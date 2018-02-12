@@ -14,3 +14,10 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Auth::routes();
+
+Route::get('/admin', [
+    'uses' => 'AdminController@index',
+    'as' => 'admin',
+]);
