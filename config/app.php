@@ -164,9 +164,26 @@ return [
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
         Mcamara\LaravelLocalization\LaravelLocalizationServiceProvider::class,
+        Intervention\Image\ImageServiceProvider::class,
         /*
          * Package Service Providers...
          */
+
+        /*
+         * Minify
+         */
+//        GrahamCampbell\HTMLMin\HTMLMinServiceProvider::class,
+
+        /*
+         * Package Service Providers...
+         */
+
+        /*
+        * Package Forms & HTML
+        */
+        Collective\Html\HtmlServiceProvider::class,
+
+
 
         /*
          * Application Service Providers...
@@ -226,6 +243,11 @@ return [
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
         'LaravelLocalization' => Mcamara\LaravelLocalization\Facades\LaravelLocalization::class,
+        'Image' => Intervention\Image\Facades\Image::class,
+        'HTMLMin' => HTMLMin\HTMLMin\Facades\HTMLMin::class,
+        'Form' => Collective\Html\FormFacade::class,
+        'Html' => Collective\Html\HtmlFacade::class,
+        'Input' => Illuminate\Support\Facades\Input::class,
     ],
 
 ];

@@ -25,6 +25,8 @@ Route::group(['prefix' => LaravelLocalization::setLocale()], function()
         'as' => 'admin',
     ]);
 
+    /* CRUD POSTS */
+    Route::resource('/admin/news', 'AdminController');
 });
 
 
