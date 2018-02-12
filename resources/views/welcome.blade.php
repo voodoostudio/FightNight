@@ -83,6 +83,16 @@
                     Laravel
                 </div>
 
+                <ul class="language_select">
+                    @foreach(LaravelLocalization::getSupportedLocales() as $localeCode => $langItem)
+                        <li>
+                            <a class="ravis-btn btn-type-2 {{ ($localeCode == App::getLocale()) ? 'active' : '' }}" rel="alternate" hreflang="{{$localeCode}}" href="{{ LaravelLocalization::getLocalizedURL($localeCode) }}">
+                                <span>{{ $langItem['native'] }}</span>
+                            </a>
+                        </li>
+                    @endforeach
+                </ul>
+
                 <div class="links">
                     <p>Test</p>
                     <a href="https://laravel.com/docs">Documentation</a>

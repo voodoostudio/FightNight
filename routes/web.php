@@ -11,13 +11,20 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::group(['prefix' => LaravelLocalization::setLocale()], function()
+{
+    Route::get('/', [
+        'uses' => 'PagesController@index',
+        'as' => 'index',
+    ]);
+
+    Auth::routes();
+
+    Route::get('/admin', [
+        'uses' => 'AdminController@index',
+        'as' => 'admin',
+    ]);
+
 });
 
-Auth::routes();
 
-Route::get('/admin', [
-    'uses' => 'AdminController@index',
-    'as' => 'admin',
-]);
