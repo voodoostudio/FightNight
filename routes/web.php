@@ -18,6 +18,48 @@ Route::group(['prefix' => LaravelLocalization::setLocale()], function()
         'as' => 'index',
     ]);
 
+    Route::get('/gallery', [
+        'uses' => 'PagesController@gallery',
+        'as' => 'gallery',
+    ]);
+
+    Route::get('/results', [
+        'uses' => 'PagesController@results',
+        'as' => 'results',
+    ]);
+
+    Route::get('/partners', [
+        'uses' => 'PagesController@partners',
+        'as' => 'partners',
+    ]);
+
+    Route::get('/news', [
+        'uses' => 'PagesController@news',
+        'as' => 'news',
+    ]);
+
+    Route::get('/press', [
+        'uses' => 'PagesController@press',
+        'as' => 'press',
+    ]);
+
+    Route::get('/about', [
+        'uses' => 'PagesController@about',
+        'as' => 'about',
+    ]);
+
+    Route::get('/contact', [
+        'uses' => 'PagesController@contact',
+        'as' => 'contact',
+    ]);
+
+    Route::post('/contact', [
+        'uses' => 'PagesController@postContact',
+        'as' => 'post-contact',
+    ]);
+
+
+
     Auth::routes();
 
     Route::get('/admin', [
