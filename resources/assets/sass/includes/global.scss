@@ -1,0 +1,22 @@
+body {
+  background: gray;
+}
+
+.container-fluid {
+  max-width: 1200px;
+}
+
+header {
+  .navbar-light .navbar-nav .nav-link {
+    font-family: proxima_nova_regular;
+  }
+}
+.flickity-slider {
+  .carousel-cell {
+    width: 100%;
+  }
+}
+
+
+body{text-align:center;font-family: 'Open Sans', sans-serif;}
+svg{width:30%;}

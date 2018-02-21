@@ -1,0 +1,55 @@
+$main_blue: #2c314f;
+$main_yellow: #d3c070;
+$text_main_gray: #888888;
+$text_light_gray: #e5e5e5;
+$border_color: #cccccc;
+$error_color: #ff6666;
+$success_color: #51bf6c;
+
+@mixin my_gradient_bg($gradient_color) {
+  background: -webkit-linear-gradient(transparent, $gradient_color);
+  background: -moz-linear-gradient(transparent, $gradient_color);
+  background: -o-linear-gradient(transparent, $gradient_color);
+  background: linear-gradient(transparent, $gradient_color);
+}
+@mixin my_gradient_right_bg($gradient_color) {
+  background: -webkit-linear-gradient(left, transparent, $gradient_color);
+  background: -moz-linear-gradient(left, transparent, $gradient_color);
+  background: -o-linear-gradient(left, transparent, $gradient_color);
+  background: linear-gradient(left, transparent, $gradient_color);
+}
+@mixin my_gradient_left_bg($gradient_color) {
+  background: -webkit-linear-gradient(to left, transparent, $gradient_color);
+  background: -moz-linear-gradient(to left, transparent, $gradient_color);
+  background: -o-linear-gradient(to left, transparent, $gradient_color);
+  background: linear-gradient(to left, transparent, $gradient_color);
+}
+@mixin my_transform($transform_parameter) {
+  -webkit-transform: $transform_parameter;
+  -moz-transform: $transform_parameter;
+  -ms-transform: $transform_parameter;
+  -o-transform: $transform_parameter;
+  transform: $transform_parameter;
+}
+@mixin my_transition($transition) {
+  -webkit-transition: $transition;
+  -moz-transition: $transition;
+  -o-transition: $transition;
+  transition: $transition;
+}
+@mixin my_box_shadow($shadow_color) {
+  -webkit-box-shadow: inset 10px 10px 300px 200px $shadow_color;
+  -moz-box-shadow: inset 10px 10px 300px 200px $shadow_color;
+  box-shadow: inset 10px 10px 300px 200px $shadow_color;
+}
+@mixin my_border_radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  border-radius: $radius;
+}
+@mixin my_display_flex {
+  display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+  display: -ms-flexbox;  /* TWEENER - IE 10 */
+  display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+  display: flex;
+}
