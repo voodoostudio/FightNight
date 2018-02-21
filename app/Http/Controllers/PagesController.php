@@ -31,6 +31,16 @@ class PagesController extends Controller
         return view('pages.gallery');
     }
 
+    public function editions ()
+    {
+        return view('pages.editions');
+    }
+
+    public function tickets ()
+    {
+        return view('pages.tickets');
+    }
+
     public function results ()
     {
         return view('pages.results');

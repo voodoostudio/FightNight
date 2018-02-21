@@ -48,6 +48,16 @@ Route::group(['prefix' => LaravelLocalization::setLocale()], function()
         'as' => 'about',
     ]);
 
+    Route::get('/editions', [
+        'uses' => 'PagesController@editions',
+        'as' => 'editions',
+    ]);
+
+    Route::get('/tickets', [
+        'uses' => 'PagesController@tickets',
+        'as' => 'tickets',
+    ]);
+
     Route::get('/contact', [
         'uses' => 'PagesController@contact',
         'as' => 'contact',
