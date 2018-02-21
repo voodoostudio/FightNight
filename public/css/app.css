@@ -13,11 +13,21 @@
   font-family: 'proxima_nova_regular';
   src: url("/fonts/proxima_nova/regular/proxima_nova_regular.eot");
   src: url("/fonts/proxima_nova/regular/proxima_nova_regular.eot?#iefix") format("embedded-opentype"), url("/fonts/proxima_nova/regular/proxima_nova_regular.woff") format("woff"), url("/fonts/proxima_nova/regular/proxima_nova_regular.ttf") format("truetype"), url("/fonts/proxima_nova/regular/proxima_nova_regular.svg") format("svg");
-  font-weight: 100;
+  font-weight: 400;
   font-style: normal;
 }
 
 /* END Regular*/
+/* BEGIN Bold*/
+@font-face {
+  font-family: 'proxima_nova_bold';
+  src: url("/fonts/proxima_nova/bold/proxima_nova_bold.eot");
+  src: url("/fonts/proxima_nova/bold/proxima_nova_bold.eot?#iefix") format("embedded-opentype"), url("/fonts/proxima_nova/bold/proxima_nova_bold.woff") format("woff"), url("/fonts/proxima_nova/bold/proxima_nova_bold.ttf") format("truetype"), url("/fonts/proxima_nova/bold/proxima_nova_bold.svg") format("svg");
+  font-weight: 900;
+  font-style: normal;
+}
+
+/* END Bold*/
 /* BEGIN Plane Crash*/
 @font-face {
   font-family: 'plane_crash';
@@ -29,26 +39,128 @@
 
 /* END Plane Crash*/
 body {
-  background: gray;
+  background-image: url("/img/bg_main.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .container-fluid {
   max-width: 1200px;
 }
 
-header .navbar-light .navbar-nav .nav-link {
-  font-family: proxima_nova_regular;
+header {
+  background-image: url("/img/bg_header.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
 }
 
-.flickity-slider .carousel-cell {
+header:before {
+  content: '';
+  height: 55px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background-image: url("/img/bg_header_top.png");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header .navbar.navbar-light {
+  position: relative;
+  background-color: transparent;
+  padding: 60px 0 30px 230px;
+}
+
+header .navbar.navbar-light .navbar-brand {
+  position: absolute;
+  left: 0;
+  top: 30px;
+}
+
+header .navbar.navbar-light .navbar-brand img {
+  width: 215px;
+}
+
+header .navbar.navbar-light .navbar-nav .nav-link {
+  font-family: proxima_nova_light;
+  line-height: 3rem;
+  color: #faddca;
+  text-transform: uppercase;
+  font-size: 0.95rem;
+  letter-spacing: 1px;
+}
+
+header .navbar.navbar-light .navbar-nav .nav-link:before {
+  content: '';
+  width: 5px;
+  height: 5px;
+  background: #faddca;
+}
+
+header .navbar.navbar-light .navbar-nav .nav-link.active {
+  font-family: proxima_nova_bold;
+  color: #ffffc5;
+}
+
+section.carousel_section {
+  margin-top: 55px;
+}
+
+section.carousel_section .homepage_carousel .flickity-viewport .flickity-slider .carousel-cell {
+  width: 100%;
+  height: auto;
+  background: black;
+  border-radius: 0;
+}
+
+section.carousel_section .homepage_carousel .flickity-viewport .flickity-slider .carousel-cell:before {
+  display: none;
+}
+
+section.carousel_section .homepage_carousel .flickity-prev-next-button {
+  background: rgba(168, 59, 64, 0.75);
+  width: 60px;
+  height: 60px;
+}
+
+section.carousel_section .homepage_carousel .flickity-prev-next-button.next {
+  right: 60px;
+}
+
+section.carousel_section .homepage_carousel .flickity-prev-next-button.previous {
+  left: 60px;
+}
+
+section.carousel_section .homepage_carousel .flickity-prev-next-button:hover {
+  background: #a83b40;
+}
+
+section.carousel_section .homepage_carousel .flickity-prev-next-button:disabled {
+  opacity: 0.7;
+}
+
+section.carousel_section .homepage_carousel .flickity-prev-next-button .arrow {
+  fill: #faddca;
+}
+
+section.countdown_section {
+  margin-top: 15px;
+}
+
+section.countdown_section .countdown_container {
+  background: black;
+}
+
+section.countdown_section .countdown_container img {
   width: 100%;
 }
 
-body {
-  text-align: center;
-  font-family: 'Open Sans', sans-serif;
-}
-
-svg {
-  width: 30%;
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: black;
+  color: white;
 }

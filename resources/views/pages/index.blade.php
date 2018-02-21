@@ -28,10 +28,31 @@
 
     <section class="carousel_section">
         <div class="container-fluid">
-            <div class="main-carousel">
-                <div class="carousel-cell">...</div>
-                <div class="carousel-cell">...</div>
-                <div class="carousel-cell">...</div>
+            <div class="homepage_carousel">
+                <div class="carousel-cell">
+                    <img src="/img/carousel/1.png" alt="">
+                </div>
+                <div class="carousel-cell">
+                    <img src="/img/carousel/1.png" alt="">
+                </div>
+                <div class="carousel-cell">
+                    <img src="/img/carousel/1.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="countdown_section">
+        <div class="container-fluid">
+            <div class="countdown_container">
+                <div class="row">
+                    <div class="col-5">
+                        <img src="/img/ticket.png" alt="ticket">
+                    </div>
+                    <div class="col-7">
+                        countdown
+                    </div>
+                </div>
             </div>
         </div>
     </section>
