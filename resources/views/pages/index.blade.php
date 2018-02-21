@@ -1,6 +1,31 @@
 @extends('layouts.app')
 
 @section('content')
+    <section class="posts">
+        <div class="container-fluid">
+            <div class="row">
+
+                @foreach($sent_posts['updates'] as $posts)
+                   <div class="col-lg-3">
+                       <h3>{{ $posts['profile_service'] }}</h3>
+                       <h4>{{ $posts['day'] }}</h4>
+                       <p>Published: {{ $posts['text'] }}</p>
+                       @if(isset($posts['media']))
+                           <img src="{{ $posts['media']['thumbnail'] }}" />
+                       @endif
+
+                       <div class="statistics">
+                           <span>Comments: {{ (!empty($posts['statistics']['comments'])) ? $posts['statistics']['comments'] : 0}}</span>
+                           <span>Likes: {{ (!empty($posts['statistics']['likes'])) ? $posts['statistics']['likes'] : 0 }}</span>
+                           <span>Clicks: {{ (!empty($posts['statistics']['clicks'])) ? $posts['statistics']['clicks'] : 0 }}</span>
+                       </div>
+                   </div>
+                @endforeach
+            </div>
+        </div>
+    </section>
+
+
     <section class="carousel_section">
         <div class="container-fluid">
             <div class="main-carousel">
