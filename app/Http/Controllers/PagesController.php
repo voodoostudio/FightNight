@@ -11,18 +11,25 @@ class PagesController extends Controller
     public function index ()
     {
         /* API BUFFER (buffer.com) */
+        $sent_posts = [];
+        $social_posts =[];
         $token_access = '1/7b7c2046ca2292ba303c599b7bc75530';
-        $client_id = '5a868f4e8d98e28e54d367bf';
-
         $auth = new TokenAuthorization($token_access);
         $client = new Client($auth);
 
-        $sent_posts = $client->getProfileSentUpdates($client_id, $page = null, $count = 4, $since = null, $utc = false);
-        $pending_posts = $client->getProfilePendingUpdates($client_id, $page = null, $count = null, $since = null, $utc = false);
+        $profiles = $client->getProfiles();
+        foreach ($profiles as $client_id) {
+            $sent_posts = $client->getProfileSentUpdates($client_id['_id'], $page = null, $count = null, $since = null, $utc = false)['updates'];
+            foreach ($sent_posts as $posts) {
+                $social_posts[] = $posts;
+            }
+        }
+
+        //$pending_posts = $client->getProfilePendingUpdates($facebook_client_id, $page = null, $count = null, $since = null, $utc = false);
 
         return view('pages.index', [
-            'sent_posts' => $sent_posts,
-            'pending_posts' => $pending_posts
+            'social_posts' => $social_posts,
+            //'pending_posts' => $pending_posts
         ]);
     }
 

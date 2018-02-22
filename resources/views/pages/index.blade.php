@@ -5,7 +5,7 @@
         <div class="container-fluid">
             <div class="row">
 
-                @foreach($sent_posts['updates'] as $posts)
+                @foreach($social_posts as $posts)
                    <div class="col-lg-3">
                        <h3>{{ $posts['profile_service'] }}</h3>
                        <h4>{{ $posts['day'] }}</h4>
