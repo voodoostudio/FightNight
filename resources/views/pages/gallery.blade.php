@@ -14,17 +14,17 @@
             <div id="grid-container">
                 <div class="cbp-item animation">
                     <a href="#" title="custom title 1">
-                        <img src="/img/gallery/1.jpg" alt="custom alt 1" width="100%">
+                        <img src="/img/gallery/1.jpg" alt="custom alt 1">
                     </a>
                 </div>
                 <div class="cbp-item artwork">
                     <a href="#" title="custom title 2">
-                        <img src="/img/gallery/2.jpg" alt="custom alt 2" width="100%">
+                        <img src="/img/gallery/2.jpg" alt="custom alt 2">
                     </a>
                 </div>
                 <div class="cbp-item photography">
                     <a href="#" title="custom title 3">
-                        <img src="/img/gallery/3.jpg" alt="custom alt 3" width="100%">
+                        <img src="/img/gallery/3.jpg" alt="custom alt 3">
                     </a>
                 </div>
             </div>
@@ -33,11 +33,5 @@
 @stop
 
 @section('js')
-    <script type="text/javascript">
-        jQuery(document).ready( function() {
-            jQuery('#grid-container').cubeportfolio({
-                animationType: 'bounceLeft'
-            });
-        });
-    </script>
+    <script type="text/javascript" src="{{mix('js/gallery.js')}}"></script>
 @stop

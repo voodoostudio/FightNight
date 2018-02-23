@@ -1,11 +1,15 @@
 $pink: #faddca;
 $yellow: #ffffc5;
+$beige: #e8e5d8;
 $red: #a83b40;
 
 $text_light_gray: #e5e5e5;
 $border_color: #cccccc;
 $error_color: #ff6666;
 $success_color: #51bf6c;
+
+$hamburger_speed: 200ms;
+$hamburger_easing: cubic-bezier(0.7, 0, 0, 0.7);
 
 @mixin my_gradient_bg($gradient_color) {
   background: -webkit-linear-gradient(transparent, $gradient_color);

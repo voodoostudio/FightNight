@@ -9,6 +9,6 @@
 
 <footer>
     <div class="container-fluid">
-        <p>© FIGHT NIGHT Saint-Tropez. All Rights Reserved. <a href="#">Privacy Policy</a><a href="{{ route('contact') }}">Contact</a></p>
+        <p>© FIGHT NIGHT Saint-Tropez. All Rights Reserved. <a href="#">Privacy Policy</a> <a href="{{ route('contact') }}">- Contact -</a></p>
     </div>
 </footer>

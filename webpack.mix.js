@@ -33,6 +33,10 @@ mix.scripts([
 ], 'public/js/app.js');
 
 mix.scripts([
+    'resources/assets/js/includes/gallery.js'
+], 'public/js/gallery.js');
+
+mix.scripts([
     'resources/assets/js/libraries/jquery-3.1.1.min.js',
     'resources/assets/js/libraries/jquery-ui.min.js',
     'resources/assets/js/libraries/bootstrap.js',
