@@ -42,6 +42,9 @@ body {
   background-image: url("/img/bg_main.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
+  min-height: 100vh;
+  font-family: proxima_nova_light;
 }
 
 .container-fluid {
@@ -157,10 +160,22 @@ section.countdown_section .countdown_container img {
   width: 100%;
 }
 
+section.posts_section {
+  display: none;
+}
+
+section.about_section {
+  margin-top: 50px;
+  color: #faddca;
+  font-size: 1rem;
+}
+
 footer {
   position: absolute;
   bottom: 0;
   width: 100%;
-  background: black;
+  padding: 40px 0;
+  background: url("/img/bg_footer.png") top no-repeat;
+  background-size: cover;
   color: white;
 }

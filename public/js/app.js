@@ -19,6 +19,8 @@ $('.homepage_carousel').flickity({
     }
 });
 
+
+
 // countdown();
 //
 // var count = $(('#count'));
