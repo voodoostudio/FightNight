@@ -5,6 +5,8 @@ body {
   position: relative;
   min-height: 100vh;
   font-family: proxima_nova_light;
+
+  padding-bottom: 300px;
 }
 
 .container-fluid {
@@ -125,12 +127,6 @@ header {
   }
 }
 
-
-
-
-
-
-
 section.carousel_section {
   margin-top: 55px;
   .homepage_carousel {
@@ -143,6 +139,9 @@ section.carousel_section {
           border-radius: 0;
           &:before {
             display: none;
+          }
+          img {
+            width: 100%;
           }
         }
       }
@@ -178,6 +177,13 @@ section.countdown_section {
     img {
       width: 100%;
     }
+    .countdown_item {
+      display: inline-block;
+      width: 20%;
+    }
+    //svg {
+    //  width: 20%;
+    //}
   }
 }
 

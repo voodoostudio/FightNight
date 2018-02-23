@@ -50,7 +50,56 @@
                         <img src="/img/ticket.png" alt="ticket">
                     </div>
                     <div class="col-7">
-                        countdown
+                        <div class="countdown_item days">
+                            <svg class="animated" viewbox="0 0 100 100">
+                                <circle cx="50" cy="50" r="40" stroke="#333333" stroke-width="12" fill="#000000" fill-opacity="0"/>
+                                <path class="progress" stroke-linecap="round" stroke-width="12" stroke="#7f7f7f" fill="none"
+                                      d="M50 10 a 40 40 0 0 1 0 80 a 40 40 0 0 1 0 -80">
+                                </path>
+                                <text class="count" x="50" y="50" text-anchor="middle" dy="7" dx="7" fill="white">
+                                    <tspan class="value" x="45" y="50" font-size="30" text-anchor="middle">0</tspan>
+                                    <tspan x="50" y="50" dy="2em" font-size="10" text-anchor="middle">DAYS</tspan>
+                                </text>
+                            </svg>
+                        </div>
+                        <div class="countdown_item hours">
+                            <svg class="animated" viewbox="0 0 100 100">
+                                <circle cx="50" cy="50" r="40" stroke="#333333" stroke-width="12" fill="#000000" fill-opacity="0"/>
+                                <path class="progress" stroke-linecap="round" stroke-width="12" stroke="#7f7f7f" fill="none"
+                                      d="M50 10 a 40 40 0 0 1 0 80 a 40 40 0 0 1 0 -80">
+                                </path>
+                                <text class="count" x="50" y="50" text-anchor="middle" dy="7" dx="7" fill="white">
+                                    <tspan class="value" x="45" y="50" font-size="30" text-anchor="middle">0</tspan>
+                                    <tspan x="50" y="50" dy="2em" font-size="10" text-anchor="middle">HOURS</tspan>
+                                </text>
+                            </svg>
+                        </div>
+                        <div class="countdown_item minutes">
+                            <svg class="animated" viewbox="0 0 100 100">
+                                <circle cx="50" cy="50" r="40" stroke="#333333" stroke-width="12" fill="#000000" fill-opacity="0"/>
+                                <path class="progress" stroke-linecap="round" stroke-width="12" stroke="#7f7f7f" fill="none"
+                                      d="M50 10 a 40 40 0 0 1 0 80 a 40 40 0 0 1 0 -80">
+                                </path>
+                                <text class="count" x="50" y="50" text-anchor="middle" dy="7" dx="7" fill="white">
+                                    <tspan class="value" x="45" y="50" font-size="30" text-anchor="middle">0</tspan>
+                                    <tspan x="50" y="50" dy="2em" font-size="10" text-anchor="middle">MINUTES</tspan>
+                                </text>
+                            </svg>
+                        </div>
+                        <div class="countdown_item seconds">
+                            <svg class="animated" viewbox="0 0 100 100">
+                                <circle cx="50" cy="50" r="40" stroke="#333333" stroke-width="12" fill="#000000" fill-opacity="0"/>
+                                <path class="progress" stroke-linecap="round" stroke-width="12" stroke="#7f7f7f" fill="none"
+                                      d="M50 10 a 40 40 0 0 1 0 80 a 40 40 0 0 1 0 -80">
+                                </path>
+                                <text class="count" x="50" y="50" text-anchor="middle" dy="7" dx="7" fill="white">
+                                    <tspan class="value" x="45" y="50" font-size="30" text-anchor="middle">0</tspan>
+                                    <tspan x="50" y="50" dy="2em" font-size="10" text-anchor="middle">SECONDS</tspan>
+                                </text>
+                            </svg>
+                        </div>
+
+                        <p id="demo" style="color: white"></p>
                     </div>
                 </div>
             </div>
@@ -59,46 +108,9 @@
 
 
 
-    {{--<svg id="svg" viewbox="0 0 100 100">--}}
-        {{--<circle cx="50" cy="50" r="45" fill="#FDB900"/>--}}
-        {{--<path fill="none" stroke-linecap="round" stroke-width="5" stroke="#fff"--}}
-              {{--stroke-dasharray="1,250.2"--}}
-              {{--d="M50 10--}}
-           {{--a 40 40 0 0 1 0 80--}}
-           {{--a 40 40 0 0 1 0 -80"/>--}}
-        {{--<text x="50" y="50" text-anchor="middle" dy="7" font-size="20">1%</text>--}}
-    {{--</svg>--}}
-    {{--<svg viewbox="0 0 100 100">--}}
-        {{--<circle cx="50" cy="50" r="45" fill="#FDB900"/>--}}
-        {{--<path fill="none" stroke-linecap="round" stroke-width="5" stroke="#fff"--}}
-              {{--stroke-dasharray="125.6,125.6"--}}
-              {{--d="M50 10--}}
-           {{--a 40 40 0 0 1 0 80--}}
-           {{--a 40 40 0 0 1 0 -80"/>--}}
-        {{--<text x="50" y="50" text-anchor="middle" dy="7" font-size="20">50%</text>--}}
-    {{--</svg>--}}
-    {{--<svg viewbox="0 0 100 100">--}}
-        {{--<circle cx="50" cy="50" r="45" fill="#FDB900"/>--}}
-        {{--<path fill="none" stroke-linecap="round" stroke-width="5" stroke="#fff"--}}
-              {{--stroke-dasharray="251.2,0"--}}
-              {{--d="M50 10--}}
-           {{--a 40 40 0 0 1 0 80--}}
-           {{--a 40 40 0 0 1 0 -80"/>--}}
-        {{--<text x="50" y="50" text-anchor="middle" dy="7" font-size="20">100%</text>--}}
-    {{--</svg>--}}
-
-    {{--<svg id="animated" viewbox="0 0 100 100">--}}
-        {{--<circle cx="50" cy="50" r="45" fill="#FDB900"/>--}}
-        {{--<path id="progress" stroke-linecap="round" stroke-width="5" stroke="#fff" fill="none"--}}
-              {{--d="M50 10--}}
-           {{--a 40 40 0 0 1 0 80--}}
-           {{--a 40 40 0 0 1 0 -80">--}}
-        {{--</path>--}}
-        {{--<text id="count" x="50" y="50" text-anchor="middle" dy="7" font-size="20">100%</text>--}}
-    {{--</svg>--}}
 
 
-    {{--<p id="demo"></p>--}}
+
 
 @stop
 

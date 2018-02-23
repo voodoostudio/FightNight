@@ -45,6 +45,7 @@ body {
   position: relative;
   min-height: 100vh;
   font-family: proxima_nova_light;
+  padding-bottom: 300px;
 }
 
 .container-fluid {
@@ -187,6 +188,10 @@ section.carousel_section .homepage_carousel .flickity-viewport .flickity-slider 
   display: none;
 }
 
+section.carousel_section .homepage_carousel .flickity-viewport .flickity-slider .carousel-cell img {
+  width: 100%;
+}
+
 section.carousel_section .homepage_carousel .flickity-prev-next-button {
   background: rgba(168, 59, 64, 0.75);
   width: 60px;
@@ -223,6 +228,11 @@ section.countdown_section .countdown_container {
 
 section.countdown_section .countdown_container img {
   width: 100%;
+}
+
+section.countdown_section .countdown_container .countdown_item {
+  display: inline-block;
+  width: 20%;
 }
 
 section.posts_section {
@@ -298,6 +308,10 @@ footer p a:hover {
   header .navbar.navbar-light .navbar-nav .nav-link:last-of-type {
     margin-right: 0;
   }
+  section.carousel_section .homepage_carousel .flickity-prev-next-button {
+    width: 50px;
+    height: 50px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -311,6 +325,16 @@ footer p a:hover {
     margin-right: 0;
     text-align: center;
     line-height: 1rem;
+  }
+  section.carousel_section .homepage_carousel .flickity-prev-next-button {
+    width: 40px;
+    height: 40px;
+  }
+  section.carousel_section .homepage_carousel .flickity-prev-next-button.previous {
+    left: 30px;
+  }
+  section.carousel_section .homepage_carousel .flickity-prev-next-button.next {
+    right: 30px;
   }
 }
 
@@ -340,5 +364,15 @@ footer p a:hover {
     margin-right: 0;
     text-align: center;
     line-height: 1rem;
+  }
+  section.carousel_section .homepage_carousel .flickity-prev-next-button {
+    width: 30px;
+    height: 30px;
+  }
+  section.carousel_section .homepage_carousel .flickity-prev-next-button.previous {
+    left: 15px;
+  }
+  section.carousel_section .homepage_carousel .flickity-prev-next-button.next {
+    right: 15px;
   }
 }
