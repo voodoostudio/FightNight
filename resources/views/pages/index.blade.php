@@ -50,10 +50,10 @@
                         <img src="/img/ticket.png" alt="ticket">
                     </div>
                     <div class="col-7">
-                        <div class="countdown_item days">
-                            <svg class="animated" viewbox="0 0 100 100">
-                                <circle cx="50" cy="50" r="40" stroke="#333333" stroke-width="12" fill="#000000" fill-opacity="0"/>
-                                <path class="progress" stroke-linecap="round" stroke-width="12" stroke="#7f7f7f" fill="none"
+                        <div class="countdown_item" id="days">
+                            <svg id="animated_days" viewbox="0 0 100 100">
+                                <circle cx="50" cy="50" r="40" stroke="#333333" stroke-width="10" fill="#000000" fill-opacity="0"/>
+                                <path id="progress_days" stroke-linecap="round" stroke-width="10" stroke="#7f7f7f" fill="none"
                                       d="M50 10 a 40 40 0 0 1 0 80 a 40 40 0 0 1 0 -80">
                                 </path>
                                 <text class="count" x="50" y="50" text-anchor="middle" dy="7" dx="7" fill="white">
@@ -62,10 +62,10 @@
                                 </text>
                             </svg>
                         </div>
-                        <div class="countdown_item hours">
-                            <svg class="animated" viewbox="0 0 100 100">
-                                <circle cx="50" cy="50" r="40" stroke="#333333" stroke-width="12" fill="#000000" fill-opacity="0"/>
-                                <path class="progress" stroke-linecap="round" stroke-width="12" stroke="#7f7f7f" fill="none"
+                        <div class="countdown_item" id="hours">
+                            <svg id="animated_hours" viewbox="0 0 100 100">
+                                <circle cx="50" cy="50" r="40" stroke="#333333" stroke-width="10" fill="#000000" fill-opacity="0"/>
+                                <path id="progress_hours" stroke-linecap="round" stroke-width="10" stroke="#7f7f7f" fill="none"
                                       d="M50 10 a 40 40 0 0 1 0 80 a 40 40 0 0 1 0 -80">
                                 </path>
                                 <text class="count" x="50" y="50" text-anchor="middle" dy="7" dx="7" fill="white">
@@ -74,10 +74,10 @@
                                 </text>
                             </svg>
                         </div>
-                        <div class="countdown_item minutes">
-                            <svg class="animated" viewbox="0 0 100 100">
-                                <circle cx="50" cy="50" r="40" stroke="#333333" stroke-width="12" fill="#000000" fill-opacity="0"/>
-                                <path class="progress" stroke-linecap="round" stroke-width="12" stroke="#7f7f7f" fill="none"
+                        <div class="countdown_item" id="minutes">
+                            <svg id="animated_minutes" viewbox="0 0 100 100">
+                                <circle cx="50" cy="50" r="40" stroke="#333333" stroke-width="10" fill="#000000" fill-opacity="0"/>
+                                <path id="progress_minutes" stroke-linecap="round" stroke-width="10" stroke="#7f7f7f" fill="none"
                                       d="M50 10 a 40 40 0 0 1 0 80 a 40 40 0 0 1 0 -80">
                                 </path>
                                 <text class="count" x="50" y="50" text-anchor="middle" dy="7" dx="7" fill="white">
@@ -86,10 +86,10 @@
                                 </text>
                             </svg>
                         </div>
-                        <div class="countdown_item seconds">
-                            <svg class="animated" viewbox="0 0 100 100">
-                                <circle cx="50" cy="50" r="40" stroke="#333333" stroke-width="12" fill="#000000" fill-opacity="0"/>
-                                <path class="progress" stroke-linecap="round" stroke-width="12" stroke="#7f7f7f" fill="none"
+                        <div class="countdown_item" id="seconds">
+                            <svg id="animated_seconds" viewbox="0 0 100 100">
+                                <circle cx="50" cy="50" r="40" stroke="#333333" stroke-width="10" fill="#000000" fill-opacity="0"/>
+                                <path id="progress_seconds" stroke-linecap="round" stroke-width="10" stroke="#7f7f7f" fill="none"
                                       d="M50 10 a 40 40 0 0 1 0 80 a 40 40 0 0 1 0 -80">
                                 </path>
                                 <text class="count" x="50" y="50" text-anchor="middle" dy="7" dx="7" fill="white">
@@ -98,22 +98,17 @@
                                 </text>
                             </svg>
                         </div>
-
-                        <p id="demo" style="color: white"></p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-
-
-
-
-
-
 @stop
 
 @section('js')
-
+    <script>
+        // Set the date we're counting down to
+        var countDownDate = new Date("Feb 25, 2018 22:37:25").getTime();
+    </script>
 @stop
