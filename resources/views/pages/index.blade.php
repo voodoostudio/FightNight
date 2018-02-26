@@ -1,38 +1,16 @@
 @extends('layouts.app')
 
+@section('title', 'Accueil')
+
 @section('content')
-    <section class="posts_section">
-        <div class="container-fluid">
-            <div class="row">
-
-                @foreach($social_posts as $posts)
-                   <div class="col-lg-3">
-                       {{ date( "d", $posts['updated_at']) }}
-                       {{ date( "M", $posts['updated_at']) }}
-                       <h3>{{ $posts['profile_service'] }}</h3>
-                       <h4>{{ $posts['day'] }}</h4>
-                       <p>Published: {{ $posts['text'] }}</p>
-                       @if(isset($posts['media']))
-                           <img src="{{ $posts['media']['thumbnail'] }}" />
-                       @endif
-
-                       <div class="statistics">
-                           <span>Comments: {{ (!empty($posts['statistics']['comments'])) ? $posts['statistics']['comments'] : 0}}</span>
-                           <span>Likes: {{ (!empty($posts['statistics']['likes'])) ? $posts['statistics']['likes'] : 0 }}</span>
-                           <span>Clicks: {{ (!empty($posts['statistics']['clicks'])) ? $posts['statistics']['clicks'] : 0 }}</span>
-                       </div>
-                   </div>
-                @endforeach
-            </div>
-        </div>
-    </section>
-
-
-    <section class="carousel_section">
+     <section class="carousel_section">
         <div class="container-fluid">
             <div class="homepage_carousel">
                 <div class="carousel-cell">
                     <img src="/img/carousel/1.png" alt="">
+                    <div class="caption">
+                        <h1>learn to <span>defend</span> yourself in real life</h1>
+                    </div>
                 </div>
                 <div class="carousel-cell">
                     <img src="/img/carousel/1.png" alt="">
@@ -111,6 +89,53 @@
         </div>
     </section>
 
+    <section class="posts_section">
+        <div class="container-fluid">
+            <div class="row">
+                @foreach($social_posts as $posts)
+                    <div class="col-lg-3">
+                        <div class="post_block">
+                            <div class="row">
+                                <div class="col-3">
+                                    <div class="date_container">
+                                        {{ date( "d", $posts['updated_at']) }}
+                                    </div>
+                                    <div class="date_container">
+                                        {{ date( "M", $posts['updated_at']) }}
+                                    </div>
+                                    {{--<h4>{{ $posts['day'] }} </h4>--}}
+                                </div>
+                                <div class="col-9">
+                                    <h3>{{ $posts['profile_service'] }}</h3>
+                                    <p>{{ mb_substr($posts['text'], 0, 100) }}</p>
+                                    {{--<p>{{ $posts['text'] }}</p>--}}
+                                </div>
+                            </div>
+                            @if(isset($posts['media']))
+                                <div class="row">
+                                    <div class="col-12">
+                                        <img src="{{ $posts['media']['thumbnail'] }}" />
+                                    </div>
+                                </div>
+                            @endif
+                        </div>
+                        {{--<h3>{{ $posts['profile_service'] }}</h3>--}}
+                        {{--<h4>{{ $posts['day'] }} </h4>--}}
+                        {{--<p>Published: {{ $posts['text'] }}</p>--}}
+                        {{--@if(isset($posts['media']))--}}
+                            {{--<img src="{{ $posts['media']['thumbnail'] }}" />--}}
+                        {{--@endif--}}
+
+                        {{--<div class="statistics">--}}
+                            {{--<span>Comments: {{ (!empty($posts['statistics']['comments'])) ? $posts['statistics']['comments'] : 0}}</span>--}}
+                            {{--<span>Likes: {{ (!empty($posts['statistics']['likes'])) ? $posts['statistics']['likes'] : 0 }}</span>--}}
+                            {{--<span>Clicks: {{ (!empty($posts['statistics']['clicks'])) ? $posts['statistics']['clicks'] : 0 }}</span>--}}
+                        {{--</div>--}}
+                    </div>
+                @endforeach
+            </div>
+        </div>
+    </section>
 @stop
 
 @section('js')
