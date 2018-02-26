@@ -5,7 +5,6 @@ body {
   position: relative;
   min-height: 100vh;
   font-family: proxima_nova_light;
-
   padding-bottom: 300px;
 }
 
@@ -174,16 +173,34 @@ section.countdown_section {
   margin-top: 15px;
   .countdown_container {
     background: black;
-    img {
-      width: 100%;
+    .ticket_container {
+      position: relative;
+      padding-left: 35px;
+      img {
+        &#arrow {
+          position: absolute;
+          top: -40px;
+          left: 40px;
+          width: 170px;
+          //@include my_transform(rotate(20deg));
+        }
+        &#ticket {
+          max-width: 400px;
+        }
+      }
     }
-    .countdown_item {
-      display: inline-block;
-      width: 20%;
+    .countdown {
+      display: flex;
+      align-content: center;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      padding-right: 50px;
+      .countdown_item {
+        //display: inline-block;
+        width: 25%;
+      }
     }
-    //svg {
-    //  width: 20%;
-    //}
   }
 }
 

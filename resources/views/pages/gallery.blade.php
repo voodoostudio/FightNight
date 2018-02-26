@@ -1,5 +1,9 @@
 @extends('layouts.app')
 
+@section('css')
+    <link rel="stylesheet" type="text/css" href="/css/cubeportfolio.css">
+@stop
+
 @section('content')
     <section class="gallery_section">
         <div class="container-fluid">
@@ -25,6 +29,11 @@
                 <div class="cbp-item photography">
                     <a href="#" title="custom title 3">
                         <img src="/img/gallery/3.jpg" alt="custom alt 3">
+                    </a>
+                </div>
+                <div class="cbp-item photography">
+                    <a href="#" title="custom title 3">
+                        <img src="/img/gallery/4.jpg" alt="custom alt 3">
                     </a>
                 </div>
             </div>

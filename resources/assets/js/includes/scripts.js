@@ -14,7 +14,3 @@ $('.homepage_carousel').flickity({
         x3: 25
     }
 });
-
-
-countdown();
-

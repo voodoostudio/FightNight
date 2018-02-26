@@ -21,7 +21,7 @@ function countdown() {
         // If the count down is finished, write some text
         if (distance < 0) {
             clearInterval(x);
-            alert("Countdown has EXPIRED");
+            // alert("Countdown has EXPIRED");
         } else {
             // Insert days, hours, minutes and second in the corresponding circles and activate animation
             var circle;
@@ -69,7 +69,3 @@ $('.homepage_carousel').flickity({
         x3: 25
     }
 });
-
-
-countdown();
-
