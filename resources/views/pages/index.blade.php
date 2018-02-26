@@ -7,6 +7,8 @@
 
                 @foreach($social_posts as $posts)
                    <div class="col-lg-3">
+                       {{ date( "d", $posts['updated_at']) }}
+                       {{ date( "M", $posts['updated_at']) }}
                        <h3>{{ $posts['profile_service'] }}</h3>
                        <h4>{{ $posts['day'] }}</h4>
                        <p>Published: {{ $posts['text'] }}</p>
