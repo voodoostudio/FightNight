@@ -42,5 +42,6 @@
 @stop
 
 @section('js')
+    <script type="text/javascript" src="/js/cubeportfolio.js"></script>
     <script type="text/javascript" src="{{mix('js/gallery.js')}}"></script>
 @stop
