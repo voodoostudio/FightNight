@@ -17,8 +17,8 @@
     <!-- Styles -->
     <link rel="stylesheet" type="text/css" href="{{mix('css/libraries.css')}}">
     <link rel="stylesheet" type="text/css" href="{{mix('css/app.css')}}">
+    @yield('css')
 </head>
-@yield('css')
 <body>
 
     @include('includes.header')
