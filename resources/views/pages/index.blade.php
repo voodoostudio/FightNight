@@ -42,7 +42,7 @@
                                     </path>
                                     <text class="count" x="50" y="50" text-anchor="middle" dy="7" dx="7" fill="white">
                                         <tspan class="value" x="45" y="50" font-size="30" text-anchor="middle">0</tspan>
-                                        <tspan x="50" y="50" dy="2em" font-size="10" text-anchor="middle">DAYS</tspan>
+                                        <tspan x="50" y="50" dy="2em" font-size="9" text-anchor="middle">DAYS</tspan>
                                     </text>
                                 </svg>
                             </div>
@@ -54,7 +54,7 @@
                                     </path>
                                     <text class="count" x="50" y="50" text-anchor="middle" dy="7" dx="7" fill="white">
                                         <tspan class="value" x="45" y="50" font-size="30" text-anchor="middle">0</tspan>
-                                        <tspan x="50" y="50" dy="2em" font-size="10" text-anchor="middle">HOURS</tspan>
+                                        <tspan x="50" y="50" dy="2em" font-size="9" text-anchor="middle">HOURS</tspan>
                                     </text>
                                 </svg>
                             </div>
@@ -66,7 +66,7 @@
                                     </path>
                                     <text class="count" x="50" y="50" text-anchor="middle" dy="7" dx="7" fill="white">
                                         <tspan class="value" x="45" y="50" font-size="30" text-anchor="middle">0</tspan>
-                                        <tspan x="50" y="50" dy="2em" font-size="10" text-anchor="middle">MINUTES</tspan>
+                                        <tspan x="50" y="50" dy="2em" font-size="9" text-anchor="middle">MINUTES</tspan>
                                     </text>
                                 </svg>
                             </div>
@@ -78,7 +78,7 @@
                                     </path>
                                     <text class="count" x="50" y="50" text-anchor="middle" dy="7" dx="7" fill="white">
                                         <tspan class="value" x="45" y="50" font-size="30" text-anchor="middle">0</tspan>
-                                        <tspan x="50" y="50" dy="2em" font-size="10" text-anchor="middle">SECONDS</tspan>
+                                        <tspan x="50" y="50" dy="2em" font-size="9" text-anchor="middle">SECONDS</tspan>
                                     </text>
                                 </svg>
                             </div>
