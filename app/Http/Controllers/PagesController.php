@@ -88,4 +88,9 @@ class PagesController extends Controller
         return view('pages.contact');
     }
 
+    public function virtual_tour ()
+    {
+        return view('pages.virtual_tour');
+    }
+
 }

@@ -132,7 +132,7 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
-  margin-top: 20px;
+  margin: 20px 0 60px;
 }
 
 header .navbar.navbar-light {
@@ -235,10 +235,6 @@ header .navbar.navbar-light .navbar-toggler[aria-expanded="true"] .icon-bar:nth-
 header .navbar.navbar-light .navbar-toggler[aria-expanded="true"] .icon-bar:nth-child(3) {
   -webkit-transform: translateY(-12px) rotate(-45deg);
   transform: translateY(-12px) rotate(-45deg);
-}
-
-section.carousel_section {
-  margin-top: 55px;
 }
 
 section.carousel_section .homepage_carousel .flickity-viewport .flickity-slider .carousel-cell {

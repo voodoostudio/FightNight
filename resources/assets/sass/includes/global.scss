@@ -22,7 +22,7 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
-  margin-top: 20px;
+  margin: 20px 0 60px;
   //&:before {
   //  content: '';
   //  height: 55px;
@@ -133,7 +133,6 @@ header {
 }
 
 section.carousel_section {
-  margin-top: 55px;
   .homepage_carousel {
     .flickity-viewport {
       .flickity-slider {

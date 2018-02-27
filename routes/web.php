@@ -27,6 +27,10 @@ Route::group(['prefix' => LaravelLocalization::setLocale()], function()
         'uses' => 'PagesController@gallery',
         'as' => 'gallery',
     ]);
+    Route::get('/virtual_tour', [
+        'uses' => 'PagesController@virtual_tour',
+        'as' => 'virtual_tour',
+    ]);
 
     Route::get('/results', [
         'uses' => 'PagesController@results',
@@ -72,6 +76,8 @@ Route::group(['prefix' => LaravelLocalization::setLocale()], function()
         'uses' => 'PagesController@postContact',
         'as' => 'post-contact',
     ]);
+
+
 
 
 
