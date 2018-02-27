@@ -19,7 +19,7 @@
                     <a class="nav-item nav-link {{ (Route::getCurrentRoute()->uri == 'about' || Route::getCurrentRoute()->uri == $lang . '/about') ? 'active' : '' }}" href="{{ route('about') }}">About</a>
                     <a class="nav-item nav-link {{ (Route::getCurrentRoute()->uri == 'editions' || Route::getCurrentRoute()->uri == $lang . '/editions') ? 'active' : '' }}" href="{{ route('editions') }}">Editions</a>
                     <a class="nav-item nav-link {{ (Route::getCurrentRoute()->uri == 'tickets' || Route::getCurrentRoute()->uri == $lang . '/tickets') ? 'active' : '' }}" href="{{ route('tickets') }}">Billeterie</a>
-                    <a class="nav-item nav-link {{ (Route::getCurrentRoute()->uri == 'gallery' || Route::getCurrentRoute()->uri == $lang . '/gallery') ? 'active' : '' }}" href="{{ route('gallery') }}">Galerie</a>
+                    <a class="nav-item nav-link {{ (Route::getCurrentRoute()->uri == 'gallery' || Route::getCurrentRoute()->uri == $lang . '/gallery') ? 'active' : '' }}" href="{{ route('galleries') }}">Galerie</a>
                     <a class="nav-item nav-link {{ (Route::getCurrentRoute()->uri == 'partners' || Route::getCurrentRoute()->uri == $lang . '/partners') ? 'active' : '' }}" href="{{ route('partners') }}">Partenaires</a>
                     <a class="nav-item nav-link {{ (Route::getCurrentRoute()->uri == 'press' || Route::getCurrentRoute()->uri == $lang . '/press') ? 'active' : '' }}" href="{{ route('press') }}">Presse</a>
                     <a class="nav-item nav-link {{ (Route::getCurrentRoute()->uri == 'contact' || Route::getCurrentRoute()->uri == $lang . '/contact') ? 'active' : '' }}" href="{{ route('contact') }}">Contact</a>

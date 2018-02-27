@@ -33,6 +33,11 @@ class PagesController extends Controller
         ]);
     }
 
+    public function galleries ()
+    {
+        return view('pages.galleries');
+    }
+
     public function gallery ()
     {
         return view('pages.gallery');

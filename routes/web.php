@@ -18,6 +18,11 @@ Route::group(['prefix' => LaravelLocalization::setLocale()], function()
         'as' => 'index',
     ]);
 
+    Route::get('/galleries', [
+        'uses' => 'PagesController@galleries',
+        'as' => 'galleries',
+    ]);
+
     Route::get('/gallery', [
         'uses' => 'PagesController@gallery',
         'as' => 'gallery',

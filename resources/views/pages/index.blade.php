@@ -2,6 +2,8 @@
 
 @section('title', 'Accueil')
 
+@section('id', 'index')
+
 @section('content')
      <section class="carousel_section">
         <div class="container-fluid">

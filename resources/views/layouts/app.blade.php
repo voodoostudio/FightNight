@@ -19,7 +19,7 @@
     <link rel="stylesheet" type="text/css" href="{{mix('css/app.css')}}">
     @yield('css')
 </head>
-<body>
+<body id="@yield('id')">
 
     @include('includes.header')
     @yield('content')
