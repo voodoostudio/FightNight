@@ -33,6 +33,10 @@ mix.scripts([
 ], 'public/js/app.js');
 
 mix.scripts([
+    'resources/assets/js/includes/index.js'
+], 'public/js/index.js');
+
+mix.scripts([
     'resources/assets/js/includes/gallery.js'
 ], 'public/js/gallery.js');
 

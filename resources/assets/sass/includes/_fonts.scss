@@ -38,6 +38,19 @@
 }
 /* END Bold*/
 
+/* BEGIN Black*/
+@font-face {
+  font-family: 'proxima_nova_black';
+  src: url('/fonts/proxima_nova/black/proxima_nova_black.eot');
+  src: url('/fonts/proxima_nova/black/proxima_nova_black.eot?#iefix') format('embedded-opentype'),
+  url('/fonts/proxima_nova/black/proxima_nova_black.woff') format('woff'),
+  url('/fonts/proxima_nova/black/proxima_nova_black.ttf') format('truetype'),
+  url('/fonts/proxima_nova/black/proxima_nova_black.svg') format('svg');
+  font-weight: 900;
+  font-style: normal;
+}
+/* END Black*/
+
 /* BEGIN Plane Crash*/
 @font-face {
   font-family: 'plane_crash';
@@ -46,7 +59,7 @@
   url('/fonts/plane_crash/plane_crash.woff') format('woff'),
   url('/fonts/plane_crash/plane_crash.ttf') format('truetype'),
   url('/fonts/plane_crash/plane_crash.svg') format('svg');
-  font-weight: 700;
+  font-weight: 300;
   font-style: normal;
 }
 /* END Plane Crash*/
