@@ -90,56 +90,96 @@
             </div>
         </div>
     </section>
+     <section class="posts_section">
+         <div class="container-fluid">
+             <div class="carousel_container">
+                 <div class="posts_carousel">
+                     @php
+                         $counter = 0;
+                     @endphp
 
-    <section class="posts_section">
-        <div class="container-fluid">
-            <div class="carousel_container">
-                <div class="posts_carousel">
-                    @foreach($social_posts as $posts)
-                        <div class="carousel_item">
-                            <div class="post_block">
-                                <div class="row my_row">
-                                    <div class="col-3 my_col">
-                                        <div class="date_container">
-                                            {{ date( "d", $posts['updated_at']) }}
-                                        </div>
-                                        <div class="date_container month">
-                                            {{ strtolower(date( "M", $posts['updated_at'])) }}
-                                        </div>
-                                        {{--<h4>{{ $posts['day'] }} </h4>--}}
-                                    </div>
-                                    <div class="col-9 my_col">
-                                        {{--<h3>{{ $posts['profile_service'] }}</h3>--}}
-                                        <p>{{ mb_substr($posts['text'], 0, 100) }}</p>
-                                        {{--<p>{{ $posts['text'] }}</p>--}}
-                                    </div>
-                                </div>
-                                {{--@if(isset($posts['media']))--}}
-                                {{--<div class="row">--}}
-                                {{--<div class="col-12 my_col">--}}
-                                {{--<img src="{{ $posts['media']['thumbnail'] }}" />--}}
-                                {{--</div>--}}
-                                {{--</div>--}}
-                                {{--@endif--}}
-                            </div>
-                            {{--<h3>{{ $posts['profile_service'] }}</h3>--}}
-                            {{--<h4>{{ $posts['day'] }} </h4>--}}
-                            {{--<p>Published: {{ $posts['text'] }}</p>--}}
-                            {{--@if(isset($posts['media']))--}}
-                            {{--<img src="{{ $posts['media']['thumbnail'] }}" />--}}
-                            {{--@endif--}}
+                     @foreach ($social_posts as $key => $items)
+                         @php
+                             $counter++;
+                         @endphp
+                         @php
+                             $posts = array_merge(
+                                 [
+                                    'text'       => (isset($items['facebook'])) ? $items['facebook']['text'] : ((isset($items['linkedin'])) ? $items['linkedin']['text'] : ((isset($items['twitter'])) ? $items['twitter']['text'] : ((isset($items['instagram'])) ? $items['instagram']['text'] : ''))),
+                                    'day'        => (isset($items['facebook'])) ? $items['facebook']['day'] : ((isset($items['linkedin'])) ? $items['linkedin']['day'] : ((isset($items['twitter'])) ? $items['twitter']['day'] : ((isset($items['instagram'])) ? $items['instagram']['day'] : ''))),
+                                    'created_at' => (isset($items['facebook'])) ? $items['facebook']['created_at'] : ((isset($items['linkedin'])) ? $items['linkedin']['created_at'] : ((isset($items['twitter'])) ? $items['twitter']['created_at'] : ((isset($items['instagram'])) ? $items['instagram']['created_at'] : ''))),
+                                    'updated_at' => (isset($items['facebook'])) ? $items['facebook']['updated_at'] : ((isset($items['linkedin'])) ? $items['linkedin']['updated_at'] : ((isset($items['twitter'])) ? $items['twitter']['updated_at'] : ((isset($items['instagram'])) ? $items['instagram']['updated_at'] : ''))),
+                                 ],
 
-                            {{--<div class="statistics">--}}
-                            {{--<span>Comments: {{ (!empty($posts['statistics']['comments'])) ? $posts['statistics']['comments'] : 0}}</span>--}}
-                            {{--<span>Likes: {{ (!empty($posts['statistics']['likes'])) ? $posts['statistics']['likes'] : 0 }}</span>--}}
-                            {{--<span>Clicks: {{ (!empty($posts['statistics']['clicks'])) ? $posts['statistics']['clicks'] : 0 }}</span>--}}
-                            {{--</div>--}}
-                        </div>
+                                 [
+                                    'facebook_link'    => (isset($items['facebook']['link'])) ? $items['facebook']['link'] : ''
+                                 ],
+
+                                 [
+                                    'linked_link' => (isset($items['linkedin']['link'])) ? $items['linkedin']['link'] : ''
+                                 ],
+
+                                 [
+                                    'twitter_link' => (isset($items['twitter']['link'])) ? $items['twitter']['link'] : ''
+                                 ],
+
+                                 [
+                                    'instagram_link' => (isset($items['instagram']['link'])) ? $items['instagram']['link'] : ''
+                                 ]
+                             );
+                         @endphp
+                         @if($counter <= 4)
+                             <div class="carousel_item">
+                                 <div class="post_block">
+                                     <div class="row my_row">
+                                         <div class="col-3 my_col">
+                                             <div class="date_container">
+                                                 {{ date( "d", $posts['created_at']) }}
+                                             </div>
+                                             <div class="date_container month">
+                                                 {{ date( "M", $posts['created_at']) }}
+                                             </div>
+                                             {{--<h4>{{ $posts['day'] }} </h4>--}}
+                                         </div>
+                                         <div class="col-9 my_col">
+                                             {{--<h3>{{ $posts['profile_service'] }}</h3>--}}
+                                             <p>{{ mb_substr($posts['text'], 0, 100) }}</p>
+                                             @if(!empty($posts['facebook_link']))
+                                                <span><a href="{{ $posts['facebook_link'] }}">fb</a></span>
+                                             @endif
+                                             @if(!empty($posts['linked_link']))
+                                                <span><a href="{{ $posts['linked_link'] }}">in</a></span>
+                                             @endif
+                                             @if(!empty($posts['twitter_link']))
+                                                <span><a href="{{ $posts['twitter_link'] }}">tw</a></span>
+                                             @endif
+                                             @if(!empty($posts['instagram_link']))
+                                                <span><a href="{{ $posts['instagram_link'] }}">insta</a></span>
+                                             @endif
+                                             {{--<p>{{ $posts['text'] }}</p>--}}
+                                         </div>
+                                     </div>
+                                 </div>
+                                 {{--<h3>{{ $posts['profile_service'] }}</h3>--}}
+                                 {{--<h4>{{ $posts['day'] }} </h4>--}}
+                                 {{--<p>Published: {{ $posts['text'] }}</p>--}}
+                                {{-- @if(isset($posts['media']))
+                                     <img src="{{ $posts['media']['thumbnail'] }}" />
+                                 @endif
+
+                                 <div class="statistics">
+                                     <span>Comments: {{ (!empty($posts['statistics']['comments'])) ? $posts['statistics']['comments'] : 0}}</span>
+                                     <span>Likes: {{ (!empty($posts['statistics']['likes'])) ? $posts['statistics']['likes'] : 0 }}</span>
+                                     <span>Clicks: {{ (!empty($posts['statistics']['clicks'])) ? $posts['statistics']['clicks'] : 0 }}</span>
+                                 </div>--}}
+                             </div>
+                        @endif
                     @endforeach
-                </div>
-            </div>
-        </div>
-    </section>
+                 </div>
+             </div>
+         </div>
+     </section>
+
 
     <section class="thumbnails_section">
         <div class="container-fluid">

@@ -5,6 +5,12 @@
 @section('css')
 @stop
 
+@php
+    $lang = LaravelLocalization::getCurrentLocale();
+    $total = count($menu);
+    $counter = 0;
+@endphp
+
 @section('content')
     <section class="gallery_section">
         {{--<div class="container-fluid">--}}
@@ -12,278 +18,47 @@
             <div data-filter="*" class="cbp-filter-item">
                 Tous les albums <div class="cbp-filter-counter"></div>
             </div> <span>/</span>
-            <div data-filter=".2013" class="cbp-filter-item">
-                2013 <div class="cbp-filter-counter"></div>
-            </div> <span>/</span>
-            <div data-filter=".2014" class="cbp-filter-item">
-                2014 <div class="cbp-filter-counter"></div>
-            </div> <span>/</span>
-            <div data-filter=".2015" class="cbp-filter-item">
-                2015 <div class="cbp-filter-counter"></div>
-            </div> <span>/</span>
-            <div data-filter=".2016" class="cbp-filter-item cbp-filter-item-active">
-                2016 <div class="cbp-filter-counter"></div>
-            </div> <span>/</span>
-            <div data-filter=".2017" class="cbp-filter-item">
-                2017 <div class="cbp-filter-counter"></div>
-            </div>
+            @foreach($menu as $key => $item)
+                @php
+                    $counter++;
+                @endphp
+                <div data-filter=".{{ $item }}" class="cbp-filter-item">
+                    {{ $item }} <div class="cbp-filter-counter"></div>
+                </div> <span>{{ ($counter == $total) ? '' : '/'  }}</span>
+            @endforeach
         </div>
+
         <div id="js-grid-full-width" class="cbp">
-            <div class="cbp-item 2013">
-                <a href="{{ route('gallery') }}" class="cbp-caption" data-title="Dashboard<br>by Paul Flavius Nechita">
-                    <div class="cbp-caption-defaultWrap">
-                        <img src="/img/gallery/1.jpg" data-cbp-src="/img/gallery/1.jpg" alt="">
-                    </div>
-                    <div class="cbp-caption-activeWrap">
-                        <div class="cbp-l-caption-alignLeft">
-                            <div class="cbp-l-caption-body">
-                                <div class="cbp-l-caption-title">Dashboard</div>
-                                <div class="cbp-l-caption-desc">by Paul Flavius Nechita</div>
+            @foreach($gallery as $images)
+                <div class="cbp-item {{ $images->year }}">
+                    <a href="{{ route('gallery_details', $images->id) }}" class="cbp-caption" data-title="{{ ($lang == 'fr') ? $images->title_fr : $images->title_en }}">
+                        <div class="cbp-caption-defaultWrap">
+                            @php
+                                $image_counter = 1;
+                            @endphp
+                            @foreach(json_decode($images->front_image) as $key => $image)
+                                @if($image_counter == 1)
+                                    <img src="{{ URL::to('/') }}/gallery/front_image/{{ $images->created_at->format('F_Y') }}/{{ $image }}"  data-cbp-src="{{ URL::to('/') }}/gallery/front_image/{{ $images->created_at->format('F_Y') }}/{{ $image }}" alt="{{ $key }}">
+                                @endif
+                                @php
+                                    $image_counter++;
+                                @endphp
+                            @endforeach
+                            @if(empty(json_decode($images->front_image)))
+                                <img src="/img/details/no_agent_photo.svg" alt="">
+                            @endif
+                        </div>
+                        <div class="cbp-caption-activeWrap">
+                            <div class="cbp-l-caption-alignLeft">
+                                <div class="cbp-l-caption-body">
+                                    <div class="cbp-l-caption-title">{{ ($lang == 'fr') ? $images->title_fr : $images->title_en }}</div>
+                                    {{--<div class="cbp-l-caption-desc">by Paul Flavius Nechita</div>--}}
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </a>
-            </div>
-            <div class="cbp-item 2014">
-                <a href="/img/gallery/2.jpg" class="cbp-caption cbp-lightbox" data-title="Dashboard<br>by Paul Flavius Nechita">
-                    <div class="cbp-caption-defaultWrap">
-                        <img src="/img/gallery/2.jpg" data-cbp-src="/img/gallery/2.jpg" alt="">
-                    </div>
-                    <div class="cbp-caption-activeWrap">
-                        <div class="cbp-l-caption-alignLeft">
-                            <div class="cbp-l-caption-body">
-                                <div class="cbp-l-caption-title">Dashboard</div>
-                                <div class="cbp-l-caption-desc">by Paul Flavius Nechita</div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="cbp-item 2015">
-                <a href="/img/gallery/3.jpg" class="cbp-caption cbp-lightbox" data-title="Dashboard<br>by Paul Flavius Nechita">
-                    <div class="cbp-caption-defaultWrap">
-                        <img src="/img/gallery/3.jpg" data-cbp-src="/img/gallery/3.jpg" alt="">
-                    </div>
-                    <div class="cbp-caption-activeWrap">
-                        <div class="cbp-l-caption-alignLeft">
-                            <div class="cbp-l-caption-body">
-                                <div class="cbp-l-caption-title">Dashboard</div>
-                                <div class="cbp-l-caption-desc">by Paul Flavius Nechita</div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="cbp-item 2016">
-                <a href="/img/gallery/4.jpg" class="cbp-caption cbp-lightbox" data-title="Dashboard<br>by Paul Flavius Nechita">
-                    <div class="cbp-caption-defaultWrap">
-                        <img src="/img/gallery/4.jpg" data-cbp-src="/img/gallery/4.jpg" alt="">
-                    </div>
-                    <div class="cbp-caption-activeWrap">
-                        <div class="cbp-l-caption-alignLeft">
-                            <div class="cbp-l-caption-body">
-                                <div class="cbp-l-caption-title">Dashboard</div>
-                                <div class="cbp-l-caption-desc">by Paul Flavius Nechita</div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="cbp-item 2017">
-                <a href="/img/gallery/5.jpg" class="cbp-caption cbp-lightbox" data-title="Dashboard<br>by Paul Flavius Nechita">
-                    <div class="cbp-caption-defaultWrap">
-                        <img src="/img/gallery/5.jpg" data-cbp-src="/img/gallery/5.jpg" alt="">
-                    </div>
-                    <div class="cbp-caption-activeWrap">
-                        <div class="cbp-l-caption-alignLeft">
-                            <div class="cbp-l-caption-body">
-                                <div class="cbp-l-caption-title">Dashboard</div>
-                                <div class="cbp-l-caption-desc">by Paul Flavius Nechita</div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="cbp-item 2013">
-                <a href="/img/gallery/6.jpg" class="cbp-caption cbp-lightbox" data-title="Dashboard<br>by Paul Flavius Nechita">
-                    <div class="cbp-caption-defaultWrap">
-                        <img src="/img/gallery/6.jpg" data-cbp-src="/img/gallery/6.jpg" alt="">
-                    </div>
-                    <div class="cbp-caption-activeWrap">
-                        <div class="cbp-l-caption-alignLeft">
-                            <div class="cbp-l-caption-body">
-                                <div class="cbp-l-caption-title">Dashboard</div>
-                                <div class="cbp-l-caption-desc">by Paul Flavius Nechita</div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="cbp-item 2014">
-                <a href="/img/gallery/7.jpg" class="cbp-caption cbp-lightbox" data-title="Dashboard<br>by Paul Flavius Nechita">
-                    <div class="cbp-caption-defaultWrap">
-                        <img src="/img/gallery/7.jpg" data-cbp-src="/img/gallery/7.jpg" alt="">
-                    </div>
-                    <div class="cbp-caption-activeWrap">
-                        <div class="cbp-l-caption-alignLeft">
-                            <div class="cbp-l-caption-body">
-                                <div class="cbp-l-caption-title">Dashboard</div>
-                                <div class="cbp-l-caption-desc">by Paul Flavius Nechita</div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="cbp-item 2015">
-                <a href="/img/gallery/8.jpg" class="cbp-caption cbp-lightbox" data-title="Dashboard<br>by Paul Flavius Nechita">
-                    <div class="cbp-caption-defaultWrap">
-                        <img src="/img/gallery/8.jpg" data-cbp-src="/img/gallery/8.jpg" alt="">
-                    </div>
-                    <div class="cbp-caption-activeWrap">
-                        <div class="cbp-l-caption-alignLeft">
-                            <div class="cbp-l-caption-body">
-                                <div class="cbp-l-caption-title">Dashboard</div>
-                                <div class="cbp-l-caption-desc">by Paul Flavius Nechita</div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="cbp-item 2016">
-                <a href="/img/gallery/9.jpg" class="cbp-caption cbp-lightbox" data-title="Dashboard<br>by Paul Flavius Nechita">
-                    <div class="cbp-caption-defaultWrap">
-                        <img src="/img/gallery/9.jpg" data-cbp-src="/img/gallery/9.jpg" alt="">
-                    </div>
-                    <div class="cbp-caption-activeWrap">
-                        <div class="cbp-l-caption-alignLeft">
-                            <div class="cbp-l-caption-body">
-                                <div class="cbp-l-caption-title">Dashboard</div>
-                                <div class="cbp-l-caption-desc">by Paul Flavius Nechita</div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="cbp-item 2017">
-                <a href="/img/gallery/10.jpg" class="cbp-caption cbp-lightbox" data-title="Dashboard<br>by Paul Flavius Nechita">
-                    <div class="cbp-caption-defaultWrap">
-                        <img src="/img/gallery/10.jpg" data-cbp-src="/img/gallery/10.jpg" alt="">
-                    </div>
-                    <div class="cbp-caption-activeWrap">
-                        <div class="cbp-l-caption-alignLeft">
-                            <div class="cbp-l-caption-body">
-                                <div class="cbp-l-caption-title">Dashboard</div>
-                                <div class="cbp-l-caption-desc">by Paul Flavius Nechita</div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="cbp-item 2013">
-                <a href="/img/gallery/11.jpg" class="cbp-caption cbp-lightbox" data-title="Dashboard<br>by Paul Flavius Nechita">
-                    <div class="cbp-caption-defaultWrap">
-                        <img src="/img/gallery/11.jpg" data-cbp-src="/img/gallery/11.jpg" alt="">
-                    </div>
-                    <div class="cbp-caption-activeWrap">
-                        <div class="cbp-l-caption-alignLeft">
-                            <div class="cbp-l-caption-body">
-                                <div class="cbp-l-caption-title">Dashboard</div>
-                                <div class="cbp-l-caption-desc">by Paul Flavius Nechita</div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="cbp-item 2014">
-                <a href="/img/gallery/12.jpg" class="cbp-caption cbp-lightbox" data-title="Dashboard<br>by Paul Flavius Nechita">
-                    <div class="cbp-caption-defaultWrap">
-                        <img src="/img/gallery/12.jpg" data-cbp-src="/img/gallery/12.jpg" alt="">
-                    </div>
-                    <div class="cbp-caption-activeWrap">
-                        <div class="cbp-l-caption-alignLeft">
-                            <div class="cbp-l-caption-body">
-                                <div class="cbp-l-caption-title">Dashboard</div>
-                                <div class="cbp-l-caption-desc">by Paul Flavius Nechita</div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="cbp-item 2015">
-                <a href="/img/gallery/13.jpg" class="cbp-caption cbp-lightbox" data-title="Dashboard<br>by Paul Flavius Nechita">
-                    <div class="cbp-caption-defaultWrap">
-                        <img src="/img/gallery/13.jpg" data-cbp-src="/img/gallery/13.jpg" alt="">
-                    </div>
-                    <div class="cbp-caption-activeWrap">
-                        <div class="cbp-l-caption-alignLeft">
-                            <div class="cbp-l-caption-body">
-                                <div class="cbp-l-caption-title">Dashboard</div>
-                                <div class="cbp-l-caption-desc">by Paul Flavius Nechita</div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="cbp-item 2017">
-                <a href="/img/gallery/14.jpg" class="cbp-caption cbp-lightbox" data-title="Dashboard<br>by Paul Flavius Nechita">
-                    <div class="cbp-caption-defaultWrap">
-                        <img src="/img/gallery/14.jpg" data-cbp-src="/img/gallery/14.jpg" alt="">
-                    </div>
-                    <div class="cbp-caption-activeWrap">
-                        <div class="cbp-l-caption-alignLeft">
-                            <div class="cbp-l-caption-body">
-                                <div class="cbp-l-caption-title">Dashboard</div>
-                                <div class="cbp-l-caption-desc">by Paul Flavius Nechita</div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="cbp-item 2013">
-                <a href="/img/gallery/15.jpg" class="cbp-caption cbp-lightbox" data-title="Dashboard<br>by Paul Flavius Nechita">
-                    <div class="cbp-caption-defaultWrap">
-                        <img src="/img/gallery/15.jpg" data-cbp-src="/img/gallery/15.jpg" alt="">
-                    </div>
-                    <div class="cbp-caption-activeWrap">
-                        <div class="cbp-l-caption-alignLeft">
-                            <div class="cbp-l-caption-body">
-                                <div class="cbp-l-caption-title">Dashboard</div>
-                                <div class="cbp-l-caption-desc">by Paul Flavius Nechita</div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="cbp-item 2014">
-                <a href="/img/gallery/16.jpg" class="cbp-caption cbp-lightbox" data-title="Dashboard<br>by Paul Flavius Nechita">
-                    <div class="cbp-caption-defaultWrap">
-                        <img src="/img/gallery/16.jpg" data-cbp-src="/img/gallery/16.jpg" alt="">
-                    </div>
-                    <div class="cbp-caption-activeWrap">
-                        <div class="cbp-l-caption-alignLeft">
-                            <div class="cbp-l-caption-body">
-                                <div class="cbp-l-caption-title">Dashboard</div>
-                                <div class="cbp-l-caption-desc">by Paul Flavius Nechita</div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="cbp-item 2015">
-                <a href="/img/gallery/17.jpg" class="cbp-caption cbp-lightbox" data-title="Dashboard<br>by Paul Flavius Nechita">
-                    <div class="cbp-caption-defaultWrap">
-                        <img src="/img/gallery/17.jpg" data-cbp-src="/img/gallery/17.jpg" alt="">
-                    </div>
-                    <div class="cbp-caption-activeWrap">
-                        <div class="cbp-l-caption-alignLeft">
-                            <div class="cbp-l-caption-body">
-                                <div class="cbp-l-caption-title">Dashboard</div>
-                                <div class="cbp-l-caption-desc">by Paul Flavius Nechita</div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
+                    </a>
+                </div>
+            @endforeach
         </div>
         {{--</div>--}}
     </section>

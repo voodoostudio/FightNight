@@ -23,10 +23,16 @@ Route::group(['prefix' => LaravelLocalization::setLocale()], function()
         'as' => 'galleries',
     ]);
 
-    Route::get('/gallery', [
+    Route::get('/gallery/details/{id}', [
+        'uses' => 'PagesController@gallery_details',
+        'as' => 'gallery_details',
+    ]);
+
+   /* Route::get('/gallery', [
         'uses' => 'PagesController@gallery',
         'as' => 'gallery',
-    ]);
+    ]);*/
+
     Route::get('/virtual_tour', [
         'uses' => 'PagesController@virtual_tour',
         'as' => 'virtual_tour',
@@ -77,10 +83,6 @@ Route::group(['prefix' => LaravelLocalization::setLocale()], function()
         'as' => 'post-contact',
     ]);
 
-
-
-
-
     Auth::routes();
 
     Route::get('/admin', [
@@ -90,6 +92,9 @@ Route::group(['prefix' => LaravelLocalization::setLocale()], function()
 
     /* CRUD POSTS */
     Route::resource('/admin/news', 'AdminController');
+
+    /* CRUD GALLERY */
+    Route::resource('/admin/gallery', 'AdminGalleryController');
 });
 
 

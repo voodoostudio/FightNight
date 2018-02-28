@@ -329,7 +329,4 @@ class AdminController extends Controller
         // redirect
         return back();
     }
-
-
-
 }

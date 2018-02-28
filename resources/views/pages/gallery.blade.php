@@ -29,22 +29,25 @@
             {{--</div>--}}
         {{--</div>--}}
         <div id="js-grid-full-width" class="cbp">
-            <div class="cbp-item identity logos">
-                <a href="/img/gallery/1.jpg" class="cbp-caption cbp-lightbox" data-title="Dashboard<br>by Paul Flavius Nechita">
-                    <div class="cbp-caption-defaultWrap">
-                        <img src="/img/gallery/1.jpg" data-cbp-src="/img/gallery/1.jpg" alt="">
-                    </div>
-                    <div class="cbp-caption-activeWrap">
-                        <div class="cbp-l-caption-alignLeft">
-                            <div class="cbp-l-caption-body">
-                                <div class="cbp-l-caption-title">Dashboard</div>
-                                <div class="cbp-l-caption-desc">by Paul Flavius Nechita</div>
+            @foreach(json_decode($gallery->gallery_images) as $image)
+                <div class="cbp-item identity logos">
+                    <a href="{{ URL::to('/') }}/gallery/gallery_images/{{ $gallery->created_at->format('F_Y') }}/{{ $image }}" class="cbp-caption cbp-lightbox" data-title="Dashboard<br>by Paul Flavius Nechita">
+                        <div class="cbp-caption-defaultWrap">
+                            <img src="{{ URL::to('/') }}/gallery/gallery_images/{{ $gallery->created_at->format('F_Y') }}/{{ $image }}" data-cbp-src="{{ URL::to('/') }}/gallery/gallery_images/{{ $gallery->created_at->format('F_Y') }}/{{ $image }}" alt="">
+                        </div>
+                        <div class="cbp-caption-activeWrap">
+                            <div class="cbp-l-caption-alignLeft">
+                                <div class="cbp-l-caption-body">
+                                    <div class="cbp-l-caption-title">Dashboard</div>
+                                    <div class="cbp-l-caption-desc">by Paul Flavius Nechita</div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </a>
-            </div>
-            <div class="cbp-item graphic logos">
+                    </a>
+                </div>
+            @endforeach
+
+            {{--<div class="cbp-item graphic logos">
                 <a href="/img/gallery/2.jpg" class="cbp-caption cbp-lightbox" data-title="Dashboard<br>by Paul Flavius Nechita">
                     <div class="cbp-caption-defaultWrap">
                         <img src="/img/gallery/2.jpg" data-cbp-src="/img/gallery/2.jpg" alt="">
@@ -283,7 +286,7 @@
                         </div>
                     </div>
                 </a>
-            </div>
+            </div>--}}
         </div>
         {{--</div>--}}
     </section>
