@@ -17,13 +17,11 @@ class CreateAdminNewsTable extends Migration
             $table->increments('id');
             $table->string('title_fr', 255)->nullable();
             $table->string('title_en', 255)->nullable();
-            $table->string('title_newspaper', 255)->nullable();
-            $table->date('date')->nullable();
-            $table->string('front_image', 1024)->default('');
-            $table->string('body_image', 1024)->default('');
+            $table->string('image_file', 1024)->nullable();
+            $table->string('pdf_file', 1024)->nullable();
+            $table->string('archive_file', 1024)->nullable();
             $table->text('description_fr')->nullable();
             $table->text('description_en')->nullable();
-            $table->string('status')->nullable();
             $table->timestamps();
         });
     }

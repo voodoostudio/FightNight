@@ -1,5 +1,7 @@
 @extends('layouts.app')
 
+{{--{{ dd($news->toArray()) }}--}}
+
 @section('title', 'News page')
 @section('css')
     <link rel="stylesheet" type="text/css" href="{{asset('css/dashboard.css')}}">
@@ -35,27 +37,18 @@
                                 </div>
                                 <div class="article_info_block">
                                     <div class="article_img">
-                                        @php
-                                            $image_counter = 1;
-                                        @endphp
-                                        @foreach(json_decode($items['front_image']) as $key => $image)
-                                            @if($image_counter == 1)
-                                                <img src="{{ URL::to('/') }}/news/front_image/{{ $items->created_at->format('F_Y') }}/{{ $image }}" alt="{{ $key }}">
-                                            @endif
-                                            @php
-                                                $image_counter++;
-                                            @endphp
-                                        @endforeach
 
-                                        @if(empty(json_decode($items['front_image'])))
+                                        <img style="max-height: 200px;" src="{{ URL::to('/') }}/news/image/{{ $items->created_at->format('F_Y') }}/{{ $items->image_file }}" alt="1">
+
+                                        @if(empty($items->image_file))
                                             <img src="/img/no_image.svg" alt="">
                                         @endif
                                     </div>
                                     <div class="article_info">
                                         <h2>@if($lang == 'fr') {{ $items['title_fr'] }} @elseif($lang == 'en') {{ $items['title_en'] }}  @endif</h2>
-                                        <h3>{{ $items['title_newspaper'] }}</h3>
-                                        <h4>{{ (!empty($items->date)) ? date('d.m.Y', strtotime($items->date)) : '' }}</h4>
-                                        <span class="published_label">{{ ($items['status'] == 'on') ? trans('lang.published') : ''}}</span>
+                                        {{--<h3>{{ $items['title_newspaper'] }}</h3>--}}
+                                        {{--<h4>{{ (!empty($items->date)) ? date('d.m.Y', strtotime($items->date)) : '' }}</h4>--}}
+                                        {{--<span class="published_label">{{ ($items['status'] == 'on') ? trans('lang.published') : ''}}</span>--}}
                                     </div>
                                 </div>
                             </div>

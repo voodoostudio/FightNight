@@ -12,7 +12,7 @@
 @section('content')
     <main>
         <section class="article_edit_section">
-            <div class="container-fluid">
+            <div class="container-fluid" style="background-color: #d07070;">
                 <div class="row">
                     <div class="col-xs-12">
                         <div class="admin_title_container">
@@ -26,7 +26,7 @@
                     <form method="POST" id="articleEditForm" action = "{{ route('news.store') }}" enctype="multipart/form-data">
                         {{ csrf_field() }}
                         <div class="row">
-                            <div class="col-md-8">
+                            <div class="col-md-6">
                                 <div class="row">
                                     <div class="col-xs-12 margin_bottom_20">
                                         <div class="label_container">
@@ -53,38 +53,47 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-xs-6">
-                                        <label class="form_el_label"><span>{{ trans('lang.newspaper_name') }} *</span></label>
-                                        <div class="input_container">
-                                            <input type="text" name="title_newspaper" id="title_newspaper" placeholder="{{ trans('lang.newspaper_name') }}">
-                                        </div>
-                                    </div>
-                                    <div class="col-xs-6">
-                                        <label class="form_el_label"><span>{{ trans('lang.posting_date') }} *</span></label>
-                                        <div class="input_container">
-                                            <input name="date" placeholder="{{ trans('lang.posting_date') }}" id="article_datepicker"/>
-                                        </div>
-                                    </div>
                                 </div>
                             </div>
 
-                            <div class="col-md-4">
+                            <div class="col-md-3">
                                 <div class="img_upload_container">
                                     <div class="img_upload">
-                                        <input name="front_image[]" type="file" accept="image/*" id="header_img" class="input_file"/>
+                                        <input name="image_file" type="file" accept="image/*" id="header_img" class="input_file"/>
                                         <label for="header_img"><span>{{ trans('lang.choose_header_img') }}</span></label>
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="col-xs-12 margin_bottom_20">
-                                <div class="img_upload_container">
-                                    <div class="img_upload">
-                                        <input name="body_image[]" type="file" accept="image/*, application/pdf" id="body_img" class="input_file"/>
-                                        <label for="body_img"><span>{{ trans('lang.choose_body_img') }}</span></label>
+                            <div class="col-md-3">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="img_upload_container">
+                                            <div class="img_upload">
+                                                <input name="pdf_file" accept="application/pdf" type="file" id="pdf" class="input_file"/>
+                                                <label for="pdf"><span>Choose a pdf</span></label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="img_upload_container">
+                                            <div class="img_upload">
+                                                <input name="archive_file" accept=".zip, .rar" type="file" id="archive" class="input_file"/>
+                                                <label for="archive"><span>Choose a archive file</span></label>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
+
+                            {{--<div class="col-xs-12 margin_bottom_20">--}}
+                                {{--<div class="img_upload_container">--}}
+                                    {{--<div class="img_upload">--}}
+                                        {{--<input name="body_image[]" type="file" accept="image/*, application/pdf" id="body_img" class="input_file"/>--}}
+                                        {{--<label for="body_img"><span>{{ trans('lang.choose_body_img') }}</span></label>--}}
+                                    {{--</div>--}}
+                                {{--</div>--}}
+                            {{--</div>--}}
 
                             <div class="col-xs-12 margin_bottom_20">
                                 <div class="label_container">
@@ -109,15 +118,6 @@
                                             <textarea name="description_en" id="text_content" cols="30" rows="10"></textarea>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="my_checkbox">
-                                    <label>
-                                        <input type="checkbox" name="status" id="status" aria-required="true" checked="checked">
-                                        <span class="fake_checkbox"></span>
-                                        <span class="my_checkbox_text">{{ trans('lang.publish') }}</span>
-                                    </label>
                                 </div>
                             </div>
                             <div class="col-md-6">

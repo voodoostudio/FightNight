@@ -2,6 +2,8 @@
 <html>
 @extends('layouts.app')
 
+{{--{{ dd($news->toArray()) }}--}}
+
 {{--@section('title', 'Details page')--}}
 @section('css')
     <link rel="stylesheet" type="text/css" href="{{asset('css/dashboard.css')}}">
@@ -28,8 +30,8 @@
                     {{ Form::model($news, array('route' => array('news.update', $news->id), 'method' => 'PUT', 'files' => true)) }}
                     {{--<form method="POST" action = "{{ route('news.update', ['id' => $news->id]) }}" enctype="multipart/form-data" style = "background: #272727; border: none;"> --}}{{--action = "{{ route('news.store') }}"--}}
                     {{--{{ csrf_field() }}--}}
-                    <div class="row">
-                        <div class="col-md-8">
+                    <div class="row" style="background-color: #0b2e13;">
+                        <div class="col-md-6">
                             <div class="row">
                                 <div class="col-xs-12 margin_bottom_20">
                                     <div class="label_container">
@@ -56,60 +58,67 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-xs-6">
-                                    <label class="form_el_label"><span>{{ trans('lang.newspaper_name') }} *</span></label>
-                                    <div class="input_container">
-                                        <input type="text" value = "{{ $news->title_newspaper }}" name="title_newspaper" id="title_newspaper" placeholder="{{ trans('lang.newspaper_name') }}">
-                                    </div>
-                                </div>
-                                <div class="col-xs-6">
-                                    <label class="form_el_label"><span>{{ trans('lang.posting_date') }} *</span></label>
-                                    <div class="input_container">
-                                        <input name="date" placeholder="{{ trans('lang.posting_date') }}" value = "{{ $news->date }}" id="article_datepicker" readonly="readonly"/>
-                                    </div>
-                                </div>
                             </div>
                         </div>
 
-                        <div class="col-md-4">
+                        <div class="col-md-3">
                             <div class="img_upload_container">
                                 <div class="img_preview">
-                                    @foreach(json_decode($news->front_image) as $key => $image)
-                                        <div class="img_preview_thumbnail" >
-                                            <img src = "{{ URL::to('/') }}/news/front_image/{{ $news->created_at->format('F_Y') }}/{{ $image }}" />
-                                        </div>
-                                    @endforeach
+                                    <div class="img_preview_thumbnail" >
+                                        <img style="max-height: 200px;" src = "{{ URL::to('/') }}/news/image/{{ $news->created_at->format('F_Y') }}/{{ $news->image_file }}" />
+                                    </div>
                                 </div>
                                 <div class="img_upload">
-                                    <input name="front_image[]" type="file" accept="image/*" id="header_img" class="input_file"/>
+                                    <input name="image_file" type="file" accept="image/*" id="header_img" class="input_file"/>
                                     <label for="header_img"><span>{{ trans('lang.choose_header_img') }}</span></label>
                                 </div>
                             </div>
                         </div>
+                        <div class="row">
+                            <div class="col-md-8">
+                                <div class="img_upload_container">
+                                    <div class="img_preview">
+                                        <div class="img_preview_thumbnail" >
+                                            @if($news->pdf_file != null)
+                                                <p>{{ $news->pdf_file }}</p>
+                                            @else
+                                                <p>No Pdf file</p>
+                                            @endif
+                                        </div>
+                                    </div>
+                                    <div class="img_upload">
+                                        <input name="image_file" type="file" accept="image/*" id="header_img" class="input_file"/>
+                                        <label for="header_img"><span>Chose a pdf</span></label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- todo add zip file content -->
 
                         <div class="col-xs-12 margin_bottom_20">
                             <div class="img_upload_container">
                                 <div class="img_preview">
-                                    @foreach(json_decode($news->body_image) as $key => $file)
-                                        @php
-                                            $extension = new SplFileInfo($file);
-                                            $jpg_preview = preg_replace('"\.pdf$"', '.jpg', $file);
-                                        @endphp
-                                        @if(strtolower($extension->getExtension()) == 'pdf')
-                                            <div class="img_preview_thumbnail" >
-                                                <img src = "{{ URL::to('/') }}/news/pdf/{{ $news->created_at->format('F_Y') }}/{{ $jpg_preview }}" alt = "{{ $key }}"/>
-                                            </div>
-                                        @else
-                                            <div class="img_preview_thumbnail" >
-                                                <img src="{{ URL::to('/') }}/news/body_image/{{ $news->created_at->format('F_Y') }}/{{ $file }}" alt="{{ $key }}">
-                                            </div>
-                                        @endif
-                                    @endforeach
+                                    {{--@foreach(json_decode($news->body_image) as $key => $file)--}}
+                                        {{--@php--}}
+                                            {{--$extension = new SplFileInfo($file);--}}
+                                            {{--$jpg_preview = preg_replace('"\.pdf$"', '.jpg', $file);--}}
+                                        {{--@endphp--}}
+                                        {{--@if(strtolower($extension->getExtension()) == 'pdf')--}}
+                                            {{--<div class="img_preview_thumbnail" >--}}
+                                                {{--<img src = "{{ URL::to('/') }}/news/pdf/{{ $news->created_at->format('F_Y') }}/{{ $jpg_preview }}" alt = "{{ $key }}"/>--}}
+                                            {{--</div>--}}
+                                        {{--@else--}}
+                                            {{--<div class="img_preview_thumbnail" >--}}
+                                                {{--<img src="{{ URL::to('/') }}/news/body_image/{{ $news->created_at->format('F_Y') }}/{{ $file }}" alt="{{ $key }}">--}}
+                                            {{--</div>--}}
+                                        {{--@endif--}}
+                                    {{--@endforeach--}}
                                 </div>
-                                <div class="img_upload">
-                                    <input name="body_image[]" type="file" accept="image/*, application/pdf" id="body_img" class="input_file"/>
-                                    <label for="body_img"><span>{{ trans('lang.choose_body_img') }}</span></label>
-                                </div>
+                                {{--<div class="img_upload">--}}
+                                    {{--<input name="body_image[]" type="file" accept="image/*, application/pdf" id="body_img" class="input_file"/>--}}
+                                    {{--<label for="body_img"><span>{{ trans('lang.choose_body_img') }}</span></label>--}}
+                                {{--</div>--}}
                             </div>
                         </div>
 
@@ -136,15 +145,6 @@
                                         <textarea name="description_en" id="text_content" cols="30" rows="10">{{ $news->description_en }}</textarea>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="my_checkbox">
-                                <label>
-                                    <input type="checkbox" name="status" id="status" aria-required="true" {{ ( !empty($news->status) ) ? 'checked="checked' : '' }}>
-                                    <span class="fake_checkbox"></span>
-                                    <span class="my_checkbox_text">{{ trans('lang.publish') }}</span>
-                                </label>
                             </div>
                         </div>
                         <div class="col-md-6">
