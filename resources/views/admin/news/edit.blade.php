@@ -75,7 +75,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-md-8">
+                            <div class="col-md-6">
                                 <div class="img_upload_container">
                                     <div class="img_preview">
                                         <div class="img_preview_thumbnail" >
@@ -86,15 +86,30 @@
                                             @endif
                                         </div>
                                     </div>
-                                    <div class="img_upload">
-                                        <input name="image_file" type="file" accept="image/*" id="header_img" class="input_file"/>
-                                        <label for="header_img"><span>Chose a pdf</span></label>
+                                    <div class="pdf_upload">
+                                        <input name="pdf_file" type="file" accept="application/pdf" id="pdf_file" class="input_file"/>
+                                        <label for="pdf_file"><span>Chose a pdf</span></label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="img_upload_container">
+                                    <div class="img_preview">
+                                        <div class="img_preview_thumbnail" >
+                                            @if($news->archive_file != null)
+                                                <p>{{ $news->archive_file }}</p>
+                                            @else
+                                                <p>No archive file</p>
+                                            @endif
+                                        </div>
+                                    </div>
+                                    <div class="archive_upload">
+                                        <input name="archive_file" type="file" accept=".zip, .rar" id="archive_file" class="input_file"/>
+                                        <label for="archive_file"><span>Chose archive</span></label>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
-                        <!-- todo add zip file content -->
 
                         <div class="col-xs-12 margin_bottom_20">
                             <div class="img_upload_container">
