@@ -7,9 +7,6 @@ use Ipalaus\Buffer\TokenAuthorization;
 
 class PagesController extends Controller
 {
-    function date_sort($a, $b) {
-        return strtotime($a) - strtotime($b);
-    }
     public function index ()
     {
         /* API BUFFER (buffer.com) */
