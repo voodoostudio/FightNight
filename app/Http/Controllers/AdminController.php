@@ -174,6 +174,7 @@ class AdminController extends Controller
             $pdf_file = $request->file('pdf_file');
             $archive_file = $request->file('archive_file');
 
+            // IMAGE
             if($request->hasFile('image_file'))
             {
                 $file_name = sha1(rand() . time() . rand()) . '.' . $image_file->getClientOriginalExtension();
@@ -199,6 +200,7 @@ class AdminController extends Controller
                 $news->image_file = News::where('id', '=', $id)->value('image_file');
             }
 
+            // PDF
             if($request->hasFile('pdf_file'))
             {
                 $file_name = sha1(rand() . time() . rand()) . '.' . $pdf_file->getClientOriginalExtension();
@@ -213,6 +215,7 @@ class AdminController extends Controller
                 $news->pdf_file = News::where('id', '=', $id)->value('pdf_file');
             }
 
+            // ARCHIVE
             if($request->hasFile('archive_file'))
             {
                 $file_name = sha1(rand() . time() . rand()) . '.' . $archive_file->getClientOriginalExtension();

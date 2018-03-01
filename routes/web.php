@@ -58,6 +58,11 @@ Route::group(['prefix' => LaravelLocalization::setLocale()], function()
         'as' => 'press',
     ]);
 
+    Route::get('/press/details/{id}', [
+        'uses' => 'PagesController@pressDetails',
+        'as' => 'press-details',
+    ]);
+
     Route::get('/about', [
         'uses' => 'PagesController@about',
         'as' => 'about',

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 use App\Gallery;
 use Ipalaus\Buffer\Client;
 use Ipalaus\Buffer\TokenAuthorization;
+use App\News;
 
 class PagesController extends Controller
 {
@@ -126,7 +127,22 @@ class PagesController extends Controller
 
     public function press ()
     {
-        return view('pages.press');
+        $news = News::all();
+//        dd($news->toArray());
+        return view('pages.press',[
+            'news' => $news
+        ]);
+    }
+
+    public function pressDetails ($id)
+    {
+        $item = News::where('id', '=', $id)->get()->toArray();
+
+//        dd($item);
+
+        return view('pages.news-details',[
+            'item' => $item
+        ]);
     }
 
     public function about ()
