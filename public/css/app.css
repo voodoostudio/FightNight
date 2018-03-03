@@ -307,7 +307,7 @@ section.countdown_section .countdown_container {
 
 section.countdown_section .countdown_container .ticket_container {
   position: relative;
-  padding-left: 35px;
+  padding: 0 0 0 35px;
 }
 
 section.countdown_section .countdown_container .ticket_container img#arrow {
@@ -319,6 +319,7 @@ section.countdown_section .countdown_container .ticket_container img#arrow {
 
 section.countdown_section .countdown_container .ticket_container img#ticket {
   max-width: 400px;
+  width: 100%;
 }
 
 section.countdown_section .countdown_container .countdown {
@@ -334,7 +335,7 @@ section.countdown_section .countdown_container .countdown {
       -ms-flex-pack: center;
           justify-content: center;
   height: 100%;
-  padding-right: 50px;
+  padding: 0 50px 0 0;
 }
 
 section.countdown_section .countdown_container .countdown .countdown_item {
@@ -368,6 +369,11 @@ section.posts_section .carousel_container .posts_carousel .flickity-page-dots .d
   width: 14px;
   height: 14px;
   margin: 0 6px;
+  opacity: .6;
+}
+
+section.posts_section .carousel_container .posts_carousel .flickity-page-dots .dot.is-selected {
+  opacity: .9;
 }
 
 section.posts_section .post_block {
@@ -398,8 +404,30 @@ section.posts_section .post_block p {
   font-family: proxima_nova_light;
   font-size: 0.875rem;
   line-height: 1;
-  margin-left: 5px;
+  margin: 0 0 0 5px;
   text-align: justify;
+}
+
+section.posts_section .post_block .social_links {
+  text-align: right;
+  position: absolute;
+  bottom: 0;
+  right: 5px;
+}
+
+section.posts_section .post_block .social_links a {
+  margin-right: 10px;
+  font-size: 16px;
+  line-height: 1;
+  color: #7f7f7f;
+}
+
+section.posts_section .post_block .social_links a:hover {
+  color: #edead9;
+}
+
+section.posts_section .post_block .social_links a:last-of-type {
+  margin: 0;
 }
 
 section.thumbnails_section {
@@ -407,10 +435,12 @@ section.thumbnails_section {
 }
 
 section.thumbnails_section .page_thumbnail {
-  background: url("/img/thumbnail.jpg");
+  background: url("/img/thumbnail.jpg") no-repeat center;
+  background-size: cover;
   height: 325px;
   border-top: 5px solid #ae3544;
   position: relative;
+  margin-bottom: 10px;
 }
 
 section.thumbnails_section .page_thumbnail h2 {
@@ -556,6 +586,28 @@ footer p a:hover {
     width: 50px;
     height: 50px;
   }
+  section.countdown_section .countdown_container .ticket_container img#arrow {
+    width: 120px;
+  }
+  section.posts_section .post_block {
+    padding: 15px;
+  }
+  section.posts_section .post_block .date_container {
+    font-size: 1rem;
+  }
+  section.posts_section .post_block .date_container.month {
+    font-size: 0.65rem;
+  }
+  section.posts_section .post_block p {
+    font-size: 0.75rem;
+    margin: 0;
+  }
+  section.thumbnails_section .page_thumbnail {
+    height: 225px;
+  }
+  section.thumbnails_section .page_thumbnail h2 {
+    font-size: 1.5rem;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -580,9 +632,21 @@ footer p a:hover {
   section.carousel_section .homepage_carousel .flickity-prev-next-button.next {
     right: 30px;
   }
+  section.countdown_section .countdown_container .ticket_container {
+    padding: 0 0 0 15px;
+  }
+  section.countdown_section .countdown_container .ticket_container img#arrow {
+    width: 100px;
+  }
+  section.countdown_section .countdown_container .countdown {
+    padding: 0 15px 0 0;
+  }
+  section.posts_section .carousel_container .posts_carousel .carousel_item {
+    width: 50%;
+  }
 }
 
-@media screen and (max-width: 544px) {
+@media screen and (max-width: 575px) {
   header:before {
     height: 30px;
   }
@@ -618,5 +682,8 @@ footer p a:hover {
   }
   section.carousel_section .homepage_carousel .flickity-prev-next-button.next {
     right: 15px;
+  }
+  section.posts_section .carousel_container .posts_carousel .carousel_item {
+    width: 100%;
   }
 }

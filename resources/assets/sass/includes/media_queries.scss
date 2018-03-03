@@ -46,6 +46,38 @@
       }
     }
   }
+  section.countdown_section {
+    .countdown_container {
+      .ticket_container {
+        img#arrow {
+          width: 120px;
+        }
+      }
+    }
+  }
+  section.posts_section {
+    .post_block {
+      padding: 15px;
+      .date_container {
+        font-size: 1rem;
+        &.month {
+          font-size: 0.65rem;
+        }
+      }
+      p {
+        font-size: 0.75rem;
+        margin: 0;
+      }
+    }
+  }
+  section.thumbnails_section {
+    .page_thumbnail {
+      height: 225px;
+      h2 {
+        font-size: 1.5rem;
+      }
+    }
+  }
 }
 
 @media screen and ( min-width: 768px ) and ( max-width: 991px ) {
@@ -79,13 +111,35 @@
       }
     }
   }
+  section.countdown_section {
+    .countdown_container {
+      .ticket_container {
+        padding: 0 0 0 15px;
+        img#arrow {
+          width: 100px;
+        }
+      }
+      .countdown {
+        padding: 0 15px 0 0;
+      }
+    }
+  }
+  section.posts_section {
+    .carousel_container {
+      .posts_carousel {
+        .carousel_item {
+          width: 50%;
+        }
+      }
+    }
+  }
 }
 
 @media screen and ( min-width: 544px) and (max-width: 767px) {
 
 }
 
-@media screen and ( max-width: 544px ) {
+@media screen and ( max-width: 575px ) {
   header {
     &:before {
       height: 30px;
@@ -121,6 +175,16 @@
         }
         &.next {
           right: 15px;
+        }
+      }
+    }
+  }
+
+  section.posts_section {
+    .carousel_container {
+      .posts_carousel {
+        .carousel_item {
+          width: 100%;
         }
       }
     }

@@ -196,7 +196,7 @@ section.countdown_section {
     background: rgba(0,0,0,0.9);
     .ticket_container {
       position: relative;
-      padding-left: 35px;
+      padding: 0 0 0 35px;
       img {
         &#arrow {
           position: absolute;
@@ -207,6 +207,7 @@ section.countdown_section {
         }
         &#ticket {
           max-width: 400px;
+          width: 100%;
         }
       }
     }
@@ -216,7 +217,7 @@ section.countdown_section {
       align-items: center;
       justify-content: center;
       height: 100%;
-      padding-right: 50px;
+      padding: 0 50px 0 0;
       .countdown_item {
         //display: inline-block;
         width: 25%;
@@ -243,6 +244,10 @@ section.posts_section {
           width: 14px;
           height: 14px;
           margin: 0 6px;
+          opacity: .6;
+          &.is-selected {
+            opacity: .9;
+          }
         }
       }
     }
@@ -267,8 +272,26 @@ section.posts_section {
       font-family: proxima_nova_light;
       font-size: 0.875rem;
       line-height: 1;
-      margin-left: 5px;
+      margin: 0 0 0 5px;
       text-align: justify;
+    }
+    .social_links {
+      text-align: right;
+      position: absolute;
+      bottom: 0;
+      right: 5px;
+      a {
+        margin-right: 10px;
+        font-size: 16px;
+        line-height: 1;
+        color: $gray;
+        &:hover {
+          color: $beige;
+        }
+        &:last-of-type {
+          margin: 0;
+        }
+      }
     }
   }
 }
@@ -276,10 +299,12 @@ section.posts_section {
 section.thumbnails_section {
   margin-top: 30px;
   .page_thumbnail {
-    background: url("/img/thumbnail.jpg");
+    background: url("/img/thumbnail.jpg") no-repeat center;
+    background-size: cover;
     height: 325px;
     border-top: 5px solid $red;
     position: relative;
+    margin-bottom: 10px;
     h2 {
       color: $beige;
       text-transform: uppercase;

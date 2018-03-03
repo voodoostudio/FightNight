@@ -1,5 +1,7 @@
 @extends('layouts.app')
 
+@section('id', 'virtual_tour')
+
 @section('content')
 
     <section class="virtual_tour">

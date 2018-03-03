@@ -28,13 +28,13 @@
         <div class="container-fluid">
             <div class="countdown_container">
                 <div class="row">
-                    <div class="col-5">
+                    <div class="col-sm 5">
                         <div class="ticket_container">
                             <img id="arrow" src="/img/ticket_arrow.png" alt="">
                             <img id="ticket" src="/img/ticket.png" alt="ticket">
                         </div>
                     </div>
-                    <div class="col-7">
+                    <div class="col-sm-7">
                         <div class="countdown">
                             <div class="countdown_item" id="days">
                                 <svg id="animated_days" viewbox="0 0 100 100">
@@ -111,23 +111,25 @@
                                                 {{ date( "d", $posts['created_at']) }}
                                             </div>
                                             <div class="date_container month">
-                                                {{ date( "M", $posts['created_at']) }}
+                                                {{ strtolower(date( "M", $posts['created_at'])) }}
                                             </div>
                                         </div>
                                         <div class="col-9 my_col">
                                             <p>{{ mb_substr($posts['text'], 0, 100) }}</p>
-                                            @if(!empty($posts['facebook_link']))
-                                               <span><a href="{{ $posts['facebook_link'] }}">fb</a></span>
-                                            @endif
-                                            @if(!empty($posts['linked_link']))
-                                               <span><a href="{{ $posts['linked_link'] }}">in</a></span>
-                                            @endif
-                                            @if(!empty($posts['twitter_link']))
-                                               <span><a href="{{ $posts['twitter_link'] }}">tw</a></span>
-                                            @endif
-                                            @if(!empty($posts['instagram_link']))
-                                               <span><a href="{{ $posts['instagram_link'] }}">insta</a></span>
-                                            @endif
+                                            <div class="social_links">
+                                                @if(!empty($posts['facebook_link']))
+                                                    <a href="{{ $posts['facebook_link'] }}"><i class="fab fa-facebook-f"></i></a>
+                                                @endif
+                                                @if(!empty($posts['linked_link']))
+                                                    <a href="{{ $posts['linked_link'] }}"><i class="fab fa-linkedin-in"></i></a>
+                                                @endif
+                                                @if(!empty($posts['twitter_link']))
+                                                    <a href="{{ $posts['twitter_link'] }}"><i class="fab fa-twitter"></i></a>
+                                                @endif
+                                                @if(!empty($posts['instagram_link']))
+                                                    <a href="{{ $posts['instagram_link'] }}"><i class="fab fa-instagram"></i></a>
+                                                @endif
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -143,19 +145,19 @@
     <section class="thumbnails_section">
         <div class="container-fluid">
             <div class="row my_row">
-                <div class="col-4 my_col">
+                <div class="col-sm-6 col-md-4 my_col">
                     <div class="page_thumbnail">
                         <h2>Our <span>location</span></h2>
                         <a href="#" class="btn">Read more</a>
                     </div>
                 </div>
-                <div class="col-4 my_col">
+                <div class="col-sm-6 col-md-4 my_col">
                     <div class="page_thumbnail">
                         <h2>Our <span>edition</span></h2>
                         <a href="#" class="btn">Read more</a>
                     </div>
                 </div>
-                <div class="col-4 my_col">
+                <div class="col-sm-6 col-md-4 my_col">
                     <div class="page_thumbnail">
                         <h2>Our <span>location</span></h2>
                         <a href="#" class="btn">Read more</a>

@@ -15,7 +15,8 @@ mix.sass('resources/assets/sass/app.scss', 'public/css');
 mix.styles([
     'resources/assets/sass/libraries/bootstrap.css',
     'resources/assets/sass/libraries/select2.min.css',
-    'resources/assets/sass/libraries/fontawesome/css/font-awesome.css',
+    'resources/assets/sass/libraries/fontawesome/css/fontawesome.css',
+    'resources/assets/sass/libraries/fontawesome/css/fa-brands.css',
     'resources/assets/sass/libraries/flickity.css',
     'resources/assets/sass/libraries/simplebar.css',
     'resources/assets/sass/libraries/datepicker.css',
