@@ -7,30 +7,34 @@
 
 @section('content')
     <main>
-        <section class="news_list_section">
+        <section class="galleries_list_section">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-12">
                         <div class="title_container">
-                            <h1>Gallery</h1>
-                            <a class="action_link" href="{{ URL::to($lang . '/admin') }}"><i class="icn icon-arrow_left"></i></a>
-                            <a class="action_link add_new" href="{{ URL::to($lang . '/admin/gallery/create') }}">Add</a>
+                            <h1>
+                                <a class="action_link" href="{{ URL::to($lang . '/admin') }}"><i class="fas fa-arrow-left"></i></a>
+                                Gallery
+                                <a class="action_link add_new" href="{{ URL::to($lang . '/admin/gallery/create') }}"><i class="fas fa-plus"></i></a>
+                            </h1>
+
+
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    @foreach($gallery as $items)
-                        <div class="col-xs-12 col-xl-6">
-                            <div class="outer_block_container">
-                                <div class="inner_block_container">
-                                    <div class="edit_elements">
-                                        {{ Form::open(array('url' => 'admin/gallery/' . $items->id, 'class' => 'pull-right')) }}
-                                        {{ Form::hidden('_method', 'DELETE') }}
-                                        <button type="submit" class = "remove_btn">Delete</button>
-                                        {{ Form::close() }}
-                                    </div>
-                                    <div class="article_info_block">
-                                        <div class="article_img">
+                <div class="outer_block_container">
+                    <div class="inner_block_container">
+                        <div class="row">
+                            @foreach($gallery as $items)
+                                <div class="col-12 col-md-4">
+                                    <div class="gallery_info_block">
+                                        <div class="edit_elements">
+                                            {{ Form::open(array('url' => 'admin/gallery/' . $items->id, 'class' => 'pull-right')) }}
+                                            {{ Form::hidden('_method', 'DELETE') }}
+                                            <button type="submit" class = "remove_btn"><i class="fas fa-trash-alt"></i></button>
+                                            {{ Form::close() }}
+                                        </div>
+                                        <div class="gallery_img">
                                             @php
                                                 $image_counter = 1;
                                             @endphp
@@ -47,14 +51,15 @@
                                                 <img src="/img/details/no_agent_photo.svg" alt="">
                                             @endif
                                         </div>
-                                        <div class="article_info">
-                                            <h2>@if($lang == 'fr') {{ $items['title_fr'] }} @elseif($lang == 'en') {{ $items['title_en'] }}  @endif</h2>
+                                        <div class="gallery_info">
+                                            <h2>{{ $items['title_fr'] }}</h2>
+{{--                                            <h2>@if($lang == 'fr') {{ $items['title_fr'] }} @elseif($lang == 'en') {{ $items['title_en'] }}  @endif</h2>--}}
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            @endforeach
                         </div>
-                    @endforeach
+                    </div>
                 </div>
             </div>
         </section>

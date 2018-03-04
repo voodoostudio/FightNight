@@ -17,12 +17,16 @@ body {
     padding: 0 5px;
   }
 }
+
+.margin_bottom_20 {
+  margin-bottom: 20px;
+}
 header {
   background-image: url("/img/bg_header.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
-  margin: 20px 0 60px;
+  margin: 70px 0 60px;
   //&:before {
   //  content: '';
   //  height: 55px;
@@ -37,11 +41,11 @@ header {
   .navbar.navbar-light {
     position: relative;
     background-color: transparent;
-    padding: 60px 0 30px 230px;
+    padding: 20px 0 20px 230px;
     .navbar-brand {
       position: absolute;
       left: 0;
-      top: 30px;
+      top: -20px;
       img {
         width: 215px;
       }
@@ -372,7 +376,7 @@ section.gallery_section {
   }
   .cbp-item {
     img {
-      max-width: 400px;
+      max-height: 400px;
     }
 
   }

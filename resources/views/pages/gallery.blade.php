@@ -7,27 +7,12 @@
 
 @section('content')
     <section class="gallery_section">
-        {{--<div class="container-fluid">--}}
-        {{--<div id="js-filters-full-width" class="cbp-l-filters-alignCenter">--}}
-            {{--<div data-filter="*" class="cbp-filter-item">--}}
-                {{--ALL <div class="cbp-filter-counter"></div>--}}
-            {{--</div> <span>/</span>--}}
-            {{--<div data-filter=".identity" class="cbp-filter-item">--}}
-                {{--IDENTITY <div class="cbp-filter-counter"></div>--}}
-            {{--</div> <span>/</span>--}}
-            {{--<div data-filter=".web-design" class="cbp-filter-item">--}}
-                {{--WEB DESIGN <div class="cbp-filter-counter"></div>--}}
-            {{--</div> <span>/</span>--}}
-            {{--<div data-filter=".graphic" class="cbp-filter-item">--}}
-                {{--GRAPHIC <div class="cbp-filter-counter"></div>--}}
-            {{--</div> <span>/</span>--}}
-            {{--<div data-filter=".logos" class="cbp-filter-item cbp-filter-item-active">--}}
-                {{--LOGO <div class="cbp-filter-counter"></div>--}}
-            {{--</div> <span>/</span>--}}
-            {{--<div data-filter=".motion" class="cbp-filter-item">--}}
-                {{--MOTION <div class="cbp-filter-counter"></div>--}}
-            {{--</div>--}}
-        {{--</div>--}}
+        <div id="js-filters-full-width" class="cbp-l-filters-alignCenter">
+            <div data-filter="*" class="cbp-filter-item">
+               Title / year
+            </div>
+        </div>
+
         <div id="js-grid-full-width" class="cbp">
             @foreach(json_decode($gallery->gallery_images) as $image)
                 <div class="cbp-item identity logos">

@@ -53,7 +53,7 @@ class AdminGalleryController extends Controller
 
         $rules = array(
             'title_fr'      => 'required',
-            'title_en'      => 'required',
+//            'title_en'      => 'required',
         );
 
         $gallery = new Gallery;
