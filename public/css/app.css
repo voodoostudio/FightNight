@@ -106,6 +106,22 @@
 }
 
 /*Buttons style END*/
+.form_group {
+  margin-bottom: 20px;
+}
+
+.form_group .form_el_label {
+  line-height: 1;
+  margin: 0 0 5px 0;
+  letter-spacing: 2px;
+  font-size: 1.2rem;
+}
+
+.form_group .form_placeholder {
+  font-family: proxima_nova_thin;
+  font-style: italic;
+}
+
 input,
 textarea {
   border: none;
@@ -116,11 +132,11 @@ textarea {
 }
 
 input {
-  height: 42px;
+  height: 50px;
 }
 
 textarea {
-  height: 150px;
+  height: 190px;
   padding: 12px;
   resize: none;
 }
@@ -820,7 +836,7 @@ section.editions_section .edition .video-container embed {
 }
 
 .contact_section .contact_container {
-  padding: 85px 125px;
+  padding: 90px 125px;
   position: relative;
 }
 
@@ -835,6 +851,16 @@ section.editions_section .edition .video-container embed {
 
 .contact_section .contact_container form button {
   margin: 50px 0;
+}
+
+.contact_section .contact_container .address {
+  letter-spacing: 1px;
+  line-height: 1.3;
+  margin-bottom: 25px;
+}
+
+.contact_section .contact_container .tel {
+  margin-bottom: 0;
 }
 
 .jeans_bg {

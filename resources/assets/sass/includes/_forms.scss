@@ -33,6 +33,19 @@
 
 /*Buttons style END*/
 
+.form_group {
+  margin-bottom: 20px;
+  .form_el_label {
+    line-height: 1;
+    margin: 0 0 5px 0;
+    letter-spacing: 2px;
+    font-size: 1.2rem;
+  }
+  .form_placeholder {
+    font-family: proxima_nova_thin;
+    font-style: italic;
+  }
+}
 
 input,
 textarea {
@@ -43,10 +56,10 @@ textarea {
   color: $black;
 }
 input {
-  height: 42px;
+  height: 50px;
 }
 textarea {
-  height: 150px;
+  height: 190px;
   padding: 12px;
   resize: none;
 }
