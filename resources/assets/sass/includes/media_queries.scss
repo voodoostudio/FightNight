@@ -141,9 +141,6 @@
 
 @media screen and ( max-width: 575px ) {
   header {
-    &:before {
-      height: 30px;
-    }
     .navbar.navbar-light {
       padding: 20px 0 25px 0;
       .navbar-brand {

@@ -16,7 +16,7 @@
                 <div class="row">
                     <div class="col-xs-12">
                         <div class="admin_title_container">
-                            <h1>{{ trans('lang.creating_article') }}</h1>
+                            <h1 class="dashboard_header">{{ trans('lang.creating_article') }}</h1>
                             <a class="action_link" href="{{ URL::to($lang . '/admin/news') }}"><i class="icn icon-arrow_left"></i></a>
                         </div>
                     </div>
