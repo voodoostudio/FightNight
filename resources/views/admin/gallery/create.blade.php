@@ -12,7 +12,7 @@
                 <div class="row">
                     <div class="col-12">
                         <div class="title_container">
-                            <h1>
+                            <h1 class="dashboard_header">
                                 <a class="action_link" href="{{ URL::to($lang . '/admin/gallery') }}"><i class="fas fa-arrow-left"></i></a>
                                 Create Gallery
                             </h1>

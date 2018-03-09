@@ -1,4 +1,17 @@
 
+/* BEGIN Thin*/
+@font-face {
+  font-family: 'proxima_nova_thin';
+  src: url('/fonts/proxima_nova/thin/proxima_nova_thin.eot');
+  src: url('/fonts/proxima_nova/thin/proxima_nova_thin.eot?#iefix') format('embedded-opentype'),
+  url('/fonts/proxima_nova/thin/proxima_nova_thin.woff') format('woff'),
+  url('/fonts/proxima_nova/thin/proxima_nova_thin.ttf') format('truetype'),
+  url('/fonts/proxima_nova/thin/proxima_nova_thin.svg') format('svg');
+  font-weight: 100;
+  font-style: normal;
+}
+/* END Thin*/
+
 /* BEGIN Light*/
 @font-face {
   font-family: 'proxima_nova_light';
@@ -63,3 +76,16 @@
   font-style: normal;
 }
 /* END Plane Crash*/
+
+/* BEGIN Steelfish*/
+@font-face {
+  font-family: 'steelfish_regular';
+  src: url('/fonts/steelfish/regular/steelfish_regular.eot');
+  src: url('/fonts/steelfish/regular/steelfish_regular.eot?#iefix') format('embedded-opentype'),
+  url('/fonts/steelfish/regular/steelfish_regular.woff') format('woff'),
+  url('/fonts/steelfish/regular/steelfish_regular.ttf') format('truetype'),
+  url('/fonts/steelfish/regular/steelfish_regular.svg') format('svg');
+  font-weight: 300;
+  font-style: normal;
+}
+/* END Steelfish*/
