@@ -15,4 +15,19 @@ return [
     'publish'               => 'Publier',
     'save'                  => 'Enregistrer',
 
+    // Header menu
+    'home'                  => 'Home',
+    'about'                 => 'Sur',
+    'editions'              => 'Editions',
+    'ticketing'             => 'Billeterie',
+    'gallery'               => 'Galerie',
+    'partners'              => 'Partenaires',
+    'press'                 => 'Presse',
+    'contact'               => 'Contact',
+
+
+
+
+
+
 ];

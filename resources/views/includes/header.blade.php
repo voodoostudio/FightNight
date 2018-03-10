@@ -15,14 +15,14 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                    <a class="nav-item nav-link {{ (Route::getCurrentRoute()->uri == '/' || Route::getCurrentRoute()->uri == $lang) ? 'active' : '' }}" href="{{ route('index') }}">Accueil <span class="sr-only">(current)</span></a>
-                    <a class="nav-item nav-link {{ (Route::getCurrentRoute()->uri == 'about' || Route::getCurrentRoute()->uri == $lang . '/about') ? 'active' : '' }}" href="{{ route('about') }}">About</a>
-                    <a class="nav-item nav-link {{ (Route::getCurrentRoute()->uri == 'editions' || Route::getCurrentRoute()->uri == $lang . '/editions') ? 'active' : '' }}" href="{{ route('editions') }}">Editions</a>
-                    <a class="nav-item nav-link {{ (Route::getCurrentRoute()->uri == 'tickets' || Route::getCurrentRoute()->uri == $lang . '/tickets') ? 'active' : '' }}" href="{{ route('tickets') }}">Billeterie</a>
-                    <a class="nav-item nav-link {{ (Route::getCurrentRoute()->uri == 'gallery' || Route::getCurrentRoute()->uri == $lang . '/galleries') ? 'active' : '' }}" href="{{ route('galleries') }}">Galerie</a>
-                    <a class="nav-item nav-link {{ (Route::getCurrentRoute()->uri == 'partners' || Route::getCurrentRoute()->uri == $lang . '/partners') ? 'active' : '' }}" href="{{ route('partners') }}">Partenaires</a>
-                    <a class="nav-item nav-link {{ (Route::getCurrentRoute()->uri == 'press' || Route::getCurrentRoute()->uri == $lang . '/press') ? 'active' : '' }}" href="{{ route('press') }}">Presse</a>
-                    <a class="nav-item nav-link {{ (Route::getCurrentRoute()->uri == 'contact' || Route::getCurrentRoute()->uri == $lang . '/contact') ? 'active' : '' }}" href="{{ route('contact') }}">Contact</a>
+                    <a class="nav-item nav-link {{ (Route::getCurrentRoute()->uri == '/' || Route::getCurrentRoute()->uri == $lang) ? 'active' : '' }}" href="{{ route('index') }}">{{ trans('lang.home') }} <span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link {{ (Route::getCurrentRoute()->uri == 'about' || Route::getCurrentRoute()->uri == $lang . '/about') ? 'active' : '' }}" href="{{ route('about') }}">{{ trans('lang.about') }}</a>
+                    <a class="nav-item nav-link {{ (Route::getCurrentRoute()->uri == 'editions' || Route::getCurrentRoute()->uri == $lang . '/editions') ? 'active' : '' }}" href="{{ route('editions') }}">{{ trans('lang.editions') }}</a>
+                    <a class="nav-item nav-link {{ (Route::getCurrentRoute()->uri == 'tickets' || Route::getCurrentRoute()->uri == $lang . '/tickets') ? 'active' : '' }}" href="{{ route('tickets') }}">{{ trans('lang.ticketing') }}</a>
+                    <a class="nav-item nav-link {{ (Route::getCurrentRoute()->uri == 'gallery' || Route::getCurrentRoute()->uri == $lang . '/galleries') ? 'active' : '' }}" href="{{ route('galleries') }}">{{ trans('lang.gallery') }}</a>
+                    <a class="nav-item nav-link {{ (Route::getCurrentRoute()->uri == 'partners' || Route::getCurrentRoute()->uri == $lang . '/partners') ? 'active' : '' }}" href="{{ route('partners') }}">{{ trans('lang.partners') }}</a>
+                    <a class="nav-item nav-link {{ (Route::getCurrentRoute()->uri == 'press' || Route::getCurrentRoute()->uri == $lang . '/press') ? 'active' : '' }}" href="{{ route('press') }}">{{ trans('lang.press') }}</a>
+                    <a class="nav-item nav-link {{ (Route::getCurrentRoute()->uri == 'contact' || Route::getCurrentRoute()->uri == $lang . '/contact') ? 'active' : '' }}" href="{{ route('contact') }}">{{ trans('lang.contact') }}</a>
                 </div>
             </div>
         </nav>
