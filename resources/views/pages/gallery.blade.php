@@ -47,6 +47,11 @@
                             <div class="cbp-caption-defaultWrap">
                                 <img src="{{ URL::to('/') }}/gallery/gallery_images/{{ $gallery->created_at->format('F_Y') }}/{{ $image }}" data-cbp-src="{{ URL::to('/') }}/gallery/gallery_images/{{ $gallery->created_at->format('F_Y') }}/{{ $image }}" alt="">
                             </div>
+                            <div class="cbp-caption-activeWrap">
+                                <div class="cbp-l-caption-alignLeft">
+                                    <div class="cbp-l-caption-body"></div>
+                                </div>
+                            </div>
                         </a>
                     </div>
                 @endforeach

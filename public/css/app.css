@@ -13,7 +13,7 @@
   font-family: 'proxima_nova_light';
   src: url("/fonts/proxima_nova/light/proxima_nova_light.eot");
   src: url("/fonts/proxima_nova/light/proxima_nova_light.eot?#iefix") format("embedded-opentype"), url("/fonts/proxima_nova/light/proxima_nova_light.woff") format("woff"), url("/fonts/proxima_nova/light/proxima_nova_light.ttf") format("truetype"), url("/fonts/proxima_nova/light/proxima_nova_light.svg") format("svg");
-  font-weight: 100;
+  font-weight: 300;
   font-style: normal;
 }
 
@@ -33,7 +33,7 @@
   font-family: 'proxima_nova_semibold';
   src: url("/fonts/proxima_nova/semibold/proxima_nova_semibold.eot");
   src: url("/fonts/proxima_nova/semibold/proxima_nova_semibold.eot?#iefix") format("embedded-opentype"), url("/fonts/proxima_nova/semibold/proxima_nova_semibold.woff") format("woff"), url("/fonts/proxima_nova/semibold/proxima_nova_semibold.ttf") format("truetype"), url("/fonts/proxima_nova/semibold/proxima_nova_semibold.svg") format("svg");
-  font-weight: 900;
+  font-weight: 700;
   font-style: normal;
 }
 
@@ -43,7 +43,7 @@
   font-family: 'proxima_nova_bold';
   src: url("/fonts/proxima_nova/bold/proxima_nova_bold.eot");
   src: url("/fonts/proxima_nova/bold/proxima_nova_bold.eot?#iefix") format("embedded-opentype"), url("/fonts/proxima_nova/bold/proxima_nova_bold.woff") format("woff"), url("/fonts/proxima_nova/bold/proxima_nova_bold.ttf") format("truetype"), url("/fonts/proxima_nova/bold/proxima_nova_bold.svg") format("svg");
-  font-weight: 900;
+  font-weight: 800;
   font-style: normal;
 }
 
@@ -83,7 +83,7 @@
   font-family: 'spinwerad_c';
   src: url("/fonts/spinwerad_c/spinwerad_c.eot");
   src: url("/fonts/spinwerad_c/spinwerad_c.eot?#iefix") format("embedded-opentype"), url("/fonts/spinwerad_c/spinwerad_c.woff") format("woff"), url("/fonts/spinwerad_c/spinwerad_c.ttf") format("truetype"), url("/fonts/spinwerad_c/spinwerad_c.svg") format("svg");
-  font-weight: 900;
+  font-weight: 800;
   font-style: normal;
 }
 
@@ -116,7 +116,7 @@
 }
 
 .btn_blue {
-  background: #08b8c3;
+  background: #00ffff;
   border-radius: 8px;
   height: 60px;
   color: #fffaff;
@@ -421,7 +421,7 @@ header .navbar.navbar-light .navbar-nav .nav-link.active:before {
   height: 0;
   border-style: solid;
   border-width: 0 17px 24px 17px;
-  border-color: transparent transparent #08b8c3 transparent;
+  border-color: transparent transparent #00ffff transparent;
   position: absolute;
   bottom: -10px;
   left: 50%;
@@ -517,7 +517,7 @@ section.carousel_section .homepage_carousel .flickity-viewport .flickity-slider 
 }
 
 section.carousel_section .homepage_carousel .flickity-viewport .flickity-slider .carousel-cell .caption h1 {
-  color: #08b8c3;
+  color: #00ffff;
   font-family: spinwerad_c;
   margin: 0;
   text-transform: uppercase;
@@ -539,7 +539,7 @@ section.carousel_section .homepage_carousel .flickity-viewport .flickity-slider 
 }
 
 section.carousel_section .homepage_carousel .flickity-prev-next-button {
-  background: rgba(8, 184, 195, 0.75);
+  background: rgba(0, 255, 255, 0.75);
   width: 60px;
   height: 60px;
 }
@@ -553,7 +553,7 @@ section.carousel_section .homepage_carousel .flickity-prev-next-button.previous 
 }
 
 section.carousel_section .homepage_carousel .flickity-prev-next-button:hover {
-  background: #08b8c3;
+  background: #00ffff;
 }
 
 section.carousel_section .homepage_carousel .flickity-prev-next-button:disabled {
@@ -585,6 +585,28 @@ section.countdown_section .countdown_container .title_container img {
 }
 
 section.countdown_section .countdown_container .countdown {
+  padding: 0 50px 0 0;
+}
+
+section.tickets_section .countdown_container {
+  position: relative;
+}
+
+section.tickets_section .countdown_container .countdown {
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 160px 0 90px;
+}
+
+section.tickets_section .countdown_container h3 {
+  font-family: proxima_nova_thin;
+  font-size: 4rem;
+  text-align: right;
+  padding: 30px;
+  margin: 0;
+}
+
+.countdown_container .countdown {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -597,10 +619,9 @@ section.countdown_section .countdown_container .countdown {
       -ms-flex-pack: center;
           justify-content: center;
   height: 100%;
-  padding: 0 50px 0 0;
 }
 
-section.countdown_section .countdown_container .countdown .countdown_item {
+.countdown_container .countdown .countdown_item {
   width: 25%;
 }
 
@@ -671,7 +692,7 @@ section.posts_section .post_block h5 {
 section.posts_section .post_block h6 {
   text-transform: uppercase;
   letter-spacing: 1px;
-  color: #08b8c3;
+  color: #00ffff;
   line-height: 1;
   margin-bottom: 5px;
 }
@@ -733,7 +754,7 @@ section.thumbnails_section .page_thumbnail h2 {
 }
 
 section.thumbnails_section .page_thumbnail h2 span {
-  color: #08b8c3;
+  color: #00ffff;
   display: block;
 }
 
@@ -779,7 +800,7 @@ section.gallery_section .cbp-l-filters-alignCenter .cbp-filter-item {
 
 section.gallery_section .cbp-l-filters-alignCenter .cbp-filter-item.cbp-filter-item-active {
   font-family: proxima_nova_semibold;
-  color: #08b8c3;
+  color: #00ffff;
 }
 
 section.gallery_section .cbp-l-filters-alignCenter span {
@@ -835,7 +856,7 @@ section.editions_section .edition .edition_title .city {
 
 section.editions_section .edition .edition_title .year {
   font-family: proxima_nova_semibold;
-  color: #08b8c3;
+  color: #00ffff;
   font-size: 3rem;
 }
 
@@ -852,7 +873,7 @@ section.editions_section .edition .edition_statistics span {
   display: inline-block;
   padding: 4px 7px 2px;
   border: 1px solid #009683;
-  color: #08b8c3;
+  color: #00ffff;
   margin-right: 10px;
   letter-spacing: 0;
 }
@@ -862,7 +883,7 @@ section.editions_section .edition .edition_statistics span sup {
 }
 
 section.editions_section .edition .edition_description {
-  color: #08b8c3;
+  color: #00ffff;
   font-family: proxima_nova_thin;
   line-height: 1.2;
   letter-spacing: 1px;
@@ -933,9 +954,9 @@ section.contact_section .contact_container .tel {
 
 .title--translated {
   font-family: proxima_nova_thin;
-  font-size: 8rem;
+  font-size: 9rem;
   position: absolute;
-  top: -80px;
+  top: -115px;
   left: 125px;
   margin: 0;
 }
@@ -987,7 +1008,7 @@ footer p a:hover {
 }
 
 .dashboard_header .action_link:hover {
-  color: #08b8c3;
+  color: #00ffff;
 }
 
 .dashboard_header .action_link.add_new {
@@ -1026,7 +1047,7 @@ footer p a:hover {
 }
 
 .admin_items_list_section .admin_item_info_block .edit_elements button:hover {
-  color: #08b8c3;
+  color: #00ffff;
 }
 
 .admin_items_list_section .admin_item_info_block .edit_elements a {
@@ -1034,7 +1055,7 @@ footer p a:hover {
 }
 
 .admin_items_list_section .admin_item_info_block .edit_elements a:hover {
-  color: #08b8c3;
+  color: #00ffff;
 }
 
 .admin_items_list_section .admin_item_info_block .admin_item_info {
@@ -1090,7 +1111,7 @@ footer p a:hover {
 }
 
 .admin_edit_section .outer_block_container .inner_block_container form .label_container ul.nav.nav-tabs li.nav-item a.nav-link.active {
-  color: #08b8c3;
+  color: #00ffff;
   background: none;
 }
 

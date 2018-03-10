@@ -238,16 +238,37 @@ section.countdown_section {
       }
     }
     .countdown {
-      display: flex;
-      align-content: center;
-      align-items: center;
-      justify-content: center;
-      height: 100%;
       padding: 0 50px 0 0;
-      .countdown_item {
-        //display: inline-block;
-        width: 25%;
-      }
+    }
+  }
+}
+
+section.tickets_section {
+  .countdown_container {
+    position: relative;
+    .countdown {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 160px 0 90px;
+    }
+    h3 {
+      font-family: proxima_nova_thin;
+      font-size: 4rem;
+      text-align: right;
+      padding: 30px;
+      margin: 0;
+    }
+  }
+}
+.countdown_container {
+  .countdown {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    .countdown_item {
+      width: 25%;
     }
   }
 }
@@ -541,9 +562,9 @@ section.contact_section {
 }
 .title--translated {
   font-family: proxima_nova_thin;
-  font-size: 8rem;
+  font-size: 9rem;
   position: absolute;
-  top: -80px;
+  top: -115px;
   left: 125px;
   margin: 0;
 }
