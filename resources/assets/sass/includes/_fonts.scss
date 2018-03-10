@@ -38,6 +38,19 @@
 }
 /* END Regular*/
 
+/* BEGIN Semibold*/
+@font-face {
+  font-family: 'proxima_nova_semibold';
+  src: url('/fonts/proxima_nova/semibold/proxima_nova_semibold.eot');
+  src: url('/fonts/proxima_nova/semibold/proxima_nova_semibold.eot?#iefix') format('embedded-opentype'),
+  url('/fonts/proxima_nova/semibold/proxima_nova_semibold.woff') format('woff'),
+  url('/fonts/proxima_nova/semibold/proxima_nova_semibold.ttf') format('truetype'),
+  url('/fonts/proxima_nova/semibold/proxima_nova_semibold.svg') format('svg');
+  font-weight: 900;
+  font-style: normal;
+}
+/* END Semibold*/
+
 /* BEGIN Bold*/
 @font-face {
   font-family: 'proxima_nova_bold';

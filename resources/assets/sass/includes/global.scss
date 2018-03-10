@@ -5,7 +5,7 @@ body {
   position: relative;
   min-height: 100vh;
   font-family: proxima_nova_light;
-  padding-bottom: 180px;
+  padding-bottom: 130px;
   color: $white;
 }
 
@@ -35,7 +35,7 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
-  margin: 70px 0 60px;
+  margin: 70px 0 0;
   position: relative;
 
   &:before{
@@ -367,7 +367,7 @@ section.about_section {
 
 section.gallery_section {
   .cbp-l-filters-alignCenter {
-    margin: 60px 0 0;
+    margin: 0;
     padding: 30px 0;
     background-color: rgba(0,0,0,0.3);
     .cbp-filter-item {
@@ -403,23 +403,32 @@ section.gallery_section {
 }
 
 section.editions_section {
+  margin-top: 80px;
   .edition {
     background-color: $black;
-    padding: 30px;
     color: $white;
+    position: relative;
     &:not(:last-child) {
       margin-bottom: 20px;
     }
+    .edition__info-container {
+      padding: 25px 30px;
+    }
     .edition_title {
-      font-size: 1.2rem;
-      text-transform: uppercase;
-      letter-spacing: 1px;
       font-family: proxima_nova_thin;
-      span {
+      font-size: 2.8rem;
+      letter-spacing: 2px;
+      margin: 0;
+      .city {
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
         display: block;
-        font-family: steelfish_regular;
-        font-size: 2.5rem;
-        letter-spacing: 4px;
+      }
+      .year {
+        font-family: proxima_nova_semibold;
+        color: $blue-light;
+        font-size: 3rem;
       }
     }
     .edition_statistics {
@@ -445,6 +454,7 @@ section.editions_section {
       color: $blue-light;
       font-family: proxima_nova_thin;
       line-height: 1.2;
+      letter-spacing: 1px;
     }
     .edition_person {
       line-height: 1;
@@ -464,7 +474,9 @@ section.editions_section {
     .video-container {
       position: relative;
       padding-bottom: 56.25%;
-      padding-top: 30px; height: 0; overflow: hidden;
+      padding-top: 58px;
+      height: 0;
+      overflow: hidden;
     }
     .video-container iframe,
     .video-container object,
@@ -507,7 +519,7 @@ section.editions_section {
 }
 
 .jeans_bg {
-  background: url("/img/jeans_texture.jpg") no-repeat;
+  background: url("/img/jeans_texture.jpg") no-repeat center;
   background-size: cover;
 }
 .img_container {

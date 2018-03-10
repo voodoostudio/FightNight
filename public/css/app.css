@@ -28,6 +28,16 @@
 }
 
 /* END Regular*/
+/* BEGIN Semibold*/
+@font-face {
+  font-family: 'proxima_nova_semibold';
+  src: url("/fonts/proxima_nova/semibold/proxima_nova_semibold.eot");
+  src: url("/fonts/proxima_nova/semibold/proxima_nova_semibold.eot?#iefix") format("embedded-opentype"), url("/fonts/proxima_nova/semibold/proxima_nova_semibold.woff") format("woff"), url("/fonts/proxima_nova/semibold/proxima_nova_semibold.ttf") format("truetype"), url("/fonts/proxima_nova/semibold/proxima_nova_semibold.svg") format("svg");
+  font-weight: 900;
+  font-style: normal;
+}
+
+/* END Semibold*/
 /* BEGIN Bold*/
 @font-face {
   font-family: 'proxima_nova_bold';
@@ -307,7 +317,7 @@ body {
   position: relative;
   min-height: 100vh;
   font-family: proxima_nova_light;
-  padding-bottom: 180px;
+  padding-bottom: 130px;
   color: #fffaff;
 }
 
@@ -344,7 +354,7 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
-  margin: 70px 0 60px;
+  margin: 70px 0 0;
   position: relative;
 }
 
@@ -714,7 +724,7 @@ section.about_section .container-fluid p {
 }
 
 section.gallery_section .cbp-l-filters-alignCenter {
-  margin: 60px 0 0;
+  margin: 0;
   padding: 30px 0;
   background-color: rgba(0, 0, 0, 0.3);
 }
@@ -748,28 +758,42 @@ section.gallery_section .cbp-caption-zoom .cbp-caption-activeWrap {
   background-color: rgba(0, 0, 0, 0.7);
 }
 
+section.editions_section {
+  margin-top: 80px;
+}
+
 section.editions_section .edition {
   background-color: black;
-  padding: 30px;
   color: #fffaff;
+  position: relative;
 }
 
 section.editions_section .edition:not(:last-child) {
   margin-bottom: 20px;
 }
 
+section.editions_section .edition .edition__info-container {
+  padding: 25px 30px;
+}
+
 section.editions_section .edition .edition_title {
+  font-family: proxima_nova_thin;
+  font-size: 2.8rem;
+  letter-spacing: 2px;
+  margin: 0;
+}
+
+section.editions_section .edition .edition_title .city {
   font-size: 1.2rem;
   text-transform: uppercase;
   letter-spacing: 1px;
-  font-family: proxima_nova_thin;
+  display: block;
 }
 
-section.editions_section .edition .edition_title span {
-  display: block;
-  font-family: steelfish_regular;
-  font-size: 2.5rem;
-  letter-spacing: 4px;
+section.editions_section .edition .edition_title .year {
+  font-family: proxima_nova_semibold;
+  color: #08b8c3;
+  font-size: 3rem;
 }
 
 section.editions_section .edition .edition_statistics {
@@ -798,6 +822,7 @@ section.editions_section .edition .edition_description {
   color: #08b8c3;
   font-family: proxima_nova_thin;
   line-height: 1.2;
+  letter-spacing: 1px;
 }
 
 section.editions_section .edition .edition_person {
@@ -820,7 +845,7 @@ section.editions_section .edition .edition__stars {
 section.editions_section .edition .video-container {
   position: relative;
   padding-bottom: 56.25%;
-  padding-top: 30px;
+  padding-top: 58px;
   height: 0;
   overflow: hidden;
 }
@@ -864,7 +889,7 @@ section.editions_section .edition .video-container embed {
 }
 
 .jeans_bg {
-  background: url("/img/jeans_texture.jpg") no-repeat;
+  background: url("/img/jeans_texture.jpg") no-repeat center;
   background-size: cover;
 }
 

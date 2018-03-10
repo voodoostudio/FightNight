@@ -20,14 +20,14 @@
                         <div class="cbp-caption-defaultWrap">
                             <img src="{{ URL::to('/') }}/gallery/gallery_images/{{ $gallery->created_at->format('F_Y') }}/{{ $image }}" data-cbp-src="{{ URL::to('/') }}/gallery/gallery_images/{{ $gallery->created_at->format('F_Y') }}/{{ $image }}" alt="">
                         </div>
-                        <div class="cbp-caption-activeWrap">
-                            <div class="cbp-l-caption-alignLeft">
-                                <div class="cbp-l-caption-body">
-                                    <div class="cbp-l-caption-title">Dashboard</div>
-                                    <div class="cbp-l-caption-desc">by Paul Flavius Nechita</div>
-                                </div>
-                            </div>
-                        </div>
+                        {{--<div class="cbp-caption-activeWrap">--}}
+                            {{--<div class="cbp-l-caption-alignLeft">--}}
+                                {{--<div class="cbp-l-caption-body">--}}
+                                    {{--<div class="cbp-l-caption-title">Dashboard</div>--}}
+                                    {{--<div class="cbp-l-caption-desc">by Paul Flavius Nechita</div>--}}
+                                {{--</div>--}}
+                            {{--</div>--}}
+                        {{--</div>--}}
                     </a>
                 </div>
             @endforeach
