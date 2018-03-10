@@ -101,8 +101,7 @@
                         <div class="cbp-caption-activeWrap">
                             <div class="cbp-l-caption-alignLeft">
                                 <div class="cbp-l-caption-body">
-                                    <div class="cbp-l-caption-title">{{ $images->title_fr }}</div>
-                                    {{--<div class="cbp-l-caption-title">{{ ($lang == 'fr') ? $images->title_fr : $images->title_en }}</div>--}}
+                                    <div class="cbp-l-caption-title">{{ ($lang == 'fr') ? $images->title_fr : $images->title_en }}</div>
                                     {{--<div class="cbp-l-caption-desc">by Paul Flavius Nechita</div>--}}
                                 </div>
                             </div>
