@@ -64,7 +64,7 @@ header {
       .nav-link {
         font-family: proxima_nova_light;
         line-height: 3rem;
-        color: $pink;
+        color: $white;
         text-transform: uppercase;
         font-size: 0.95rem;
         letter-spacing: 1px;
@@ -172,13 +172,21 @@ section.carousel_section {
             bottom: 100px;
             left: 40px;
             h1 {
-              color: $pink;
-              font-family: plane_crash;
-              font-size: 2.2rem;
-              span {
-                font-size: 4rem;
+              color: $blue-light;
+              font-family: spinwerad_c;
+              margin: 0;
+              text-transform: uppercase;
+              .big {
+                font-size: 10rem;
                 display: block;
-                color: $red;
+                color: $beige;
+                line-height: 1;
+              }
+              .small {
+                font-size: 4rem;
+                line-height: 1;
+                display: block;
+                transform: translateY(-25px);
               }
             }
           }
@@ -186,7 +194,7 @@ section.carousel_section {
       }
     }
     .flickity-prev-next-button {
-      background: rgba($red, 0.75);
+      background: rgba($blue-light, 0.75);
       width: 60px;
       height: 60px;
       &.next {
@@ -196,7 +204,7 @@ section.carousel_section {
         left: 60px;
       }
       &:hover {
-        background: $red;
+        background: $blue-light;
       }
       &:disabled {
         opacity: 0.7;
@@ -212,22 +220,14 @@ section.carousel_section {
 section.countdown_section {
   margin-top: 15px;
   .countdown_container {
-    background: rgba(0,0,0,0.9);
-    .ticket_container {
+    padding: 30px;
+    .title_container {
       position: relative;
-      padding: 0 0 0 35px;
+      top: 50%;
+      transform: translateY(-50%);
       img {
-        &#arrow {
-          position: absolute;
-          top: -40px;
-          left: 40px;
-          width: 170px;
-          //@include my_transform(rotate(20deg));
-        }
-        &#ticket {
           max-width: 400px;
           width: 100%;
-        }
       }
     }
     .countdown {
@@ -273,8 +273,6 @@ section.posts_section {
   }
   .post_block {
     padding: 25px;
-    background: rgba(0,0,0,0.9);
-    border-top: 5px solid $red;
     .date_container {
       font-family: plane_crash;
       padding: 10px 5px;
@@ -287,25 +285,40 @@ section.posts_section {
         font-size: 1rem;
       }
     }
-    p {
-      font-family: proxima_nova_light;
-      font-size: 0.875rem;
+    h5 {
+      font-family: proxima_nova_black;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin: 0;
       line-height: 1;
+    }
+    h6 {
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: $blue-light;
+      line-height: 1;
+      margin-bottom: 5px;
+    }
+    p {
+      font-family: proxima_nova_thin;
+      font-size: 0.8rem;
+      line-height: 1.1;
       margin: 0 0 0 5px;
-      text-align: justify;
     }
     .social_links {
       text-align: right;
       position: absolute;
-      bottom: 0;
-      right: 5px;
+      top: -20px;
+      right: -10px;
+      display: table;
+      line-height: 1;
       a {
-        margin-right: 10px;
-        font-size: 16px;
+        margin-right: 6px;
+        font-size: 14px;
         line-height: 1;
         color: $gray;
         &:hover {
-          color: $beige;
+          color: $white;
         }
         &:last-of-type {
           margin: 0;
@@ -321,11 +334,10 @@ section.thumbnails_section {
     background: url("/img/thumbnail.jpg") no-repeat center;
     background-size: cover;
     height: 325px;
-    border-top: 5px solid $red;
     position: relative;
     margin-bottom: 10px;
     h2 {
-      color: $beige;
+      color: $white;
       text-transform: uppercase;
       font-family: proxima_nova_black;
       font-size: 2.3rem;
@@ -336,7 +348,7 @@ section.thumbnails_section {
       left: 30px;
       margin: 0;
       span {
-        color: $red;
+        color: $blue-light;
         display: block;
       }
     }
@@ -349,18 +361,16 @@ section.thumbnails_section {
 }
 
 section.about_section {
-  margin-top: 50px;
-  color: $pink;
   font-size: 1rem;
   img {
     width: 100%;
-    margin-bottom: 70px;
   }
-  .container-fluid {
+  .about_container {
+    padding: 90px 125px;
+    position: relative;
     p {
-      line-height: 1.2;
-      text-align: justify;
-      color: $pink;
+      line-height: 1.3;
+      letter-spacing: 1px;
     }
   }
 }
@@ -390,7 +400,9 @@ section.gallery_section {
     }
   }
   .cbp-item {
+    border-radius: 6px;
     img {
+      max-width: 400px;
       max-height: 400px;
     }
 
@@ -490,18 +502,10 @@ section.editions_section {
   }
 }
 
-.contact_section {
+section.contact_section {
   .contact_container {
     padding: 90px 125px;
     position: relative;
-    h1 {
-      font-family: proxima_nova_thin;
-      font-size: 8rem;
-      position: absolute;
-      top: -80px;
-      left: 125px;
-      margin: 0;
-    }
     form {
       button {
         margin: 50px 0;
@@ -526,6 +530,14 @@ section.editions_section {
   img {
     width: 100%;
   }
+}
+.title--translated {
+  font-family: proxima_nova_thin;
+  font-size: 8rem;
+  position: absolute;
+  top: -80px;
+  left: 125px;
+  margin: 0;
 }
 footer {
   position: absolute;

@@ -23,6 +23,7 @@ $('.posts_carousel').flickity({
     prevNextButtons: false,
     contain: true,
     wrapAround: true,
+    pageDots: false,
     // autoPlay: true,
     arrowShape: {
         x0: 15,

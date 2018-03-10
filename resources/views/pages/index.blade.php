@@ -9,16 +9,19 @@
         <div class="container-fluid">
             <div class="homepage_carousel">
                 <div class="carousel-cell">
-                    <img src="/img/carousel/1.png" alt="">
+                    <img src="/img/carousel/2.png" alt="">
+                    {{--<div class="caption">--}}
+                        {{--<h1>learn to <span>defend</span> yourself in real life</h1>--}}
+                    {{--</div>--}}
                     <div class="caption">
-                        <h1>learn to <span>defend</span> yourself in real life</h1>
+                        <h1><span class="big">Live</span> <span class="small">experience</span></h1>
                     </div>
                 </div>
                 <div class="carousel-cell">
-                    <img src="/img/carousel/1.png" alt="">
+                    <img src="/img/carousel/2.png" alt="">
                 </div>
                 <div class="carousel-cell">
-                    <img src="/img/carousel/1.png" alt="">
+                    <img src="/img/carousel/2.png" alt="">
                 </div>
             </div>
         </div>
@@ -26,23 +29,17 @@
 
     <section class="countdown_section">
         <div class="container-fluid">
-            <div class="countdown_container">
+            <div class="countdown_container jeans_bg">
                 <div class="row">
-                    <div class="col-sm 5">
-                        <div class="ticket_container">
-                            <img id="arrow" src="/img/ticket_arrow.png" alt="">
-                            <img id="ticket" src="/img/ticket.png" alt="ticket">
-                        </div>
-                    </div>
                     <div class="col-sm-7">
                         <div class="countdown">
                             <div class="countdown_item" id="days">
                                 <svg id="animated_days" viewbox="0 0 100 100">
-                                    <circle cx="50" cy="50" r="40" stroke="#333333" stroke-width="10" fill="#000000" fill-opacity="0"/>
-                                    <path id="progress_days" stroke-linecap="round" stroke-width="10" stroke="#7f7f7f" fill="none"
+                                    <circle cx="50" cy="50" r="40" stroke="#08b8c3" stroke-opacity="0.3" stroke-width="10" fill="#000000" fill-opacity="0"/>
+                                    <path id="progress_days" stroke-linecap="round" stroke-width="10" stroke="#08b8c3" fill="none"
                                           d="M50 10 a 40 40 0 0 1 0 80 a 40 40 0 0 1 0 -80">
                                     </path>
-                                    <text class="count" x="50" y="50" text-anchor="middle" dy="7" dx="7" fill="white">
+                                    <text class="count" x="50" y="50" text-anchor="middle" dy="7" dx="7" fill="#08b8c3">
                                         <tspan class="value" x="45" y="50" font-size="30" text-anchor="middle">0</tspan>
                                         <tspan x="50" y="50" dy="2.2em" font-size="8" text-anchor="middle">DAYS</tspan>
                                     </text>
@@ -50,11 +47,11 @@
                             </div>
                             <div class="countdown_item" id="hours">
                                 <svg id="animated_hours" viewbox="0 0 100 100">
-                                    <circle cx="50" cy="50" r="40" stroke="#333333" stroke-width="10" fill="#000000" fill-opacity="0"/>
-                                    <path id="progress_hours" stroke-linecap="round" stroke-width="10" stroke="#7f7f7f" fill="none"
+                                    <circle cx="50" cy="50" r="40" stroke="#08b8c3" stroke-opacity="0.3" stroke-width="10" fill="#000000" fill-opacity="0"/>
+                                    <path id="progress_hours" stroke-linecap="round" stroke-width="10" stroke="#08b8c3" fill="none"
                                           d="M50 10 a 40 40 0 0 1 0 80 a 40 40 0 0 1 0 -80">
                                     </path>
-                                    <text class="count" x="50" y="50" text-anchor="middle" dy="7" dx="7" fill="white">
+                                    <text class="count" x="50" y="50" text-anchor="middle" dy="7" dx="7" fill="#08b8c3">
                                         <tspan class="value" x="45" y="50" font-size="30" text-anchor="middle">0</tspan>
                                         <tspan x="50" y="50" dy="2.2em" font-size="8" text-anchor="middle">HOURS</tspan>
                                     </text>
@@ -62,11 +59,11 @@
                             </div>
                             <div class="countdown_item" id="minutes">
                                 <svg id="animated_minutes" viewbox="0 0 100 100">
-                                    <circle cx="50" cy="50" r="40" stroke="#333333" stroke-width="10" fill="#000000" fill-opacity="0"/>
-                                    <path id="progress_minutes" stroke-linecap="round" stroke-width="10" stroke="#7f7f7f" fill="none"
+                                    <circle cx="50" cy="50" r="40" stroke="#08b8c3" stroke-opacity="0.3" stroke-width="10" fill="#000000" fill-opacity="0"/>
+                                    <path id="progress_minutes" stroke-linecap="round" stroke-width="10" stroke="#08b8c3" fill="none"
                                           d="M50 10 a 40 40 0 0 1 0 80 a 40 40 0 0 1 0 -80">
                                     </path>
-                                    <text class="count" x="50" y="50" text-anchor="middle" dy="7" dx="7" fill="white">
+                                    <text class="count" x="50" y="50" text-anchor="middle" dy="7" dx="7" fill="#08b8c3">
                                         <tspan class="value" x="45" y="50" font-size="30" text-anchor="middle">0</tspan>
                                         <tspan x="50" y="50" dy="2.2em" font-size="8" text-anchor="middle">MINUTES</tspan>
                                     </text>
@@ -74,16 +71,26 @@
                             </div>
                             <div class="countdown_item" id="seconds">
                                 <svg id="animated_seconds" viewbox="0 0 100 100">
-                                    <circle cx="50" cy="50" r="40" stroke="#333333" stroke-width="10" fill="#000000" fill-opacity="0"/>
-                                    <path id="progress_seconds" stroke-linecap="round" stroke-width="10" stroke="#7f7f7f" fill="none"
+                                    <circle cx="50" cy="50" r="40" stroke="#08b8c3" stroke-opacity="0.3" stroke-width="10" fill="#000000" fill-opacity="0"/>
+                                    <path id="progress_seconds" stroke-linecap="round" stroke-width="10" stroke="#08b8c3" fill="none"
                                           d="M50 10 a 40 40 0 0 1 0 80 a 40 40 0 0 1 0 -80">
                                     </path>
-                                    <text class="count" x="50" y="50" text-anchor="middle" dy="7" dx="7" fill="white">
+                                    <text class="count" x="50" y="50" text-anchor="middle" dy="7" dx="7" fill="#08b8c3">
                                         <tspan class="value" x="45" y="50" font-size="30" text-anchor="middle">0</tspan>
                                         <tspan x="50" y="50" dy="2.2em" font-size="8" text-anchor="middle">SECONDS</tspan>
                                     </text>
                                 </svg>
                             </div>
+                        </div>
+                    </div>
+                    <div class="col-sm 5">
+                        <div class="title_container">
+                            {{--<h4>--}}
+                                {{--Billeterie <br>--}}
+                                {{--Prochainment <br>--}}
+                                {{--Disponible--}}
+                            {{--</h4>--}}
+                            <img src="/img/countdown_title.png" alt="ticket">
                         </div>
                     </div>
                 </div>
@@ -104,7 +111,7 @@
                         @endphp
                         @if($counter <= $count_items)
                             <div class="carousel_item">
-                                <div class="post_block">
+                                <div class="post_block jeans_bg">
                                     <div class="row my_row">
                                         <div class="col-3 my_col">
                                             <div class="date_container">
@@ -115,7 +122,9 @@
                                             </div>
                                         </div>
                                         <div class="col-9 my_col">
-                                            <p>{{ mb_substr($posts['text'], 0, 100) }}</p>
+                                            <h5>Fight Night</h5>
+                                            <h6>Saint Tropez</h6>
+                                            <p>{{ mb_substr($posts['text'], 0, 70) }}</p>
                                             <div class="social_links">
                                                 @if(!empty($posts['facebook_link']))
                                                     <a href="{{ $posts['facebook_link'] }}"><i class="fab fa-facebook-f"></i></a>
@@ -172,7 +181,7 @@
     <script type="text/javascript" src="{{mix('js/index.js')}}"></script>
     <script>
         // Set the date we're counting down to
-        var countDownDate = new Date("Feb 28, 2018 22:37:25").getTime();
+        var countDownDate = new Date("Mar 28, 2018 22:37:25").getTime();
         countdown();
     </script>
 @stop

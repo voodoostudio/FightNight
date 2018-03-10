@@ -78,6 +78,16 @@
 }
 
 /* END Steelfish*/
+/* BEGIN Spinwerad*/
+@font-face {
+  font-family: 'spinwerad_c';
+  src: url("/fonts/spinwerad_c/spinwerad_c.eot");
+  src: url("/fonts/spinwerad_c/spinwerad_c.eot?#iefix") format("embedded-opentype"), url("/fonts/spinwerad_c/spinwerad_c.woff") format("woff"), url("/fonts/spinwerad_c/spinwerad_c.ttf") format("truetype"), url("/fonts/spinwerad_c/spinwerad_c.svg") format("svg");
+  font-weight: 900;
+  font-style: normal;
+}
+
+/* END Spinwerad*/
 /*Buttons style START*/
 .btn {
   height: 52px;
@@ -90,7 +100,7 @@
   overflow: hidden;
   border: none;
   z-index: 1;
-  color: #edead9;
+  color: #f3e4cd;
   text-transform: uppercase;
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -386,7 +396,7 @@ header .navbar.navbar-light .navbar-brand img {
 header .navbar.navbar-light .navbar-nav .nav-link {
   font-family: proxima_nova_light;
   line-height: 3rem;
-  color: #fadfc3;
+  color: #fffaff;
   text-transform: uppercase;
   font-size: 0.95rem;
   letter-spacing: 1px;
@@ -499,19 +509,29 @@ section.carousel_section .homepage_carousel .flickity-viewport .flickity-slider 
 }
 
 section.carousel_section .homepage_carousel .flickity-viewport .flickity-slider .carousel-cell .caption h1 {
-  color: #fadfc3;
-  font-family: plane_crash;
-  font-size: 2.2rem;
+  color: #08b8c3;
+  font-family: spinwerad_c;
+  margin: 0;
+  text-transform: uppercase;
 }
 
-section.carousel_section .homepage_carousel .flickity-viewport .flickity-slider .carousel-cell .caption h1 span {
-  font-size: 4rem;
+section.carousel_section .homepage_carousel .flickity-viewport .flickity-slider .carousel-cell .caption h1 .big {
+  font-size: 10rem;
   display: block;
-  color: #ae3544;
+  color: #f3e4cd;
+  line-height: 1;
+}
+
+section.carousel_section .homepage_carousel .flickity-viewport .flickity-slider .carousel-cell .caption h1 .small {
+  font-size: 4rem;
+  line-height: 1;
+  display: block;
+  -webkit-transform: translateY(-25px);
+          transform: translateY(-25px);
 }
 
 section.carousel_section .homepage_carousel .flickity-prev-next-button {
-  background: rgba(174, 53, 68, 0.75);
+  background: rgba(8, 184, 195, 0.75);
   width: 60px;
   height: 60px;
 }
@@ -525,7 +545,7 @@ section.carousel_section .homepage_carousel .flickity-prev-next-button.previous 
 }
 
 section.carousel_section .homepage_carousel .flickity-prev-next-button:hover {
-  background: #ae3544;
+  background: #08b8c3;
 }
 
 section.carousel_section .homepage_carousel .flickity-prev-next-button:disabled {
@@ -541,22 +561,17 @@ section.countdown_section {
 }
 
 section.countdown_section .countdown_container {
-  background: rgba(0, 0, 0, 0.9);
+  padding: 30px;
 }
 
-section.countdown_section .countdown_container .ticket_container {
+section.countdown_section .countdown_container .title_container {
   position: relative;
-  padding: 0 0 0 35px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
-section.countdown_section .countdown_container .ticket_container img#arrow {
-  position: absolute;
-  top: -40px;
-  left: 40px;
-  width: 170px;
-}
-
-section.countdown_section .countdown_container .ticket_container img#ticket {
+section.countdown_section .countdown_container .title_container img {
   max-width: 400px;
   width: 100%;
 }
@@ -617,8 +632,6 @@ section.posts_section .carousel_container .posts_carousel .flickity-page-dots .d
 
 section.posts_section .post_block {
   padding: 25px;
-  background: rgba(0, 0, 0, 0.9);
-  border-top: 5px solid #ae3544;
 }
 
 section.posts_section .post_block .date_container {
@@ -639,30 +652,47 @@ section.posts_section .post_block .date_container.month {
   font-size: 1rem;
 }
 
-section.posts_section .post_block p {
-  font-family: proxima_nova_light;
-  font-size: 0.875rem;
+section.posts_section .post_block h5 {
+  font-family: proxima_nova_black;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 0;
   line-height: 1;
+}
+
+section.posts_section .post_block h6 {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #08b8c3;
+  line-height: 1;
+  margin-bottom: 5px;
+}
+
+section.posts_section .post_block p {
+  font-family: proxima_nova_thin;
+  font-size: 0.8rem;
+  line-height: 1.1;
   margin: 0 0 0 5px;
-  text-align: justify;
 }
 
 section.posts_section .post_block .social_links {
   text-align: right;
   position: absolute;
-  bottom: 0;
-  right: 5px;
+  top: -20px;
+  right: -10px;
+  display: table;
+  line-height: 1;
 }
 
 section.posts_section .post_block .social_links a {
-  margin-right: 10px;
-  font-size: 16px;
+  margin-right: 6px;
+  font-size: 14px;
   line-height: 1;
   color: #7f7f7f;
 }
 
 section.posts_section .post_block .social_links a:hover {
-  color: #edead9;
+  color: #fffaff;
 }
 
 section.posts_section .post_block .social_links a:last-of-type {
@@ -677,13 +707,12 @@ section.thumbnails_section .page_thumbnail {
   background: url("/img/thumbnail.jpg") no-repeat center;
   background-size: cover;
   height: 325px;
-  border-top: 5px solid #ae3544;
   position: relative;
   margin-bottom: 10px;
 }
 
 section.thumbnails_section .page_thumbnail h2 {
-  color: #edead9;
+  color: #fffaff;
   text-transform: uppercase;
   font-family: proxima_nova_black;
   font-size: 2.3rem;
@@ -696,7 +725,7 @@ section.thumbnails_section .page_thumbnail h2 {
 }
 
 section.thumbnails_section .page_thumbnail h2 span {
-  color: #ae3544;
+  color: #08b8c3;
   display: block;
 }
 
@@ -707,20 +736,21 @@ section.thumbnails_section .page_thumbnail .btn {
 }
 
 section.about_section {
-  margin-top: 50px;
-  color: #fadfc3;
   font-size: 1rem;
 }
 
 section.about_section img {
   width: 100%;
-  margin-bottom: 70px;
 }
 
-section.about_section .container-fluid p {
-  line-height: 1.2;
-  text-align: justify;
-  color: #fadfc3;
+section.about_section .about_container {
+  padding: 90px 125px;
+  position: relative;
+}
+
+section.about_section .about_container p {
+  line-height: 1.3;
+  letter-spacing: 1px;
 }
 
 section.gallery_section .cbp-l-filters-alignCenter {
@@ -750,7 +780,12 @@ section.gallery_section .cbp-l-filters-alignCenter span {
   line-height: 2rem;
 }
 
+section.gallery_section .cbp-item {
+  border-radius: 6px;
+}
+
 section.gallery_section .cbp-item img {
+  max-width: 400px;
   max-height: 400px;
 }
 
@@ -860,31 +895,22 @@ section.editions_section .edition .video-container embed {
   height: 100%;
 }
 
-.contact_section .contact_container {
+section.contact_section .contact_container {
   padding: 90px 125px;
   position: relative;
 }
 
-.contact_section .contact_container h1 {
-  font-family: proxima_nova_thin;
-  font-size: 8rem;
-  position: absolute;
-  top: -80px;
-  left: 125px;
-  margin: 0;
-}
-
-.contact_section .contact_container form button {
+section.contact_section .contact_container form button {
   margin: 50px 0;
 }
 
-.contact_section .contact_container .address {
+section.contact_section .contact_container .address {
   letter-spacing: 1px;
   line-height: 1.3;
   margin-bottom: 25px;
 }
 
-.contact_section .contact_container .tel {
+section.contact_section .contact_container .tel {
   margin-bottom: 0;
 }
 
@@ -895,6 +921,15 @@ section.editions_section .edition .video-container embed {
 
 .img_container img {
   width: 100%;
+}
+
+.title--translated {
+  font-family: proxima_nova_thin;
+  font-size: 8rem;
+  position: absolute;
+  top: -80px;
+  left: 125px;
+  margin: 0;
 }
 
 footer {
@@ -944,7 +979,7 @@ footer p a:hover {
 }
 
 .dashboard_header .action_link:hover {
-  color: #edead9;
+  color: #f3e4cd;
 }
 
 .dashboard_header .action_link.add_new {
