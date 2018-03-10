@@ -85,12 +85,10 @@
                     </div>
                     <div class="col-sm 5">
                         <div class="title_container">
-                            {{--<h4>--}}
-                                {{--Billeterie <br>--}}
-                                {{--Prochainment <br>--}}
-                                {{--Disponible--}}
-                            {{--</h4>--}}
-                            <img src="/img/countdown_title.png" alt="ticket">
+                            <h4 title="Billeterie Prochainment Disponible">
+                                <span>Billeterie Prochainment Disponible</span>
+                            </h4>
+                            {{--<img src="/img/countdown_title.png" alt="ticket">--}}
                         </div>
                     </div>
                 </div>

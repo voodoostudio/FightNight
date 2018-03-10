@@ -6,7 +6,7 @@ $('.homepage_carousel').flickity({
     // options
     cellAlign: 'left',
     contain: true,
-    wrapAround: true,
+    wrapAround: false,
     pageDots: false,
     arrowShape: {
         x0: 15,

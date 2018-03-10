@@ -557,7 +557,7 @@ section.carousel_section .homepage_carousel .flickity-prev-next-button:hover {
 }
 
 section.carousel_section .homepage_carousel .flickity-prev-next-button:disabled {
-  opacity: 0.7;
+  display: none;
 }
 
 section.carousel_section .homepage_carousel .flickity-prev-next-button .arrow {
@@ -582,6 +582,33 @@ section.countdown_section .countdown_container .title_container {
 section.countdown_section .countdown_container .title_container img {
   max-width: 400px;
   width: 100%;
+}
+
+section.countdown_section .countdown_container .title_container h4 {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: proxima_nova_black;
+  font-size: 2.2rem;
+  letter-spacing: 2px;
+  position: relative;
+}
+
+section.countdown_section .countdown_container .title_container h4 span {
+  background: #bf9971;
+  background: -webkit-gradient(left bottom, right top, color-stop(0%, #bf9971), color-stop(40%, #bf9971), color-stop(53%, #f2dac2), color-stop(63%, #fcf1dd), color-stop(77%, #fff5b7), color-stop(100%, #fff5b7));
+  background: -webkit-linear-gradient(45deg, #bf9971 0%, #bf9971 40%, #f2dac2 53%, #fcf1dd 63%, #fff5b7 77%, #fff5b7 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+section.countdown_section .countdown_container .title_container h4:after {
+  content: attr(title);
+  text-shadow: 5px 4px 1px rgba(0, 0, 0, 0.75);
+  color: transparent;
 }
 
 section.countdown_section .countdown_container .countdown {
