@@ -1022,6 +1022,11 @@ footer p a:hover {
   border-bottom: 1px solid #fffaff;
 }
 
+footer p a.social {
+  font-size: 20px;
+  line-height: 16px;
+}
+
 .dashboard_header {
   background-color: rgba(0, 0, 0, 0.5);
   padding: 15px 30px;
