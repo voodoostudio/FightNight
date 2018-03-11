@@ -4,10 +4,10 @@
     <section class="contact_section">
         <div class="container-fluid">
             <div class="img_container">
-                <img src="/img/contact/contact.jpg" alt="Contact us">
+                <img src="/img/contact/contact.jpg" alt="Contact us banner">
             </div>
             <div class="contact_container jeans_bg">
-                <h1>Contact</h1>
+                <h1 class="title--translated">Contact</h1>
                 <form action="">
                     <div class="row">
                         <div class="col-12 col-md-7">

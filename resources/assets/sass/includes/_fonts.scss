@@ -20,7 +20,7 @@
   url('/fonts/proxima_nova/light/proxima_nova_light.woff') format('woff'),
   url('/fonts/proxima_nova/light/proxima_nova_light.ttf') format('truetype'),
   url('/fonts/proxima_nova/light/proxima_nova_light.svg') format('svg');
-  font-weight: 100;
+  font-weight: 300;
   font-style: normal;
 }
 /* END Light*/
@@ -38,6 +38,19 @@
 }
 /* END Regular*/
 
+/* BEGIN Semibold*/
+@font-face {
+  font-family: 'proxima_nova_semibold';
+  src: url('/fonts/proxima_nova/semibold/proxima_nova_semibold.eot');
+  src: url('/fonts/proxima_nova/semibold/proxima_nova_semibold.eot?#iefix') format('embedded-opentype'),
+  url('/fonts/proxima_nova/semibold/proxima_nova_semibold.woff') format('woff'),
+  url('/fonts/proxima_nova/semibold/proxima_nova_semibold.ttf') format('truetype'),
+  url('/fonts/proxima_nova/semibold/proxima_nova_semibold.svg') format('svg');
+  font-weight: 700;
+  font-style: normal;
+}
+/* END Semibold*/
+
 /* BEGIN Bold*/
 @font-face {
   font-family: 'proxima_nova_bold';
@@ -46,7 +59,7 @@
   url('/fonts/proxima_nova/bold/proxima_nova_bold.woff') format('woff'),
   url('/fonts/proxima_nova/bold/proxima_nova_bold.ttf') format('truetype'),
   url('/fonts/proxima_nova/bold/proxima_nova_bold.svg') format('svg');
-  font-weight: 900;
+  font-weight: 800;
   font-style: normal;
 }
 /* END Bold*/
@@ -89,3 +102,16 @@
   font-style: normal;
 }
 /* END Steelfish*/
+
+/* BEGIN Spinwerad*/
+@font-face {
+  font-family: 'spinwerad_c';
+  src: url('/fonts/spinwerad_c/spinwerad_c.eot');
+  src: url('/fonts/spinwerad_c/spinwerad_c.eot?#iefix') format('embedded-opentype'),
+  url('/fonts/spinwerad_c/spinwerad_c.woff') format('woff'),
+  url('/fonts/spinwerad_c/spinwerad_c.ttf') format('truetype'),
+  url('/fonts/spinwerad_c/spinwerad_c.svg') format('svg');
+  font-weight: 800;
+  font-style: normal;
+}
+/* END Spinwerad*/

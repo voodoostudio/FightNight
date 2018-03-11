@@ -1,0 +1,41 @@
+h1 {
+  background-color: black;
+}
+
+.article_edit_section {
+  margin-top: 40px;
+}
+
+.article_edit_section .outer_block_container .inner_block_container form .label_container ul.nav.nav-tabs {
+  border: none;
+  float: right;
+  margin-bottom: 9px;
+  margin-top: 5px;
+}
+
+.article_edit_section .outer_block_container .inner_block_container form .label_container ul.nav.nav-tabs li.nav-item:not(:last-of-type) {
+  margin-right: 10px !important;
+}
+
+.article_edit_section .outer_block_container .inner_block_container form .label_container ul.nav.nav-tabs li.nav-item a.nav-link {
+  line-height: 1;
+  font-size: 0.875rem;
+}
+
+.article_edit_section .outer_block_container .inner_block_container form .label_container ul.nav.nav-tabs li.nav-item a.nav-link.active {
+  color: white;
+  background: none;
+}
+
+.article_edit_section .outer_block_container .inner_block_container form .img_upload_container {
+  margin-top: 27px;
+  min-height: 133px;
+}
+
+.article_edit_section .outer_block_container .inner_block_container form textarea {
+  height: 133px;
+}
+
+.article_edit_section .outer_block_container .inner_block_container form button.btn {
+  float: right;
+}

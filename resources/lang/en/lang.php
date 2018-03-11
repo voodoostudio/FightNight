@@ -15,4 +15,20 @@ return [
     'publish'               => 'Publish',
     'save'                  => 'Save',
 
+    // Header menu
+    'home'                  => 'Home',
+    'about'                 => 'About',
+    'editions'              => 'Editions',
+    'ticketing'             => 'Ticketing',
+    'gallery'               => 'Gallery',
+    'partners'              => 'Partners',
+    'press'                 => 'Press',
+    'contact'               => 'Contact',
+    
+
+
+
+    
+
+
 ];

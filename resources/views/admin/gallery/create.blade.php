@@ -7,7 +7,7 @@
 
 @section('content')
     <main>
-        <section class="article_edit_section">
+        <section class="admin_edit_section">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-12">
@@ -16,7 +16,6 @@
                                 <a class="action_link" href="{{ URL::to($lang . '/admin/gallery') }}"><i class="fas fa-arrow-left"></i></a>
                                 Create Gallery
                             </h1>
-
                         </div>
                     </div>
                 </div>
@@ -31,27 +30,27 @@
                                         <div class="col-12 margin_bottom_20">
                                             <div class="label_container">
                                                 <label class="form_el_label"><span>{{ trans('lang.title') }} *</span></label>
-                                                {{--<ul class="nav nav-tabs" role="tablist">--}}
-                                                    {{--<li class="nav-item">--}}
-                                                        {{--<a class="nav-link active" href="#fr_title" role="tab" data-toggle="tab">FR</a>--}}
-                                                    {{--</li>--}}
-                                                    {{--<li class="nav-item">--}}
-                                                        {{--<a class="nav-link" href="#en_title" role="tab" data-toggle="tab">EN</a>--}}
-                                                    {{--</li>--}}
-                                                {{--</ul>--}}
+                                                <ul class="nav nav-tabs" role="tablist">
+                                                    <li class="nav-item">
+                                                        <a class="nav-link active" href="#fr_title" role="tab" data-toggle="tab">FR</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="#en_title" role="tab" data-toggle="tab">EN</a>
+                                                    </li>
+                                                </ul>
                                             </div>
-                                            {{--<div class="tab-content">--}}
+                                            <div class="tab-content">
                                                 <div role="tabpanel" class="tab-pane fade in show active" id="fr_title">
                                                     <div class="input_container">
                                                         <input type="text" name="title_fr" id="title_fr" placeholder="{{ trans('lang.title') }}">
                                                     </div>
                                                 </div>
-                                                {{--<div role="tabpanel" class="tab-pane fade" id="en_title" >--}}
-                                                    {{--<div class="input_container">--}}
-                                                        {{--<input type="text" name="title_en" id="title_fr" placeholder="{{ trans('lang.title') }}">--}}
-                                                    {{--</div>--}}
-                                                {{--</div>--}}
-                                            {{--</div>--}}
+                                                <div role="tabpanel" class="tab-pane fade" id="en_title" >
+                                                    <div class="input_container">
+                                                        <input type="text" name="title_en" id="title_fr" placeholder="{{ trans('lang.title') }}">
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                         <div class="col-12">
                                             <div class="label_container">

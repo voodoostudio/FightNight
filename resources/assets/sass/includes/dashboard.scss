@@ -7,7 +7,7 @@
     margin-right: 15px;
     color: white;
     &:hover {
-      color: $beige;
+      color: $blue-light;
     }
     &.add_new {
       float: right;
@@ -23,21 +23,34 @@
   }
 }
 
-.galleries_list_section {
-  .gallery_info_block {
+.admin_items_list_section {
+  margin-top: 40px;
+  .admin_item_info_block {
     position: relative;
     display: table;
     .edit_elements {
       position: absolute;
       top: 10px;
       right: 10px;
+      > * {
+        display: inline-block;
+      }
       button {
         background: none;
         border: none;
         color: white;
+        &:hover {
+          color: $blue-light;
+        }
+      }
+      a {
+        color: white;
+        &:hover {
+          color: $blue-light;
+        }
       }
     }
-    .gallery_info {
+    .admin_item_info {
       position: absolute;
       bottom: 5px;
       left: 0;
@@ -47,15 +60,23 @@
         margin: 0;
         line-height: 1;
         width: 100%;
-        padding: 3px 15px;
-        font-size: 1.5rem;
-        background: rgba(0,0,0, .5);
+        padding: 5px 15px;
+        font-size: 1.2rem;
+        background: rgba(0,0,0, .8);
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    }
+    .admin_item_img {
+      img {
+        width: 100%;
       }
     }
   }
 }
 
-.article_edit_section {
+.admin_edit_section {
   margin-top: 40px;
   .outer_block_container {
     .inner_block_container {
@@ -63,12 +84,12 @@
         .label_container {
           .form_el_label {
             color: white;
+            margin-bottom: 0;
           }
           ul.nav.nav-tabs {
             border: none;
             float: right;
-            margin-bottom: 9px;
-            margin-top: 5px;
+            margin: 0;
             li.nav-item {
               &:not(:last-of-type) {
                 margin-right: 10px !important;
@@ -76,8 +97,12 @@
               a.nav-link {
                 line-height: 1;
                 font-size: 0.875rem;
+                border-radius: 0;
+                border: none;
+                color: rgba($white, 0.5);
+                padding: 0;
                 &.active {
-                  color: white;
+                  color: $blue-light;
                   background: none;
                 }
               }
@@ -85,13 +110,17 @@
           }
         }
         .input_container {
-          input {
-            background: rgba(black, .3);
+          input, textarea {
+            background: rgba(white, .3);
+            color: $white;
           }
         }
         .img_upload_container {
-          margin-top: 37px;
-          min-height: 142px;
+          margin-top: 28px;
+          min-height: 148px;
+          &.sm {
+            min-height: 58px;
+          }
         }
 
         textarea {
@@ -105,6 +134,10 @@
   }
 }
 
+.card {
+  margin-top: 50px;
+  color: $black;
+}
 //Img uploader field START
 .img_upload_container {
   border: 1px dashed gray;
@@ -141,7 +174,7 @@
         font-size: 1rem;
         font-weight: 700;
         margin: 0;
-        background-color: rgba(black, 0.3);
+        background-color: rgba(white, 0.3);
         font-size: .875rem;
         font-family: modelica_thin;
         color: gray;
