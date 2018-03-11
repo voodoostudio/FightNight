@@ -1,3 +1,6 @@
+html {
+  font-size: 16px;
+}
 body {
   background-image: url("/img/bg_main.jpg");
   background-repeat: no-repeat;
@@ -5,7 +8,7 @@ body {
   position: relative;
   min-height: 100vh;
   font-family: proxima_nova_light;
-  padding-bottom: 130px;
+  padding-bottom: 160px;
   color: $white;
 }
 
@@ -56,14 +59,14 @@ header {
   .navbar.navbar-light {
     position: relative;
     background-color: transparent;
-    padding: 20px 0 20px 230px;
+    padding: 20px 0 20px 270px;
     .navbar-brand {
       position: absolute;
       left: 0;
-      top: -20px;
+      top: -39px;
       z-index: 9;
       img {
-        width: 215px;
+        width: 250px;
       }
     }
 
@@ -74,6 +77,7 @@ header {
         color: $white;
         text-transform: uppercase;
         font-size: 0.95rem;
+        text-shadow: 1px 1px 5px #000000;
         letter-spacing: 1px;
         position: relative;
         &.active {
@@ -176,7 +180,7 @@ section.carousel_section {
           }
           .caption {
             position: absolute;
-            bottom: 100px;
+            bottom: 120px;
             left: 40px;
             h1 {
               color: $blue-light;
@@ -184,14 +188,16 @@ section.carousel_section {
               margin: 0;
               text-transform: uppercase;
               .big {
-                font-size: 10rem;
+                font-size: 12rem;
+                letter-spacing: 12px;
                 display: block;
                 color: $beige;
                 line-height: 1;
               }
               .small {
-                font-size: 4rem;
+                font-size: 4.5rem;
                 line-height: 1;
+                letter-spacing: 4px;
                 display: block;
                 transform: translateY(-25px);
               }
@@ -201,7 +207,7 @@ section.carousel_section {
       }
     }
     .flickity-prev-next-button {
-      background: rgba($blue-light, 0.75);
+      background: rgba($blue-medium, 0.75);
       width: 60px;
       height: 60px;
       &.next {
@@ -211,7 +217,7 @@ section.carousel_section {
         left: 60px;
       }
       &:hover {
-        background: $blue-light;
+        background: $blue-medium;
       }
       &:disabled {
         display: none;
@@ -240,9 +246,10 @@ section.countdown_section {
         text-align: center;
         text-transform: uppercase;
         font-family: proxima_nova_black;
-        font-size: 2.2rem;
-        letter-spacing: 2px;
+        font-size: 2.6rem;
+        letter-spacing: 4px;
         position: relative;
+        line-height: .9;
         span {
           background: rgba(191,153,113,1);
           background: -moz-linear-gradient(45deg, rgba(191,153,113,1) 0%, rgba(191,153,113,1) 40%, rgba(242,218,194,1) 53%, rgba(252,241,221,1) 63%, rgba(255,245,183,1) 77%, rgba(255,245,183,1) 100%);
@@ -259,7 +266,7 @@ section.countdown_section {
         }
         &:after {
           content: attr(title);
-          text-shadow: 5px 4px 1px rgba(0, 0, 0, 0.75);
+          text-shadow: 3px 4px 1px rgba(0, 0, 0, 0.75);
           color: transparent;
         }
       }
@@ -274,7 +281,7 @@ section.tickets_section {
   .countdown_container {
     position: relative;
     .countdown {
-      max-width: 780px;
+      max-width: 790px;
       margin: 0 auto;
       padding: 160px 0 90px;
     }
@@ -287,6 +294,7 @@ section.tickets_section {
     }
   }
 }
+
 .countdown_container {
   .countdown {
     display: flex;
@@ -296,6 +304,9 @@ section.tickets_section {
     height: 100%;
     .countdown_item {
       width: 25%;
+      &:not(:last-child) {
+        margin-right: 15px;
+      }
     }
   }
 }
@@ -334,21 +345,23 @@ section.posts_section {
       margin-right: 5px;
       text-align: center;
       @include my_vertical_gradient;
-      font-size: 1.7rem;
+      font-size: 2.5rem;
       line-height: 1;
       &.month {
-        font-size: 1rem;
+        font-size: 1.2rem;
       }
     }
     h5 {
-      font-family: proxima_nova_black;
+      font-family: proxima_nova_bold;
       text-transform: uppercase;
       letter-spacing: 1px;
       margin: 0;
       line-height: 1;
+      font-size: 1.5rem;
     }
     h6 {
       text-transform: uppercase;
+      font-size: 1.1rem;
       letter-spacing: 1px;
       color: $blue-light;
       line-height: 1;
@@ -356,20 +369,20 @@ section.posts_section {
     }
     p {
       font-family: proxima_nova_thin;
-      font-size: 0.8rem;
+      font-size: 1rem;
       line-height: 1.1;
-      margin: 0 0 0 5px;
+      margin: 0;
     }
     .social_links {
       text-align: right;
       position: absolute;
-      top: -20px;
+      top: -23px;
       right: -10px;
       display: table;
       line-height: 1;
       a {
         margin-right: 6px;
-        font-size: 14px;
+        font-size: 16px;
         line-height: 1;
         color: $gray;
         &:hover {
@@ -386,18 +399,26 @@ section.posts_section {
 section.thumbnails_section {
   margin-top: 30px;
   .page_thumbnail {
-    background: url("/img/thumbnail.jpg") no-repeat center;
     background-size: cover;
     height: 325px;
     position: relative;
     margin-bottom: 10px;
+    &.first {
+      background: url("/img/thumbnails/thumbnail_1.jpg") no-repeat center;
+    }
+    &.second {
+      background: url("/img/thumbnails/thumbnail_2.jpg") no-repeat center;
+    }
+    &.third {
+      background: url("/img/thumbnails/thumbnail_3.jpg") no-repeat center;
+    }
     h2 {
       color: $white;
       text-transform: uppercase;
       font-family: proxima_nova_black;
-      font-size: 2.3rem;
+      font-size: 2.6rem;
       line-height: 1;
-      letter-spacing: 2px;
+      letter-spacing: 3px;
       position: absolute;
       bottom: 90px;
       left: 30px;
@@ -421,11 +442,17 @@ section.about_section {
     width: 100%;
   }
   .about_container {
-    padding: 90px 125px;
+    padding: 75px 125px 90px;
     position: relative;
     p {
-      line-height: 1.3;
+      line-height: 1.4;
       letter-spacing: 1px;
+      font-size: 1.4rem;
+    }
+    &:after {
+      @extend %header-border;
+      bottom: -17px;
+      left: 0;
     }
   }
 }
@@ -484,23 +511,23 @@ section.editions_section {
     }
     .edition_title {
       font-family: proxima_nova_thin;
-      font-size: 2.8rem;
+      font-size: 3.6rem;
       letter-spacing: 2px;
       margin: 0;
       .city {
-        font-size: 1.2rem;
+        font-size: 1.35rem;
         text-transform: uppercase;
         letter-spacing: 1px;
         display: block;
       }
       .year {
-        font-family: proxima_nova_semibold;
+        font-family: proxima_nova_regular;
         color: $blue-light;
-        font-size: 3rem;
+        font-size: 3.8rem;
       }
     }
     .edition_statistics {
-      font-size: .6rem;
+      font-size: .7rem;
       text-transform: uppercase;
       line-height: 1;
       font-family: proxima_nova_thin;
@@ -508,18 +535,20 @@ section.editions_section {
       span {
         font-family: proxima_nova_light;
         display: inline-block;
-        padding: 4px 7px 2px;
-        border: 1px solid $green-blue;
+        padding: 2px 5px 0;
+        border: 2px solid $blue-light;
         color: $blue-light;
         margin-right: 10px;
         letter-spacing: 0;
+        font-size: 1rem;
         sup {
-          font-size: .4rem;
+          font-size: .6rem;
         }
       }
     }
     .edition_description {
       color: $blue-light;
+      font-size: 1.2rem;
       font-family: proxima_nova_thin;
       line-height: 1.2;
       letter-spacing: 1px;
@@ -527,6 +556,7 @@ section.editions_section {
     .edition_person {
       line-height: 1;
       margin: 0 0 7px 0;
+      font-size: 1.2rem;
       letter-spacing: 1px;
       span {
         color: $gray;
@@ -564,16 +594,20 @@ section.contact_section {
     position: relative;
     form {
       button {
-        margin: 50px 0;
+        margin: 30px 0 35px;
       }
     }
     .address {
+      font-family: proxima_nova_thin;
       letter-spacing: 1px;
       line-height: 1.3;
       margin-bottom: 25px;
+      font-size: 1.2rem;
     }
     .tel {
+      font-family: proxima_nova_thin;
       margin-bottom: 0;
+      font-size: 1.2rem;
     }
   }
 }
@@ -589,7 +623,7 @@ section.contact_section {
 }
 .title--translated {
   font-family: proxima_nova_thin;
-  font-size: 9rem;
+  font-size: 11rem;
   position: absolute;
   top: -115px;
   left: 125px;

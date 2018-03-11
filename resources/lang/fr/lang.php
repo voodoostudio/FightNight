@@ -16,8 +16,8 @@ return [
     'save'                  => 'Enregistrer',
 
     // Header menu
-    'home'                  => 'Home',
-    'about'                 => 'Sur',
+    'home'                  => 'Accueil',
+    'about'                 => 'A propos',
     'editions'              => 'Editions',
     'ticketing'             => 'Billeterie',
     'gallery'               => 'Galerie',

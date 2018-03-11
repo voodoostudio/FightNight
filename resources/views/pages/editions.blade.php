@@ -8,7 +8,7 @@
                     <div class="col-6">
                         <div class="edition__info-container">
                             <h2 class="edition_title"><span class="city">Saint-Tropez</span> Fight Night <span class="year">2015</span></h2>
-                            <h3 class="edition_statistics"><span>1<sup>ere</sup> edition</span> 1000 telespectateurs</h3>
+                            <h3 class="edition_statistics"><span>1<sup>ere</sup> edition</span> 100 000 telespectateurs</h3>
                             <p class="edition_description">Crée en 2013 la FIGHT NIGHT de Saint-Tropez est un évènement devenu incontournable, alliant les plus hautes valeurs des sports de combat internationaux au caractère authentique de ce village de pêcheurs</p>
                             <p class="edition_person"><span>Guest</span>Sylvester Stalone</p>
                             <p class="edition_person"><span>Combats</span>Jerome Lebaner....</p>
@@ -33,7 +33,7 @@
                     <div class="col-6">
                         <div class="edition__info-container">
                             <h2 class="edition_title"><span class="city">Saint-Tropez</span> Fight Night <span class="year">2015</span></h2>
-                            <h3 class="edition_statistics"><span>1<sup>ere</sup> edition</span> 1000 telespectateurs</h3>
+                            <h3 class="edition_statistics"><span>1<sup>ere</sup> edition</span> 100 000 telespectateurs</h3>
                             <p class="edition_description">Crée en 2013 la FIGHT NIGHT de Saint-Tropez est un évènement devenu incontournable, alliant les plus hautes valeurs des sports de combat internationaux au caractère authentique de ce village de pêcheurs</p>
                             <p class="edition_person"><span>Guest</span>Sylvester Stalone</p>
                             <p class="edition_person"><span>Combats</span>Jerome Lebaner....</p>
@@ -58,7 +58,7 @@
                     <div class="col-6">
                         <div class="edition__info-container">
                             <h2 class="edition_title"><span class="city">Saint-Tropez</span> Fight Night <span class="year">2015</span></h2>
-                            <h3 class="edition_statistics"><span>1<sup>ere</sup> edition</span> 1000 telespectateurs</h3>
+                            <h3 class="edition_statistics"><span>1<sup>ere</sup> edition</span> 100 000 telespectateurs</h3>
                             <p class="edition_description">Crée en 2013 la FIGHT NIGHT de Saint-Tropez est un évènement devenu incontournable, alliant les plus hautes valeurs des sports de combat internationaux au caractère authentique de ce village de pêcheurs</p>
                             <p class="edition_person"><span>Guest</span>Sylvester Stalone</p>
                             <p class="edition_person"><span>Combats</span>Jerome Lebaner....</p>

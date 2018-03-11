@@ -92,7 +92,8 @@
 .btn {
   height: 52px;
   padding: 0 25px;
-  font: 1.125rem proxima_nova_light;
+  font: 1.35rem proxima_nova_light;
+  letter-spacing: 2px;
   line-height: 50px;
   border-radius: 0;
   position: relative;
@@ -100,7 +101,7 @@
   overflow: hidden;
   border: none;
   z-index: 1;
-  color: #f3e4cd;
+  color: #fffaff;
   text-transform: uppercase;
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -112,17 +113,18 @@
 }
 
 .btn:hover {
-  color: #ae3544;
+  color: #00ffff;
 }
 
 .btn_blue {
-  background: #00ffff;
+  background: #08b8c3;
   border-radius: 8px;
   height: 60px;
   color: #fffaff;
   line-height: 60px;
   padding: 0 25px;
-  font: 1.4rem proxima_nova_regular;
+  letter-spacing: 1px;
+  font: 1.6rem proxima_nova_regular;
 }
 
 /*Buttons style END*/
@@ -134,12 +136,16 @@
   line-height: 1;
   margin: 0 0 5px 0;
   letter-spacing: 2px;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
 }
 
 .form_group .form_placeholder {
   font-family: proxima_nova_thin;
   font-style: italic;
+  display: block;
+  margin-top: 4px;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
 }
 
 input,
@@ -149,6 +155,7 @@ textarea {
   width: 100%;
   background-color: #ffffff;
   color: black;
+  font-size: 1.125rem;
 }
 
 input {
@@ -159,6 +166,7 @@ textarea {
   height: 190px;
   padding: 12px;
   resize: none;
+  display: block;
 }
 
 a:focus,
@@ -179,7 +187,7 @@ textarea:focus {
 
 .select2-container--default .select2-selection--single {
   background-color: transparent;
-  height: 42px;
+  height: 50px;
   border-color: #cccccc;
   border-radius: 0;
   outline: none;
@@ -193,14 +201,14 @@ textarea:focus {
 
 .select2-container--default .select2-selection--single .select2-selection__rendered {
   color: black;
-  line-height: 42px;
+  line-height: 50px;
   padding-right: 20px;
   padding-left: 15px;
-  font-size: 16px;
+  font-size: 1.125rem;
 }
 
 .select2-container--default .select2-selection--single .select2-selection__arrow {
-  height: 42px;
+  height: 50px;
   width: 11px;
   top: 0;
   right: 10px;
@@ -262,7 +270,7 @@ textarea:focus {
   padding: 7px 15px 6px;
   display: table;
   width: 100%;
-  font-size: 16px;
+  font-size: 1.125rem;
 }
 
 .select2-container--default .select2-dropdown .select2-results .select2-results__options .select2-results__option span {
@@ -320,6 +328,10 @@ textarea:focus {
 }
 
 /*Select2 styles END*/
+html {
+  font-size: 16px;
+}
+
 body {
   background-image: url("/img/bg_main.jpg");
   background-repeat: no-repeat;
@@ -327,7 +339,7 @@ body {
   position: relative;
   min-height: 100vh;
   font-family: proxima_nova_light;
-  padding-bottom: 130px;
+  padding-bottom: 160px;
   color: #fffaff;
 }
 
@@ -355,7 +367,7 @@ body {
   margin-top: 20px;
 }
 
-header:before, header:after, footer:before {
+header:before, header:after, section.about_section .about_container:after, footer:before {
   content: '';
   height: 10px;
   position: absolute;
@@ -387,18 +399,18 @@ header:after {
 header .navbar.navbar-light {
   position: relative;
   background-color: transparent;
-  padding: 20px 0 20px 230px;
+  padding: 20px 0 20px 270px;
 }
 
 header .navbar.navbar-light .navbar-brand {
   position: absolute;
   left: 0;
-  top: -20px;
+  top: -39px;
   z-index: 9;
 }
 
 header .navbar.navbar-light .navbar-brand img {
-  width: 215px;
+  width: 250px;
 }
 
 header .navbar.navbar-light .navbar-nav .nav-link {
@@ -407,6 +419,7 @@ header .navbar.navbar-light .navbar-nav .nav-link {
   color: #fffaff;
   text-transform: uppercase;
   font-size: 0.95rem;
+  text-shadow: 1px 1px 5px #000000;
   letter-spacing: 1px;
   position: relative;
 }
@@ -512,7 +525,7 @@ section.carousel_section .homepage_carousel .flickity-viewport .flickity-slider 
 
 section.carousel_section .homepage_carousel .flickity-viewport .flickity-slider .carousel-cell .caption {
   position: absolute;
-  bottom: 100px;
+  bottom: 120px;
   left: 40px;
 }
 
@@ -524,22 +537,24 @@ section.carousel_section .homepage_carousel .flickity-viewport .flickity-slider 
 }
 
 section.carousel_section .homepage_carousel .flickity-viewport .flickity-slider .carousel-cell .caption h1 .big {
-  font-size: 10rem;
+  font-size: 12rem;
+  letter-spacing: 12px;
   display: block;
   color: #f3e4cd;
   line-height: 1;
 }
 
 section.carousel_section .homepage_carousel .flickity-viewport .flickity-slider .carousel-cell .caption h1 .small {
-  font-size: 4rem;
+  font-size: 4.5rem;
   line-height: 1;
+  letter-spacing: 4px;
   display: block;
   -webkit-transform: translateY(-25px);
           transform: translateY(-25px);
 }
 
 section.carousel_section .homepage_carousel .flickity-prev-next-button {
-  background: rgba(0, 255, 255, 0.75);
+  background: rgba(8, 184, 195, 0.75);
   width: 60px;
   height: 60px;
 }
@@ -553,7 +568,7 @@ section.carousel_section .homepage_carousel .flickity-prev-next-button.previous 
 }
 
 section.carousel_section .homepage_carousel .flickity-prev-next-button:hover {
-  background: #00ffff;
+  background: #08b8c3;
 }
 
 section.carousel_section .homepage_carousel .flickity-prev-next-button:disabled {
@@ -588,9 +603,10 @@ section.countdown_section .countdown_container .title_container h4 {
   text-align: center;
   text-transform: uppercase;
   font-family: proxima_nova_black;
-  font-size: 2.2rem;
-  letter-spacing: 2px;
+  font-size: 2.6rem;
+  letter-spacing: 4px;
   position: relative;
+  line-height: .9;
 }
 
 section.countdown_section .countdown_container .title_container h4 span {
@@ -607,7 +623,7 @@ section.countdown_section .countdown_container .title_container h4 span {
 
 section.countdown_section .countdown_container .title_container h4:after {
   content: attr(title);
-  text-shadow: 5px 4px 1px rgba(0, 0, 0, 0.75);
+  text-shadow: 3px 4px 1px rgba(0, 0, 0, 0.75);
   color: transparent;
 }
 
@@ -620,7 +636,7 @@ section.tickets_section .countdown_container {
 }
 
 section.tickets_section .countdown_container .countdown {
-  max-width: 780px;
+  max-width: 790px;
   margin: 0 auto;
   padding: 160px 0 90px;
 }
@@ -650,6 +666,10 @@ section.tickets_section .countdown_container h3 {
 
 .countdown_container .countdown .countdown_item {
   width: 25%;
+}
+
+.countdown_container .countdown .countdown_item:not(:last-child) {
+  margin-right: 15px;
 }
 
 section.posts_section {
@@ -700,24 +720,26 @@ section.posts_section .post_block .date_container {
   background: -webkit-gradient(linear, left top, left bottom, from(#454545), color-stop(45%, #4d4c4d), to(#1f1a1c));
   background: linear-gradient(to bottom, #454545 0%, #4d4c4d 45%, #1f1a1c 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#454545', endColorstr='#1f1a1c', GradientType=0 );
-  font-size: 1.7rem;
+  font-size: 2.5rem;
   line-height: 1;
 }
 
 section.posts_section .post_block .date_container.month {
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 section.posts_section .post_block h5 {
-  font-family: proxima_nova_black;
+  font-family: proxima_nova_bold;
   text-transform: uppercase;
   letter-spacing: 1px;
   margin: 0;
   line-height: 1;
+  font-size: 1.5rem;
 }
 
 section.posts_section .post_block h6 {
   text-transform: uppercase;
+  font-size: 1.1rem;
   letter-spacing: 1px;
   color: #00ffff;
   line-height: 1;
@@ -726,15 +748,15 @@ section.posts_section .post_block h6 {
 
 section.posts_section .post_block p {
   font-family: proxima_nova_thin;
-  font-size: 0.8rem;
+  font-size: 1rem;
   line-height: 1.1;
-  margin: 0 0 0 5px;
+  margin: 0;
 }
 
 section.posts_section .post_block .social_links {
   text-align: right;
   position: absolute;
-  top: -20px;
+  top: -23px;
   right: -10px;
   display: table;
   line-height: 1;
@@ -742,7 +764,7 @@ section.posts_section .post_block .social_links {
 
 section.posts_section .post_block .social_links a {
   margin-right: 6px;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1;
   color: #7f7f7f;
 }
@@ -760,20 +782,31 @@ section.thumbnails_section {
 }
 
 section.thumbnails_section .page_thumbnail {
-  background: url("/img/thumbnail.jpg") no-repeat center;
   background-size: cover;
   height: 325px;
   position: relative;
   margin-bottom: 10px;
 }
 
+section.thumbnails_section .page_thumbnail.first {
+  background: url("/img/thumbnails/thumbnail_1.jpg") no-repeat center;
+}
+
+section.thumbnails_section .page_thumbnail.second {
+  background: url("/img/thumbnails/thumbnail_2.jpg") no-repeat center;
+}
+
+section.thumbnails_section .page_thumbnail.third {
+  background: url("/img/thumbnails/thumbnail_3.jpg") no-repeat center;
+}
+
 section.thumbnails_section .page_thumbnail h2 {
   color: #fffaff;
   text-transform: uppercase;
   font-family: proxima_nova_black;
-  font-size: 2.3rem;
+  font-size: 2.6rem;
   line-height: 1;
-  letter-spacing: 2px;
+  letter-spacing: 3px;
   position: absolute;
   bottom: 90px;
   left: 30px;
@@ -800,13 +833,19 @@ section.about_section img {
 }
 
 section.about_section .about_container {
-  padding: 90px 125px;
+  padding: 75px 125px 90px;
   position: relative;
 }
 
 section.about_section .about_container p {
-  line-height: 1.3;
+  line-height: 1.4;
   letter-spacing: 1px;
+  font-size: 1.4rem;
+}
+
+section.about_section .about_container:after {
+  bottom: -17px;
+  left: 0;
 }
 
 section.gallery_section .cbp-l-filters-alignCenter {
@@ -869,26 +908,26 @@ section.editions_section .edition .edition__info-container {
 
 section.editions_section .edition .edition_title {
   font-family: proxima_nova_thin;
-  font-size: 2.8rem;
+  font-size: 3.6rem;
   letter-spacing: 2px;
   margin: 0;
 }
 
 section.editions_section .edition .edition_title .city {
-  font-size: 1.2rem;
+  font-size: 1.35rem;
   text-transform: uppercase;
   letter-spacing: 1px;
   display: block;
 }
 
 section.editions_section .edition .edition_title .year {
-  font-family: proxima_nova_semibold;
+  font-family: proxima_nova_regular;
   color: #00ffff;
-  font-size: 3rem;
+  font-size: 3.8rem;
 }
 
 section.editions_section .edition .edition_statistics {
-  font-size: .6rem;
+  font-size: .7rem;
   text-transform: uppercase;
   line-height: 1;
   font-family: proxima_nova_thin;
@@ -898,19 +937,21 @@ section.editions_section .edition .edition_statistics {
 section.editions_section .edition .edition_statistics span {
   font-family: proxima_nova_light;
   display: inline-block;
-  padding: 4px 7px 2px;
-  border: 1px solid #009683;
+  padding: 2px 5px 0;
+  border: 2px solid #00ffff;
   color: #00ffff;
   margin-right: 10px;
   letter-spacing: 0;
+  font-size: 1rem;
 }
 
 section.editions_section .edition .edition_statistics span sup {
-  font-size: .4rem;
+  font-size: .6rem;
 }
 
 section.editions_section .edition .edition_description {
   color: #00ffff;
+  font-size: 1.2rem;
   font-family: proxima_nova_thin;
   line-height: 1.2;
   letter-spacing: 1px;
@@ -919,6 +960,7 @@ section.editions_section .edition .edition_description {
 section.editions_section .edition .edition_person {
   line-height: 1;
   margin: 0 0 7px 0;
+  font-size: 1.2rem;
   letter-spacing: 1px;
 }
 
@@ -957,17 +999,21 @@ section.contact_section .contact_container {
 }
 
 section.contact_section .contact_container form button {
-  margin: 50px 0;
+  margin: 30px 0 35px;
 }
 
 section.contact_section .contact_container .address {
+  font-family: proxima_nova_thin;
   letter-spacing: 1px;
   line-height: 1.3;
   margin-bottom: 25px;
+  font-size: 1.2rem;
 }
 
 section.contact_section .contact_container .tel {
+  font-family: proxima_nova_thin;
   margin-bottom: 0;
+  font-size: 1.2rem;
 }
 
 .jeans_bg {
@@ -981,7 +1027,7 @@ section.contact_section .contact_container .tel {
 
 .title--translated {
   font-family: proxima_nova_thin;
-  font-size: 9rem;
+  font-size: 11rem;
   position: absolute;
   top: -115px;
   left: 125px;

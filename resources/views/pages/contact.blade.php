@@ -25,7 +25,7 @@
                         </div>
                         <div class="col-12 col-md-7">
                             <div class="form_group">
-                                <label class="form_el_label"><span>Email</span></label>
+                                <label class="form_el_label"><span>E-mail</span></label>
                                 <div class="input_container">
                                     <input type="email" name="emial" value="" placeholder="">
                                 </div>

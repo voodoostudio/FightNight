@@ -41,7 +41,7 @@
         <div class="container-fluid">
             <div id="js-filters-mosaic" class="cbp-l-filters-alignCenter">
                 <div data-filter="*" class="cbp-filter-item">
-                    {{ ($lang == 'fr') ?  $gallery->title_fr :  $gallery->title_fr}} / {{ $gallery->year }}
+                    {{ ($lang == 'fr') ?  $gallery->title_fr :  $gallery->title_en}} / {{ $gallery->year }}
                 </div>
             </div>
             <div id="js-grid-mosaic" class="cbp">

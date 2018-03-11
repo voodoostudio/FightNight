@@ -4,7 +4,8 @@
   .btn {
     height: 52px;
     padding: 0 25px;
-    font: 1.125rem proxima_nova_light;
+    font: 1.35rem proxima_nova_light;
+    letter-spacing: 2px;
     line-height: 50px;
     border-radius: 0;
     position: relative;
@@ -12,22 +13,23 @@
     overflow: hidden;
     border: none;
     z-index: 1;
-    color: $beige;
+    color: $white;
     text-transform: uppercase;
     @include my_transition(0.3s);
     @include my_vertical_gradient;
 
     &:hover {
-      color: $red;
+      color: $blue-light;
     }
     &_blue {
-      background: $blue-light;
+      background: $blue-medium;
       border-radius: 8px;
       height: 60px;
       color: $white;
       line-height: 60px;
       padding: 0 25px;
-      font: 1.4rem proxima_nova_regular;
+      letter-spacing: 1px;
+      font: 1.6rem proxima_nova_regular;
     }
   }
 
@@ -39,11 +41,15 @@
     line-height: 1;
     margin: 0 0 5px 0;
     letter-spacing: 2px;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
   }
   .form_placeholder {
     font-family: proxima_nova_thin;
     font-style: italic;
+    display: block;
+    margin-top: 4px;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
   }
 }
 
@@ -54,6 +60,7 @@ textarea {
   width: 100%;
   background-color: #ffffff;
   color: $black;
+  font-size: 1.125rem;
 }
 input {
   height: 50px;
@@ -62,6 +69,7 @@ textarea {
   height: 190px;
   padding: 12px;
   resize: none;
+  display: block;
 }
 a:focus,
 button:focus,
@@ -80,7 +88,7 @@ textarea:focus {
 .select2-container--default {
   .select2-selection--single {
     background-color: transparent;
-    height: 42px;
+    height: 50px;
     border-color: $border_color;
     border-radius: 0;
     outline: none;
@@ -91,13 +99,13 @@ textarea:focus {
     }
     .select2-selection__rendered {
       color: $black;
-      line-height: 42px;
+      line-height: 50px;
       padding-right: 20px;
       padding-left: 15px;
-      font-size: 16px;
+      font-size: 1.125rem;
     }
     .select2-selection__arrow {
-      height: 42px;
+      height: 50px;
       width: 11px;
       top: 0;
       right: 10px;
@@ -148,7 +156,7 @@ textarea:focus {
           padding: 7px 15px 6px;
           display: table;
           width: 100%;
-          font-size: 16px;
+          font-size: 1.125rem;
           span {
             vertical-align: middle;
             padding-left: 10px;

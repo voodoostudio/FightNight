@@ -153,19 +153,19 @@
         <div class="container-fluid">
             <div class="row my_row">
                 <div class="col-sm-6 col-md-4 my_col">
-                    <div class="page_thumbnail">
+                    <div class="page_thumbnail first">
                         <h2>Our <span>location</span></h2>
                         <a href="#" class="btn">Read more</a>
                     </div>
                 </div>
                 <div class="col-sm-6 col-md-4 my_col">
-                    <div class="page_thumbnail">
+                    <div class="page_thumbnail second">
                         <h2>Our <span>edition</span></h2>
                         <a href="#" class="btn">Read more</a>
                     </div>
                 </div>
                 <div class="col-sm-6 col-md-4 my_col">
-                    <div class="page_thumbnail">
+                    <div class="page_thumbnail third">
                         <h2>Our <span>location</span></h2>
                         <a href="#" class="btn">Read more</a>
                     </div>
