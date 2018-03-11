@@ -233,7 +233,7 @@ section.carousel_section {
 section.countdown_section {
   margin-top: 15px;
   .countdown_container {
-    padding: 30px;
+    padding: 35px;
     .title_container {
       position: relative;
       top: 50%;
@@ -272,7 +272,7 @@ section.countdown_section {
       }
     }
     .countdown {
-      padding: 0 50px 0 0;
+      padding: 0 20px 0 0;
     }
   }
 }
@@ -317,7 +317,7 @@ section.posts_section {
   .carousel_container {
     overflow: hidden;
     .posts_carousel {
-      margin: 30px -5px 0;
+      margin: 15px -5px 0;
       .carousel_item {
         padding: 0 5px;
         width: 33.3%;
@@ -376,7 +376,7 @@ section.posts_section {
     .social_links {
       text-align: right;
       position: absolute;
-      top: -23px;
+      top: -17px;
       right: -10px;
       display: table;
       line-height: 1;
@@ -652,17 +652,20 @@ footer {
       color: $white;
       text-decoration: none;
       margin-left: 5px;
-      &:hover {
+      &:not(.social):hover {
         text-decoration: none;
         color: $white;
         border-bottom: 1px solid $white;
       }
       &.social {
-        font-size: 20px;
+        font-size: 26px;
         line-height: 16px;
-        //&.instagram {
-        //  font-size: 26px;
-        //}
+        display: inline-block;
+        transform: translateY(5px);
+        &:hover {
+          color: $white;
+          transform: scale(1.2) translateY(4px);
+        }
       }
     }
   }

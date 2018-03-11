@@ -13,7 +13,8 @@
             © FIGHT NIGHT Saint-Tropez. All Rights Reserved.
             <a href="#">Privacy Policy</a>
             <a href="{{ route('contact') }}">- Contact -</a>
-            <a href="#" class="social facebook"><i class="fab fa-facebook-f"></i></a>
+            {{--<a href="#" class="social facebook"><i class="fab fa-facebook-f"></i></a>--}}
+            <a href="#" class="social facebook"><i class="fab fa-facebook-square"></i></a>
             <a href="#" class="social instagram"><i class="fab fa-instagram"></i></a>
         </p>
     </div>

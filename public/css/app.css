@@ -584,7 +584,7 @@ section.countdown_section {
 }
 
 section.countdown_section .countdown_container {
-  padding: 30px;
+  padding: 35px;
 }
 
 section.countdown_section .countdown_container .title_container {
@@ -628,7 +628,7 @@ section.countdown_section .countdown_container .title_container h4:after {
 }
 
 section.countdown_section .countdown_container .countdown {
-  padding: 0 50px 0 0;
+  padding: 0 20px 0 0;
 }
 
 section.tickets_section .countdown_container {
@@ -682,7 +682,7 @@ section.posts_section .carousel_container {
 }
 
 section.posts_section .carousel_container .posts_carousel {
-  margin: 30px -5px 0;
+  margin: 15px -5px 0;
 }
 
 section.posts_section .carousel_container .posts_carousel .carousel_item {
@@ -756,7 +756,7 @@ section.posts_section .post_block p {
 section.posts_section .post_block .social_links {
   text-align: right;
   position: absolute;
-  top: -23px;
+  top: -17px;
   right: -10px;
   display: table;
   line-height: 1;
@@ -1062,15 +1062,24 @@ footer p a {
   margin-left: 5px;
 }
 
-footer p a:hover {
+footer p a:not(.social):hover {
   text-decoration: none;
   color: #fffaff;
   border-bottom: 1px solid #fffaff;
 }
 
 footer p a.social {
-  font-size: 20px;
+  font-size: 26px;
   line-height: 16px;
+  display: inline-block;
+  -webkit-transform: translateY(5px);
+          transform: translateY(5px);
+}
+
+footer p a.social:hover {
+  color: #fffaff;
+  -webkit-transform: scale(1.2) translateY(4px);
+          transform: scale(1.2) translateY(4px);
 }
 
 .dashboard_header {
