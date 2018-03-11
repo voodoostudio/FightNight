@@ -418,9 +418,9 @@ header .navbar.navbar-light .navbar-nav .nav-link {
   line-height: 3rem;
   color: #fffaff;
   text-transform: uppercase;
-  font-size: 0.95rem;
+  font-size: 1.1rem;
   text-shadow: 1px 1px 5px #000000;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
   position: relative;
 }
 
