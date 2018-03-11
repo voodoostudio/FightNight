@@ -10,7 +10,6 @@
     $lang = LaravelLocalization::getCurrentLocale();
 @endphp
 
-
 @section('content')
     <main id="dashboard_index">
         <section class="admin_items_list_section">

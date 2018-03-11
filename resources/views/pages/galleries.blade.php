@@ -18,14 +18,14 @@
                 <div data-filter="*" class="cbp-filter-item">
                     Tous les albums <div class="cbp-filter-counter"></div>
                 </div> <span>/</span>
-                @foreach($menu as $key => $item)
+              {{--  @foreach($menu as $key => $item)
                     @php
                         $counter++;
                     @endphp
                     <div data-filter=".{{ $item }}" class="cbp-filter-item">
                         {{ $item }} <div class="cbp-filter-counter"></div>
                     </div> <span>{{ ($counter == $total) ? '' : '/'  }}</span>
-                @endforeach
+                @endforeach--}}
             </div>
 
             <div id="js-grid-full-width" class="cbp">

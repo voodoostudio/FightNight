@@ -5,6 +5,10 @@
 @section('css')
 @stop
 
+@php
+    $lang = LaravelLocalization::getCurrentLocale();
+@endphp
+
 @section('content')
     <section class="gallery_section" style="display: none">
         <div id="js-filters-full-width" class="cbp-l-filters-alignCenter">
@@ -37,7 +41,7 @@
         <div class="container-fluid">
             <div id="js-filters-mosaic" class="cbp-l-filters-alignCenter">
                 <div data-filter="*" class="cbp-filter-item">
-                    Title / year
+                    {{ ($lang == 'fr') ?  $gallery->title_fr :  $gallery->title_fr}} / {{ $gallery->year }}
                 </div>
             </div>
             <div id="js-grid-mosaic" class="cbp">
