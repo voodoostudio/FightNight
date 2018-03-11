@@ -12,7 +12,7 @@
                     <div class="row">
                         <div class="col-12 col-md-7">
                             <div class="form_group">
-                                <label class="form_el_label"><span>Secteur</span></label>
+                                <label class="form_el_label"><span>{{ trans('lang.sector') }}</span></label>
                                 <select id="view_select" name="object_view" title="">
                                     <option value="0">Option 1</option>
                                     <option value="1">Option 2</option>
@@ -20,16 +20,16 @@
                                     <option value="3">Option 4</option>
                                     <option value="4">Option 5</option>
                                 </select>
-                                <span class="form_placeholder">Veuillez spécifier le secteur que vous souhaitez contacter</span>
+                                <span class="form_placeholder">{{ trans('lang.specify_sector') }}</span>
                             </div>
                         </div>
                         <div class="col-12 col-md-7">
                             <div class="form_group">
-                                <label class="form_el_label"><span>E-mail</span></label>
+                                <label class="form_el_label"><span>{{ trans('lang.email') }}</span></label>
                                 <div class="input_container">
                                     <input type="email" name="emial" value="" placeholder="">
                                 </div>
-                                <span class="form_placeholder">Veuillez entrer votre adresse e-mail</span>
+                                <span class="form_placeholder">{{ trans('lang.enter_email') }}</span>
                             </div>
                         </div>
                         <div class="col-12">
@@ -38,11 +38,11 @@
                                 <div class="input_container">
                                     <textarea name="message" value="" placeholder=""></textarea>
                                 </div>
-                                <span class="form_placeholder">Rédigez votre message ici.</span>
+                                <span class="form_placeholder">{{ trans('lang.write_message') }}</span>
                             </div>
                         </div>
                         <div class="col-12">
-                            <button type="submit" class="btn btn_blue">Envoyer</button>
+                            <button type="submit" class="btn btn_blue">{{ trans('lang.send') }}</button>
                         </div>
                     </div>
                 </form>
