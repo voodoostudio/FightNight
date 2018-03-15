@@ -188,18 +188,20 @@ section.carousel_section {
               margin: 0;
               text-transform: uppercase;
               .big {
-                font-size: 12rem;
+                font-size: 8rem;
                 letter-spacing: 12px;
                 display: block;
-                color: $red;
                 line-height: 1;
+                height: 100px;
+                margin: 10px 0;
               }
               .small {
-                font-size: 4.5rem;
+                font-size: 4rem;
                 line-height: 1;
                 letter-spacing: 4px;
                 display: block;
-                transform: translateY(-25px);
+                color: $red;
+                height: 50px;
               }
             }
           }

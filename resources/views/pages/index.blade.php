@@ -14,7 +14,7 @@
                         {{--<h1>learn to <span>defend</span> yourself in real life</h1>--}}
                     {{--</div>--}}
                     <div class="caption">
-                        <h1><span class="big">Live</span> <span class="small">experience</span></h1>
+                        <h1><span class="small">The best</span><span class="big">show</span> <span class="small">of st-tropez</span></h1>
                     </div>
                 </div>
                 <div class="carousel-cell">

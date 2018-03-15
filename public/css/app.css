@@ -531,20 +531,21 @@ section.carousel_section .homepage_carousel .flickity-viewport .flickity-slider 
 }
 
 section.carousel_section .homepage_carousel .flickity-viewport .flickity-slider .carousel-cell .caption h1 .big {
-  font-size: 12rem;
+  font-size: 8rem;
   letter-spacing: 12px;
   display: block;
-  color: #bf3737;
   line-height: 1;
+  height: 100px;
+  margin: 10px 0;
 }
 
 section.carousel_section .homepage_carousel .flickity-viewport .flickity-slider .carousel-cell .caption h1 .small {
-  font-size: 4.5rem;
+  font-size: 4rem;
   line-height: 1;
   letter-spacing: 4px;
   display: block;
-  -webkit-transform: translateY(-25px);
-          transform: translateY(-25px);
+  color: #bf3737;
+  height: 50px;
 }
 
 section.carousel_section .homepage_carousel .flickity-prev-next-button {

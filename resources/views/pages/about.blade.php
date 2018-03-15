@@ -7,7 +7,7 @@
                 <img src="/img/about.png" alt="About us banner">
             </div>
             <div class="about_container jeans_bg_ragged">
-                <h1 class="title--translated">About</h1>
+                <h1 class="title--translated">{{ trans('lang.about') }}</h1>
                 <p>{{ trans('lang.about_text1') }}</p>
 
                 <p>{{ trans('lang.about_text2') }}</p>
