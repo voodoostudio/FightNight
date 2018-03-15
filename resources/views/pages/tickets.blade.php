@@ -7,7 +7,7 @@
                 <img src="/img/tickets/tickets.jpg" alt="Titckets banner">
             </div>
 
-            <div class="countdown_container jeans_bg">
+            <div class="countdown_container jeans_bg_ragged">
                 <h1 class="title--translated">{{ trans('lang.tickets_title') }}</h1>
                 <div class="countdown">
                     <div class="countdown_item" id="days">

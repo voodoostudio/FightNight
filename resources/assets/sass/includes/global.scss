@@ -234,7 +234,7 @@ section.carousel_section {
 }
 
 section.countdown_section {
-  margin-top: 15px;
+  margin-top: 20px;
   .countdown_container {
     padding: 35px;
     .title_container {
@@ -316,7 +316,7 @@ section.tickets_section {
 }
 
 section.posts_section {
-  margin-top: 15px;
+  margin-top: 5px;
   color: white;
   .carousel_container {
     overflow: hidden;
@@ -401,20 +401,22 @@ section.posts_section {
 }
 
 section.thumbnails_section {
-  margin-top: 30px;
+  margin-top: 20px;
   .page_thumbnail {
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     height: 325px;
     position: relative;
     margin-bottom: 10px;
     &.first {
-      background: url("/img/thumbnails/thumbnail_1.jpg") no-repeat center;
+      background-image: url("/img/thumbnails/thumbnail_1.png");
     }
     &.second {
-      background: url("/img/thumbnails/thumbnail_2.jpg") no-repeat center;
+      background-image: url("/img/thumbnails/thumbnail_2.png");
     }
     &.third {
-      background: url("/img/thumbnails/thumbnail_3.jpg") no-repeat center;
+      background-image: url("/img/thumbnails/thumbnail_3.png");
     }
     h2 {
       color: $white;
@@ -611,6 +613,12 @@ section.contact_section {
   }
 }
 
+section.press_section {
+  .press_container {
+    padding: 90px 125px;
+    position: relative;
+  }
+}
 .jeans_bg {
   background: url("/img/jeans_texture_plain.jpg") no-repeat center;
   background-size: cover;

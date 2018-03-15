@@ -9,7 +9,7 @@
         <div class="container-fluid">
             <div class="homepage_carousel">
                 <div class="carousel-cell">
-                    <img src="/img/carousel/2.png" alt="">
+                    <img src="/img/carousel/3.png" alt="">
                     {{--<div class="caption">--}}
                         {{--<h1>learn to <span>defend</span> yourself in real life</h1>--}}
                     {{--</div>--}}
@@ -21,7 +21,7 @@
                     <img src="/img/carousel/2.png" alt="">
                 </div>
                 <div class="carousel-cell">
-                    <img src="/img/carousel/2.png" alt="">
+                    <img src="/img/carousel/1.png" alt="">
                 </div>
             </div>
         </div>

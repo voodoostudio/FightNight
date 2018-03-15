@@ -124,7 +124,7 @@
 }
 
 .btn:hover {
-  color: #00ffff;
+  color: #c08167;
 }
 
 .btn_beige {
@@ -576,7 +576,7 @@ section.carousel_section .homepage_carousel .flickity-prev-next-button .arrow {
 }
 
 section.countdown_section {
-  margin-top: 15px;
+  margin-top: 20px;
 }
 
 section.countdown_section .countdown_container {
@@ -652,7 +652,7 @@ section.tickets_section .countdown_container h3 {
 }
 
 section.posts_section {
-  margin-top: 15px;
+  margin-top: 5px;
   color: white;
 }
 
@@ -757,26 +757,28 @@ section.posts_section .post_block .social_links a:last-of-type {
 }
 
 section.thumbnails_section {
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 section.thumbnails_section .page_thumbnail {
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   height: 325px;
   position: relative;
   margin-bottom: 10px;
 }
 
 section.thumbnails_section .page_thumbnail.first {
-  background: url("/img/thumbnails/thumbnail_1.jpg") no-repeat center;
+  background-image: url("/img/thumbnails/thumbnail_1.png");
 }
 
 section.thumbnails_section .page_thumbnail.second {
-  background: url("/img/thumbnails/thumbnail_2.jpg") no-repeat center;
+  background-image: url("/img/thumbnails/thumbnail_2.png");
 }
 
 section.thumbnails_section .page_thumbnail.third {
-  background: url("/img/thumbnails/thumbnail_3.jpg") no-repeat center;
+  background-image: url("/img/thumbnails/thumbnail_3.png");
 }
 
 section.thumbnails_section .page_thumbnail h2 {
@@ -988,6 +990,11 @@ section.contact_section .contact_container .tel {
   font-family: proxima_nova_thin;
   margin-bottom: 0;
   font-size: 1.2rem;
+}
+
+section.press_section .press_container {
+  padding: 90px 125px;
+  position: relative;
 }
 
 .jeans_bg {
