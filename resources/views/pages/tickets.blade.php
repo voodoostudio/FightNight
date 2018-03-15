@@ -7,8 +7,8 @@
                 <img src="/img/tickets/tickets.jpg" alt="Titckets banner">
             </div>
 
-            <div class="countdown_container jeans_bg_ragged">
-                <h1 class="title--translated">Billeterie</h1>
+            <div class="countdown_container jeans_bg">
+                <h1 class="title--translated">{{ trans('lang.tickets_title') }}</h1>
                 <div class="countdown">
                     <div class="countdown_item" id="days">
                         <svg id="animated_days" viewbox="0 0 100 100">
@@ -59,7 +59,7 @@
                         </svg>
                     </div>
                 </div>
-                <h3>Bientôt disponible...</h3>
+                <h3>{{ trans('lang.coming_soon') }}</h3>
             </div>
         </div>
     </section>
