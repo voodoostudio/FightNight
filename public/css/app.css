@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* BEGIN Thin*/
 @font-face {
   font-family: 'proxima_nova_thin';
@@ -88,6 +89,16 @@
 }
 
 /* END Spinwerad*/
+/* BEGIN ChunkFiveEx*/
+@font-face {
+  font-family: '\441hunkfive_ex';
+  src: url("/fonts/сhunkfive_ex/сhunkfive_ex.eot");
+  src: url("/fonts/сhunkfive_ex/сhunkfive_ex.eot?#iefix") format("embedded-opentype"), url("/fonts/сhunkfive_ex/сhunkfive_ex.woff") format("woff"), url("/fonts/сhunkfive_ex/сhunkfive_ex.ttf") format("truetype"), url("/fonts/сhunkfive_ex/сhunkfive_ex.svg") format("svg");
+  font-weight: 900;
+  font-style: normal;
+}
+
+/* END ChunkFiveEx*/
 /*Buttons style START*/
 .btn {
   height: 52px;
@@ -116,8 +127,8 @@
   color: #00ffff;
 }
 
-.btn_blue {
-  background: #08b8c3;
+.btn_beige {
+  background: #c2947b;
   border-radius: 8px;
   height: 60px;
   color: #fffaff;
@@ -367,33 +378,13 @@ body {
   margin-top: 20px;
 }
 
-header:before, header:after, section.about_section .about_container:after, footer:before {
-  content: '';
-  height: 10px;
-  position: absolute;
-  width: 100%;
-  background: #315575;
-  background: -webkit-gradient(left top, left bottom, color-stop(0%, #315575), color-stop(37%, #1f3b59), color-stop(48%, #1f3b59), color-stop(67%, #1f3b59), color-stop(100%, #10213b));
-  background: -webkit-gradient(linear, left top, left bottom, from(#315575), color-stop(37%, #1f3b59), color-stop(48%, #1f3b59), color-stop(67%, #1f3b59), to(#10213b));
-  background: linear-gradient(to bottom, #315575 0%, #1f3b59 37%, #1f3b59 48%, #1f3b59 67%, #10213b 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#315575', endColorstr='#10213b', GradientType=0 );
-}
-
 header {
   background-image: url("/img/bg_header.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
-  margin: 70px 0 0;
+  margin: 70px 0 -20px;
   position: relative;
-}
-
-header:before {
-  top: 0;
-}
-
-header:after {
-  bottom: 0;
 }
 
 header .navbar.navbar-light {
@@ -430,16 +421,15 @@ header .navbar.navbar-light .navbar-nav .nav-link.active {
 
 header .navbar.navbar-light .navbar-nav .nav-link.active:before {
   content: '';
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 0 17px 24px 17px;
-  border-color: transparent transparent #00ffff transparent;
+  width: 70px;
+  height: 8px;
+  background: url("/img/nav_selector.png") no-repeat;
+  background-size: 100%;
   position: absolute;
-  bottom: -10px;
+  bottom: 10px;
   left: 50%;
-  -webkit-transform: translateX(-17px);
-  transform: translateX(-17px);
+  -webkit-transform: translateX(-35px);
+  transform: translateX(-35px);
 }
 
 header .navbar.navbar-light .navbar-toggler {
@@ -507,6 +497,10 @@ header .navbar.navbar-light .navbar-toggler[aria-expanded="true"] .icon-bar:nth-
   transform: translateY(-12px) rotate(-45deg);
 }
 
+section.carousel_section {
+  margin-top: 60px;
+}
+
 section.carousel_section .homepage_carousel .flickity-viewport .flickity-slider .carousel-cell {
   width: 100%;
   height: auto;
@@ -530,8 +524,8 @@ section.carousel_section .homepage_carousel .flickity-viewport .flickity-slider 
 }
 
 section.carousel_section .homepage_carousel .flickity-viewport .flickity-slider .carousel-cell .caption h1 {
-  color: #00ffff;
-  font-family: spinwerad_c;
+  color: #fffaff;
+  font-family: сhunkfive_ex;
   margin: 0;
   text-transform: uppercase;
 }
@@ -540,7 +534,7 @@ section.carousel_section .homepage_carousel .flickity-viewport .flickity-slider 
   font-size: 12rem;
   letter-spacing: 12px;
   display: block;
-  color: #f3e4cd;
+  color: #bf3737;
   line-height: 1;
 }
 
@@ -554,9 +548,9 @@ section.carousel_section .homepage_carousel .flickity-viewport .flickity-slider 
 }
 
 section.carousel_section .homepage_carousel .flickity-prev-next-button {
-  background: rgba(8, 184, 195, 0.75);
-  width: 60px;
-  height: 60px;
+  background: rgba(0, 0, 0, 0.75);
+  width: 40px;
+  height: 40px;
 }
 
 section.carousel_section .homepage_carousel .flickity-prev-next-button.next {
@@ -564,11 +558,12 @@ section.carousel_section .homepage_carousel .flickity-prev-next-button.next {
 }
 
 section.carousel_section .homepage_carousel .flickity-prev-next-button.previous {
-  left: 60px;
+  right: 160px;
+  left: initial;
 }
 
 section.carousel_section .homepage_carousel .flickity-prev-next-button:hover {
-  background: #08b8c3;
+  background: black;
 }
 
 section.carousel_section .homepage_carousel .flickity-prev-next-button:disabled {
@@ -576,7 +571,7 @@ section.carousel_section .homepage_carousel .flickity-prev-next-button:disabled 
 }
 
 section.carousel_section .homepage_carousel .flickity-prev-next-button .arrow {
-  fill: #fadfc3;
+  fill: #fffaff;
 }
 
 section.countdown_section {
@@ -603,28 +598,11 @@ section.countdown_section .countdown_container .title_container h4 {
   text-align: center;
   text-transform: uppercase;
   font-family: proxima_nova_black;
-  font-size: 2.6rem;
-  letter-spacing: 4px;
+  font-size: 2.4rem;
+  letter-spacing: 5px;
   position: relative;
   line-height: .9;
-}
-
-section.countdown_section .countdown_container .title_container h4 span {
-  background: #bf9971;
-  background: -webkit-gradient(left bottom, right top, color-stop(0%, #bf9971), color-stop(40%, #bf9971), color-stop(53%, #f2dac2), color-stop(63%, #fcf1dd), color-stop(77%, #fff5b7), color-stop(100%, #fff5b7));
-  background: -webkit-linear-gradient(45deg, #bf9971 0%, #bf9971 40%, #f2dac2 53%, #fcf1dd 63%, #fff5b7 77%, #fff5b7 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  position: absolute;
-  width: 100%;
-  top: 0;
-  left: 0;
-}
-
-section.countdown_section .countdown_container .title_container h4:after {
-  content: attr(title);
-  text-shadow: 3px 4px 1px rgba(0, 0, 0, 0.75);
-  color: transparent;
+  color: #fffaff;
 }
 
 section.countdown_section .countdown_container .countdown {
@@ -741,7 +719,7 @@ section.posts_section .post_block h6 {
   text-transform: uppercase;
   font-size: 1.1rem;
   letter-spacing: 1px;
-  color: #00ffff;
+  color: #c08167;
   line-height: 1;
   margin-bottom: 5px;
 }
@@ -814,7 +792,7 @@ section.thumbnails_section .page_thumbnail h2 {
 }
 
 section.thumbnails_section .page_thumbnail h2 span {
-  color: #00ffff;
+  color: #c08167;
   display: block;
 }
 
@@ -833,19 +811,14 @@ section.about_section img {
 }
 
 section.about_section .about_container {
-  padding: 75px 125px 90px;
+  padding: 90px 125px 90px;
   position: relative;
 }
 
 section.about_section .about_container p {
-  line-height: 1.4;
+  line-height: 1.2;
   letter-spacing: 1px;
-  font-size: 1.4rem;
-}
-
-section.about_section .about_container:after {
-  bottom: -17px;
-  left: 0;
+  font-size: 1.2rem;
 }
 
 section.gallery_section .cbp-l-filters-alignCenter {
@@ -922,7 +895,7 @@ section.editions_section .edition .edition_title .city {
 
 section.editions_section .edition .edition_title .year {
   font-family: proxima_nova_regular;
-  color: #00ffff;
+  color: #c08167;
   font-size: 3.8rem;
 }
 
@@ -938,8 +911,8 @@ section.editions_section .edition .edition_statistics span {
   font-family: proxima_nova_light;
   display: inline-block;
   padding: 2px 5px 0;
-  border: 2px solid #00ffff;
-  color: #00ffff;
+  border: 2px solid #c08167;
+  color: #c08167;
   margin-right: 10px;
   letter-spacing: 0;
   font-size: 1rem;
@@ -950,8 +923,8 @@ section.editions_section .edition .edition_statistics span sup {
 }
 
 section.editions_section .edition .edition_description {
-  color: #00ffff;
-  font-size: 1.2rem;
+  color: #c08167;
+  font-size: 1.1rem;
   font-family: proxima_nova_thin;
   line-height: 1.2;
   letter-spacing: 1px;
@@ -960,7 +933,7 @@ section.editions_section .edition .edition_description {
 section.editions_section .edition .edition_person {
   line-height: 1;
   margin: 0 0 7px 0;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   letter-spacing: 1px;
 }
 
@@ -1017,8 +990,17 @@ section.contact_section .contact_container .tel {
 }
 
 .jeans_bg {
-  background: url("/img/jeans_texture.jpg") no-repeat center;
+  background: url("/img/jeans_texture_plain.jpg") no-repeat center;
   background-size: cover;
+}
+
+.jeans_bg_ragged {
+  background: url("/img/jeans_texture.png") no-repeat bottom;
+  background-size: cover;
+}
+
+.img_container {
+  margin-bottom: -20px;
 }
 
 .img_container img {
@@ -1038,14 +1020,10 @@ footer {
   position: absolute;
   bottom: 0;
   width: 100%;
-  padding: 45px 0 30px;
-  background: url("/img/bg_header.png") top no-repeat;
+  padding: 45px 0 20px;
+  background: url("/img/bg_footer.png") top no-repeat;
   background-size: cover;
   z-index: 999;
-}
-
-footer:before {
-  top: 0;
 }
 
 footer p {
@@ -1054,6 +1032,8 @@ footer p {
   font-size: 0.875rem;
   text-align: right;
   font-family: proxima_nova_thin;
+  display: inline-block;
+  float: right;
 }
 
 footer p a {
@@ -1080,6 +1060,61 @@ footer p a.social:hover {
   color: #fffaff;
   -webkit-transform: scale(1.2) translateY(4px);
           transform: scale(1.2) translateY(4px);
+}
+
+footer .links_list {
+  list-style: none;
+  float: right;
+  padding: 0 0 0 20px;
+  margin: 0;
+  -webkit-transform: translateY(-12px);
+          transform: translateY(-12px);
+}
+
+footer .links_list li {
+  display: inline-block;
+  padding: 0 5px;
+}
+
+footer .links_list li:nth-child(2) {
+  border-right: 2px solid #fffaff;
+  padding-right: 10px;
+}
+
+footer .links_list li:nth-child(3) {
+  padding-left: 10px;
+}
+
+footer .links_list li a {
+  color: #fffaff;
+  text-decoration: none;
+  display: inline-block;
+}
+
+footer .links_list li a.social {
+  font-size: 26px;
+  -webkit-transform: translateY(5px);
+          transform: translateY(5px);
+}
+
+footer .links_list li a.social:hover {
+  color: #fffaff;
+  -webkit-transform: scale(1.2) translateY(4px);
+          transform: scale(1.2) translateY(4px);
+}
+
+footer .links_list li a.lang {
+  -webkit-transform: translateY(-2px);
+          transform: translateY(-2px);
+}
+
+footer .links_list li a.lang:hover {
+  -webkit-transform: scale(1.2) translateY(-2px);
+          transform: scale(1.2) translateY(-2px);
+}
+
+footer .links_list li a img {
+  width: 26px;
 }
 
 .dashboard_header {
@@ -1299,10 +1334,13 @@ footer p a.social:hover {
 
 @media screen and (max-width: 1199px) {
   header .navbar.navbar-light {
-    padding-left: 170px;
+    padding-left: 190px;
+  }
+  header .navbar.navbar-light .navbar-brand {
+    top: -30px;
   }
   header .navbar.navbar-light .navbar-brand img {
-    width: 160px;
+    width: 180px;
   }
   header .navbar.navbar-light .navbar-nav .nav-link {
     font-size: 0.875rem;

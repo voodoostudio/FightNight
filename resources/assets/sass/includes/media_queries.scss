@@ -5,10 +5,11 @@
 @media screen and ( max-width: 1199px ) {
   header {
     .navbar.navbar-light {
-      padding-left: 170px;
+      padding-left: 190px;
       .navbar-brand {
+        top: -30px;
         img {
-          width: 160px;
+          width: 180px;
         }
       }
       .navbar-nav {

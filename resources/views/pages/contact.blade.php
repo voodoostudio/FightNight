@@ -6,7 +6,7 @@
             <div class="img_container">
                 <img src="/img/contact/contact.jpg" alt="Contact us banner">
             </div>
-            <div class="contact_container jeans_bg">
+            <div class="contact_container jeans_bg_ragged">
                 <h1 class="title--translated">Contact</h1>
                 <form action="">
                     <div class="row">
@@ -42,7 +42,7 @@
                             </div>
                         </div>
                         <div class="col-12">
-                            <button type="submit" class="btn btn_blue">Envoyer</button>
+                            <button type="submit" class="btn btn_beige">Envoyer</button>
                         </div>
                     </div>
                 </form>
