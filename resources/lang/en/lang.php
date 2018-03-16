@@ -18,7 +18,7 @@ return [
     // Header menu
     'home'                  => 'Home',
     'about'                 => 'About',
-    'editions'              => 'Editions',
+    'editions'              => 'Archive',
     'ticketing'             => 'Ticketing',
     'gallery'               => 'Gallery',
     'partners'              => 'Partners',
@@ -37,7 +37,7 @@ return [
 
 
     // Ticketing page
-    'tickets_title'         => 'Ticketing',
+    'tickets_title'         => 'Tickets',
     'coming_soon'           => 'Coming soon...',
 
     // Gallery
