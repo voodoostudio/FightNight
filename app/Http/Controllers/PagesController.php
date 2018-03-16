@@ -14,28 +14,36 @@ class PagesController extends Controller
         $token_access = env('BUFFER_TOKEN_ACCESS');
         $auth = new TokenAuthorization($token_access);
         $client = new Client($auth);
-        $profiles = $client->getProfiles();
+        $prof = [
+            ['_id' => '5a54cb3decbe8a1c474ec402'],
+            ['_id' => '5a377adea43056c05d33ab0f'],
+            ['_id' => '5a377adea43056c05d33ab11'],
+            ['_id' => '5a68965df7fb85143c2b4006'],
+        ];
         $social_posts =[];
         $formatted_posts = [];
 
-        foreach ($profiles as $client_id) {
+        foreach ($prof as $client_id) {
             $sent_posts = $client->getProfileSentUpdates($client_id['_id'], $page = null, $count = null, $since = null, $utc = false)['updates'];
             foreach ($sent_posts as $posts) {
-                $value = $posts['text_md5'] . '|' . $posts['created_at'];
-                $key = explode("|", $value);
-                if (!isset($social_posts[$key[0]])) $social_posts[$key[0]] = [];
-                $social_posts[$key[0]][$posts['profile_service']] = [
-                    'text' => $posts['text'],
-                    'link' => $posts['service_link'],
-                    'day' => $posts['day'],
-                    'created_at' => $posts['created_at'],
-                    'updated_at' => $posts['updated_at'],
-                    'text_md5' => $posts['text_md5'],
-                ];
+                if(isset($posts['text_md5'])) {
+                    $value = $posts['text_md5'] . '|' . $posts['created_at'];
+                    $key = explode("|", $value);
+                    if (!isset($social_posts[$key[0]])) $social_posts[$key[0]] = [];
+                    $social_posts[$key[0]][$posts['profile_service']] = [
+                        'text' => $posts['text'],
+                        'link' => $posts['service_link'],
+                        'day' => $posts['day'],
+                        'created_at' => $posts['created_at'],
+                        'updated_at' => $posts['updated_at'],
+                        'text_md5' => $posts['text_md5'],
+                    ];
+                }
             }
         }
 
         foreach ($social_posts as $key => $items) {
+
             $posts = array_merge(
                 [
                     'text' => (isset($items['facebook'])) ? $items['facebook']['text'] : ((isset($items['linkedin'])) ? $items['linkedin']['text'] : ((isset($items['twitter'])) ? $items['twitter']['text'] : ((isset($items['instagram'])) ? $items['instagram']['text'] : ''))),
