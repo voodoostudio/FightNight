@@ -30,6 +30,9 @@
       padding: 0 25px;
       letter-spacing: 1px;
       font: 1.6rem proxima_nova_regular;
+      &:hover {
+        color: $black;
+      }
     }
   }
 

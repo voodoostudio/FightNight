@@ -28,7 +28,7 @@
                             <a target="_blank" href="{{ URl::to('/') }}/news/archives/{{ date('F_Y', strtotime($itemm['created_at'])) }}/{{ $itemm['archive_file'] }}">{{ $itemm['archive_file'] }}</a>
                         @endif
                         <p>{{ $itemm['description_fr'] }}</p>
-                        <p>{{ $itemm['description_en'] }}</p>
+
                     </div>
                 @endforeach
             </div>

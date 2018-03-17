@@ -312,30 +312,7 @@
 
 @section('js')
     <script type="text/javascript">
-        $('#article_datepicker').datepicker({
-            showOtherMonths: true,
-            selectOtherMonths: false,
-            format: 'yyyy-mm-dd',
-            icons: {
-                rightIcon: '<div class="datepicker_btn"><i class="icn icon-calendar"></i></div>',
-                previousMonth: '<i class="icn icon-arrow_big_left"></i>',
-                nextMonth: '<i class="icn icon-arrow_big_right"></i>'
-            }
-        });
-
-        $('#article_datepicker').on('click', function () {
-            $( ".datepicker_btn" ).trigger( "click" );
-        });
-
-        $(document).mouseup(function(e)
-        {
-            var container = $(".gj-calendar");
-
-            if (!container.is(e.target) && container.has(e.target).length === 0)
-            {
-                container.hide();
-            }
-        });
+        showSelectedFileName();
     </script>
 @stop
 

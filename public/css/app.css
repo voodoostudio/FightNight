@@ -138,6 +138,10 @@
   font: 1.6rem proxima_nova_regular;
 }
 
+.btn_beige:hover {
+  color: black;
+}
+
 /*Buttons style END*/
 .form_group {
   margin-bottom: 20px;
@@ -352,6 +356,14 @@ body {
   font-family: proxima_nova_light;
   padding-bottom: 160px;
   color: #fffaff;
+}
+
+p a {
+  color: #00ffff;
+}
+
+p a:hover {
+  color: #00ffff;
 }
 
 .container-fluid {
@@ -618,14 +630,13 @@ section.tickets_section .countdown_container {
 section.tickets_section .countdown_container .countdown {
   max-width: 790px;
   margin: 0 auto;
-  padding: 160px 0 90px;
+  padding: 100px 0;
 }
 
 section.tickets_section .countdown_container h3 {
   font-family: proxima_nova_thin;
   font-size: 4rem;
   text-align: right;
-  padding: 30px;
   margin: 0;
 }
 
@@ -986,6 +997,98 @@ section.contact_section .contact_container .tel {
   font-family: proxima_nova_thin;
   margin-bottom: 0;
   font-size: 1.2rem;
+}
+
+section.press_section .press_container h2 {
+  color: #c08167;
+  position: relative;
+  letter-spacing: 1px;
+  line-height: 1;
+  margin-bottom: 20px;
+}
+
+section.press_section .press_container h2:after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 1px;
+  max-width: 209px;
+  background: #c08167;
+  position: absolute;
+  bottom: -5px;
+}
+
+section.press_section .press_container .paragraph {
+  max-width: 58%;
+}
+
+section.press_section .press_container .download_link {
+  float: left;
+  margin-right: 15px;
+}
+
+section.press_section .press_container .download_link img {
+  width: 40px;
+}
+
+section.press_section .press_container .article_block {
+  margin-bottom: 20px;
+}
+
+section.press_section .press_container .article_block .article_img {
+  background-size: cover;
+  background-position: center;
+}
+
+section.press_section .press_container .article_block .article_img a {
+  display: block;
+  height: 180px;
+}
+
+section.press_section .press_container .article_block .article_info {
+  padding: 15px;
+  position: relative;
+}
+
+section.press_section .press_container .article_block .article_info h3 {
+  font-family: proxima_nova_bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 0;
+  line-height: 1;
+  font-size: 1.5rem;
+}
+
+section.press_section .press_container .article_block .article_info h4 {
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  color: #c08167;
+  line-height: 1;
+  margin-bottom: 5px;
+}
+
+section.press_section .press_container .article_block .article_info p {
+  line-height: 1;
+  font-family: proxima_nova_thin;
+  text-align: justify;
+  font-size: .875rem;
+  margin: 0;
+}
+
+section.press_section .press_container .article_block .article_info .links_block {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+section.press_section .press_container .article_block .article_info .links_block a {
+  color: #00ffff;
+  font-size: 20px;
+}
+
+section.press_section .press_container .article_block .article_info .links_block a:not(:last-child) {
+  margin-right: 10px;
 }
 
 section.privacy_policy_section .privacy_policy_container {

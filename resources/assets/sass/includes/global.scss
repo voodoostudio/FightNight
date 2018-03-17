@@ -12,6 +12,14 @@ body {
   color: $white;
 }
 
+p {
+  a {
+    color: $blue-light;
+    &:hover {
+      color: $blue-light;
+    }
+  }
+}
 .container-fluid {
   max-width: 1200px;
 }
@@ -287,13 +295,12 @@ section.tickets_section {
     .countdown {
       max-width: 790px;
       margin: 0 auto;
-      padding: 160px 0 90px;
+      padding: 100px 0;
     }
     h3 {
       font-family: proxima_nova_thin;
       font-size: 4rem;
       text-align: right;
-      padding: 30px;
       margin: 0;
     }
   }
@@ -611,6 +618,87 @@ section.contact_section {
   }
 }
 
+section.press_section {
+  .press_container {
+    h2 {
+      color: $brown;
+      position: relative;
+      letter-spacing: 1px;
+      line-height: 1;
+      margin-bottom: 20px;
+      &:after {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 1px;
+        max-width: 209px;
+        background: $brown;
+        position: absolute;
+        bottom: -5px;
+      }
+    }
+    .paragraph {
+      max-width: 58%;
+    }
+    .download_link {
+      float: left;
+      margin-right: 15px;
+      img {
+        width: 40px;
+      }
+    }
+    .article_block {
+      margin-bottom: 20px;
+      .article_img {
+        background-size: cover;
+        background-position: center;
+        a {
+          display: block;
+          height: 180px;
+        }
+      }
+      .article_info {
+        padding: 15px;
+        position: relative;
+        h3 {
+          font-family: proxima_nova_bold;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+          margin: 0;
+          line-height: 1;
+          font-size: 1.5rem;
+        }
+        h4 {
+          text-transform: uppercase;
+          font-size: 1.1rem;
+          letter-spacing: 1px;
+          color: $brown;
+          line-height: 1;
+          margin-bottom: 5px;
+        }
+        p {
+          line-height: 1;
+          font-family: proxima_nova_thin;
+          text-align: justify;
+          font-size: .875rem;
+          margin: 0;
+        }
+        .links_block {
+          position: absolute;
+          top: 15px;
+          right: 15px;
+          a {
+            color: $blue_light;
+            font-size: 20px;
+            &:not(:last-child) {
+              margin-right: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
 section.privacy_policy_section {
   .privacy_policy_container {
     padding: 90px 125px;
@@ -630,6 +718,7 @@ section.privacy_policy_section {
     }
   }
 }
+
 .jeans_bg {
   background: url("/img/jeans_texture_plain.jpg") no-repeat center;
   background-size: cover;
