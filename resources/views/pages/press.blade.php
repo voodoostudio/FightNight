@@ -1,5 +1,9 @@
 @extends('layouts.app')
 
+@php
+    $lang = LaravelLocalization::getCurrentLocale();
+@endphp
+
 @section('content')
     <section class="press_section">
         <div class="container-fluid">
@@ -22,7 +26,7 @@
                                 </div>
                                 <div class="article_info jeans_bg">
 {{--                                            <h3><a href="{{ route('press-details', ['id' => $item['id']]) }}">{{ $item['title_fr'] }}</a></h3>--}}
-                                    <h3>{{ $item['title_fr'] }}</h3>
+                                    <h3>{{ $item['title_'.$lang] }}</h3>
                                     <h4>Saint tropez</h4>
                                     {{--<h3>{{ (!empty($item['date'])) ? date('d.m.Y', strtotime($item['created_at'])) : '' }}</h3>--}}
                                     <div class="links_block">
@@ -33,7 +37,7 @@
                                             <a href="{{ URl::to('/') }}/news/archives/{{ date('F_Y', strtotime($item['created_at'])) }}/{{ $item['archive_file'] }}" download><i class="far fa-file-archive"></i></a>
                                         @endif
                                     </div>
-                                    <p>{{ $item['description_en'] }}</p>
+                                    <p>{{ $item['description_'.$lang] }}</p>
                                 </div>
                             </div>
                         </div>
