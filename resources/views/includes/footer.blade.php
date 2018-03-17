@@ -30,7 +30,7 @@
         </ul>
         <p>
             © FIGHT NIGHT Saint-Tropez. All Rights Reserved.
-            <a href="#">Privacy Policy</a>
+            <a href="{{ route('privacy_policy') }}">Privacy Policy</a>
             <a href="{{ route('contact') }}">- Contact -</a>
         </p>
     </div>

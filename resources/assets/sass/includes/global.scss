@@ -47,7 +47,7 @@ header {
   background-position: bottom;
   margin: 70px 0 -20px;
   position: relative;
-
+  z-index: 99999;
   //&:before{
   //  @extend %header-border;
   //  top: 0;
@@ -188,20 +188,20 @@ section.carousel_section {
               margin: 0;
               text-transform: uppercase;
               .big {
-                font-size: 8rem;
+                font-size: 6rem;
                 letter-spacing: 12px;
                 display: block;
                 line-height: 1;
-                height: 100px;
+                height: 75px;
                 margin: 10px 0;
               }
               .small {
-                font-size: 4rem;
+                font-size: 3rem;
                 line-height: 1;
                 letter-spacing: 4px;
                 display: block;
                 color: $red;
-                height: 50px;
+                height: 40px;
               }
             }
           }
@@ -448,8 +448,6 @@ section.about_section {
     width: 100%;
   }
   .about_container {
-    padding: 90px 125px 90px;
-    position: relative;
     p {
       line-height: 1.2;
       letter-spacing: 1px;
@@ -613,10 +611,23 @@ section.contact_section {
   }
 }
 
-section.press_section {
-  .press_container {
+section.privacy_policy_section {
+  .privacy_policy_container {
     padding: 90px 125px;
-    position: relative;
+    background: rgba(#151515, .99);
+    font-family: proxima_nova_thin;
+    h1 {
+      font-size: 3rem;
+      margin: 0 0 20px;
+    }
+    h3 {
+      font-size: 1.2rem;
+      margin: 20px 0 10px;
+      font-family: proxima_nova_regular;
+    }
+    p {
+      font-size: .875rem;
+    }
   }
 }
 .jeans_bg {
@@ -626,6 +637,14 @@ section.press_section {
 .jeans_bg_ragged {
   background: url("/img/jeans_texture.png") no-repeat bottom;
   background-size: cover;
+  position: relative;
+  padding: 90px 125px;
+}
+.jeans_bg_big {
+  background: url("/img/jeans_texture_plain.jpg") repeat-y;
+  background-size: cover;
+  position: relative;
+  padding: 90px 125px;
 }
 .img_container {
   margin-bottom: -20px;

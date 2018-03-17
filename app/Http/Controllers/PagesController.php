@@ -158,6 +158,11 @@ class PagesController extends Controller
         return view('pages.about');
     }
 
+    public function privacy_policy ()
+    {
+        return view('pages.privacy_policy');
+    }
+
     public function contact ()
     {
         return view('pages.contact');

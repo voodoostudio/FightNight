@@ -385,6 +385,7 @@ header {
   background-position: bottom;
   margin: 70px 0 -20px;
   position: relative;
+  z-index: 99999;
 }
 
 header .navbar.navbar-light {
@@ -531,21 +532,21 @@ section.carousel_section .homepage_carousel .flickity-viewport .flickity-slider 
 }
 
 section.carousel_section .homepage_carousel .flickity-viewport .flickity-slider .carousel-cell .caption h1 .big {
-  font-size: 8rem;
+  font-size: 6rem;
   letter-spacing: 12px;
   display: block;
   line-height: 1;
-  height: 100px;
+  height: 75px;
   margin: 10px 0;
 }
 
 section.carousel_section .homepage_carousel .flickity-viewport .flickity-slider .carousel-cell .caption h1 .small {
-  font-size: 4rem;
+  font-size: 3rem;
   line-height: 1;
   letter-spacing: 4px;
   display: block;
   color: #bf3737;
-  height: 50px;
+  height: 40px;
 }
 
 section.carousel_section .homepage_carousel .flickity-prev-next-button {
@@ -813,11 +814,6 @@ section.about_section img {
   width: 100%;
 }
 
-section.about_section .about_container {
-  padding: 90px 125px 90px;
-  position: relative;
-}
-
 section.about_section .about_container p {
   line-height: 1.2;
   letter-spacing: 1px;
@@ -992,9 +988,25 @@ section.contact_section .contact_container .tel {
   font-size: 1.2rem;
 }
 
-section.press_section .press_container {
+section.privacy_policy_section .privacy_policy_container {
   padding: 90px 125px;
-  position: relative;
+  background: rgba(21, 21, 21, 0.99);
+  font-family: proxima_nova_thin;
+}
+
+section.privacy_policy_section .privacy_policy_container h1 {
+  font-size: 3rem;
+  margin: 0 0 20px;
+}
+
+section.privacy_policy_section .privacy_policy_container h3 {
+  font-size: 1.2rem;
+  margin: 20px 0 10px;
+  font-family: proxima_nova_regular;
+}
+
+section.privacy_policy_section .privacy_policy_container p {
+  font-size: .875rem;
 }
 
 .jeans_bg {
@@ -1005,6 +1017,15 @@ section.press_section .press_container {
 .jeans_bg_ragged {
   background: url("/img/jeans_texture.png") no-repeat bottom;
   background-size: cover;
+  position: relative;
+  padding: 90px 125px;
+}
+
+.jeans_bg_big {
+  background: url("/img/jeans_texture_plain.jpg") repeat-y;
+  background-size: cover;
+  position: relative;
+  padding: 90px 125px;
 }
 
 .img_container {

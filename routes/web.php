@@ -83,6 +83,11 @@ Route::group(['prefix' => LaravelLocalization::setLocale()], function()
         'as' => 'contact',
     ]);
 
+    Route::get('/privacy_policy', [
+        'uses' => 'PagesController@privacy_policy',
+        'as' => 'privacy_policy',
+    ]);
+
     Route::post('/contact', [
         'uses' => 'PagesController@postContact',
         'as' => 'post-contact',
