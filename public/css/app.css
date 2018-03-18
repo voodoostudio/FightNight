@@ -619,10 +619,6 @@ section.countdown_section .countdown_container .title_container h4 {
   color: #fffaff;
 }
 
-section.countdown_section .countdown_container .countdown {
-  padding: 0 20px 0 0;
-}
-
 section.tickets_section .countdown_container {
   position: relative;
 }
@@ -769,7 +765,7 @@ section.posts_section .post_block .social_links a:last-of-type {
 }
 
 section.thumbnails_section {
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 section.thumbnails_section .page_thumbnail {
@@ -886,7 +882,7 @@ section.editions_section .edition:not(:last-child) {
 }
 
 section.editions_section .edition .edition__info-container {
-  padding: 25px 30px;
+  padding: 25px 0 25px 30px;
 }
 
 section.editions_section .edition .edition_title {
@@ -1477,6 +1473,32 @@ footer .links_list li a img {
   header .navbar.navbar-light .navbar-nav .nav-link {
     font-size: 0.875rem;
   }
+  section.countdown_section .countdown_container .title_container h4 {
+    font-size: 2rem;
+  }
+  section.posts_section .post_block .date_container {
+    font-size: 2rem;
+    margin-right: 0;
+  }
+  section.posts_section .post_block .date_container.month {
+    font-size: 1.2rem;
+  }
+  section.editions_section .edition .edition_title {
+    font-size: 2.6rem;
+  }
+  section.editions_section .edition .edition_title .year {
+    font-size: 2.8rem;
+  }
+  section.editions_section .edition .edition_description {
+    font-size: 1rem;
+    line-height: 1.1;
+  }
+  section.editions_section .edition .edition_person {
+    margin-bottom: 3px;
+  }
+  section.editions_section .edition .video-container {
+    padding-top: 90px;
+  }
 }
 
 @media screen and (max-width: 991px) {
@@ -1506,17 +1528,27 @@ footer .links_list li a img {
     width: 50px;
     height: 50px;
   }
-  section.countdown_section .countdown_container .ticket_container img#arrow {
-    width: 120px;
+  section.carousel_section .homepage_carousel .flickity-viewport .flickity-slider .carousel-cell .caption {
+    bottom: 40px;
+    left: 40px;
   }
-  section.posts_section .post_block {
-    padding: 15px;
+  section.carousel_section .homepage_carousel .flickity-viewport .flickity-slider .carousel-cell .caption h1 .small {
+    font-size: 2rem;
+    height: 25px;
+  }
+  section.carousel_section .homepage_carousel .flickity-viewport .flickity-slider .carousel-cell .caption h1 .big {
+    font-size: 4rem;
+    height: 50px;
+  }
+  section.countdown_section .countdown_container .title_container h4 {
+    font-size: 1.5rem;
   }
   section.posts_section .post_block .date_container {
-    font-size: 1rem;
+    font-size: 1.3rem;
+    margin-right: 0;
   }
   section.posts_section .post_block .date_container.month {
-    font-size: 0.65rem;
+    font-size: 0.75rem;
   }
   section.posts_section .post_block p {
     font-size: 0.75rem;
@@ -1528,10 +1560,25 @@ footer .links_list li a img {
   section.thumbnails_section .page_thumbnail h2 {
     font-size: 1.5rem;
   }
+  section.editions_section .edition .video-container {
+    padding-top: 160px;
+  }
+  .title--translated {
+    font-size: 8rem;
+    top: -85px;
+    left: 85px;
+  }
+  .jeans_bg_ragged {
+    padding: 85px;
+  }
 }
 
 @media screen and (max-width: 767px) {
+  header {
+    margin-top: 40px;
+  }
   header .navbar.navbar-light .navbar-nav {
+    margin: 0 0 40px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1542,15 +1589,27 @@ footer .links_list li a img {
     text-align: center;
     line-height: 1rem;
   }
+  header .navbar.navbar-light .navbar-nav .nav-link.active:before {
+    bottom: 0;
+  }
   section.carousel_section .homepage_carousel .flickity-prev-next-button {
     width: 40px;
     height: 40px;
   }
-  section.carousel_section .homepage_carousel .flickity-prev-next-button.previous {
-    left: 30px;
-  }
   section.carousel_section .homepage_carousel .flickity-prev-next-button.next {
-    right: 30px;
+    right: 45px;
+  }
+  section.carousel_section .homepage_carousel .flickity-prev-next-button.previous {
+    right: 115px;
+  }
+  section.carousel_section .homepage_carousel .flickity-viewport .flickity-slider .carousel-cell .caption {
+    bottom: 15px;
+    left: 25px;
+  }
+  section.carousel_section .homepage_carousel .flickity-viewport .flickity-slider .carousel-cell .caption h1 .big {
+    font-size: 3rem;
+    letter-spacing: 8px;
+    height: 37px;
   }
   section.countdown_section .countdown_container .ticket_container {
     padding: 0 0 0 15px;
@@ -1559,48 +1618,147 @@ footer .links_list li a img {
     width: 100px;
   }
   section.countdown_section .countdown_container .countdown {
-    padding: 0 15px 0 0;
+    padding: 0;
+    margin: 0 auto;
   }
   section.posts_section .carousel_container .posts_carousel .carousel_item {
     width: 50%;
   }
+  section.about_section .about_container p {
+    font-size: 1rem;
+    line-height: 1.1;
+  }
+  section.editions_section {
+    margin-top: 60px;
+  }
+  section.editions_section .edition .edition__info-container {
+    padding: 25px;
+  }
+  section.editions_section .edition .video-container {
+    padding-top: 0;
+  }
+  .title--translated {
+    font-size: 5rem;
+    top: -50px;
+    left: 50px;
+  }
+  .jeans_bg_ragged {
+    padding: 50px;
+  }
 }
 
 @media screen and (max-width: 575px) {
+  body {
+    padding-bottom: 200px;
+  }
+  header {
+    margin-top: 20px;
+  }
   header .navbar.navbar-light {
-    padding: 20px 0 25px 0;
+    padding: 0 0 20px 0;
   }
   header .navbar.navbar-light .navbar-brand {
-    top: 10px;
+    top: -5px;
+    padding: 0;
+    margin: 0;
   }
   header .navbar.navbar-light .navbar-brand img {
     width: 130px;
   }
   header .navbar.navbar-light .navbar-toggler {
     top: 10px;
+    margin-right: 0;
   }
   header .navbar.navbar-light .navbar-nav {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    margin-top: 30px;
   }
   header .navbar.navbar-light .navbar-nav .nav-link {
     margin-right: 0;
     text-align: center;
     line-height: 1rem;
   }
+  section.countdown_section .countdown_container {
+    padding: 15px;
+  }
+  section.countdown_section .countdown_container .countdown .countdown_item:not(:last-child) {
+    margin-right: 5px;
+  }
   section.carousel_section .homepage_carousel .flickity-prev-next-button {
     width: 30px;
     height: 30px;
-  }
-  section.carousel_section .homepage_carousel .flickity-prev-next-button.previous {
-    left: 15px;
+    top: 25%;
   }
   section.carousel_section .homepage_carousel .flickity-prev-next-button.next {
     right: 15px;
   }
+  section.carousel_section .homepage_carousel .flickity-prev-next-button.previous {
+    right: 85px;
+  }
+  section.carousel_section .homepage_carousel .flickity-viewport .flickity-slider .carousel-cell .caption h1 .small {
+    font-size: 1rem;
+    height: 13px;
+  }
+  section.carousel_section .homepage_carousel .flickity-viewport .flickity-slider .carousel-cell .caption h1 .big {
+    font-size: 1.5rem;
+    letter-spacing: 5px;
+    height: 20px;
+    margin: 5px 0 0;
+  }
   section.posts_section .carousel_container .posts_carousel .carousel_item {
     width: 100%;
+  }
+  section.editions_section {
+    margin-top: 50px;
+  }
+  section.editions_section .edition .edition_title {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+  }
+  section.editions_section .edition .edition_title .year {
+    font-size: 1.8rem;
+  }
+  section.editions_section .edition .edition_title .city {
+    font-size: 1rem;
+  }
+  section.editions_section .edition .edition_statistics {
+    letter-spacing: 0;
+  }
+  section.editions_section .edition .edition_statistics span {
+    font-size: .75rem;
+  }
+  section.editions_section .edition .edition_description {
+    font-size: .875rem;
+  }
+  section.editions_section .edition .edition_person {
+    font-size: .9rem;
+  }
+  section.editions_section .edition .edition__info-container {
+    padding: 15px;
+  }
+  footer .links_list {
+    display: table;
+    margin: 0 auto;
+    float: none;
+    padding: 0;
+  }
+  footer p {
+    text-align: center;
+    float: none;
+    display: block;
+  }
+  footer p a {
+    display: block;
+  }
+  .title--translated {
+    font-size: 2rem;
+    top: -15px;
+    left: 15px;
+  }
+  .jeans_bg_ragged {
+    padding: 30px 15px 15px;
   }
 }

@@ -32,7 +32,7 @@
         <div class="container-fluid">
             <div class="countdown_container jeans_bg">
                 <div class="row">
-                    <div class="col-sm-7">
+                    <div class="col-12 col-md-7">
                         <div class="countdown">
                             <div class="countdown_item" id="days">
                                 <svg id="animated_days" viewbox="0 0 100 100">
@@ -84,7 +84,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm 5">
+                    <div class="col-12 col-md-5">
                         <div class="title_container">
                             <h4 title="Billeterie Prochainment Disponible">
                                 <span>Billeterie Prochainment Disponible</span>

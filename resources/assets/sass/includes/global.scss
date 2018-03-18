@@ -283,9 +283,6 @@ section.countdown_section {
         //}
       }
     }
-    .countdown {
-      padding: 0 20px 0 0;
-    }
   }
 }
 
@@ -408,7 +405,7 @@ section.posts_section {
 }
 
 section.thumbnails_section {
-  margin-top: 20px;
+  margin-top: 10px;
   .page_thumbnail {
     background-size: cover;
     background-repeat: no-repeat;
@@ -513,7 +510,7 @@ section.editions_section {
       margin-bottom: 20px;
     }
     .edition__info-container {
-      padding: 25px 30px;
+      padding: 25px 0 25px 30px;
     }
     .edition_title {
       font-family: proxima_nova_thin;

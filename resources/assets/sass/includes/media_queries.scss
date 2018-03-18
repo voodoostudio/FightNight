@@ -19,6 +19,47 @@
       }
     }
   }
+  section.countdown_section {
+    .countdown_container {
+      .title_container {
+        h4 {
+          font-size: 2rem;
+        }
+      }
+    }
+  }
+  section.posts_section {
+    .post_block {
+      .date_container {
+        font-size: 2rem;
+        margin-right: 0;
+        &.month {
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+
+  section.editions_section {
+    .edition {
+      .edition_title {
+        font-size: 2.6rem;
+        .year {
+          font-size: 2.8rem;
+        }
+      }
+      .edition_description {
+        font-size: 1rem;
+        line-height: 1.1;
+      }
+      .edition_person {
+        margin-bottom: 3px;
+      }
+      .video-container {
+        padding-top: 90px;
+      }
+    }
+  }
 }
 
 @media screen and ( max-width: 991px ) {
@@ -45,24 +86,44 @@
         width: 50px;
         height: 50px;
       }
+      .flickity-viewport {
+        .flickity-slider {
+          .carousel-cell {
+            .caption {
+              bottom: 40px;
+              left: 40px;
+              h1 {
+                .small {
+                  font-size: 2rem;
+                  height: 25px;
+                }
+                .big {
+                  font-size: 4rem;
+                  height: 50px;
+                }
+              }
+            }
+          }
+        }
+      }
     }
   }
   section.countdown_section {
     .countdown_container {
-      .ticket_container {
-        img#arrow {
-          width: 120px;
+      .title_container {
+        h4 {
+          font-size: 1.5rem;
         }
       }
     }
   }
   section.posts_section {
     .post_block {
-      padding: 15px;
       .date_container {
-        font-size: 1rem;
+        font-size: 1.3rem;
+        margin-right: 0;
         &.month {
-          font-size: 0.65rem;
+          font-size: 0.75rem;
         }
       }
       p {
@@ -79,6 +140,22 @@
       }
     }
   }
+  section.editions_section {
+    .edition {
+      .video-container {
+        padding-top: 160px;
+      }
+    }
+  }
+
+  .title--translated {
+    font-size: 8rem;
+    top: -85px;
+    left: 85px;
+  }
+  .jeans_bg_ragged {
+    padding: 85px
+  }
 }
 
 @media screen and ( min-width: 768px ) and ( max-width: 991px ) {
@@ -87,13 +164,18 @@
 
 @media screen and ( max-width: 767px ) {
   header {
+    margin-top: 40px;
     .navbar.navbar-light {
       .navbar-nav {
+        margin: 0 0 40px;
         flex-direction: column;
         .nav-link {
           margin-right: 0;
           text-align: center;
           line-height: 1rem;
+          &.active:before {
+            bottom: 0;
+          }
         }
       }
     }
@@ -103,11 +185,28 @@
       .flickity-prev-next-button {
         width: 40px;
         height: 40px;
-        &.previous {
-          left: 30px;
-        }
         &.next {
-          right: 30px;
+          right: 45px;
+        }
+        &.previous {
+          right: 115px;
+        }
+      }
+      .flickity-viewport {
+        .flickity-slider {
+          .carousel-cell {
+            .caption {
+              bottom: 15px;
+              left: 25px;
+              h1 {
+                .big {
+                  font-size: 3rem;
+                  letter-spacing: 8px;
+                  height: 37px;
+                }
+              }
+            }
+          }
         }
       }
     }
@@ -121,7 +220,8 @@
         }
       }
       .countdown {
-        padding: 0 15px 0 0;
+        padding: 0;
+        margin: 0 auto;
       }
     }
   }
@@ -134,6 +234,33 @@
       }
     }
   }
+  section.about_section {
+    .about_container {
+      p {
+        font-size: 1rem;
+        line-height: 1.1;
+      }
+    }
+  }
+  section.editions_section {
+    margin-top: 60px;
+    .edition {
+      .edition__info-container {
+        padding: 25px;
+      }
+      .video-container {
+        padding-top: 0;
+      }
+    }
+  }
+  .title--translated {
+    font-size: 5rem;
+    top: -50px;
+    left: 50px;
+  }
+  .jeans_bg_ragged {
+    padding: 50px
+  }
 }
 
 @media screen and ( min-width: 544px) and (max-width: 767px) {
@@ -141,20 +268,29 @@
 }
 
 @media screen and ( max-width: 575px ) {
+  body {
+    padding-bottom: 200px;
+  }
+
   header {
+    margin-top: 20px;
     .navbar.navbar-light {
-      padding: 20px 0 25px 0;
+      padding: 0 0 20px 0;
       .navbar-brand {
-        top: 10px;
+        top: -5px;
+        padding: 0;
+        margin: 0;
         img {
           width: 130px;
         }
       }
       .navbar-toggler {
         top: 10px;
+        margin-right: 0;
       }
       .navbar-nav {
         flex-direction: column;
+        margin-top: 30px;
         .nav-link {
           margin-right: 0;
           text-align: center;
@@ -163,16 +299,49 @@
       }
     }
   }
+
+  section.countdown_section {
+    .countdown_container {
+      padding: 15px;
+      .countdown {
+        .countdown_item:not(:last-child) {
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+
   section.carousel_section {
     .homepage_carousel {
       .flickity-prev-next-button {
         width: 30px;
         height: 30px;
-        &.previous {
-          left: 15px;
-        }
+        top: 25%;
         &.next {
           right: 15px;
+        }
+        &.previous {
+          right: 85px;
+        }
+      }
+      .flickity-viewport {
+        .flickity-slider {
+          .carousel-cell {
+            .caption {
+              h1 {
+                .small {
+                  font-size: 1rem;
+                  height: 13px;
+                }
+                .big {
+                  font-size: 1.5rem;
+                  letter-spacing: 5px;
+                  height: 20px;
+                  margin: 5px 0 0;
+                }
+              }
+            }
+          }
         }
       }
     }
@@ -186,6 +355,64 @@
         }
       }
     }
+  }
+
+  section.editions_section {
+    margin-top: 50px;
+    .edition {
+      .edition_title {
+        font-size: 1.6rem;
+        margin-bottom: 10px;
+        .year {
+          font-size: 1.8rem;
+        }
+        .city {
+          font-size: 1rem;
+        }
+      }
+      .edition_statistics {
+        letter-spacing: 0;
+        span {
+          font-size: .75rem;
+        }
+      }
+      .edition_description {
+        font-size: .875rem;
+      }
+      .edition_person {
+        font-size: .9rem;
+      }
+      .edition__info-container {
+        padding: 15px;
+      }
+    }
+  }
+
+  footer {
+    .links_list {
+      display: table;
+      margin: 0 auto;
+      float: none;
+      padding: 0;
+    }
+    p {
+      text-align: center;
+      float: none;
+      display: block;
+      a {
+        display: block;
+      }
+    }
+  }
+
+  .title--translated {
+    font-size: 2rem;
+    top: -15px;
+    left: 15px;
+  }
+
+  .jeans_bg_ragged {
+    padding: 30px 15px 15px;
   }
 }
 
