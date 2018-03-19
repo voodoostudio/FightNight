@@ -1126,10 +1126,6 @@ section.privacy_policy_section .privacy_policy_container p {
   padding: 90px 125px;
 }
 
-.img_container {
-  margin-bottom: -20px;
-}
-
 .img_container img {
   width: 100%;
 }
@@ -1568,6 +1564,9 @@ footer .links_list li a img {
   section.tickets_section .countdown_container h3 {
     font-size: 3rem;
   }
+  section.privacy_policy_section .privacy_policy_container {
+    padding: 85px;
+  }
   .title--translated {
     font-size: 8rem;
     top: -85px;
@@ -1651,6 +1650,18 @@ footer .links_list li a img {
   section.press_section .press_container .paragraph {
     max-width: 100%;
   }
+  section.contact_section .contact_container form button {
+    margin-top: 15px;
+  }
+  section.contact_section .contact_container .address {
+    font-size: 1rem;
+  }
+  section.contact_section .contact_container .tel {
+    font-size: 1rem;
+  }
+  section.privacy_policy_section .privacy_policy_container {
+    padding: 50px;
+  }
   .title--translated {
     font-size: 5rem;
     top: -50px;
@@ -1658,6 +1669,16 @@ footer .links_list li a img {
   }
   .jeans_bg_ragged {
     padding: 50px;
+  }
+  .form_group .form_el_label {
+    font-size: 1rem;
+  }
+  .form_group .form_placeholder {
+    font-size: .75rem;
+  }
+  .btn_beige {
+    font-size: 1.2rem;
+    height: 50px;
   }
 }
 
@@ -1702,10 +1723,13 @@ footer .links_list li a img {
     line-height: 1rem;
   }
   section.countdown_section .countdown_container {
-    padding: 15px;
+    padding: 15px 7px;
   }
   section.countdown_section .countdown_container .countdown .countdown_item:not(:last-child) {
     margin-right: 5px;
+  }
+  section.countdown_section .countdown_container .title_container h4 {
+    font-size: 1.2rem;
   }
   section.carousel_section .homepage_carousel .flickity-prev-next-button {
     width: 30px;
@@ -1771,6 +1795,22 @@ footer .links_list li a img {
   section.press_section .press_container h2 {
     font-size: 1.1rem;
   }
+  section.privacy_policy_section .privacy_policy_container {
+    padding: 30px 15px;
+  }
+  section.privacy_policy_section .privacy_policy_container h1 {
+    font-size: 2.5rem;
+    margin-top: 20px;
+  }
+  section.privacy_policy_section .privacy_policy_container h3 {
+    font-size: 1rem;
+  }
+  section.privacy_policy_section .privacy_policy_container p {
+    font-size: .8rem;
+  }
+  section.privacy_policy_section .privacy_policy_container ul li {
+    font-size: .8rem;
+  }
   footer .links_list {
     display: table;
     margin: 0 auto;
@@ -1783,7 +1823,8 @@ footer .links_list li a img {
     display: block;
   }
   footer p a {
-    display: block;
+    display: table;
+    margin: 0 auto;
   }
   .form_group {
     margin-bottom: 10px;
@@ -1792,11 +1833,11 @@ footer .links_list li a img {
     font-size: 1.5rem;
   }
   .title--translated {
-    font-size: 2rem;
-    top: -15px;
+    font-size: 2.5rem;
+    top: -25px;
     left: 15px;
   }
   .jeans_bg_ragged {
-    padding: 30px 15px 15px;
+    padding: 30px 15px;
   }
 }

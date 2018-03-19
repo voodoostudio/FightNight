@@ -157,7 +157,11 @@
       }
     }
   }
-
+  section.privacy_policy_section {
+    .privacy_policy_container {
+      padding: 85px
+    }
+  }
   .title--translated {
     font-size: 8rem;
     top: -85px;
@@ -280,6 +284,24 @@
       }
     }
   }
+  section.contact_section {
+    .contact_container {
+      form button {
+        margin-top: 15px;
+      }
+      .address {
+        font-size: 1rem;
+      }
+      .tel {
+        font-size: 1rem;
+      }
+    }
+  }
+  section.privacy_policy_section {
+    .privacy_policy_container {
+      padding: 50px
+    }
+  }
   .title--translated {
     font-size: 5rem;
     top: -50px;
@@ -287,6 +309,18 @@
   }
   .jeans_bg_ragged {
     padding: 50px
+  }
+  .form_group {
+    .form_el_label {
+      font-size: 1rem;
+    }
+    .form_placeholder {
+      font-size: .75rem;
+    }
+  }
+  .btn_beige {
+    font-size: 1.2rem;
+    height: 50px;
   }
 }
 
@@ -333,10 +367,15 @@
 
   section.countdown_section {
     .countdown_container {
-      padding: 15px;
+      padding: 15px 7px;
       .countdown {
         .countdown_item:not(:last-child) {
           margin-right: 5px;
+        }
+      }
+      .title_container {
+        h4 {
+          font-size: 1.2rem;
         }
       }
     }
@@ -441,6 +480,28 @@
     }
   }
 
+  section.privacy_policy_section {
+    .privacy_policy_container {
+      padding: 30px 15px;
+      h1 {
+        font-size: 2.5rem;
+        margin-top: 20px;
+      }
+      h3 {
+        font-size: 1rem;
+      }
+      p {
+        font-size: .8rem
+      }
+      ul {
+        li {
+          font-size: .8rem;
+        }
+      }
+    }
+  }
+
+
   footer {
     .links_list {
       display: table;
@@ -453,7 +514,8 @@
       float: none;
       display: block;
       a {
-        display: block;
+        display: table;
+        margin: 0 auto;
       }
     }
   }
@@ -466,13 +528,13 @@
     font-size: 1.5rem;
   }
   .title--translated {
-    font-size: 2rem;
-    top: -15px;
+    font-size: 2.5rem;
+    top: -25px;
     left: 15px;
   }
 
   .jeans_bg_ragged {
-    padding: 30px 15px 15px;
+    padding: 30px 15px;
   }
 }
 
