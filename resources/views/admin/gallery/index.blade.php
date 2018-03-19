@@ -14,7 +14,7 @@
                         <div class="title_container">
                             <h1 class="dashboard_header">
                                 <a class="action_link" href="{{ URL::to($lang . '/admin') }}"><i class="fas fa-arrow-left"></i></a>
-                                Gallery
+                                {{ trans('lang.gallery') }}
                                 <a class="action_link add_new" href="{{ URL::to($lang . '/admin/gallery/create') }}"><i class="fas fa-plus"></i></a>
                             </h1>
                         </div>
@@ -24,7 +24,7 @@
                     <div class="inner_block_container">
                         <div class="row">
                             @foreach($gallery as $items)
-                                <div class="col-12 col-md-3">
+                                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
                                     <div class="admin_item_info_block">
                                         <div class="edit_elements">
                                             {{ Form::open(array('url' => 'admin/gallery/' . $items->id, 'class' => 'pull-right')) }}

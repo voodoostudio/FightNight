@@ -10,7 +10,7 @@
                 <h1 class="title--translated">Contact</h1>
                 <form action="">
                     <div class="row">
-                        <div class="col-12 col-md-7">
+                        <div class="col-12 col-md-9 col-lg-7">
                             <div class="form_group">
                                 <label class="form_el_label"><span>{{ trans('lang.sector') }}</span></label>
                                 <select id="view_select" name="object_view" title="">
@@ -23,7 +23,7 @@
                                 <span class="form_placeholder">{{ trans('lang.specify_sector') }}</span>
                             </div>
                         </div>
-                        <div class="col-12 col-md-7">
+                        <div class="col-12 col-md-9 col-lg-7">
                             <div class="form_group">
                                 <label class="form_el_label"><span>{{ trans('lang.email') }}</span></label>
                                 <div class="input_container">

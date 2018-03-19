@@ -77,8 +77,8 @@
             cols: 2,
             options: {
                 caption: '',
-                gapHorizontal: 15,
-                gapVertical: 15,
+                gapHorizontal: 10,
+                gapVertical: 10,
             }
         }],
         defaultFilter: '*',

@@ -397,7 +397,7 @@ header {
   background-position: bottom;
   margin: 70px 0 -20px;
   position: relative;
-  z-index: 99999;
+  z-index: 9999;
 }
 
 header .navbar.navbar-light {
@@ -863,7 +863,7 @@ section.gallery_section .cbp-item img {
   max-height: 400px;
 }
 
-section.gallery_section .cbp-caption-zoom .cbp-caption-activeWrap {
+section.gallery_section .cbp-caption-activeWrap {
   background-color: rgba(0, 0, 0, 0.7);
 }
 
@@ -973,7 +973,6 @@ section.editions_section .edition .video-container embed {
 }
 
 section.contact_section .contact_container {
-  padding: 90px 125px;
   position: relative;
 }
 
@@ -1371,8 +1370,8 @@ footer .links_list li a img {
 }
 
 .admin_edit_section .outer_block_container .inner_block_container form .img_upload_container {
-  margin-top: 28px;
-  min-height: 148px;
+  margin-top: 24px;
+  min-height: 144px;
 }
 
 .admin_edit_section .outer_block_container .inner_block_container form .img_upload_container.sm {
@@ -1649,6 +1648,9 @@ footer .links_list li a img {
   section.tickets_section .countdown_container h3 {
     font-size: 2rem;
   }
+  section.press_section .press_container .paragraph {
+    max-width: 100%;
+  }
   .title--translated {
     font-size: 5rem;
     top: -50px;
@@ -1656,6 +1658,12 @@ footer .links_list li a img {
   }
   .jeans_bg_ragged {
     padding: 50px;
+  }
+}
+
+@media screen and (max-width: 885px) {
+  section.gallery_section .cbp-caption-activeWrap {
+    display: none;
   }
 }
 
@@ -1760,6 +1768,9 @@ footer .links_list li a img {
   section.tickets_section .countdown_container h3 {
     font-size: 1.5rem;
   }
+  section.press_section .press_container h2 {
+    font-size: 1.1rem;
+  }
   footer .links_list {
     display: table;
     margin: 0 auto;
@@ -1773,6 +1784,12 @@ footer .links_list li a img {
   }
   footer p a {
     display: block;
+  }
+  .form_group {
+    margin-bottom: 10px;
+  }
+  .dashboard_header {
+    font-size: 1.5rem;
   }
   .title--translated {
     font-size: 2rem;

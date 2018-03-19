@@ -28,7 +28,7 @@
                     <div class="inner_block_container">
                         <div class="row">
                             @foreach($news as $items)
-                                <div class="col-12 col-md-3">
+                                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
                                     <div class="admin_item_info_block">
                                         <div class="edit_elements">
                                             <a class="edit_btn" href="{{ URL::to($lang . '/admin/news/' . $items->id . '/edit') }}"><i class="fas fa-edit"></i></a>

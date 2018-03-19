@@ -55,15 +55,7 @@ header {
   background-position: bottom;
   margin: 70px 0 -20px;
   position: relative;
-  z-index: 99999;
-  //&:before{
-  //  @extend %header-border;
-  //  top: 0;
-  //}
-  //&:after{
-  //  @extend %header-border;
-  //  bottom: 0;
-  //}
+  z-index: 9999;
   .navbar.navbar-light {
     position: relative;
     background-color: transparent;
@@ -493,10 +485,8 @@ section.gallery_section {
     }
 
   }
-  .cbp-caption-zoom {
-    .cbp-caption-activeWrap {
-      background-color: rgba(0,0,0, 0.7);
-    }
+  .cbp-caption-activeWrap {
+    background-color: rgba(0,0,0, 0.7);
   }
 }
 
@@ -593,7 +583,6 @@ section.editions_section {
 
 section.contact_section {
   .contact_container {
-    padding: 90px 125px;
     position: relative;
     form {
       button {

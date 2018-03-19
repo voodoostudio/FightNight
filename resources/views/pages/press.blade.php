@@ -15,7 +15,7 @@
                 <h2>Communiqués de presse  </h2>
                 <div class="row">
                     @foreach($news as $item)
-                        <div class="col-12 col-lg-4 col-md-6">
+                        <div class="col-12 col-xl-4 col-md-6">
                             <div class="article_block">
                             @if(!empty($item['image_file']))
                                 <div class="article_img" style="background-image: url({{ URL::to('/') }}/news/image/{{ date('F_Y', strtotime($item['created_at'])) }}/{{ $item['image_file'] }})">
