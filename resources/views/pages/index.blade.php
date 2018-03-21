@@ -38,7 +38,7 @@
                     <div class="col-12 col-md-5">
                         <div class="title_container">
                             <h4 title="Billeterie Prochainment Disponible">
-                                <span>Billeterie Prochainment Disponible</span>
+                                <span>Billetterie Prochainement Disponible</span>
                             </h4>
                             {{--<img src="/img/countdown_title.png" alt="ticket">--}}
                         </div>

@@ -44,7 +44,7 @@
                     @endforeach
                 </div>
                 <h2>Accréditations</h2>
-                <p class="paragraph">Accréditez-vous a la Fight Night Saint-Tropez en envoyant une copie de votre carte de presse à <a href="mailto:info@fightnights.pro">info@fightnights.pro</a></p>
+                <p class="paragraph">Accréditez-vous à la Fight Night Saint-Tropez en envoyant une copie de votre carte de presse à <a href="mailto:info@fightnights.pro">info@fightnights.pro</a></p>
 
                 <h2>Dossier de presse</h2>
                 <a href="#" class="download_link">

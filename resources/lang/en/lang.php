@@ -18,7 +18,7 @@ return [
     // Header menu
     'home'                  => 'Home',
     'about'                 => 'About',
-    'editions'              => 'Archive',
+    'editions'              => 'Editions',
     'ticketing'             => 'Ticketing',
     'gallery'               => 'Gallery',
     'partners'              => 'Partners',
