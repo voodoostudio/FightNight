@@ -808,8 +808,12 @@ footer {
         }
         &.lang {
           transform: translateY(-2px);
+          opacity: .5;
           &:hover {
             transform: scale(1.2) translateY(-2px);
+          }
+          &.active {
+            opacity: 1;
           }
         }
         img {

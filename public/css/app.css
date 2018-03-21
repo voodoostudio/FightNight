@@ -1229,11 +1229,16 @@ footer .links_list li a.social:hover {
 footer .links_list li a.lang {
   -webkit-transform: translateY(-2px);
           transform: translateY(-2px);
+  opacity: .5;
 }
 
 footer .links_list li a.lang:hover {
   -webkit-transform: scale(1.2) translateY(-2px);
           transform: scale(1.2) translateY(-2px);
+}
+
+footer .links_list li a.lang.active {
+  opacity: 1;
 }
 
 footer .links_list li a img {

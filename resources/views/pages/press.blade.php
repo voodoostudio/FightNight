@@ -12,7 +12,7 @@
             </div>
             <div class="press_container jeans_bg_ragged">
                 <h1 class="title--translated">Presse</h1>
-                <h2>Communiqués de presse  </h2>
+                <h2>Communiqués de presse</h2>
                 <div class="row">
                     @foreach($news as $item)
                         <div class="col-12 col-xl-4 col-md-6">

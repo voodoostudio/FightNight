@@ -17,16 +17,14 @@
             <li>
                 <a href="#" class="social instagram"><i class="fab fa-instagram"></i></a>
             </li>
-            <li>
-                <a href="#" class="lang">
-                    <img src="/img/en_flag.png" alt="">
-                </a>
-            </li>
-            <li>
-                <a href="#" class="lang">
-                    <img src="/img/fr_flag.png" alt="">
-                </a>
-            </li>
+
+            @foreach(LaravelLocalization::getSupportedLocales() as $localeCode => $langItem)
+                <li>
+                    <a href="{{ LaravelLocalization::getLocalizedURL($localeCode) }}" hreflang="{{$localeCode}}" class="lang {{ ($localeCode == App::getLocale()) ? 'active' : '' }}">
+                        <img src="/img/{{ strtolower($langItem['native']) }}_flag.png" alt="">
+                    </a>
+                </li>
+            @endforeach
         </ul>
         <p>
             © FIGHT NIGHT Saint-Tropez. All Rights Reserved.
