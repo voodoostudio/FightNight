@@ -19,10 +19,10 @@ return [
     'home'                  => 'Accueil',
     'about'                 => 'A propos',
     'editions'              => 'Editions',
-    'ticketing'             => 'Billeterie',
-    'gallery'               => 'Galerie',
+    'ticketing'             => 'Tickets',
+    'gallery'               => 'Galeries',
     'partners'              => 'Partenaires',
-    'press'                 => 'Presse',
+    'press'                 => 'Press',
     'contact'               => 'Contact',
 
     // About page

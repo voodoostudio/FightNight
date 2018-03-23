@@ -22,7 +22,7 @@
     <script type="text/javascript" src="{{mix('js/index.js')}}"></script>
     <script>
         // Set the date we're counting down to
-        var countDownDate = new Date("Mar 28, 2018 22:37:25").getTime();
+        var countDownDate = new Date("Apr 25, 2018 00:00:01").getTime();
         countdown();
     </script>
 @stop
