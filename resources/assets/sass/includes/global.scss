@@ -794,6 +794,7 @@ footer {
       &:nth-child(3) {
         padding-left: 10px;
       }
+
       a {
         color: $white;
         text-decoration: none;
@@ -811,6 +812,7 @@ footer {
           opacity: .5;
           &:hover {
             transform: scale(1.2) translateY(-2px);
+            opacity: .75;
           }
           &.active {
             opacity: 1;

@@ -1235,6 +1235,7 @@ footer .links_list li a.lang {
 footer .links_list li a.lang:hover {
   -webkit-transform: scale(1.2) translateY(-2px);
           transform: scale(1.2) translateY(-2px);
+  opacity: .75;
 }
 
 footer .links_list li a.lang.active {
