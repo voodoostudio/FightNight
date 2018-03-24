@@ -8,17 +8,17 @@
             </div>
             <div class="contact_container jeans_bg_ragged">
                 <h1 class="title--translated">Contact</h1>
-                <form action="">
+                <form action="{{ route('post_contact') }}" method="POST">
+                    {{ csrf_field() }}
                     <div class="row">
                         <div class="col-12 col-md-9 col-lg-7">
                             <div class="form_group">
                                 <label class="form_el_label"><span>{{ trans('lang.sector') }}</span></label>
-                                <select id="view_select" name="object_view" title="">
-                                    <option value="0">Option 1</option>
-                                    <option value="1">Option 2</option>
-                                    <option value="2">Option 3</option>
-                                    <option value="3">Option 4</option>
-                                    <option value="4">Option 5</option>
+                                <select id="view_select" name="select_option_contact" title="">
+                                    <option value="Presse">Presse</option>
+                                    <option value="Billetterie">Billetterie</option>
+                                    <option value="Partenaires">Partenaires</option>
+                                    <option value="Informations Générales">Informations Générales</option>
                                 </select>
                                 <span class="form_placeholder">{{ trans('lang.specify_sector') }}</span>
                             </div>
@@ -27,7 +27,7 @@
                             <div class="form_group">
                                 <label class="form_el_label"><span>{{ trans('lang.email') }}</span></label>
                                 <div class="input_container">
-                                    <input type="email" name="emial" value="" placeholder="">
+                                    <input type="email" name="email" value="" placeholder="">
                                 </div>
                                 <span class="form_placeholder">{{ trans('lang.enter_email') }}</span>
                             </div>

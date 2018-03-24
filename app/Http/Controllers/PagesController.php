@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 use App\Gallery;
 use Ipalaus\Buffer\Client;
 use Ipalaus\Buffer\TokenAuthorization;
+use Illuminate\Http\Request;
 use App\News;
 
 class PagesController extends Controller
@@ -14,12 +15,14 @@ class PagesController extends Controller
         $token_access = env('BUFFER_TOKEN_ACCESS');
         $auth = new TokenAuthorization($token_access);
         $client = new Client($auth);
+        $profiles = $client->getProfiles();
         $prof = [
             ['_id' => '5a54cb3decbe8a1c474ec402'],
             ['_id' => '5a377adea43056c05d33ab0f'],
             ['_id' => '5a377adea43056c05d33ab11'],
             ['_id' => '5a68965df7fb85143c2b4006'],
         ];
+
         $social_posts =[];
         $formatted_posts = [];
 
@@ -168,9 +171,37 @@ class PagesController extends Controller
         return view('pages.contact');
     }
 
-    public function postContact ()
+    public function postContact (Request $request)
     {
-        return view('pages.contact');
+        $this->validate($request, [
+            'email'         => 'required|email',
+            'message'       => 'required',
+        ]);
+
+        $data = [
+            'select_option' => $request->select_option_contact,
+            'email' => $request->email,
+            'message' => $request->message,
+        ];
+
+        $to = env('CONTACT_EMAIL');
+        $subject = 'Fight Night Contact form';
+        $message = '
+			<h3>You have a new contact Via the contact form</h3>
+			<p>Name: ' . $data['select_option'] . '</p>
+			<div>
+				Message: ' . $data['message'] . '
+			</div>
+			<p>Sent via ' . $data['email'] . '</p>
+		';
+
+        $headers  = 'MIME-Version: 1.0' . "\r\n";
+        $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
+        $headers .= 'From: ' . $data['email'] . '' . "\r\n";
+
+        mail($to, $subject, $message, $headers);
+
+        return back();
     }
 
     public function virtual_tour ()

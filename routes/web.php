@@ -90,7 +90,7 @@ Route::group(['prefix' => LaravelLocalization::setLocale()], function()
 
     Route::post('/contact', [
         'uses' => 'PagesController@postContact',
-        'as' => 'post-contact',
+        'as' => 'post_contact',
     ]);
 
     Auth::routes();
