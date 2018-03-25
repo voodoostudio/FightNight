@@ -1088,6 +1088,48 @@ section.press_section .press_container .article_block .article_info .links_block
   margin-right: 10px;
 }
 
+section.partners_section .partners_container .partners_carousel .carousel_item {
+  padding: 0 5px;
+  width: 20%;
+  height: 100%;
+}
+
+section.partners_section .partners_container .partners_carousel .carousel_item a .partner {
+  background: white;
+  padding: 50px;
+}
+
+section.partners_section .partners_container .partners_carousel .carousel_item a .partner img {
+  width: 100%;
+  height: auto;
+}
+
+section.partners_section .partners_container .flickity-prev-next-button {
+  background: rgba(0, 0, 0, 0.75);
+  width: 40px;
+  height: 40px;
+}
+
+section.partners_section .partners_container .flickity-prev-next-button.next {
+  right: -60px;
+}
+
+section.partners_section .partners_container .flickity-prev-next-button.previous {
+  left: -60px;
+}
+
+section.partners_section .partners_container .flickity-prev-next-button:hover {
+  background: black;
+}
+
+section.partners_section .partners_container .flickity-prev-next-button:disabled {
+  display: none;
+}
+
+section.partners_section .partners_container .flickity-prev-next-button .arrow {
+  fill: #fffaff;
+}
+
 section.privacy_policy_section .privacy_policy_container {
   padding: 90px 125px;
   background: rgba(21, 21, 21, 0.99);
