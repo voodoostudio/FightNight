@@ -19,7 +19,7 @@ class PagesController extends Controller
         $prof = [
             ['_id' => env('BUFFER_FACEBOOK_ID')],
             ['_id' => env('BUFFER_TWITTER_ID')],
-            ['_id' => env('BUFFER_INSTAGRAM_ID')]
+            ['_id' => env('BUFFER_INSTAGRAM_ID')],
         ];
 
         $social_posts =[];
@@ -85,11 +85,11 @@ class PagesController extends Controller
     public function galleries ()
     {
         $gallery = Gallery::all();
-        $years = Gallery::orderBy('year')->pluck('year');
+        $category_name = Gallery::orderBy('category_name')->pluck('category_name');
         $menu = [];
 
-        foreach ($years as $year) {
-           $menu[] = $year;
+        foreach ($category_name as $category) {
+           $menu[] = $category;
         }
 
         return view('pages.galleries', [
