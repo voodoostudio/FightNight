@@ -9,6 +9,7 @@
 /public/news/archives
 /public/news/image
 /public/news/pdf
+/public/gallery
 /.vagrant
 Homestead.json
 Homestead.yaml

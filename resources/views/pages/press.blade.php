@@ -17,11 +17,7 @@
                     @foreach($news as $item)
                         <div class="col-12 col-xl-4 col-md-6">
                             <div class="article_block">
-                            @if(!empty($item['image_file']))
-                                <div class="article_img" style="background-image: url({{ URL::to('/') }}/news/image/{{ date('F_Y', strtotime($item['created_at'])) }}/{{ $item['image_file'] }})">
-                            @else
-                                <div class="article_img" style="background-image: url('/img/no_image.svg')">
-                            @endif
+                                <div class="article_img" style="background-image: url({{ (!empty($item['image_file'])) ?  URL::to('/').'/news/image/'.date('F_Y', strtotime($item['created_at'])).'/'.$item['image_file'] :  '/img/no_image.svg'}})">
                                     <a href="{{ route('press-details', ['id' => $item['id']]) }}"></a>
                                 </div>
                                 <div class="article_info jeans_bg">
