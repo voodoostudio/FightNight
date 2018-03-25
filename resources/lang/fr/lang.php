@@ -22,7 +22,7 @@ return [
     'ticketing'             => 'Tickets',
     'gallery'               => 'Galeries',
     'partners'              => 'Partenaires',
-    'press'                 => 'Press',
+    'press'                 => 'Presse',
     'contact'               => 'Contact',
 
     // About page
