@@ -12,10 +12,13 @@
 
         <ul class="links_list">
             <li>
-                <a href="#" class="social facebook"><i class="fab fa-facebook-square"></i></a>
+                <a href="https://www.facebook.com/fightnightsttropez/" class="social facebook"><i class="fab fa-facebook-square"></i></a>
             </li>
             <li>
-                <a href="#" class="social instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.instagram.com/fightnightstropez/" class="social instagram"><i class="fab fa-instagram"></i></a>
+            </li>
+            <li>
+                <a href="#" class="social twitter"><i class="fab fa-twitter-square"></i></a>
             </li>
 
             @foreach(LaravelLocalization::getSupportedLocales() as $localeCode => $langItem)
