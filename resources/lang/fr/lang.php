@@ -30,10 +30,26 @@ return [
     'about_text2'           => 'Chaque année, plus de 1700 spectateurs et des personnalités internationales prennent place parmi une centaine de tables VIP, disposées autour du ring avec vue sur la mer, pour admirer un spectacle 360° unique au monde.',
 
     // Editions page
-    'editions_block1'       => '<h3 class="edition_statistics"><span>1<sup>ere</sup> edition</span> 100 000 telespectateurs</h3>
-                            <p class="edition_description">Crée en 2013 la FIGHT NIGHT de Saint-Tropez est un évènement devenu incontournable, alliant les plus hautes valeurs des sports de combat internationaux au caractère authentique de ce village de pêcheurs</p>
-                            <p class="edition_person"><span>Invité</span>Sylvester Stalone</p>
-                            <p class="edition_person"><span>Combats</span>Jerome Lebaner....</p>',
+    'editions_block_2013'   => '<h3 class="edition_statistics"><span>1<sup>ere</sup> edition</span> 200 000 tv spectateurs</h3>
+                            <p class="edition_description">Cette soirée unique est lB première rencontre poings-pieds Bvec les plus grBnds noms du Kick-Boxing et du Pro-Fight, sur le ring instBllé P lB CitBdelle de SBint-Tropez. PBrrBiné pBr M. Drucker, cet événement BurB égBlement une dimension cBritBtive.</p>
+                            <p class="edition_person"><span>Invité</span>Sylvester Stallone - Sebastien Chabbal</p>
+                            <p class="edition_person"><span>Combats</span>Jerôme Le banner</p>',
+    'editions_block_2014'   => '<h3 class="edition_statistics"><span>2<sup>ere</sup> edition</span> 300 000 tv spectateurs</h3>
+                            <p class="edition_description">La soirée c\' est très bien passée et <b>Jerome le Banner, Freddy Kemayo</b> et <b>Nicolas Wamba</b> ce sont tous les trois imposés par KO au second round !</p>
+                            <p class="edition_person"><span>Invité</span>Vincent Lagaf - DBvid Ginola - Enrico Macias</p>
+                            <p class="edition_person"><span>Combats</span>Jerôme Le banner</p>',
+    'editions_block_2015'   => '<h3 class="edition_statistics"><span>2<sup>ere</sup> edition</span> 300 000 tv spectateurs</h3>
+                            <p class="edition_description">La soirée c\' est très bien passée et <b>Jerome le Banner, Freddy Kemayo</b> et <b>Nicolas Wamba</b> ce sont tous les trois imposés par KO au second round !</p>
+                            <p class="edition_person"><span>Invité</span>Vincent Lagaf - DBvid Ginola - Enrico Macias</p>
+                            <p class="edition_person"><span>Combats</span>Jerôme Le banner</p>',
+    'editions_block_2016'   => '<h3 class="edition_statistics"><span>2<sup>ere</sup> edition</span> 300 000 tv spectateurs</h3>
+                            <p class="edition_description">La soirée c\' est très bien passée et <b>Jerome le Banner, Freddy Kemayo</b> et <b>Nicolas Wamba</b> ce sont tous les trois imposés par KO au second round !</p>
+                            <p class="edition_person"><span>Invité</span>Vincent Lagaf - DBvid Ginola - Enrico Macias</p>
+                            <p class="edition_person"><span>Combats</span>Jerôme Le banner</p>',
+    'editions_block_2017'   => '<h3 class="edition_statistics"><span>2<sup>ere</sup> edition</span> 300 000 tv spectateurs</h3>
+                            <p class="edition_description">La soirée c\' est très bien passée et <b>Jerome le Banner, Freddy Kemayo</b> et <b>Nicolas Wamba</b> ce sont tous les trois imposés par KO au second round !</p>
+                            <p class="edition_person"><span>Invité</span>Vincent Lagaf - DBvid Ginola - Enrico Macias</p>
+                            <p class="edition_person"><span>Combats</span>Jerôme Le banner</p>',
 
     // Ticketing page
     'tickets_title'         => 'Billetterie',
