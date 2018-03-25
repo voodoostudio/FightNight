@@ -30,7 +30,7 @@
 
             <div id="js-grid-full-width" class="cbp">
             @foreach($gallery as $images)
-                <div class="cbp-item {{ $images->year }}">
+                <div class="cbp-item {{ $images->category_name }}">
                     <a href="{{ route('gallery_details', $images->id) }}" class="cbp-caption" data-title="{{ ($lang == 'fr') ? $images->title_fr : $images->title_en }}">
                         <div class="cbp-caption-defaultWrap">
                             @php
@@ -72,7 +72,7 @@
                     @php
                         $counter++;
                     @endphp
-                    <div data-filter=".{{ $item }}" class="cbp-filter-item">
+                    <div data-filter=".{{ strtolower(str_replace(' ', '_', $item)) }}" class="cbp-filter-item">
                         {{ $item }} <div class="cbp-filter-counter"></div>
                     </div> <span>{{ ($counter == $total) ? '' : '/'  }}</span>
                 @endforeach
@@ -80,7 +80,7 @@
 
             <div id="js-grid-mosaic" class="cbp">
             @foreach($gallery as $images)
-                <div class="cbp-item {{ $images->year }}">
+                <div class="cbp-item {{ strtolower(str_replace(' ', '_', $images->category_name)) }}">
                     <a href="{{ route('gallery_details', $images->id) }}" class="cbp-caption" data-title="{{ ($lang == 'fr') ? $images->title_fr : $images->title_en }}">
                         <div class="cbp-caption-defaultWrap">
                             @php

@@ -54,10 +54,10 @@
                                         </div>
                                         <div class="col-12">
                                             <div class="label_container">
-                                                <label class="form_el_label"><span>Year *</span></label>
+                                                <label class="form_el_label"><span>Category name *</span></label>
                                             </div>
                                             <div class="input_container">
-                                                <input name="year" type="text" placeholder="Year" id="article_datepicker"/>
+                                                <input name="category_name" type="text" placeholder="Category" id="article_datepicker"/>
                                             </div>
                                         </div>
                                     </div>

@@ -17,10 +17,9 @@ class PagesController extends Controller
         $client = new Client($auth);
         $profiles = $client->getProfiles();
         $prof = [
-            ['_id' => '5a54cb3decbe8a1c474ec402'],
-            ['_id' => '5a377adea43056c05d33ab0f'],
-            ['_id' => '5a377adea43056c05d33ab11'],
-            ['_id' => '5a68965df7fb85143c2b4006'],
+            ['_id' => env('BUFFER_FACEBOOK_ID')],
+            ['_id' => env('BUFFER_TWITTER_ID')],
+            ['_id' => env('BUFFER_INSTAGRAM_ID')],
         ];
 
         $social_posts =[];
@@ -86,11 +85,11 @@ class PagesController extends Controller
     public function galleries ()
     {
         $gallery = Gallery::all();
-        $years = Gallery::orderBy('year')->pluck('year');
+        $category_name = Gallery::orderBy('category_name')->pluck('category_name');
         $menu = [];
 
-        foreach ($years as $year) {
-           $menu[] = $year;
+        foreach ($category_name as $category) {
+           $menu[] = $category;
         }
 
         return view('pages.galleries', [

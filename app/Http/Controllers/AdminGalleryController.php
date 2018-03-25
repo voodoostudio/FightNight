@@ -125,7 +125,7 @@ class AdminGalleryController extends Controller
 
             $gallery->title_fr        = Input::get('title_fr');
             $gallery->title_en        = Input::get('title_en');
-            $gallery->year            = Input::get('year');
+            $gallery->category_name   = Input::get('category_name');
             $gallery->save();
 
             // redirect
