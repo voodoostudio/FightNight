@@ -541,6 +541,7 @@ section.carousel_section .homepage_carousel .flickity-viewport .flickity-slider 
   font-family: сhunkfive_ex;
   margin: 0;
   text-transform: uppercase;
+  text-shadow: 2px 2px 15px black;
 }
 
 section.carousel_section .homepage_carousel .flickity-viewport .flickity-slider .carousel-cell .caption h1 .big {

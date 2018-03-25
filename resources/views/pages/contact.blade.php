@@ -20,7 +20,7 @@
                                     <option value="Partenaires">Partenaires</option>
                                     <option value="Informations Générales">Informations Générales</option>
                                 </select>
-                                <span class="form_placeholder">{{ trans('lang.specify_sector') }}</span>
+                                {{--<span class="form_placeholder">{{ trans('lang.specify_sector') }}</span>--}}
                             </div>
                         </div>
                         <div class="col-12 col-md-9 col-lg-7">
@@ -29,7 +29,7 @@
                                 <div class="input_container">
                                     <input type="email" name="email" value="" placeholder="">
                                 </div>
-                                <span class="form_placeholder">{{ trans('lang.enter_email') }}</span>
+                                {{--<span class="form_placeholder">{{ trans('lang.enter_email') }}</span>--}}
                             </div>
                         </div>
                         <div class="col-12">
@@ -38,7 +38,7 @@
                                 <div class="input_container">
                                     <textarea name="message" value="" placeholder=""></textarea>
                                 </div>
-                                <span class="form_placeholder">{{ trans('lang.write_message') }}</span>
+                                {{--<span class="form_placeholder">{{ trans('lang.write_message') }}</span>--}}
                             </div>
                         </div>
                         <div class="col-12">
@@ -51,10 +51,10 @@
                         <p class="address">
                             Fight Night Saint-Tropez<br>
                             2 Montée de la Citadelle<br>
-                            1202 ST TROPEZ
+                            83990 SAINT-TROPEZ
                         </p>
-                        <p class="tel">T. + 41 (0)22 365 10 10</p>
-                        <p class="tel">F. + 41 (0)22 365 10 20</p>
+                        <p class="tel">T. +33 (0)4 94 20 34 24</p>
+                        <p class="tel">P. +33 (0)6 24 26 03 28</p>
                     </div>
                 </div>
             </div>

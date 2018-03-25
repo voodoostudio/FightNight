@@ -47,36 +47,10 @@
                 <p class="paragraph">Accréditez-vous à la Fight Night Saint-Tropez en envoyant une copie de votre carte de presse à <a href="mailto:info@fightnights.pro">info@fightnights.pro</a></p>
 
                 <h2>Dossier de presse</h2>
-                <a href="#" class="download_link">
+                <a href="/news/fightnight_2018.pdf" class="download_link" download="FightNight Saint-Tropez Communique de presse 2018">
                     <img src="/img/pdf.png" alt="PDF icn">
                 </a>
                 <p class="paragraph">Cliquez ici pour télécharger le dossier de presse Fight Night 2018 !</p>
-            </div>
-
-
-            {{--<div class="row">--}}
-                {{--@foreach($news as $item)--}}
-                    {{--<div class="col-12 col-lg-6">--}}
-                        {{--<div class="block_container">--}}
-                            {{--<div class="article_info_block">--}}
-                                {{--<div class="article_img">--}}
-                                    {{--<a href="{{ route('press-details', ['id' => $item['id']]) }}">--}}
-                                        {{--@if(!empty($item['image_file']))--}}
-                                            {{--<img style="max-height: 150px;" src="{{ URL::to('/') }}/news/image/{{ date('F_Y', strtotime($item['created_at'])) }}/{{ $item['image_file'] }}" alt="Photo">--}}
-                                        {{--@else--}}
-                                            {{--<img src="/img/no_image.svg" alt="No photo">--}}
-                                        {{--@endif--}}
-                                    {{--</a>--}}
-                                {{--</div>--}}
-                                {{--<div class="article_info">--}}
-                                    {{--<h3><a href="{{ route('press-details', ['id' => $item['id']]) }}">{{ $item['title_fr'] }}</a></h3>--}}
-                                    {{--<h3>{{ (!empty($item['date'])) ? date('d.m.Y', strtotime($item['created_at'])) : '' }}</h3>--}}
-                                {{--</div>--}}
-                            {{--</div>--}}
-                        {{--</div>--}}
-                    {{--</div>--}}
-                {{--@endforeach--}}
-            {{--</div>--}}
             </div>
         </div>
     </section>

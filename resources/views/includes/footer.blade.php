@@ -18,7 +18,7 @@
                 <a href="https://www.instagram.com/fightnightstropez/" class="social instagram"><i class="fab fa-instagram"></i></a>
             </li>
             <li>
-                <a href="#" class="social twitter"><i class="fab fa-twitter-square"></i></a>
+                <a href="https://twitter.com/fightnightst" class="social twitter"><i class="fab fa-twitter-square"></i></a>
             </li>
 
             @foreach(LaravelLocalization::getSupportedLocales() as $localeCode => $langItem)

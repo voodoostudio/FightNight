@@ -4,7 +4,9 @@
 /storage/*.key
 /vendor
 /.idea
-/public/news
+/public/news/archives
+/public/news/image
+/public/news/pdf
 /.vagrant
 Homestead.json
 Homestead.yaml
