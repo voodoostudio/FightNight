@@ -53,6 +53,11 @@ return [
     'write_message'         => 'Rédigez votre message ici.',
     'send'                  => 'Envoyer',
 
+    //Homepage
+    'our_tickets'           => 'Nos <span>tickets</span>',
+    'our_editions'          => 'Nos <span>éditions</span>',
+    'our_contact'           => 'Notre <span>contact</span>',
+    'read_more'             => 'Voir plus',
 
 
 

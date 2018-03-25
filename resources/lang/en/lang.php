@@ -54,6 +54,10 @@ return [
     'write_message'         => 'Write your message here.',
     'send'                  => 'Send',
 
-
+    //Homepage
+    'our_tickets'           => 'Our <span>tickets</span>',
+    'our_editions'          => 'Our <span>edition</span>',
+    'our_contact'           => 'Oure <span>contact</span>',
+    'read_more'             => 'Read more',
 
 ];

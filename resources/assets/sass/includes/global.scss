@@ -63,7 +63,7 @@ header {
     .navbar-brand {
       position: absolute;
       left: 0;
-      top: -39px;
+      top: -50px;
       z-index: 9;
       img {
         width: 250px;
@@ -445,6 +445,7 @@ section.about_section {
   }
   .about_container {
     p {
+      font-family: proxima_nova_thin;
       line-height: 1.2;
       letter-spacing: 1px;
       font-size: 1.2rem;
@@ -743,11 +744,6 @@ footer {
   background: url("/img/bg_footer.png") top no-repeat;
   background-size: cover;
   z-index: 999;
-  //&:before{
-  //  @extend %header-border;
-  //  top: 0;
-  //}
-
   p {
     margin: 0;
     color: $white;
@@ -787,11 +783,11 @@ footer {
     li {
       display: inline-block;
       padding: 0 5px;
-      &:nth-child(2) {
+      &:nth-child(3) {
         border-right: 2px solid $white;
         padding-right: 10px;
       }
-      &:nth-child(3) {
+      &:nth-child(4) {
         padding-left: 10px;
       }
 

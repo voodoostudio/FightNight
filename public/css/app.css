@@ -409,7 +409,7 @@ header .navbar.navbar-light {
 header .navbar.navbar-light .navbar-brand {
   position: absolute;
   left: 0;
-  top: -39px;
+  top: -50px;
   z-index: 9;
 }
 
@@ -822,6 +822,7 @@ section.about_section img {
 }
 
 section.about_section .about_container p {
+  font-family: proxima_nova_thin;
   line-height: 1.2;
   letter-spacing: 1px;
   font-size: 1.2rem;
@@ -1199,12 +1200,12 @@ footer .links_list li {
   padding: 0 5px;
 }
 
-footer .links_list li:nth-child(2) {
+footer .links_list li:nth-child(3) {
   border-right: 2px solid #fffaff;
   padding-right: 10px;
 }
 
-footer .links_list li:nth-child(3) {
+footer .links_list li:nth-child(4) {
   padding-left: 10px;
 }
 
@@ -1638,6 +1639,9 @@ footer .links_list li a img {
     font-size: 1rem;
     line-height: 1.1;
   }
+  section.about_section .about_container h3 {
+    font-size: 1.2rem;
+  }
   section.editions_section {
     margin-top: 60px;
   }
@@ -1705,7 +1709,7 @@ footer .links_list li a img {
     padding: 0 0 20px 0;
   }
   header .navbar.navbar-light .navbar-brand {
-    top: -5px;
+    top: -10px;
     padding: 0;
     margin: 0;
   }
@@ -1800,6 +1804,12 @@ footer .links_list li a img {
   }
   section.press_section .press_container h2 {
     font-size: 1.1rem;
+  }
+  section.about_section .about_container h3 {
+    font-size: 1.1rem;
+  }
+  section.about_section .about_container p {
+    font-size: .85rem;
   }
   section.privacy_policy_section .privacy_policy_container {
     padding: 30px 15px;
