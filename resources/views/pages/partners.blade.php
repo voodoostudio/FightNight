@@ -11,47 +11,37 @@
                 <h2>Partenaires historiques</h2>
                 <div class="partners_carousel">
                     <div class="carousel_item">
-                        blbslsblsb
                         <a href="#">
                             <div class="partner">
-                                blablab
-                                <img src="/img/logo.png" alt="logo">
+                                <img src="/img/partners/grands_partenaires/bagatelle.png" alt="logo">
                             </div>
                         </a>
                     </div>
                     <div class="carousel_item">
-                        blbslsblsb
                         <a href="#">
                             <div class="partner">
-                                blablab
-                                <img src="/img/logo.png" alt="logo">
+                                <img src="/img/partners/grands_partenaires/bagatelle.png" alt="logo">
                             </div>
                         </a>
                     </div>
                     <div class="carousel_item">
-                        blbslsblsb
                         <a href="#">
                             <div class="partner">
-                                blablab
-                                <img src="/img/logo.png" alt="logo">
+                                <img src="/img/partners/grands_partenaires/bagatelle.png" alt="logo">
                             </div>
                         </a>
                     </div>
                     <div class="carousel_item">
-                        blbslsblsb
                         <a href="#">
                             <div class="partner">
-                                blablab
-                                <img src="/img/logo.png" alt="logo">
+                                <img src="/img/partners/grands_partenaires/bagatelle.png" alt="logo">
                             </div>
                         </a>
                     </div>
                     <div class="carousel_item">
-                        blbslsblsb
                         <a href="#">
                             <div class="partner">
-                                blablab
-                                <img src="/img/logo.png" alt="logo">
+                                <img src="/img/partners/grands_partenaires/bagatelle.png" alt="logo">
                             </div>
                         </a>
                     </div>
@@ -61,42 +51,35 @@
                     <div class="carousel_item">
                         <a href="#">
                             <div class="partner">
-                                <img src="/img/logo.png" alt="logo">
+                                <img src="/img/partners/grands_partenaires/bagatelle.png" alt="logo">
                             </div>
                         </a>
                     </div>
                     <div class="carousel_item">
                         <a href="#">
                             <div class="partner">
-                                <img src="/img/logo.png" alt="logo">
+                                <img src="/img/partners/grands_partenaires/heraclee.png" alt="logo">
                             </div>
                         </a>
                     </div>
                     <div class="carousel_item">
                         <a href="#">
                             <div class="partner">
-                                <img src="/img/logo.png" alt="logo">
+                                <img src="/img/partners/grands_partenaires/madinevent.png" alt="logo">
                             </div>
                         </a>
                     </div>
                     <div class="carousel_item">
                         <a href="#">
                             <div class="partner">
-                                <img src="/img/logo.png" alt="logo">
+                                <img src="/img/partners/grands_partenaires/mairie.png" alt="logo">
                             </div>
                         </a>
                     </div>
                     <div class="carousel_item">
                         <a href="#">
                             <div class="partner">
-                                <img src="/img/logo.png" alt="logo">
-                            </div>
-                        </a>
-                    </div>
-                    <div class="carousel_item">
-                        <a href="#">
-                            <div class="partner">
-                                <img src="/img/logo.png" alt="logo">
+                                <img src="/img/partners/grands_partenaires/moorea.png" alt="logo">
                             </div>
                         </a>
                     </div>

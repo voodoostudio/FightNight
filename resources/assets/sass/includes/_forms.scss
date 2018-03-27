@@ -36,6 +36,11 @@
     }
   }
 
+.btn:not(:disabled):not(.disabled):active,
+.btn:not(:disabled):not(.disabled).active {
+  @include my_vertical_gradient;
+}
+
 /*Buttons style END*/
 
 .form_group {
