@@ -339,18 +339,6 @@ section.posts_section {
   }
   .post_block {
     padding: 25px;
-    .date_container {
-      font-family: plane_crash;
-      padding: 10px 5px;
-      margin-right: 5px;
-      text-align: center;
-      @include my_vertical_gradient;
-      font-size: 2.5rem;
-      line-height: 1;
-      &.month {
-        font-size: 1.2rem;
-      }
-    }
     h5 {
       font-family: proxima_nova_bold;
       text-transform: uppercase;
@@ -640,14 +628,34 @@ section.press_section {
       .article_img {
         background-size: cover;
         background-position: center;
-        a {
+        position: relative;
+        a.article_link {
           display: block;
           height: 180px;
+        }
+        .links_block {
+          position: absolute;
+          top: 10px;
+          right: 10px;
+          a {
+            color: $blue_light;
+            font-size: 20px;
+            &:not(:last-child) {
+              margin-right: 10px;
+            }
+          }
         }
       }
       .article_info {
         padding: 15px;
         position: relative;
+        .date_container {
+          font-size: 2rem;
+          margin: 0;
+          &.month {
+            font-size: 1rem;
+          }
+        }
         h3 {
           font-family: proxima_nova_bold;
           text-transform: uppercase;
@@ -670,18 +678,6 @@ section.press_section {
           text-align: justify;
           font-size: .875rem;
           margin: 0;
-        }
-        .links_block {
-          position: absolute;
-          top: 15px;
-          right: 15px;
-          a {
-            color: $blue_light;
-            font-size: 20px;
-            &:not(:last-child) {
-              margin-right: 10px;
-            }
-          }
         }
       }
     }
@@ -768,6 +764,19 @@ section.privacy_policy_section {
   //margin-bottom: -20px;
   img {
     width: 100%;
+  }
+}
+
+.date_container {
+  font-family: plane_crash;
+  padding: 10px 5px;
+  margin-right: 5px;
+  text-align: center;
+  @include my_vertical_gradient;
+  font-size: 2.5rem;
+  line-height: 1;
+  &.month {
+    font-size: 1.2rem;
   }
 }
 .title--translated {
