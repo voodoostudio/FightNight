@@ -352,6 +352,10 @@ textarea:focus {
 }
 
 /*Select2 styles END*/
+#form-messages .success {
+  color: #51bf6c;
+}
+
 html {
   font-size: 16px;
 }
@@ -555,7 +559,7 @@ section.carousel_section .homepage_carousel .flickity-viewport .flickity-slider 
 
 section.carousel_section .homepage_carousel .flickity-viewport .flickity-slider .carousel-cell .caption h1 .big {
   font-size: 6rem;
-  letter-spacing: 12px;
+  letter-spacing: 5px;
   display: block;
   line-height: 1;
   height: 75px;
@@ -565,7 +569,7 @@ section.carousel_section .homepage_carousel .flickity-viewport .flickity-slider 
 section.carousel_section .homepage_carousel .flickity-viewport .flickity-slider .carousel-cell .caption h1 .small {
   font-size: 3rem;
   line-height: 1;
-  letter-spacing: 4px;
+  letter-spacing: 3px;
   display: block;
   color: #bf3737;
   height: 40px;
@@ -599,7 +603,7 @@ section.carousel_section .homepage_carousel .flickity-prev-next-button .arrow {
 }
 
 section.countdown_section {
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 section.countdown_section .countdown_container {
@@ -670,7 +674,6 @@ section.tickets_section .countdown_container h3 {
 }
 
 section.posts_section {
-  margin-top: 5px;
   color: white;
 }
 
@@ -679,7 +682,7 @@ section.posts_section .carousel_container {
 }
 
 section.posts_section .carousel_container .posts_carousel {
-  margin: 15px -5px 0;
+  margin: 10px -5px 0;
 }
 
 section.posts_section .carousel_container .posts_carousel .carousel_item {
@@ -705,24 +708,6 @@ section.posts_section .carousel_container .posts_carousel .flickity-page-dots .d
 
 section.posts_section .post_block {
   padding: 25px;
-}
-
-section.posts_section .post_block .date_container {
-  font-family: plane_crash;
-  padding: 10px 5px;
-  margin-right: 5px;
-  text-align: center;
-  background: #454545;
-  background: -webkit-gradient(left top, left bottom, color-stop(0%, #454545), color-stop(45%, #4d4c4d), color-stop(100%, #1f1a1c));
-  background: -webkit-gradient(linear, left top, left bottom, from(#454545), color-stop(45%, #4d4c4d), to(#1f1a1c));
-  background: linear-gradient(to bottom, #454545 0%, #4d4c4d 45%, #1f1a1c 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#454545', endColorstr='#1f1a1c', GradientType=0 );
-  font-size: 2.5rem;
-  line-height: 1;
-}
-
-section.posts_section .post_block .date_container.month {
-  font-size: 1.2rem;
 }
 
 section.posts_section .post_block h5 {
@@ -805,7 +790,7 @@ section.thumbnails_section .page_thumbnail h2 {
   font-family: proxima_nova_black;
   font-size: 2.6rem;
   line-height: 1;
-  letter-spacing: 3px;
+  letter-spacing: 2px;
   position: absolute;
   bottom: 90px;
   left: 30px;
@@ -834,7 +819,7 @@ section.about_section img {
 section.about_section .about_container p {
   font-family: proxima_nova_thin;
   line-height: 1.2;
-  letter-spacing: 1px;
+  letter-spacing: 0px;
   font-size: 1.2rem;
 }
 
@@ -902,7 +887,7 @@ section.editions_section .edition .edition__info-container {
 
 section.editions_section .edition .edition_title {
   font-family: proxima_nova_thin;
-  font-size: 3.6rem;
+  font-size: 3rem;
   letter-spacing: 2px;
   margin: 0;
 }
@@ -917,7 +902,7 @@ section.editions_section .edition .edition_title .city {
 section.editions_section .edition .edition_title .year {
   font-family: proxima_nova_regular;
   color: #c08167;
-  font-size: 3.8rem;
+  font-size: 3.2rem;
 }
 
 section.editions_section .edition .edition_statistics {
@@ -948,14 +933,12 @@ section.editions_section .edition .edition_description {
   font-size: 1.1rem;
   font-family: proxima_nova_thin;
   line-height: 1.2;
-  letter-spacing: 1px;
 }
 
 section.editions_section .edition .edition_person {
   line-height: 1;
   margin: 0 0 7px 0;
   font-size: 1.1rem;
-  letter-spacing: 1px;
 }
 
 section.editions_section .edition .edition_person span {
@@ -1009,6 +992,11 @@ section.contact_section .contact_container .tel {
   font-size: 1.2rem;
 }
 
+section.press_section .press_container {
+  background-image: url(/img/presse/bg.png);
+  padding-bottom: 250px;
+}
+
 section.press_section .press_container h2 {
   color: #c08167;
   position: relative;
@@ -1048,16 +1036,41 @@ section.press_section .press_container .article_block {
 section.press_section .press_container .article_block .article_img {
   background-size: cover;
   background-position: center;
+  position: relative;
 }
 
-section.press_section .press_container .article_block .article_img a {
+section.press_section .press_container .article_block .article_img a.article_link {
   display: block;
   height: 180px;
+}
+
+section.press_section .press_container .article_block .article_img .links_block {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+section.press_section .press_container .article_block .article_img .links_block a {
+  color: #00ffff;
+  font-size: 20px;
+}
+
+section.press_section .press_container .article_block .article_img .links_block a:not(:last-child) {
+  margin-right: 10px;
 }
 
 section.press_section .press_container .article_block .article_info {
   padding: 15px;
   position: relative;
+}
+
+section.press_section .press_container .article_block .article_info .date_container {
+  font-size: 2rem;
+  margin: 0;
+}
+
+section.press_section .press_container .article_block .article_info .date_container.month {
+  font-size: 1rem;
 }
 
 section.press_section .press_container .article_block .article_info h3 {
@@ -1084,21 +1097,6 @@ section.press_section .press_container .article_block .article_info p {
   text-align: justify;
   font-size: .875rem;
   margin: 0;
-}
-
-section.press_section .press_container .article_block .article_info .links_block {
-  position: absolute;
-  top: 15px;
-  right: 15px;
-}
-
-section.press_section .press_container .article_block .article_info .links_block a {
-  color: #00ffff;
-  font-size: 20px;
-}
-
-section.press_section .press_container .article_block .article_info .links_block a:not(:last-child) {
-  margin-right: 10px;
 }
 
 section.partners_section .partners_container h2 {
@@ -1190,6 +1188,24 @@ section.privacy_policy_section .privacy_policy_container p {
 
 .img_container img {
   width: 100%;
+}
+
+.date_container {
+  font-family: plane_crash;
+  padding: 10px 5px;
+  margin-right: 5px;
+  text-align: center;
+  background: #454545;
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, #454545), color-stop(45%, #4d4c4d), color-stop(100%, #1f1a1c));
+  background: -webkit-gradient(linear, left top, left bottom, from(#454545), color-stop(45%, #4d4c4d), to(#1f1a1c));
+  background: linear-gradient(to bottom, #454545 0%, #4d4c4d 45%, #1f1a1c 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#454545', endColorstr='#1f1a1c', GradientType=0 );
+  font-size: 2.5rem;
+  line-height: 1;
+}
+
+.date_container.month {
+  font-size: 1.2rem;
 }
 
 .title--translated {
@@ -1629,6 +1645,9 @@ footer .links_list li a img {
   }
   section.tickets_section .countdown_container h3 {
     font-size: 3rem;
+  }
+  section.press_section .press_container {
+    padding-bottom: 200px;
   }
   section.privacy_policy_section .privacy_policy_container {
     padding: 85px;

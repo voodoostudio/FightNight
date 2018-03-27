@@ -42,12 +42,12 @@
                             </div>
                         </div>
                         <div class="col-12">
+                            <div id="form-messages"></div>
+                        </div>
+                        <div class="col-12">
                             <div class="row">
                                 <div class="col-4">
                                     <button type="submit" class="btn btn_beige">{{ trans('lang.send') }}</button>
-                                </div>
-                                <div class="col-8">
-                                    <div id="form-messages"></div>
                                 </div>
                             </div>
                         </div>
