@@ -1080,6 +1080,9 @@ section.press_section .press_container .article_block .article_info h3 {
   margin: 0;
   line-height: 1;
   font-size: 1.5rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 section.press_section .press_container .article_block .article_info h4 {
