@@ -216,3 +216,9 @@ textarea:focus {
   }
 }
 /*Select2 styles END*/
+
+#form-messages {
+  .success {
+    color: $success_color;
+  }
+}
