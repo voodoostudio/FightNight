@@ -1101,6 +1101,27 @@ section.press_section .press_container .article_block .article_info .links_block
   margin-right: 10px;
 }
 
+section.partners_section .partners_container h2 {
+  margin-bottom: 20px;
+}
+
+section.partners_section .partners_container .partners_carousel {
+  margin-bottom: 30px;
+}
+
+section.partners_section .partners_container .partners_carousel .carousel_item {
+  width: 20%;
+}
+
+section.partners_section .partners_container .partners_carousel .carousel_item .partner {
+  background: white;
+  margin: 0 5px;
+}
+
+section.partners_section .partners_container .partners_carousel .carousel_item .partner img {
+  width: 100%;
+}
+
 section.partners_section .partners_container .partners_carousel .flickity-prev-next-button {
   background: rgba(0, 0, 0, 0.75);
   width: 40px;

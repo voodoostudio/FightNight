@@ -1,6 +1,33 @@
 @extends('layouts.app')
 
 @section('content')
+
+    <section class="carousel_section">
+        <div class="container-fluid">
+            <div class="homepage_carousel">
+                <div class="carousel-cell">
+                    <img src="/img/carousel/1.jpg" alt="">
+                    {{--<div class="caption">--}}
+                    {{--<h1>learn to <span>defend</span> yourself in real life</h1>--}}
+                    {{--</div>--}}
+                    <div class="caption">
+                        <h1><span class="small">Saint-Tropez</span><span class="big">Best Show</span></h1>
+                        {{--<h1><span class="small">The best</span><span class="big">show</span> <span class="small">of st-tropez</span></h1>--}}
+                    </div>
+                </div>
+                <div class="carousel-cell">
+                    <img src="/img/carousel/2.jpg" alt="">
+                </div>
+                <div class="carousel-cell">
+                    <img src="/img/carousel/3.jpg" alt="">
+                </div>
+                <div class="carousel-cell">
+                    <img src="/img/carousel/4.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section class="partners_section">
         <div class="container-fluid">
             <div class="img_container">
@@ -11,46 +38,36 @@
                 <h2>Partenaires historiques</h2>
                 <div class="partners_carousel">
                     <div class="carousel_item">
-                        blbslsblsb
                         <a href="#">
                             <div class="partner">
-                                blablab
                                 <img src="/img/logo.png" alt="logo">
                             </div>
                         </a>
                     </div>
                     <div class="carousel_item">
-                        blbslsblsb
                         <a href="#">
                             <div class="partner">
-                                blablab
                                 <img src="/img/logo.png" alt="logo">
                             </div>
                         </a>
                     </div>
                     <div class="carousel_item">
-                        blbslsblsb
                         <a href="#">
                             <div class="partner">
-                                blablab
                                 <img src="/img/logo.png" alt="logo">
                             </div>
                         </a>
                     </div>
                     <div class="carousel_item">
-                        blbslsblsb
                         <a href="#">
                             <div class="partner">
-                                blablab
                                 <img src="/img/logo.png" alt="logo">
                             </div>
                         </a>
                     </div>
                     <div class="carousel_item">
-                        blbslsblsb
                         <a href="#">
                             <div class="partner">
-                                blablab
                                 <img src="/img/logo.png" alt="logo">
                             </div>
                         </a>
@@ -198,7 +215,24 @@
 @stop
 
 @section('js')
+
     <script>
+
+        $('.homepage_carousel').flickity({
+            // options
+            cellAlign: 'left',
+            contain: true,
+            wrapAround: true,
+            pageDots: false,
+            arrowShape: {
+                x0: 15,
+                x1: 65, y1: 50,
+                x2: 70, y2: 45,
+                x3: 25
+            }
+        });
+
+
         $('.partners_carousel').flickity({
             // options
             cellAlign: 'left',

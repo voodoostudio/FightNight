@@ -691,8 +691,20 @@ section.press_section {
 
 section.partners_section {
   .partners_container {
+    h2 {
+      margin-bottom: 20px;
+    }
     .partners_carousel {
+      margin-bottom: 30px;
       .carousel_item {
+        width: 20%;
+        .partner {
+          background: white;
+          margin: 0 5px;
+          img {
+            width: 100%;
+          }
+        }
         //  padding: 0 5px;
         //  width: 20%;
         //  height: 100%;
