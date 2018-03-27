@@ -15,6 +15,13 @@
                 <h2>Communiqués de presse</h2>
                 <div class="row">
                     @foreach($news as $item)
+                        <!-- ************************ -->
+                        <!-- ******* ДЛЯ ВАНИ ******* -->
+                        <!-- ************************ -->
+
+                       <span>{{ $item->updated_at->format('d') }}</span>
+                       <span>{{ $item->updated_at->format('M') }}</span>
+
                         <div class="col-12 col-xl-4 col-md-6">
                             <div class="article_block">
                                 <div class="article_img" style="background-image: url({{ (!empty($item['image_file'])) ?  URL::to('/').'/news/image/'.date('F_Y', strtotime($item['created_at'])).'/'.$item['image_file'] :  '/img/no_image.svg'}})">
