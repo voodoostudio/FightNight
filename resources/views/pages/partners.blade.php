@@ -40,35 +40,55 @@
                     <div class="carousel_item">
                         <a href="#">
                             <div class="partner">
+<<<<<<< HEAD
                                 <img src="/img/logo.png" alt="logo">
+=======
+                                <img src="/img/partners/grands_partenaires/bagatelle.png" alt="logo">
+>>>>>>> dev
                             </div>
                         </a>
                     </div>
                     <div class="carousel_item">
                         <a href="#">
                             <div class="partner">
+<<<<<<< HEAD
                                 <img src="/img/logo.png" alt="logo">
+=======
+                                <img src="/img/partners/grands_partenaires/bagatelle.png" alt="logo">
+>>>>>>> dev
                             </div>
                         </a>
                     </div>
                     <div class="carousel_item">
                         <a href="#">
                             <div class="partner">
+<<<<<<< HEAD
                                 <img src="/img/logo.png" alt="logo">
+=======
+                                <img src="/img/partners/grands_partenaires/bagatelle.png" alt="logo">
+>>>>>>> dev
                             </div>
                         </a>
                     </div>
                     <div class="carousel_item">
                         <a href="#">
                             <div class="partner">
+<<<<<<< HEAD
                                 <img src="/img/logo.png" alt="logo">
+=======
+                                <img src="/img/partners/grands_partenaires/bagatelle.png" alt="logo">
+>>>>>>> dev
                             </div>
                         </a>
                     </div>
                     <div class="carousel_item">
                         <a href="#">
                             <div class="partner">
+<<<<<<< HEAD
                                 <img src="/img/logo.png" alt="logo">
+=======
+                                <img src="/img/partners/grands_partenaires/bagatelle.png" alt="logo">
+>>>>>>> dev
                             </div>
                         </a>
                     </div>
@@ -78,42 +98,35 @@
                     <div class="carousel_item">
                         <a href="#">
                             <div class="partner">
-                                <img src="/img/logo.png" alt="logo">
+                                <img src="/img/partners/grands_partenaires/bagatelle.png" alt="logo">
                             </div>
                         </a>
                     </div>
                     <div class="carousel_item">
                         <a href="#">
                             <div class="partner">
-                                <img src="/img/logo.png" alt="logo">
+                                <img src="/img/partners/grands_partenaires/heraclee.png" alt="logo">
                             </div>
                         </a>
                     </div>
                     <div class="carousel_item">
                         <a href="#">
                             <div class="partner">
-                                <img src="/img/logo.png" alt="logo">
+                                <img src="/img/partners/grands_partenaires/madinevent.png" alt="logo">
                             </div>
                         </a>
                     </div>
                     <div class="carousel_item">
                         <a href="#">
                             <div class="partner">
-                                <img src="/img/logo.png" alt="logo">
+                                <img src="/img/partners/grands_partenaires/mairie.png" alt="logo">
                             </div>
                         </a>
                     </div>
                     <div class="carousel_item">
                         <a href="#">
                             <div class="partner">
-                                <img src="/img/logo.png" alt="logo">
-                            </div>
-                        </a>
-                    </div>
-                    <div class="carousel_item">
-                        <a href="#">
-                            <div class="partner">
-                                <img src="/img/logo.png" alt="logo">
+                                <img src="/img/partners/grands_partenaires/moorea.png" alt="logo">
                             </div>
                         </a>
                     </div>
