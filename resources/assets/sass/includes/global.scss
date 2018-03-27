@@ -692,39 +692,40 @@ section.partners_section {
   .partners_container {
     .partners_carousel {
       .carousel_item {
-      //  padding: 0 5px;
-      //  width: 20%;
-      //  height: 100%;
-      //  a {
-      //    .partner {
-      //      background: white;
-      //      padding: 50px;
-      //      img {
-      //        width: 100%;
-      //        height: auto;
-      //      }
-      //    }
-      //  }
-      //}
-    }
-    .flickity-prev-next-button {
-      background: rgba($black, 0.75);
-      width: 40px;
-      height: 40px;
-      &.next {
-        right: -60px;
+        //  padding: 0 5px;
+        //  width: 20%;
+        //  height: 100%;
+        //  a {
+        //    .partner {
+        //      background: white;
+        //      padding: 50px;
+        //      img {
+        //        width: 100%;
+        //        height: auto;
+        //      }
+        //    }
+        //  }
+        //}
       }
-      &.previous {
-        left: -60px;
-      }
-      &:hover {
-        background: $black;
-      }
-      &:disabled {
-        display: none;
-      }
-      .arrow {
-        fill: $white;
+      .flickity-prev-next-button {
+        background: rgba($black, 0.75);
+        width: 40px;
+        height: 40px;
+        &.next {
+          right: -60px;
+        }
+        &.previous {
+          left: -60px;
+        }
+        &:hover {
+          background: $black;
+        }
+        &:disabled {
+          display: none;
+        }
+        .arrow {
+          fill: $white;
+        }
       }
     }
   }
@@ -826,10 +827,10 @@ footer {
     li {
       display: inline-block;
       padding: 0 5px;
-      &:nth-child(3) {
-        border-right: 2px solid $white;
-        padding-right: 10px;
-      }
+      //&:nth-child(3) {
+      //  border-right: 2px solid $white;
+      //  padding-right: 10px;
+      //}
       &:nth-child(4) {
         padding-left: 10px;
       }
@@ -866,5 +867,3 @@ footer {
 }
 
 
-//body{text-align:center;font-family: 'Open Sans', sans-serif;}
-//svg{width:30%;}

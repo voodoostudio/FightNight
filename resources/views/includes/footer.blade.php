@@ -22,11 +22,11 @@
             </li>
 
             @foreach(LaravelLocalization::getSupportedLocales() as $localeCode => $langItem)
-                <li>
-                    <a href="{{ LaravelLocalization::getLocalizedURL($localeCode) }}" hreflang="{{$localeCode}}" class="lang {{ ($localeCode == App::getLocale()) ? 'active' : '' }}">
-                        <img src="/img/{{ strtolower($langItem['native']) }}_flag.png" alt="">
-                    </a>
-                </li>
+                {{--<li>--}}
+                    {{--<a href="{{ LaravelLocalization::getLocalizedURL($localeCode) }}" hreflang="{{$localeCode}}" class="lang {{ ($localeCode == App::getLocale()) ? 'active' : '' }}">--}}
+                        {{--<img src="/img/{{ strtolower($langItem['native']) }}_flag.png" alt="">--}}
+                    {{--</a>--}}
+                {{--</li>--}}
             @endforeach
         </ul>
         <p>

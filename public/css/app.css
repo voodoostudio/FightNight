@@ -142,6 +142,15 @@
   color: black;
 }
 
+.btn:not(:disabled):not(.disabled):active,
+.btn:not(:disabled):not(.disabled).active {
+  background: #454545;
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, #454545), color-stop(45%, #4d4c4d), color-stop(100%, #1f1a1c));
+  background: -webkit-gradient(linear, left top, left bottom, from(#454545), color-stop(45%, #4d4c4d), to(#1f1a1c));
+  background: linear-gradient(to bottom, #454545 0%, #4d4c4d 45%, #1f1a1c 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#454545', endColorstr='#1f1a1c', GradientType=0 );
+}
+
 /*Buttons style END*/
 .form_group {
   margin-bottom: 20px;
@@ -1088,45 +1097,29 @@ section.press_section .press_container .article_block .article_info .links_block
   margin-right: 10px;
 }
 
-section.partners_section .partners_container .partners_carousel .carousel_item {
-  padding: 0 5px;
-  width: 20%;
-  height: 100%;
-}
-
-section.partners_section .partners_container .partners_carousel .carousel_item a .partner {
-  background: white;
-  padding: 50px;
-}
-
-section.partners_section .partners_container .partners_carousel .carousel_item a .partner img {
-  width: 100%;
-  height: auto;
-}
-
-section.partners_section .partners_container .flickity-prev-next-button {
+section.partners_section .partners_container .partners_carousel .flickity-prev-next-button {
   background: rgba(0, 0, 0, 0.75);
   width: 40px;
   height: 40px;
 }
 
-section.partners_section .partners_container .flickity-prev-next-button.next {
+section.partners_section .partners_container .partners_carousel .flickity-prev-next-button.next {
   right: -60px;
 }
 
-section.partners_section .partners_container .flickity-prev-next-button.previous {
+section.partners_section .partners_container .partners_carousel .flickity-prev-next-button.previous {
   left: -60px;
 }
 
-section.partners_section .partners_container .flickity-prev-next-button:hover {
+section.partners_section .partners_container .partners_carousel .flickity-prev-next-button:hover {
   background: black;
 }
 
-section.partners_section .partners_container .flickity-prev-next-button:disabled {
+section.partners_section .partners_container .partners_carousel .flickity-prev-next-button:disabled {
   display: none;
 }
 
-section.partners_section .partners_container .flickity-prev-next-button .arrow {
+section.partners_section .partners_container .partners_carousel .flickity-prev-next-button .arrow {
   fill: #fffaff;
 }
 
@@ -1241,11 +1234,6 @@ footer .links_list {
 footer .links_list li {
   display: inline-block;
   padding: 0 5px;
-}
-
-footer .links_list li:nth-child(3) {
-  border-right: 2px solid #fffaff;
-  padding-right: 10px;
 }
 
 footer .links_list li:nth-child(4) {
