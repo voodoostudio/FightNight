@@ -28,8 +28,8 @@ class PagesController extends Controller
         foreach ($prof as $client_id) {
             $sent_posts = $client->getProfileSentUpdates($client_id['_id'], $page = null, $count = null, $since = null, $utc = false)['updates'];
             foreach ($sent_posts as $posts) {
-                if(isset($posts['text_md5'])) {
-                    $value = $posts['text_md5'] . '|' . $posts['created_at'];
+                if(isset($posts['text'])) {
+                    $value = $posts['text'] . '|' . $posts['created_at'];
                     $key = explode("|", $value);
                     if (!isset($social_posts[$key[0]])) $social_posts[$key[0]] = [];
                     $social_posts[$key[0]][$posts['profile_service']] = [
@@ -38,14 +38,12 @@ class PagesController extends Controller
                         'day' => $posts['day'],
                         'created_at' => $posts['created_at'],
                         'updated_at' => $posts['updated_at'],
-                        'text_md5' => $posts['text_md5'],
                     ];
                 }
             }
         }
 
         foreach ($social_posts as $key => $items) {
-
             $posts = array_merge(
                 [
                     'text' => (isset($items['facebook'])) ? $items['facebook']['text'] : ((isset($items['linkedin'])) ? $items['linkedin']['text'] : ((isset($items['twitter'])) ? $items['twitter']['text'] : ((isset($items['instagram'])) ? $items['instagram']['text'] : ''))),
@@ -183,6 +181,16 @@ class PagesController extends Controller
             'message' => $request->message,
         ];
 
+        $success = array(
+            'status' => 'success',
+            'msg' => 'Votre message a bien été envoyé',
+        );
+
+        $error = array(
+            'status' => 'error',
+            'msg' => 'Une erreur s\'est produite'
+        );
+
         $to = env('CONTACT_EMAIL');
         $subject = 'Fight Night Contact form';
         $message = '
@@ -196,11 +204,15 @@ class PagesController extends Controller
 
         $headers  = 'MIME-Version: 1.0' . "\r\n";
         $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
-        $headers .= 'From: ' . $data['email'] . '' . "\r\n";
+        $headers .= 'From: Fight Night <webmaster@fight-night.com>' . "\r\n";
 
-        mail($to, $subject, $message, $headers);
+        $send_mail = mail($to, $subject, $message, $headers);
 
-        return back();
+        if($send_mail == true) {
+            return $success;
+        } else {
+            return $error;
+        }
     }
 
     public function virtual_tour ()

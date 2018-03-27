@@ -64,7 +64,7 @@ return [
     //Contact
     'sector'                => 'Secteur',
     'specify_sector'        => 'Veuillez spécifier le secteur que vous souhaitez contacter',
-    'email'                 => 'É-mail',
+    'email'                 => 'Courriel',
     'enter_email'           => 'Veuillez entrer votre adresse email',
     'write_message'         => 'Rédigez votre message ici.',
     'send'                  => 'Envoyer',
