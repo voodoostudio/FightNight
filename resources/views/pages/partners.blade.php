@@ -13,105 +13,105 @@
                     <div class="carousel_item">
                         <a href="#">
                             <div class="partner">
-                                <img src="/img/partners/partenaires_historiques/2logos.png" alt="logo">
+                                <img src="/img/partners/partenaires_historiques/2logos.png" alt="logo Pastis Hôtel + Strend ">
                             </div>
                         </a>
                     </div>
                     <div class="carousel_item">
                         <a href="#">
                             <div class="partner">
-                                <img src="/img/partners/partenaires_historiques/3logos.png" alt="logo">
+                                <img src="/img/partners/partenaires_historiques/3logos.png" alt="logo Sporting + Maître Vignerons + Sylvain Costa ">
                             </div>
                         </a>
                     </div>
                     <div class="carousel_item">
                         <a href="#">
                             <div class="partner">
-                                <img src="/img/partners/partenaires_historiques/3logos2.png" alt="logo">
+                                <img src="/img/partners/partenaires_historiques/3logos2.png" alt="logo belle rose hotel + Tartane + San Pellegrino ">
                             </div>
                         </a>
                     </div>
                     <div class="carousel_item">
                         <a href="#">
                             <div class="partner">
-                                <img src="/img/partners/partenaires_historiques/blondesttropez.png" alt="logo">
+                                <img src="/img/partners/partenaires_historiques/blondesttropez.png" alt="logo Blond of saint tropez">
                             </div>
                         </a>
                     </div>
                     <div class="carousel_item">
                         <a href="#">
                             <div class="partner">
-                                <img src="/img/partners/partenaires_historiques/cafedeparis.png" alt="logo">
+                                <img src="/img/partners/partenaires_historiques/cafedeparis.png" alt="logo Café paris">
                             </div>
                         </a>
                     </div>
                     <div class="carousel_item">
                         <a href="#">
                             <div class="partner">
-                                <img src="/img/partners/partenaires_historiques/edenplage.png" alt="logo">
+                                <img src="/img/partners/partenaires_historiques/edenplage.png" alt="logo Eden plage">
                             </div>
                         </a>
                     </div>
                     <div class="carousel_item">
                         <a href="#">
                             <div class="partner">
-                                <img src="/img/partners/partenaires_historiques/icetropez.png" alt="logo">
+                                <img src="/img/partners/partenaires_historiques/icetropez.png" alt="logo Ice tropez">
                             </div>
                         </a>
                     </div>
                     <div class="carousel_item">
                         <a href="#">
                             <div class="partner">
-                                <img src="/img/partners/partenaires_historiques/manuclim.png" alt="logo">
+                                <img src="/img/partners/partenaires_historiques/manuclim.png" alt="logo Manu clim">
                             </div>
                         </a>
                     </div>
                     <div class="carousel_item">
                         <a href="#">
                             <div class="partner">
-                                <img src="/img/partners/partenaires_historiques/masbellevue.png" alt="logo">
+                                <img src="/img/partners/partenaires_historiques/masbellevue.png" alt="logo Mas bellevue">
                             </div>
                         </a>
                     </div>
                     <div class="carousel_item">
                         <a href="#">
                             <div class="partner">
-                                <img src="/img/partners/partenaires_historiques/pastis.png" alt="logo">
+                                <img src="/img/partners/partenaires_historiques/pastis.png" alt="logo Pastis">
                             </div>
                         </a>
                     </div>
                     <div class="carousel_item">
                         <a href="#">
                             <div class="partner">
-                                <img src="/img/partners/partenaires_historiques/riviera_village.png" alt="logo">
+                                <img src="/img/partners/partenaires_historiques/riviera_village.png" alt="logo Riviera village">
                             </div>
                         </a>
                     </div>
                     <div class="carousel_item">
                         <a href="#">
                             <div class="partner">
-                                <img src="/img/partners/partenaires_historiques/sezz.png" alt="logo">
+                                <img src="/img/partners/partenaires_historiques/sezz.png" alt="logo Hôtel sezz">
                             </div>
                         </a>
                     </div>
                     <div class="carousel_item">
                         <a href="#">
                             <div class="partner">
-                                <img src="/img/partners/partenaires_historiques/torchia.png" alt="logo">
+                                <img src="/img/partners/partenaires_historiques/torchia.png" alt="logo Torchia">
                             </div>
                         </a>
                     </div>
                     <div class="carousel_item">
                         <a href="#">
                             <div class="partner">
-                                <img src="/img/partners/partenaires_historiques/universaldecoration.png" alt="logo">
+                                <img src="/img/partners/partenaires_historiques/universaldecoration.png" alt="logo universal deco">
                             </div>
                         </a>
                     </div>
                     <div class="carousel_item">
                         <a href="#">
                             <div class="partner">
-                                <img src="/img/partners/partenaires_historiques/viproom.png" alt="logo">
+                                <img src="/img/partners/partenaires_historiques/viproom.png" alt="logo VIP Room">
                             </div>
                         </a>
                     </div>
@@ -159,21 +159,35 @@
                     <div class="carousel_item">
                         <a href="#">
                             <div class="partner">
-                                <img src="/img/partners/partenaires_privilégiés/edenplage.png" alt="logo">
+                                <img src="/img/partners/partenaires_privilégiés/edenplage.png" alt="logo Eden plage">
                             </div>
                         </a>
                     </div>
                     <div class="carousel_item">
                         <a href="#">
                             <div class="partner">
-                                <img src="/img/partners/partenaires_privilégiés/mapauto.png" alt="logo">
+                                <img src="/img/partners/partenaires_privilégiés/mapauto.png" alt="logo Map auto">
                             </div>
                         </a>
                     </div>
                     <div class="carousel_item">
                         <a href="#">
                             <div class="partner">
-                                <img src="/img/partners/partenaires_privilégiés/opera.png" alt="logo">
+                                <img src="/img/partners/partenaires_privilégiés/opera.png" alt="logo Opera">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="carousel_item">
+                        <a href="#">
+                            <div class="partner">
+                                <img src="/img/partners/your_logo.png" alt="Your logo">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="carousel_item">
+                        <a href="#">
+                            <div class="partner">
+                                <img src="/img/partners/your_logo.png" alt="Your logo">
                             </div>
                         </a>
                     </div>
@@ -183,7 +197,35 @@
                     <div class="carousel_item">
                         <a href="#">
                             <div class="partner">
-                                <img src="/img/partners/partenaires_medias/canalsport.png" alt="logo">
+                                <img src="/img/partners/partenaires_medias/canalsport.png" alt="logo Canal sport">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="carousel_item">
+                        <a href="#">
+                            <div class="partner">
+                                <img src="/img/partners/your_logo.png" alt="Your logo">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="carousel_item">
+                        <a href="#">
+                            <div class="partner">
+                                <img src="/img/partners/your_logo.png" alt="Your logo">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="carousel_item">
+                        <a href="#">
+                            <div class="partner">
+                                <img src="/img/partners/your_logo.png" alt="Your logo">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="carousel_item">
+                        <a href="#">
+                            <div class="partner">
+                                <img src="/img/partners/your_logo.png" alt="Your logo">
                             </div>
                         </a>
                     </div>
