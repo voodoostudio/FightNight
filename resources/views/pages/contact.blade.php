@@ -60,8 +60,8 @@
                             1 Montée de la Citadelle<br>
                             83990 ST TROPEZ
                         </p>
-                        <p class="tel">T. +33 (0)4 94 20 34 24</p>
-                        <p class="tel">P. +33 (0)6 81 14 55 33</p>
+                        <p class="tel">+33 (0)4 94 20 34 24</p>
+                        <p class="tel">+33 (0)6 81 14 55 33</p>
                     </div>
                 </div>
             </div>
