@@ -57,11 +57,11 @@
                     <div class="col-12 col-md-4">
                         <p class="address">
                             Fight Night Saint-Tropez<br>
-                            2 Montée de la Citadelle<br>
-                            83990 SAINT-TROPEZ
+                            1 Montée de la Citadelle<br>
+                            83990 ST TROPEZ
                         </p>
                         <p class="tel">T. +33 (0)4 94 20 34 24</p>
-                        <p class="tel">P. +33 (0)6 24 26 03 28</p>
+                        <p class="tel">P. +33 (0)6 81 14 55 33</p>
                     </div>
                 </div>
             </div>
@@ -70,35 +70,44 @@
 @stop
 
 @section('js')
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.15.0/jquery.validate.min.js"></script>
     <script>
-        $(function() {
-            // Get the form.
-            var form = $('#ajax-contact');
-            // Get the messages div.
-            var formMessages = $('#form-messages');
-            // Set up an event listener for the contact form.
-            $(form).submit(function(e) {
-                // Stop the browser from submitting the form.
-                e.preventDefault();
-                // Serialize the form data.
-                var formData = $(form).serialize();
-                // Submit the form using AJAX.
-                $.ajax({
-                    type: 'POST',
-                    url: $(form).attr('action'),
-                    data: formData
-                })
-                .done(function(response) {
-                    if(response.status == 'success') {
-                        formMessages.html('<p class = "'+ response.status +'">' + response.msg + '</p>');
-                        // Clear the form.
-                        $('#email').val('');
-                        $('#message').val('');
+        jQuery(document).ready(function () {
+            jQuery("#ajax-contact").validate({
+                rules: {
+                    email: {
+                        required: true,
+                        email: true
+                    },
+                    message: {
+                        required: true
                     }
-                })
-                .fail(function(response) {
-                    formMessages.html('<p class = "'+ response.status +'">' + response.msg + '</p>');
-                });
+                },
+                messages: {
+                    email: {
+                        email: "Not valid email"
+                    }
+                },
+                submitHandler: function (form) {
+                    $.ajax({
+                        type: form.method,
+                        dataType: 'json',
+                        cache: false,
+                        url: form.action,
+                        data: $(form).serialize()
+                    })
+                    .done(function (response) {
+                        if (response.status == 'success') {
+                            $('#form-messages').html('<p class = "' + response.status + '">' + response.msg + '</p>');
+                            // Clear the form.
+                            $('#email').val('');
+                            $('#message').val('');
+                        }
+                    })
+                    .fail(function (response) {
+                        $('#form-messages').html('<p class = "' + response.status + '">' + response.msg + '</p>');
+                    });
+                }
             });
         });
     </script>

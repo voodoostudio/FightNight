@@ -586,8 +586,8 @@ section.carousel_section .homepage_carousel .flickity-prev-next-button.next {
 }
 
 section.carousel_section .homepage_carousel .flickity-prev-next-button.previous {
-  right: 160px;
-  left: initial;
+  left: 60px;
+  right: initial;
 }
 
 section.carousel_section .homepage_carousel .flickity-prev-next-button:hover {

@@ -13,7 +13,7 @@
                 {{--<p>{{ trans('lang.about_text2') }}</p>--}}
 
 
-                <h3>Fight Night 6</h3>
+                <h3>Fight Night VI</h3>
 
                 <p>Une soirée sportive et glamour exceptionnelle dans un lieu magique !</p>
 

@@ -19,7 +19,7 @@ return [
     'home'                  => 'Accueil',
     'about'                 => 'A propos',
     'editions'              => 'Editions',
-    'ticketing'             => 'Tickets',
+    'ticketing'             => 'Billeterie',
     'gallery'               => 'Galeries',
     'partners'              => 'Partenaires',
     'press'                 => 'Presse',
