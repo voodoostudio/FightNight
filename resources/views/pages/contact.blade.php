@@ -15,10 +15,10 @@
                             <div class="form_group">
                                 <label class="form_el_label"><span>{{ trans('lang.sector') }}</span></label>
                                 <select id="view_select" name="select_option_contact" title="">
-                                    <option value="Presse">Presse</option>
-                                    <option value="Billetterie">Billetterie</option>
-                                    <option value="Partenaires">Partenaires</option>
-                                    <option value="Informations Générales">Informations Générales</option>
+                                    <option value="Presse">{{ trans('lang.select_option1') }}</option>
+                                    <option value="Billetterie">{{ trans('lang.select_option2') }}</option>
+                                    <option value="Partenaires">{{ trans('lang.select_option3') }}</option>
+                                    <option value="Informations Générales">{{ trans('lang.select_option4') }}</option>
                                 </select>
                                 {{--<span class="form_placeholder">{{ trans('lang.specify_sector') }}</span>--}}
                             </div>

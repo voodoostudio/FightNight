@@ -41,7 +41,7 @@
                     <div class="col-12 col-md-5">
                         <div class="title_container">
                             <h4 title="Billeterie Prochainment Disponible">
-                                <span>Billetterie Prochainement Disponible</span>
+                                <span>{{ trans('lang.ticketing_coming') }}</span>
                             </h4>
                             {{--<img src="/img/countdown_title.png" alt="ticket">--}}
                         </div>

@@ -7,8 +7,8 @@
                 <img src="/img/presse/presse_img.jpg" alt="About us banner">
             </div>
             <div class="partners_container jeans_bg_ragged">
-                <h1 class="title--translated">Partenaires</h1>
-                <h2>Partenaires historiques</h2>
+                <h1 class="title--translated">{{ trans('lang.partners_title') }}</h1>
+                <h2>{{ trans('lang.historical_partners') }}</h2>
                 <div class="partners_carousel">
                     <div class="carousel_item">
                         <a href="#">
@@ -116,7 +116,7 @@
                         </a>
                     </div>
                 </div>
-                <h2>Grands partenaires</h2>
+                <h2>{{ trans('lang.great_partners') }}</h2>
                 <div class="partners_carousel">
                     <div class="carousel_item">
                         <a href="#">
@@ -154,7 +154,7 @@
                         </a>
                     </div>
                 </div>
-                <h2>Partenaires privilégiés</h2>
+                <h2>{{ trans('lang.preferred_partners') }}</h2>
                 <div class="partners_carousel">
                     <div class="carousel_item">
                         <a href="#">
@@ -192,7 +192,7 @@
                         </a>
                     </div>
                 </div>
-                <h2>Partenaires médias</h2>
+                <h2>{{ trans('lang.media_partners') }}</h2>
                 <div class="partners_carousel">
                     <div class="carousel_item">
                         <a href="#">
