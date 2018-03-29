@@ -217,8 +217,13 @@ textarea:focus {
 }
 /*Select2 styles END*/
 
-#form-messages {
   .success {
     color: $success_color;
+    font-family: proxima_nova_thin;
+    font-size: .875rem;
   }
-}
+  .error {
+    color: $error_color;
+    font-family: proxima_nova_thin;
+    font-size: .875rem;
+  }

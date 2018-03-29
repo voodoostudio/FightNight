@@ -63,7 +63,7 @@ return [
                             <p class="edition_person"><span>Fighter </span>Bob Sapp - Yohan Lidon</p>',
 
     // Ticketing page
-    'tickets_title'         => 'Billetterie',
+    'tickets_title'         => 'Billeterie',
     'coming_soon'           => 'Bientôt disponible...',
 
     // Gallery

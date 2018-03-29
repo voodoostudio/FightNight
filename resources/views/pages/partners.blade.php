@@ -153,6 +153,13 @@
                             </div>
                         </a>
                     </div>
+                    <div class="carousel_item">
+                        <a href="#">
+                            <div class="partner">
+                                <img src="/img/partners/your_logo.png" alt="Your logo">
+                            </div>
+                        </a>
+                    </div>
                 </div>
                 <h2>{{ trans('lang.preferred_partners') }}</h2>
                 <div class="partners_carousel">
@@ -191,6 +198,13 @@
                             </div>
                         </a>
                     </div>
+                    <div class="carousel_item">
+                        <a href="#">
+                            <div class="partner">
+                                <img src="/img/partners/your_logo.png" alt="Your logo">
+                            </div>
+                        </a>
+                    </div>
                 </div>
                 <h2>{{ trans('lang.media_partners') }}</h2>
                 <div class="partners_carousel">
@@ -198,6 +212,13 @@
                         <a href="#">
                             <div class="partner">
                                 <img src="/img/partners/partenaires_medias/canalsport.png" alt="logo Canal sport">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="carousel_item">
+                        <a href="#">
+                            <div class="partner">
+                                <img src="/img/partners/your_logo.png" alt="Your logo">
                             </div>
                         </a>
                     </div>

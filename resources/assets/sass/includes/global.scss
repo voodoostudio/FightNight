@@ -59,7 +59,7 @@ header {
   .navbar.navbar-light {
     position: relative;
     background-color: transparent;
-    padding: 20px 0 20px 270px;
+    padding: 20px 0 20px 260px;
     .navbar-brand {
       position: absolute;
       left: 0;
@@ -80,6 +80,7 @@ header {
         text-shadow: 1px 1px 5px #000000;
         letter-spacing: 2px;
         position: relative;
+        white-space: nowrap;
         &.active {
           font-family: proxima_nova_bold;
           &:before {
@@ -194,7 +195,7 @@ section.carousel_section {
                 display: block;
                 line-height: 1;
                 height: 75px;
-                margin: 10px 0;
+                margin: 5px 0;
               }
               .small {
                 font-size: 3rem;
@@ -202,7 +203,7 @@ section.carousel_section {
                 letter-spacing: 3px;
                 display: block;
                 color: $red;
-                height: 40px;
+                height: 36px;
               }
             }
           }
@@ -217,8 +218,7 @@ section.carousel_section {
         right: 60px;
       }
       &.previous {
-        right: 160px;
-        left: initial;
+        left: 60px;
       }
       &:hover {
         background: $black;
@@ -282,6 +282,7 @@ section.countdown_section {
 section.tickets_section {
   .countdown_container {
     position: relative;
+    padding: 90px 30px 45px;
     .countdown {
       max-width: 790px;
       margin: 0 auto;
@@ -494,9 +495,10 @@ section.editions_section {
     }
     .edition_title {
       font-family: proxima_nova_thin;
-      font-size: 3rem;
+      font-size: 3.4rem;
       letter-spacing: 2px;
-      margin: 0;
+      margin: 0 0 7px 0;
+      line-height: 1;
       .city {
         font-size: 1.35rem;
         text-transform: uppercase;
@@ -504,41 +506,43 @@ section.editions_section {
         display: block;
       }
       .year {
-        font-family: proxima_nova_regular;
-        color: $brown;
-        font-size: 3.2rem;
+        font-family: proxima_nova_semibold;
+        color: $brown_dark;
+        font-size: 3.6rem;
       }
     }
     .edition_statistics {
       font-size: .7rem;
       text-transform: uppercase;
       line-height: 1;
-      font-family: proxima_nova_thin;
       letter-spacing: 1px;
       span {
-        font-family: proxima_nova_light;
+        font-family: proxima_nova_regular;
         display: inline-block;
-        padding: 2px 5px 0;
-        border: 2px solid $brown;
-        color: $brown;
+        padding: 3px 7px 2px;
+        border: 1px solid $brown_dark;
+        color: $brown_dark;
         margin-right: 10px;
         letter-spacing: 0;
         font-size: 1rem;
         sup {
           font-size: .6rem;
+          letter-spacing: 1px;
         }
       }
     }
     .edition_description {
       color: $brown;
       font-size: 1.1rem;
-      font-family: proxima_nova_thin;
+      font-family: proxima_nova_light;
       line-height: 1.2;
+      letter-spacing: 1px;
     }
     .edition_person {
       line-height: 1;
       margin: 0 0 7px 0;
       font-size: 1.1rem;
+      letter-spacing: 1px;
       span {
         color: $gray;
         margin-right: 7px;
@@ -784,10 +788,10 @@ section.privacy_policy_section {
 }
 .title--translated {
   font-family: proxima_nova_thin;
-  font-size: 11rem;
+  font-size: 10rem;
   position: absolute;
-  top: -115px;
-  left: 125px;
+  top: -92px;
+  left: 115px;
   margin: 0;
 }
 footer {
