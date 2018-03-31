@@ -296,6 +296,23 @@
       }
     }
   }
+  section.partners_section {
+    .partners_container {
+      h2 {
+        font-size: 1.2rem;
+      }
+      .partners_carousel {
+        .flickity-prev-next-button{
+          &.next {
+            right: -43px;
+          }
+          &.previous {
+            left: -43px;
+          }
+        }
+      }
+    }
+  }
   section.contact_section {
     .contact_container {
       form button {
@@ -499,6 +516,24 @@
       }
       p {
         font-size: .85rem;
+      }
+    }
+  }
+
+  section.partners_section {
+    .partners_container {
+      .partners_carousel {
+        .carousel_item {
+          width: 25%;
+        }
+        .flickity-prev-next-button{
+          &.next {
+            right: -43px;
+          }
+          &.previous {
+            left: -43px;
+          }
+        }
       }
     }
   }

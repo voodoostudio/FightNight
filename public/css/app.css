@@ -832,6 +832,15 @@ section.about_section .about_container p {
   font-size: 1.2rem;
 }
 
+section.about_section .about_container .program_download_btn {
+  margin-top: 20px;
+  display: block;
+}
+
+section.about_section .about_container .program_download_btn img {
+  width: 225px;
+}
+
 section.gallery_section {
   margin-top: 50px;
 }
@@ -1753,6 +1762,15 @@ footer .links_list li a img {
   section.press_section .press_container .paragraph {
     max-width: 100%;
   }
+  section.partners_section .partners_container h2 {
+    font-size: 1.2rem;
+  }
+  section.partners_section .partners_container .partners_carousel .flickity-prev-next-button.next {
+    right: -43px;
+  }
+  section.partners_section .partners_container .partners_carousel .flickity-prev-next-button.previous {
+    left: -43px;
+  }
   section.contact_section .contact_container form button {
     margin-top: 15px;
   }
@@ -1903,6 +1921,15 @@ footer .links_list li a img {
   }
   section.about_section .about_container p {
     font-size: .85rem;
+  }
+  section.partners_section .partners_container .partners_carousel .carousel_item {
+    width: 25%;
+  }
+  section.partners_section .partners_container .partners_carousel .flickity-prev-next-button.next {
+    right: -43px;
+  }
+  section.partners_section .partners_container .partners_carousel .flickity-prev-next-button.previous {
+    left: -43px;
   }
   section.privacy_policy_section .privacy_policy_container {
     padding: 30px 15px;
