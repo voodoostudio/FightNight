@@ -261,21 +261,48 @@
         window.setTimeout(initCarousel(), 2000);
 
         function initCarousel() {
-            $('.partners_carousel').flickity({
-                // options
-                cellAlign: 'left',
-                cellSelector: '.carousel_item',
-                prevNextButtons: true,
-                contain: true,
-                wrapAround: true,
-                pageDots: false,
-                autoPlay: true,
-                arrowShape: {
-                    x0: 15,
-                    x1: 65, y1: 50,
-                    x2: 70, y2: 45,
-                    x3: 25
-                }
+//            $('.partners_carousel').flickity({
+//                // options
+//                cellAlign: 'left',
+//                cellSelector: '.carousel_item',
+//                prevNextButtons: true,
+//                contain: true,
+//                wrapAround: true,
+//                pageDots: false,
+//                autoPlay: true,
+//                arrowShape: {
+//                    x0: 15,
+//                    x1: 65, y1: 50,
+//                    x2: 70, y2: 45,
+//                    x3: 25
+//                }
+//            });
+            $('.partners_carousel').slick({
+                infinite: true,
+                slidesToShow: 5,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 3000,
+                prevArrow: '<button type="button" class="slick-prev"><img src="/img/arrow_left.png" alt="Slide to previous"></button>',
+                nextArrow: '<button type="button" class="slick-next"><img src="/img/arrow_right.png" alt="Slide to previous"></button>',
+                responsive: [
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            arrows: false,
+                            centerPadding: '40px',
+                            slidesToShow: 4
+                        }
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            arrows: false,
+                            centerPadding: '40px',
+                            slidesToShow: 3
+                        }
+                    }
+                ]
             });
         }
     </script>

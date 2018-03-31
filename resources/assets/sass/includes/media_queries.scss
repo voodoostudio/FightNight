@@ -527,11 +527,13 @@
           width: 25%;
         }
         .flickity-prev-next-button{
+          width: 30px;
+          height: 30px;
           &.next {
-            right: -43px;
+            right: -10px;
           }
           &.previous {
-            left: -43px;
+            left: -10px;
           }
         }
       }
