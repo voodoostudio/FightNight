@@ -1210,6 +1210,10 @@ section.privacy_policy_section .privacy_policy_container p {
   padding: 90px 125px;
 }
 
+.img_container {
+  margin-bottom: -20px;
+}
+
 .img_container img {
   width: 100%;
 }
