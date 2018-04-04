@@ -1051,7 +1051,7 @@ section.press_section .press_container .download_link img {
 }
 
 section.press_section .press_container .article_block {
-  margin-bottom: 20px;
+  margin: 0 10px 20px;
 }
 
 section.press_section .press_container .article_block .article_img {
@@ -1078,22 +1078,6 @@ section.press_section .press_container .article_block .article_img .links_block 
 
 section.press_section .press_container .article_block .article_img .links_block a:not(:last-child) {
   margin-right: 10px;
-}
-
-section.press_section .press_container .article_block .modal .modal-body {
-  padding: 0;
-  position: relative;
-}
-
-section.press_section .press_container .article_block .modal .modal-body .close {
-  position: absolute;
-  right: 15px;
-  top: 8px;
-  color: white;
-}
-
-section.press_section .press_container .article_block .modal .modal-body img {
-  width: 100%;
 }
 
 section.press_section .press_container .article_block .article_info {
@@ -1137,6 +1121,22 @@ section.press_section .press_container .article_block .article_info p {
   text-align: justify;
   font-size: .875rem;
   margin: 0;
+}
+
+section.press_section .modal .modal-body {
+  padding: 0;
+  position: relative;
+}
+
+section.press_section .modal .modal-body .close {
+  position: absolute;
+  right: 15px;
+  top: 8px;
+  color: white;
+}
+
+section.press_section .modal .modal-body img {
+  width: 100%;
 }
 
 section.partners_section .partners_container h2 {
