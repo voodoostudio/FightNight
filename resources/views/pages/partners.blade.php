@@ -139,7 +139,7 @@
                     <div class="carousel_item">
                         {{--<a href="#">--}}
                             <div class="partner">
-                                <img src="/img/partners/partenaires_historiques/universaldecoration.png" alt="logo universal deco">
+                                <img src="/img/partners/partenaires_historiques/universal_decoration.png" alt="Logo universal deco">
                             </div>
                         {{--</a>--}}
                     </div>
