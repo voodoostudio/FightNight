@@ -13,21 +13,56 @@
                     <div class="carousel_item">
                         {{--<a href="#">--}}
                             <div class="partner">
-                                <img src="/img/partners/partenaires_historiques/2logos.png" alt="logo Pastis Hôtel + Strend ">
+                                <img src="/img/partners/partenaires_historiques/le_sporting.png" alt="logo Sporting">
                             </div>
                         {{--</a>--}}
                     </div>
                     <div class="carousel_item">
                         {{--<a href="#">--}}
                             <div class="partner">
-                                <img src="/img/partners/partenaires_historiques/3logos.png" alt="logo Sporting + Maître Vignerons + Sylvain Costa ">
+                                <img src="/img/partners/partenaires_historiques/maitres_vigneron.png" alt="logo Maître Vignerons">
                             </div>
                         {{--</a>--}}
                     </div>
                     <div class="carousel_item">
                         {{--<a href="#">--}}
                             <div class="partner">
-                                <img src="/img/partners/partenaires_historiques/3logos2.png" alt="logo belle rose hotel + Tartane + San Pellegrino ">
+                                <img src="/img/partners/partenaires_historiques/pastis_hotel.png" alt="Logo Pastis Hotel ">
+                            </div>
+                        {{--</a>--}}
+                    </div>
+                    <div class="carousel_item">
+                        {{--<a href="#">--}}
+                            <div class="partner">
+                                <img src="/img/partners/partenaires_historiques/st_pellegrino.png" alt="logo Sporting">
+                            </div>
+                        {{--</a>--}}
+                    </div>
+                    <div class="carousel_item">
+                        {{--<a href="#">--}}
+                            <div class="partner">
+                                <img src="/img/partners/partenaires_historiques/strend.png" alt="Logo Strend">
+                            </div>
+                        {{--</a>--}}
+                    </div>
+                    <div class="carousel_item">
+                        {{--<a href="#">--}}
+                            <div class="partner">
+                                <img src="/img/partners/partenaires_historiques/sylvain_costa.png" alt="logo Sylvain Costa">
+                            </div>
+                        {{--</a>--}}
+                    </div>
+                    <div class="carousel_item">
+                        {{--<a href="#">--}}
+                            <div class="partner">
+                                <img src="/img/partners/partenaires_historiques/tartane.png" alt="logo Tartane">
+                            </div>
+                        {{--</a>--}}
+                    </div>
+                    <div class="carousel_item">
+                        {{--<a href="#">--}}
+                            <div class="partner">
+                                <img src="/img/partners/partenaires_historiques/villa_belrose.png" alt="Logo Villa Belrose ">
                             </div>
                         {{--</a>--}}
                     </div>
@@ -250,6 +285,18 @@
                             </div>
                         {{--</a>--}}
                     </div>
+                </div>
+
+                <h2>Devenez partenaire</h2>
+                <p>De 5'000 € à 50'000 € nos packages s’adaptent à vos objectifs.<br>
+                    Nous vous accompagnons dans la réalisation de vos campagnes et leur activation.</p>
+                <div class="buttons_container">
+                    <a href="/img/partners/partenaires_fnst18.pdf" download="Partenaires-FNST18.pdf" class="img_btn">
+                        <img src="/img/partners/sponsors_list_btn.png" alt="Sponsors list btn">
+                    </a>
+                    <a href="/img/partners/sponsoring_fnst18.pdf" download="Sponsoring-FNST18.pdf" class="img_btn">
+                        <img src="/img/partners/packages_btn.png" alt="Sponsors list btn">
+                    </a>
                 </div>
             </div>
         </div>

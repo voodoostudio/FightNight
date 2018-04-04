@@ -416,7 +416,7 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
-  margin: 70px 0 -20px;
+  margin: 70px 0 -40px;
   position: relative;
   z-index: 9999;
 }
@@ -832,12 +832,12 @@ section.about_section .about_container p {
   font-size: 1.2rem;
 }
 
-section.about_section .about_container .program_download_btn {
+section.about_section .about_container .img_btn {
   margin-top: 20px;
   display: block;
 }
 
-section.about_section .about_container .program_download_btn img {
+section.about_section .about_container .img_btn img {
   width: 225px;
 }
 
@@ -1372,6 +1372,18 @@ footer .links_list li a img {
   right: -50px;
 }
 
+.img_btn {
+  text-decoration: none;
+}
+
+.img_btn img {
+  width: 225px;
+}
+
+.img_btn:hover, .img_btn:active {
+  text-decoration: none;
+}
+
 .dashboard_header {
   background-color: rgba(0, 0, 0, 0.5);
   padding: 15px 30px;
@@ -1588,6 +1600,9 @@ footer .links_list li a img {
 }
 
 @media screen and (max-width: 1199px) {
+  header {
+    margin-bottom: -20px;
+  }
   header .navbar.navbar-light {
     padding-left: 190px;
   }
@@ -1718,6 +1733,7 @@ footer .links_list li a img {
 @media screen and (max-width: 767px) {
   header {
     margin-top: 40px;
+    margin-bottom: -10px;
   }
   header .navbar.navbar-light .navbar-nav {
     margin: 0 0 40px;

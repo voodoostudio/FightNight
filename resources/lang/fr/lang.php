@@ -19,7 +19,7 @@ return [
     'home'                  => 'Accueil',
     'about'                 => 'A propos',
     'editions'              => 'Editions',
-    'ticketing'             => 'Billeterie',
+    'ticketing'             => 'Billetterie',
     'gallery'               => 'Galeries',
     'partners'              => 'Partenaires',
     'press'                 => 'Presse',
@@ -52,7 +52,7 @@ return [
                             <p class="edition_person"><span>Fighter </span>Bob Sapp - Yohan Lidon</p>',
 
     // Ticketing page
-    'tickets_title'         => 'Billeterie',
+    'tickets_title'         => 'Billetterie',
     'coming_soon'           => 'Bientôt disponible...',
 
     // Gallery

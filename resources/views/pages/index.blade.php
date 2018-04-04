@@ -134,7 +134,8 @@
     <script type="text/javascript" src="{{mix('js/index.js')}}"></script>
     <script>
         // Set the date we're counting down to
-        var countDownDate = new Date("Aug 4, 2018 00:00:01").getTime();
+//        var countDownDate = new Date("Aug 4, 2018 00:00:01").getTime();
+        var countDownDate = new Date("Apr 25, 2018 00:00:01").getTime();
         countdown();
     </script>
 @stop

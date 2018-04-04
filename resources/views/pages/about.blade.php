@@ -30,7 +30,7 @@
 
                 <div class="row">
                     <div class="col-12">
-                        <a href="#" class="program_download_btn">
+                        <a href="#" class="img_btn">
                             <img src="/img/about/about_btn.png" alt="Download the program">
                         </a>
                     </div>
