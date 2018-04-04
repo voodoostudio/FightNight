@@ -7,12 +7,6 @@
                 <img src="/img/tickets/tickets.jpg" alt="Titckets banner">
             </div>
 
-           {{-- <iframe src="{{ URL::to('/chaises_ticket_widget') }}" width = "100%" ></iframe>
-            <iframe src="{{ URL::to('/tables_ticket_widget') }}" width = "100%" ></iframe>
-            <iframe src="{{ URL::to('/salons_ticket_widget') }}" width = "100%" ></iframe>--}}
-           <!-- <a title="Logiciel billetterie en ligne" href="https://www.weezevent.com/?c=sys_widget" class="weezevent-widget-integration" target="_blank" data-src="https://www.weezevent.com/widget_billeterie.php?id_evenement=332537&lg_billetterie=1&code=59823&resize=1&width_auto=1&color_primary=00AEEF" data-width="650" data-height="600" data-id="332537" data-resize="1" data-width_auto="1" data-noscroll="0" data-nopb="0">Billetterie Weezevent</a>-->
-            <!--<a title="Logiciel billetterie en ligne" href="https://www.weezevent.com/?c=sys_widget" class="weezevent-widget-integration" target="_blank" data-src="https://www.weezevent.com/widget_billeterie.php?id_evenement=332537&lg_billetterie=2&code=59823&resize=1&width_auto=1&color_primary=00AEEF" data-width="650" data-height="600" data-id="332537" data-resize="1" data-width_auto="1" data-noscroll="0" data-nopb="0">Billetterie Weezevent</a>-->
-
             <div class="countdown_container jeans_bg_ragged">
                 <h1 class="title--translated">{{ trans('lang.tickets_title') }}</h1>
 
@@ -30,7 +24,6 @@
                 <area target="" arena="SL2" alt="salons_2" title="SALONS ZONE 2" href="#salons_2" data-toggle="modal" data-target="#salons" coords="694,390,728,369,786,329,814,304,833,283,849,263,887,170,941,187,936,203,924,237,911,269,901,286,881,318,868,335,850,351,832,366,813,380,754,423" shape="poly">
                 <area target="" arena="CH" alt="chaises" title="CHAISES ZONE " href="#chaises" data-toggle="modal" data-target="#chaises" coords="755,423,835,365,863,339,877,324,895,298,910,270,918,250,931,218,939,187,1000,205,1044,227,1085,249,1102,259,1118,265,1140,279,1150,286,1158,304,1164,318,1167,335,1168,350,1166,367,1162,381,1160,393,1143,420,1116,459,1083,503,1045,546,1016,575,999,589,976,606,947,624,918,639,912,582,887,537,849,497,809,456" shape="poly">
             </map>
-
 
             <div class="modal fade" id="tables" tabindex="-1" role="dialog" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered" role="document">
