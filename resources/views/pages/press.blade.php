@@ -26,16 +26,16 @@
                             <div class="article_block">
                                 <div class="article_img" style="background-image: url({{ (!empty($item['image_file'])) ?  URL::to('/').'/news/image/'.date('F_Y', strtotime($item['created_at'])).'/'.$item['image_file'] :  '/img/no_image.svg'}})">
                                     <a href="{{ route('press-details', ['id' => $item['id']]) }}" class="article_link"></a>
-                                    <div class="links_block">
+                                    {{--<div class="links_block">
                                         @if(!empty($item['pdf_file']))
                                             <a href="{{ URl::to('/') }}/news/pdf/{{ date('F_Y', strtotime($item['created_at'])) }}/{{ $item['pdf_file'] }}" download><i class="far fa-file-pdf"></i></a>
                                         @endif
                                         @if(!empty($item['archive_file']))
                                             <a href="{{ URl::to('/') }}/news/archives/{{ date('F_Y', strtotime($item['created_at'])) }}/{{ $item['archive_file'] }}" download><i class="far fa-file-archive"></i></a>
                                         @endif
-                                    </div>
+                                    </div>--}}
                                 </div>
-                                <div class="article_info jeans_bg">
+                                {{--<div class="article_info jeans_bg">
 
                                     <div class="row my_row">
                                         <div class="col-3 my_col">
@@ -47,15 +47,15 @@
                                             </div>
                                         </div>
                                         <div class="col-9 my_col">
-                                            {{--                                            <h3><a href="{{ route('press-details', ['id' => $item['id']]) }}">{{ $item['title_fr'] }}</a></h3>--}}
+                                            --}}{{--                                            <h3><a href="{{ route('press-details', ['id' => $item['id']]) }}">{{ $item['title_fr'] }}</a></h3>--}}{{--
                                             <h3>{{ $item['title_'.$lang] }}</h3>
                                             <h4>Saint tropez</h4>
-                                            {{--<h3>{{ (!empty($item['date'])) ? date('d.m.Y', strtotime($item['created_at'])) : '' }}</h3>--}}
+                                            --}}{{--<h3>{{ (!empty($item['date'])) ? date('d.m.Y', strtotime($item['created_at'])) : '' }}</h3>--}}{{--
 
                                             <p>{{ $item['description_'.$lang] }}</p>
                                         </div>
                                     </div>
-                                </div>
+                                </div>--}}
                             </div>
                         </div>
                     @endforeach

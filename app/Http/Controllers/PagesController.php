@@ -118,6 +118,43 @@ class PagesController extends Controller
         return view('pages.tickets');
     }
 
+    public function tickets_widget($name)
+    {
+        $url = 'https://www.weezevent.com/widget_billeterie.php?id_evenement=333583&lg_billetterie=2&code=40534&resize=1&width_auto=1&color_primary=00AEEF&v=2';
+        $ch = curl_init();
+
+        curl_setopt($ch, CURLOPT_HEADER, 0);
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+        curl_setopt($ch, CURLOPT_URL, $url);
+        $content = curl_exec($ch);
+        curl_close($ch);
+
+        $content = str_replace('/static/c14198/css/widget/widget_main.css','https://static-ticketing.weezevent.net/static/c14198/css/widget/widget_main.css', $content);
+        $content = str_replace('images/billetterie/securite_info.gif','https://static-ticketing.weezevent.net/images/billetterie/securite_info.gif', $content);
+
+        if($name == "salons") {
+            $content = str_replace('id="bloc_liste_billets_' . env('WEEZEVENT_SALONS_ID') . '" ' . 'style="display: none;"','id="bloc_liste_billets_' . env('WEEZEVENT_CHAISES_ID') . '" ' . 'style="display: block;"', $content);
+            $content = str_replace('data-id="' . env('WEEZEVENT_TABLES_ID') . '"','data-id="' . env('WEEZEVENT_TABLES_ID') . '"' . 'style="display:none;"', $content);
+            $content = str_replace('data-id="' . env('WEEZEVENT_CHAISES_ID') . '"','data-id="' . env('WEEZEVENT_CHAISES_ID') . '"' . 'style="display:none;"', $content);
+            return view('widgets.salons_widget', ['content' => $content]);
+        }
+
+        if($name == "tables") {
+            $content = str_replace('id="bloc_liste_billets_' . env('WEEZEVENT_TABLES_ID') . '" ' . 'style="display: none;"','id="bloc_liste_billets_' . env('WEEZEVENT_TABLES_ID') . '" ' . 'style="display: block;"', $content);
+            $content = str_replace('data-id="' . env('WEEZEVENT_SALONS_ID') . '"','data-id="' . env('WEEZEVENT_SALONS_ID') . '"' . 'style="display:none;"', $content);
+            $content = str_replace('data-id="' . env('WEEZEVENT_CHAISES_ID') . '"','data-id="' . env('WEEZEVENT_CHAISES_ID') . '"' . 'style="display:none;"', $content);
+            return view('widgets.tables_widget', ['content' => $content]);
+        }
+
+        if($name == "chaises") {
+            $content = str_replace('id="bloc_liste_billets_' . env('WEEZEVENT_CHAISES_ID') . '" ' . 'style="display: none;"','id="bloc_liste_billets_' . env('WEEZEVENT_CHAISES_ID') . '" ' . 'style="display: block;"', $content);
+            $content = str_replace('data-id="' . env('WEEZEVENT_SALONS_ID') . '"','data-id="' . env('WEEZEVENT_SALONS_ID') . '"' . 'style="display:none;"', $content);
+            $content = str_replace('data-id="' . env('WEEZEVENT_TABLES_ID') . '"','data-id="' . env('WEEZEVENT_CHAISES_ID') . '"' . 'style="display:none;"', $content);
+            return view('widgets.tables_widget', ['content' => $content]);
+        }
+    }
+
+
     public function results ()
     {
         return view('pages.results');

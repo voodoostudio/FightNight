@@ -29,7 +29,7 @@
                         <form method="POST" id="articleEditForm" action = "{{ route('news.store') }}" enctype="multipart/form-data">
                         {{ csrf_field() }}
                         <div class="row">
-                            <div class="col-md-6">
+                            {{--<div class="col-md-6">
                                 <div class="row">
                                     <div class="col-12 margin_bottom_20">
                                         <div class="label_container">
@@ -84,19 +84,19 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div>--}}
 
-                            <div class="col-md-6">
+                            <div class="col-md-12">
                                 <div class="row">
                                     <div class="col-12">
                                         <div class="img_upload_container sm">
                                             <div class="img_upload">
-                                                <input name="image_file" type="file" accept="image/*" id="header_img" class="input_file"/>
+                                                <input name="image_file" type="file" accept="application/pdf, image/*" id="header_img" class="input_file"/>
                                                 <label for="header_img"><span>{{ trans('lang.choose_header_img') }}</span></label>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-12">
+                                    {{--<div class="col-12">
                                         <div class="img_upload_container sm">
                                             <div class="img_upload">
                                                 <input name="pdf_file" accept="application/pdf" type="file" id="pdf" class="input_file"/>
@@ -111,7 +111,7 @@
                                                 <label for="archive"><span>Choose a archive file</span></label>
                                             </div>
                                         </div>
-                                    </div>
+                                    </div>--}}
                                 </div>
                             </div>
 
