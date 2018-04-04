@@ -12,7 +12,7 @@
             </div>
             <div class="press_container jeans_bg_ragged">
                 <h1 class="title--translated">Presse</h1>
-                <h2>Communiqués de presse</h2>
+                <h2>La presse en parle</h2>
 
                 <div class="press_carousel">
                     @foreach($news as $item)
