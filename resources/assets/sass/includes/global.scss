@@ -657,6 +657,22 @@ section.press_section {
           }
         }
       }
+      .modal {
+        .modal-body {
+          padding: 0;
+          position: relative;
+          .close {
+            position: absolute;
+            right: 15px;
+            top: 8px;
+            color: white;
+          }
+          img {
+            width: 100%;
+          }
+        }
+
+      }
       .article_info {
         padding: 15px;
         position: relative;

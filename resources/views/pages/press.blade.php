@@ -25,7 +25,8 @@
                         <div class="col-12 col-xl-4 col-md-6">
                             <div class="article_block">
                                 <div class="article_img" style="background-image: url({{ (!empty($item['image_file'])) ?  URL::to('/').'/news/image/'.date('F_Y', strtotime($item['created_at'])).'/'.$item['image_file'] :  '/img/no_image.svg'}})">
-                                    <a href="{{ route('press-details', ['id' => $item['id']]) }}" class="article_link"></a>
+                                    <a href="#" data-toggle="modal" data-target="#exampleModal" class="article_link"></a>
+                                    {{--<a href="{{ route('press-details', ['id' => $item['id']]) }}" class="article_link"></a>--}}
                                     {{--<div class="links_block">
                                         @if(!empty($item['pdf_file']))
                                             <a href="{{ URl::to('/') }}/news/pdf/{{ date('F_Y', strtotime($item['created_at'])) }}/{{ $item['pdf_file'] }}" download><i class="far fa-file-pdf"></i></a>
@@ -34,6 +35,23 @@
                                             <a href="{{ URl::to('/') }}/news/archives/{{ date('F_Y', strtotime($item['created_at'])) }}/{{ $item['archive_file'] }}" download><i class="far fa-file-archive"></i></a>
                                         @endif
                                     </div>--}}
+
+
+                                <!-- Modal -->
+                                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-body">
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                    <img src="{{ (!empty($item['image_file'])) ?  URL::to('/').'/news/image/'.date('F_Y', strtotime($item['created_at'])).'/'.$item['image_file'] :  '/img/no_image.svg'}}" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
                                 </div>
                                 {{--<div class="article_info jeans_bg">
 
@@ -71,6 +89,13 @@
             </div>
         </div>
     </section>
+
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+        Launch demo modal
+    </button>
+
+
 @stop
 
 @section('js')

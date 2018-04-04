@@ -1080,6 +1080,22 @@ section.press_section .press_container .article_block .article_img .links_block 
   margin-right: 10px;
 }
 
+section.press_section .press_container .article_block .modal .modal-body {
+  padding: 0;
+  position: relative;
+}
+
+section.press_section .press_container .article_block .modal .modal-body .close {
+  position: absolute;
+  right: 15px;
+  top: 8px;
+  color: white;
+}
+
+section.press_section .press_container .article_block .modal .modal-body img {
+  width: 100%;
+}
+
 section.press_section .press_container .article_block .article_info {
   padding: 15px;
   position: relative;
