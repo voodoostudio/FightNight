@@ -110,19 +110,19 @@
                 <div class="col-sm-6 col-md-4 my_col">
                     <div class="page_thumbnail first">
                         <h2>{!! trans('lang.our_tickets') !!}</h2>
-                        <a href="{{ route('tickets') }}" class="btn">{{ trans('lang.read_more') }}</a>
+                        <a href="{{ route('tickets') }}" class="btn">Acheter</a>
                     </div>
                 </div>
                 <div class="col-sm-6 col-md-4 my_col">
                     <div class="page_thumbnail second">
                         <h2>{!! trans('lang.our_editions') !!}</h2>
-                        <a href="{{ route('editions') }}" class="btn">{{ trans('lang.read_more') }}</a>
+                        <a href="{{ route('editions') }}" class="btn">Découvrir</a>
                     </div>
                 </div>
                 <div class="col-sm-6 col-md-4 my_col">
                     <div class="page_thumbnail third">
                         <h2>{!! trans('lang.our_contact') !!}</h2>
-                        <a href="{{ route('contact') }}" class="btn">{{ trans('lang.read_more') }}</a>
+                        <a href="{{ route('contact') }}" class="btn">Ecrire</a>
                     </div>
                 </div>
             </div>

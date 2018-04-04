@@ -71,9 +71,9 @@ return [
     'send'                  => 'Send',
 
     //Homepage
-    'our_tickets'           => 'Our <span>tickets</span>',
-    'our_editions'          => 'Our <span>edition</span>',
-    'our_contact'           => 'Oure <span>contact</span>',
+    'our_tickets'           => 'tickets',
+    'our_editions'          => 'edition',
+    'our_contact'           => 'contact',
     'read_more'             => 'Read more',
 
 ];
