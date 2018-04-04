@@ -129,7 +129,7 @@
                 {
                     staticState: true,
                     fill: false,
-                    stroke: true,
+                    stroke: false,
                     strokeWidth: 0.1,
                     strokeColor: '000000'
                 });

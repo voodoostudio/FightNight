@@ -18,7 +18,7 @@
                     @foreach($news as $item)
                         <div class="article_block">
                             <div class="article_img" style="background-image: url({{ (!empty($item['image_file'])) ?  URL::to('/').'/news/image/'.date('F_Y', strtotime($item['created_at'])).'/'.$item['image_file'] :  '/img/no_image.svg'}})">
-                                <a href="#" data-toggle="modal" data-target="#exampleModal" class="article_link"></a>
+                                <a href="#" data-toggle="modal" data-target="#image_{{ $item->id }}" class="article_link"></a>
                             {{--<a href="{{ route('press-details', ['id' => $item['id']]) }}" class="article_link"></a>--}}
                             {{--<div class="links_block">
                                 @if(!empty($item['pdf_file']))
@@ -67,7 +67,7 @@
         </div>
         @foreach($news as $item)
         <!-- Modal -->
-            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal fade" id="image_{{ $item->id }}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog" role="document">
                     <div class="modal-content">
                         <div class="modal-body">
