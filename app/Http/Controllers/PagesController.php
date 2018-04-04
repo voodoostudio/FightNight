@@ -133,25 +133,21 @@ class PagesController extends Controller
         $content = str_replace('images/billetterie/securite_info.gif','https://static-ticketing.weezevent.net/images/billetterie/securite_info.gif', $content);
 
         if($name == "salons") {
-            $content = str_replace('id="bloc_liste_billets_' . env('WEEZEVENT_SALONS_ID') . '" ' . 'style="display: none;"','id="bloc_liste_billets_' . env('WEEZEVENT_CHAISES_ID') . '" ' . 'style="display: block;"', $content);
-            $content = str_replace('data-id="' . env('WEEZEVENT_TABLES_ID') . '"','data-id="' . env('WEEZEVENT_TABLES_ID') . '"' . 'style="display:none;"', $content);
-            $content = str_replace('data-id="' . env('WEEZEVENT_CHAISES_ID') . '"','data-id="' . env('WEEZEVENT_CHAISES_ID') . '"' . 'style="display:none;"', $content);
-            return view('widgets.salons_widget', ['content' => $content]);
+            $content = str_replace('id="bloc_liste_billets_134126" style="display: none;"','id="bloc_liste_billets_134126 style="display: block;"', $content);
+            $content = str_replace('class="billetterie_tb_titre_categorie p_0 wid-close"','class="billetterie_tb_titre_categorie p_0 wid-close" style="display:none;"', $content);
         }
 
         if($name == "tables") {
-            $content = str_replace('id="bloc_liste_billets_' . env('WEEZEVENT_TABLES_ID') . '" ' . 'style="display: none;"','id="bloc_liste_billets_' . env('WEEZEVENT_TABLES_ID') . '" ' . 'style="display: block;"', $content);
-            $content = str_replace('data-id="' . env('WEEZEVENT_SALONS_ID') . '"','data-id="' . env('WEEZEVENT_SALONS_ID') . '"' . 'style="display:none;"', $content);
-            $content = str_replace('data-id="' . env('WEEZEVENT_CHAISES_ID') . '"','data-id="' . env('WEEZEVENT_CHAISES_ID') . '"' . 'style="display:none;"', $content);
-            return view('widgets.tables_widget', ['content' => $content]);
+            $content = str_replace('id="bloc_liste_billets_134127" style="display: none;"','id="bloc_liste_billets_134127 style="display: block;"', $content);
+            $content = str_replace('class="billetterie_tb_titre_categorie p_0 wid-close"','class="billetterie_tb_titre_categorie p_0 wid-close" style="display:none;"', $content);
         }
 
         if($name == "chaises") {
-            $content = str_replace('id="bloc_liste_billets_' . env('WEEZEVENT_CHAISES_ID') . '" ' . 'style="display: none;"','id="bloc_liste_billets_' . env('WEEZEVENT_CHAISES_ID') . '" ' . 'style="display: block;"', $content);
-            $content = str_replace('data-id="' . env('WEEZEVENT_SALONS_ID') . '"','data-id="' . env('WEEZEVENT_SALONS_ID') . '"' . 'style="display:none;"', $content);
-            $content = str_replace('data-id="' . env('WEEZEVENT_TABLES_ID') . '"','data-id="' . env('WEEZEVENT_CHAISES_ID') . '"' . 'style="display:none;"', $content);
-            return view('widgets.tables_widget', ['content' => $content]);
+            $content = str_replace('id="bloc_liste_billets_134188" style="display: none;"','id="bloc_liste_billets_134188 style="display: block;"', $content);
+            $content = str_replace('class="billetterie_tb_titre_categorie p_0 wid-close"','class="billetterie_tb_titre_categorie p_0 wid-close" style="display:none;"', $content);
         }
+
+        return view('widgets.widget', ['content' => $content]);
     }
 
 

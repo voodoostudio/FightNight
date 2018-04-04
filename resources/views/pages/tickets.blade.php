@@ -102,7 +102,7 @@
     <script type="text/javascript" src="https://www.weezevent.com/js/widget/min/widget.min.js"></script>
     <script type="text/javascript" src="{{ asset('/js/jquery.imagemapster.js') }}"></script>
     <script>
-        $( document ).ready(function() {
+        function map_ster() {
             var basic_opts = {
                 mapKey: 'arena'
             };
@@ -119,24 +119,14 @@
             $('img[usemap]').mapster(initial_opts)
                 .mapster('snapshot')
                 .mapster('rebind', basic_opts);
+        }
+
+        $( document ).ready(function() {
+            map_ster();
         });
 
         $( window ).resize(function() {
-            var basic_opts = {
-                mapKey: 'arena'
-            };
-            var initial_opts = $.extend({}, basic_opts,
-                {
-                    staticState: true,
-                    fill: false,
-                    stroke: false,
-                    strokeWidth: 0.1,
-                    strokeColor: '000000'
-                });
-
-            $('img[usemap]').mapster(initial_opts)
-                .mapster('snapshot')
-                .mapster('rebind', basic_opts);
+            map_ster();
         });
     </script>
 @stop
