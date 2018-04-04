@@ -1123,6 +1123,10 @@ section.press_section .press_container .article_block .article_info p {
   margin: 0;
 }
 
+section.press_section .modal .modal-dialog {
+  max-width: 800px;
+}
+
 section.press_section .modal .modal-body {
   padding: 0;
   position: relative;
