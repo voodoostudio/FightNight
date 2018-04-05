@@ -16,8 +16,12 @@
 
                 <div class="press_carousel">
                     @foreach($news as $item)
+                        @php
+                            $extension = new SplFileInfo($item['image_file']);
+                            $jpg_preview = preg_replace('"\.pdf$"', '.jpg', $item['image_file']);
+                        @endphp
                         <div class="article_block">
-                            <div class="article_img" style="background-image: url({{ (!empty($item['image_file'])) ?  URL::to('/').'/news/image/'.date('F_Y', strtotime($item['created_at'])).'/'.$item['image_file'] :  '/img/no_image.svg'}})">
+                            <div class="article_img" style="background-image: url({{ (strtolower($extension->getExtension()) == 'pdf') ? URL::to('/') . '/news/pdf/' . date('F_Y', strtotime($item['updated_at'])) . '/' . $jpg_preview :  URL::to('/') . '/news/image/' . date('F_Y', strtotime($item['updated_at'])) . '/' . $item['image_file']}})">
                                 <a href="#" data-toggle="modal" data-target="#image_{{ $item->id }}" class="article_link"></a>
                             {{--<a href="{{ route('press-details', ['id' => $item['id']]) }}" class="article_link"></a>--}}
                             {{--<div class="links_block">
@@ -66,6 +70,10 @@
             </div>
         </div>
         @foreach($news as $item)
+            @php
+                $extension = new SplFileInfo($item['image_file']);
+                $jpg_preview = preg_replace('"\.pdf$"', '.jpg', $item['image_file']);
+            @endphp
         <!-- Modal -->
             <div class="modal fade" id="image_{{ $item->id }}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog" role="document">
@@ -74,7 +82,7 @@
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
-                            <img src="{{ (!empty($item['image_file'])) ?  URL::to('/').'/news/image/'.date('F_Y', strtotime($item['created_at'])).'/'.$item['image_file'] :  '/img/no_image.svg'}}" alt="">
+                            <img src="{{ (strtolower($extension->getExtension()) == 'pdf') ? URL::to('/') . '/news/pdf/' . date('F_Y', strtotime($item['updated_at'])) . '/' . $jpg_preview :  URL::to('/') . '/news/image/' . date('F_Y', strtotime($item['updated_at'])) . '/' . $item['image_file']}}" alt="">
                         </div>
                     </div>
                 </div>

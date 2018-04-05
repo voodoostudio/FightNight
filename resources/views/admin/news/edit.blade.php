@@ -252,7 +252,15 @@
                                             <div class="img_upload_container sm">
                                                 <div class="img_preview">
                                                     <div class="img_preview_thumbnail" >
-                                                        <img src="{{ URL::to('/') }}/news/image/{{ $news->updated_at->format('F_Y') }}/{{ $news->image_file }}" />
+                                                        @php
+                                                            $extension = new SplFileInfo($news->image_file);
+                                                            $jpg_preview = preg_replace('"\.pdf$"', '.jpg', $news->image_file);
+                                                        @endphp
+                                                        @if(strtolower($extension->getExtension()) == 'pdf')
+                                                            <img src = "{{ URL::to('/') }}/news/pdf/{{ $news->updated_at->format('F_Y') }}/{{ $jpg_preview }}" alt = ""/>
+                                                        @else
+                                                            <img src="{{ URL::to('/') }}/news/image/{{ $news->updated_at->format('F_Y') }}/{{ $news->image_file }}" />
+                                                        @endif
                                                     </div>
                                                 </div>
                                                 <div class="img_upload">

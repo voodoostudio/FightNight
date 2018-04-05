@@ -38,7 +38,15 @@
                                             {{ Form::close() }}
                                         </div>
                                         <div class="admin_item_img">
-                                            <img src="{{ URL::to('/') }}/news/image/{{ $items->updated_at->format('F_Y') }}/{{ $items->image_file }}" alt="1">
+                                            @php
+                                                $extension = new SplFileInfo($items->image_file);
+                                                $jpg_preview = preg_replace('"\.pdf$"', '.jpg', $items->image_file);
+                                            @endphp
+                                            @if(strtolower($extension->getExtension()) == 'pdf')
+                                                <img src = "{{ URL::to('/') }}/news/pdf/{{ $items->updated_at->format('F_Y') }}/{{ $jpg_preview }}" alt = ""/>
+                                            @else
+                                                <img src="{{ URL::to('/') }}/news/image/{{ $items->updated_at->format('F_Y') }}/{{ $items->image_file }}" />
+                                            @endif
                                             @if(empty($items->image_file))
                                                 <img src="/img/no_image.svg" alt="">
                                             @endif
