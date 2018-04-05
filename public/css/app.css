@@ -401,6 +401,12 @@ body {
   color: #fffaff;
 }
 
+body.modal-open {
+  position: fixed;
+  overflow: hidden;
+  background-size: 150%;
+}
+
 p a {
   color: #00ffff;
 }

@@ -10,6 +10,11 @@ body {
   font-family: proxima_nova_light;
   padding-bottom: 160px;
   color: $white;
+  &.modal-open {
+    position: fixed;
+    overflow: hidden;
+    background-size: 150%;
+  }
 }
 
 p {
