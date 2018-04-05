@@ -979,6 +979,8 @@ section.editions_section .edition .edition_description {
 
 section.editions_section .edition .results_link {
   color: #00ffff;
+  font-family: proxima_nova_thin;
+  letter-spacing: 1px;
 }
 
 section.editions_section .edition .edition_person {
@@ -1249,11 +1251,13 @@ section.results_section .results_container {
 section.results_section .results_container h3 {
   text-align: center;
   font-size: 1.2rem;
+  color: #fbffff;
 }
 
 section.results_section .results_container p {
   text-align: center;
   margin-bottom: 20px;
+  color: #fbffff;
 }
 
 section.results_section .results_container .red_btn {
