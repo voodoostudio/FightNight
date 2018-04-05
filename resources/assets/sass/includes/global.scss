@@ -11,6 +11,8 @@ body {
   padding-bottom: 160px;
   color: $white;
   &.modal-open {
+    height: 100%;
+    overflow: hidden;
     .wrapper {
       overflow: hidden;
     }

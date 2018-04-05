@@ -129,5 +129,26 @@
                 }
             ]
         });
+
+
+        $('.modal').on('shown.bs.modal', function () {
+            stopBodyScrolling(true);
+        });
+
+        $('.modal').on('hidden.bs.modal', function () {
+            stopBodyScrolling(false);
+        });
+
+        var freezeVp = function(e) {
+            e.preventDefault();
+        };
+
+        function stopBodyScrolling (bool) {
+            if (bool === true) {
+                document.body.addEventListener("touchmove", freezeVp, false);
+            } else {
+                document.body.removeEventListener("touchmove", freezeVp, false);
+            }
+        }
     </script>
 @stop

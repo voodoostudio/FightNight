@@ -401,6 +401,11 @@ body {
   color: #fffaff;
 }
 
+body.modal-open {
+  height: 100%;
+  overflow: hidden;
+}
+
 body.modal-open .wrapper {
   overflow: hidden;
 }
