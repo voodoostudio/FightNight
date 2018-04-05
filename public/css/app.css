@@ -401,10 +401,8 @@ body {
   color: #fffaff;
 }
 
-body.modal-open {
-  position: fixed;
+body.modal-open .press_section {
   overflow: hidden;
-  background-size: 150%;
 }
 
 p a {

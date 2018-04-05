@@ -11,9 +11,9 @@ body {
   padding-bottom: 160px;
   color: $white;
   &.modal-open {
-    position: fixed;
-    overflow: hidden;
-    background-size: 150%;
+    .press_section {
+      overflow: hidden;
+    }
   }
 }
 
