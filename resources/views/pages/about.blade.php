@@ -28,13 +28,13 @@
                     <a href="{{ route('tickets') }}">Mise en vente des billets le 25 avril 2018</a><br>
                 A tous nos fans et invités de prestige, nous souhaitons une excellente Fight Night 6 !</p>
 
-                <div class="row">
-                    <div class="col-12">
-                        <a href="#" class="red_btn">
-                            Telecharger le programme 2018
-                        </a>
-                    </div>
-                </div>
+                {{--<div class="row">--}}
+                    {{--<div class="col-12">--}}
+                        {{--<a href="#" class="red_btn">--}}
+                            {{--Telecharger le programme 2018--}}
+                        {{--</a>--}}
+                    {{--</div>--}}
+                {{--</div>--}}
             </div>
         </div>
     </section>

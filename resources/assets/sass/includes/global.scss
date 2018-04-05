@@ -164,53 +164,25 @@ header {
 
 section.carousel_section {
   margin-top: 60px;
-  .homepage_carousel {
-    .flickity-viewport {
-      .flickity-slider {
-        .carousel-cell {
+
+  .flickity-viewport {
+    .flickity-slider {
+      .carousel-cell {
+        width: 100%;
+        height: auto;
+        background: black;
+        border-radius: 0;
+        position: relative;
+        &:before {
+          display: none;
+        }
+        img {
           width: 100%;
-          height: auto;
-          background: black;
-          border-radius: 0;
-          position: relative;
-          &:before {
-            display: none;
-          }
-          img {
-            width: 100%;
-          }
-          .caption {
-            position: absolute;
-            bottom: 120px;
-            left: 40px;
-            h1 {
-              color: $white;
-              font-family: сhunkfive_ex;
-              margin: 0;
-              text-transform: uppercase;
-              text-shadow: 2px 2px 15px $black;
-              .big {
-                font-size: 6rem;
-                letter-spacing: 5px;
-                display: block;
-                line-height: 1;
-                height: 75px;
-                margin: 5px 0;
-              }
-              .small {
-                font-size: 3rem;
-                line-height: 1;
-                letter-spacing: 3px;
-                display: block;
-                color: $red;
-                height: 36px;
-              }
-            }
-          }
         }
       }
     }
-    .flickity-prev-next-button {
+  }
+  .flickity-prev-next-button {
       background: rgba($black, 0.75);
       width: 40px;
       height: 40px;
@@ -231,6 +203,52 @@ section.carousel_section {
       }
     }
 
+  .caption {
+    position: absolute;
+    bottom: 120px;
+    left: 40px;
+    h1 {
+      color: $white;
+      font-family: сhunkfive_ex;
+      margin: 0;
+      text-transform: uppercase;
+      text-shadow: 2px 2px 15px $black;
+      .big {
+        font-size: 6rem;
+        letter-spacing: 5px;
+        display: block;
+        line-height: 1;
+        height: 75px;
+        margin: 5px 0;
+      }
+      .small {
+        font-size: 3rem;
+        line-height: 1;
+        letter-spacing: 3px;
+        display: block;
+        color: $red;
+        height: 36px;
+      }
+    }
+  }
+
+  .slick-slide {
+    img {
+      width: 100%;
+    }
+  }
+  .slick-slider {
+    .slick-slide {
+      position: relative;
+    }
+    .slick-arrow {
+      &.slick-prev {
+        left: 60px;
+      }
+      &.slick-next {
+        right: 60px;
+      }
+    }
   }
 }
 
@@ -371,7 +389,7 @@ section.posts_section {
       line-height: 1;
       a {
         margin-right: 6px;
-        font-size: 16px;
+        font-size: 20px;
         line-height: 1;
         color: $gray;
         &:hover {
