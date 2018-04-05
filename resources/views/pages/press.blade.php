@@ -89,9 +89,6 @@
             </div>
         @endforeach
     </section>
-
-
-
 @stop
 
 @section('js')

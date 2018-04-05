@@ -401,7 +401,7 @@ body {
   color: #fffaff;
 }
 
-body.modal-open .press_section {
+body.modal-open .wrapper {
   overflow: hidden;
 }
 

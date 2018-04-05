@@ -34,14 +34,15 @@
     @yield('css')
 </head>
 <body id="@yield('id')">
+    <div class="wrapper">
+        @include('includes.header')
+        @yield('content')
+        @include('includes.footer')
 
-    @include('includes.header')
-    @yield('content')
-    @include('includes.footer')
-
-    <!-- Scripts -->
-    <script type="text/javascript" src="{{mix('js/libraries.js')}}"></script>
-    <script type="text/javascript" src="{{mix('js/app.js')}}"></script>
-    @yield('js')
+        <!-- Scripts -->
+        <script type="text/javascript" src="{{mix('js/libraries.js')}}"></script>
+        <script type="text/javascript" src="{{mix('js/app.js')}}"></script>
+        @yield('js')
+    </div>
 </body>
 </html>
