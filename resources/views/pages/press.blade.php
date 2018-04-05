@@ -20,9 +20,9 @@
                             $extension = new SplFileInfo($item['image_file']);
                             $jpg_preview = preg_replace('"\.pdf$"', '.jpg', $item['image_file']);
                         @endphp
-                        <div class="article_block">
+                        <div class="article_block" style="width: 180px;">
                             <div class="article_img" style="background-image: url({{ (strtolower($extension->getExtension()) == 'pdf') ? URL::to('/') . '/news/pdf/' . date('F_Y', strtotime($item['updated_at'])) . '/' . $jpg_preview :  URL::to('/') . '/news/image/' . date('F_Y', strtotime($item['updated_at'])) . '/' . $item['image_file']}})">
-                                <a href="#" data-toggle="modal" data-target="#image_{{ $item->id }}" class="article_link"></a>
+                                <a href="#" data-toggle="modal" style="height: 225px;" data-target="#image_{{ $item->id }}" class="article_link"></a>
                             {{--<a href="{{ route('press-details', ['id' => $item['id']]) }}" class="article_link"></a>--}}
                             {{--<div class="links_block">
                                 @if(!empty($item['pdf_file']))
@@ -98,7 +98,7 @@
     <script>
         $('.press_carousel').slick({
             infinite: true,
-            slidesToShow: 3,
+            slidesToShow: 5,
             centerMode: false,
             slidesToScroll: 1,
             autoplay: true,
@@ -111,7 +111,7 @@
                     settings: {
                         arrows: false,
                         centerPadding: '40px',
-                        slidesToShow: 2
+                        slidesToShow: 3
                     }
                 },
                 {
