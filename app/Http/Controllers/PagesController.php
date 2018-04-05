@@ -133,17 +133,17 @@ class PagesController extends Controller
         $content = str_replace('images/billetterie/securite_info.gif','https://static-ticketing.weezevent.net/images/billetterie/securite_info.gif', $content);
 
         if($name == "salons") {
-            $content = str_replace('id="bloc_liste_billets_134126" style="display: none;"','id="bloc_liste_billets_134126 style="display: block;"', $content);
+            $content = str_replace('id="bloc_liste_billets_133686" style="display: none;"','id="bloc_liste_billets_133686 style="display: block;"', $content);
             $content = str_replace('class="billetterie_tb_titre_categorie p_0 wid-close"','class="billetterie_tb_titre_categorie p_0 wid-close" style="display:none;"', $content);
         }
 
         if($name == "tables") {
-            $content = str_replace('id="bloc_liste_billets_134127" style="display: none;"','id="bloc_liste_billets_134127 style="display: block;"', $content);
+            $content = str_replace('id="bloc_liste_billets_133684" style="display: none;"','id="bloc_liste_billets_133684 style="display: block;"', $content);
             $content = str_replace('class="billetterie_tb_titre_categorie p_0 wid-close"','class="billetterie_tb_titre_categorie p_0 wid-close" style="display:none;"', $content);
         }
 
         if($name == "chaises") {
-            $content = str_replace('id="bloc_liste_billets_134188" style="display: none;"','id="bloc_liste_billets_134188 style="display: block;"', $content);
+            $content = str_replace('id="bloc_liste_billets_134316" style="display: none;"','id="bloc_liste_billets_134316 style="display: block;"', $content);
             $content = str_replace('class="billetterie_tb_titre_categorie p_0 wid-close"','class="billetterie_tb_titre_categorie p_0 wid-close" style="display:none;"', $content);
         }
 
