@@ -120,7 +120,7 @@ class PagesController extends Controller
 
     public function tickets_widget($name)
     {
-        $url = 'https://www.weezevent.com/widget_billeterie.php?id_evenement=333583&lg_billetterie=2&code=40534&resize=1&width_auto=1&color_primary=00AEEF&v=2';
+        $url = 'https://www.weezevent.com/widget_billeterie.php?id_evenement=332537&code=59823';
         $ch = curl_init();
 
         curl_setopt($ch, CURLOPT_HEADER, 0);
