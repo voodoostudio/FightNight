@@ -291,11 +291,11 @@
                 <p>De 5'000 € à 50'000 € nos packages s’adaptent à vos objectifs.<br>
                     Nous vous accompagnons dans la réalisation de vos campagnes et leur activation.</p>
                 <div class="buttons_container">
-                    <a href="/img/partners/sponsoring_fnst18.pdf" download="Partenaires-FNST18.pdf" class="img_btn">
-                        <img src="/img/partners/sponsors_list_btn.png" alt="Sponsors list btn">
+                    <a href="#" class="red_btn">
+                        Telecharger le dossier<br> de sponsoring 2018
                     </a>
-                    <a href="/img/partners/partenaires_fnst18.pdf" download="Sponsoring-FNST18.pdf" class="img_btn">
-                        <img src="/img/partners/packages_btn.png" alt="Sponsors list btn">
+                    <a href="#" class="red_btn">
+                        Consulter nos<br> packages
                     </a>
                 </div>
             </div>

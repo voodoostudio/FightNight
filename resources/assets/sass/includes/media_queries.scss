@@ -353,6 +353,11 @@
     font-size: 1.2rem;
     height: 50px;
   }
+  .red_btn {
+    padding: 10px 15px;
+    font-size: .85rem;
+    width: 213px;
+  }
 }
 
 @media screen and (max-width: 885px) {
@@ -536,6 +541,16 @@
           }
           &.previous {
             left: -10px;
+          }
+        }
+      }
+      .buttons_container {
+        .red_btn {
+          margin: 0 auto;
+          &:first-child {
+            margin: 0 auto;
+            float: none;
+            margin-bottom: 20px;
           }
         }
       }
