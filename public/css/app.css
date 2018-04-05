@@ -1925,6 +1925,13 @@ footer .links_list li a img {
     font-size: .85rem;
     width: 213px;
   }
+  section.press_section .modal .modal-body .close {
+    right: 5px;
+    top: 5px;
+    padding: 6px;
+    width: 40px;
+    height: 40px;
+  }
 }
 
 @media screen and (max-width: 885px) {
