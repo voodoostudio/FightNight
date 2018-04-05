@@ -1166,9 +1166,17 @@ section.press_section .modal .modal-body {
 
 section.press_section .modal .modal-body .close {
   position: absolute;
-  right: 15px;
-  top: 8px;
-  color: #b7866f;
+  right: 10px;
+  top: 10px;
+  text-align: center;
+  color: #ffffff;
+  display: block;
+  padding: 10px;
+  background: black;
+  font-size: 2rem;
+  width: 50px;
+  border-radius: 50%;
+  height: 50px;
 }
 
 section.press_section .modal .modal-body img {

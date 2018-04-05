@@ -712,9 +712,17 @@ section.press_section {
       position: relative;
       .close {
         position: absolute;
-        right: 15px;
-        top: 8px;
-        color: $brown;
+        right: 10px;
+        top: 10px;
+        text-align: center;
+        color: #ffffff;
+        display: block;
+        padding: 10px;
+        background: black;
+        font-size: 2rem;
+        width: 50px;
+        border-radius: 50%;
+        height: 50px;
       }
       img {
         width: 100%;
