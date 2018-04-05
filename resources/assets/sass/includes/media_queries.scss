@@ -4,6 +4,7 @@
 
 @media screen and ( max-width: 1199px ) {
   header {
+    margin-bottom: -20px;
     .navbar.navbar-light {
       padding-left: 190px;
       .navbar-brand {
@@ -188,6 +189,7 @@
 @media screen and ( max-width: 767px ) {
   header {
     margin-top: 40px;
+    margin-bottom: -10px;
     .navbar.navbar-light {
       .navbar-nav {
         margin: 0 0 40px;
@@ -296,6 +298,23 @@
       }
     }
   }
+  section.partners_section {
+    .partners_container {
+      h2 {
+        font-size: 1.2rem;
+      }
+      .partners_carousel {
+        .flickity-prev-next-button{
+          &.next {
+            right: -43px;
+          }
+          &.previous {
+            left: -43px;
+          }
+        }
+      }
+    }
+  }
   section.contact_section {
     .contact_container {
       form button {
@@ -333,6 +352,11 @@
   .btn_beige {
     font-size: 1.2rem;
     height: 50px;
+  }
+  .red_btn {
+    padding: 10px 15px;
+    font-size: .85rem;
+    width: 213px;
   }
 }
 
@@ -499,6 +523,36 @@
       }
       p {
         font-size: .85rem;
+      }
+    }
+  }
+
+  section.partners_section {
+    .partners_container {
+      .partners_carousel {
+        .carousel_item {
+          width: 25%;
+        }
+        .flickity-prev-next-button{
+          width: 30px;
+          height: 30px;
+          &.next {
+            right: -10px;
+          }
+          &.previous {
+            left: -10px;
+          }
+        }
+      }
+      .buttons_container {
+        .red_btn {
+          margin: 0 auto;
+          &:first-child {
+            margin: 0 auto;
+            float: none;
+            margin-bottom: 20px;
+          }
+        }
       }
     }
   }

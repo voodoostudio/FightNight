@@ -151,6 +151,28 @@
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#454545', endColorstr='#1f1a1c', GradientType=0 );
 }
 
+.red_btn {
+  display: table;
+  width: 260px;
+  line-height: 1;
+  text-align: center;
+  padding: 18px 25px;
+  border-radius: 15px;
+  color: #fffaff;
+  text-transform: uppercase;
+  font-family: proxima_nova_bold;
+  background: #fc0000;
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, #fc0000), color-stop(0%, #f6290c), color-stop(100%, #780000));
+  background: -webkit-gradient(linear, left top, left bottom, from(#fc0000), color-stop(0%, #f6290c), to(#780000));
+  background: linear-gradient(to bottom, #fc0000 0%, #f6290c 0%, #780000 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fc0000', endColorstr='#780000', GradientType=0 );
+}
+
+.red_btn:hover {
+  color: #fffaff;
+  text-decoration: underline;
+}
+
 /*Buttons style END*/
 .form_group {
   margin-bottom: 20px;
@@ -416,7 +438,7 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
-  margin: 70px 0 -20px;
+  margin: 70px 0 -40px;
   position: relative;
   z-index: 9999;
 }
@@ -832,6 +854,15 @@ section.about_section .about_container p {
   font-size: 1.2rem;
 }
 
+section.about_section .about_container .img_btn {
+  margin-top: 20px;
+  display: block;
+}
+
+section.about_section .about_container .img_btn img {
+  width: 225px;
+}
+
 section.gallery_section {
   margin-top: 50px;
 }
@@ -946,6 +977,10 @@ section.editions_section .edition .edition_description {
   letter-spacing: 1px;
 }
 
+section.editions_section .edition .results_link {
+  color: #00ffff;
+}
+
 section.editions_section .edition .edition_person {
   line-height: 1;
   margin: 0 0 7px 0;
@@ -966,7 +1001,7 @@ section.editions_section .edition .edition__stars {
 
 section.editions_section .edition .video-container {
   position: relative;
-  padding-bottom: 56.25%;
+  padding-bottom: 61.25%;
   padding-top: 58px;
   height: 0;
   overflow: hidden;
@@ -1042,7 +1077,7 @@ section.press_section .press_container .download_link img {
 }
 
 section.press_section .press_container .article_block {
-  margin-bottom: 20px;
+  margin: 0 10px 20px;
 }
 
 section.press_section .press_container .article_block .article_img {
@@ -1114,6 +1149,26 @@ section.press_section .press_container .article_block .article_info p {
   margin: 0;
 }
 
+section.press_section .modal .modal-dialog {
+  max-width: 800px;
+}
+
+section.press_section .modal .modal-body {
+  padding: 0;
+  position: relative;
+}
+
+section.press_section .modal .modal-body .close {
+  position: absolute;
+  right: 15px;
+  top: 8px;
+  color: #b7866f;
+}
+
+section.press_section .modal .modal-body img {
+  width: 100%;
+}
+
 section.partners_section .partners_container h2 {
   margin-bottom: 20px;
 }
@@ -1161,6 +1216,11 @@ section.partners_section .partners_container .partners_carousel .flickity-prev-n
   fill: #fffaff;
 }
 
+section.partners_section .partners_container .buttons_container .red_btn:first-child {
+  float: left;
+  margin-right: 20px;
+}
+
 section.privacy_policy_section .privacy_policy_container {
   padding: 90px 125px;
   background: rgba(21, 21, 21, 0.99);
@@ -1182,6 +1242,25 @@ section.privacy_policy_section .privacy_policy_container p {
   font-size: .875rem;
 }
 
+section.results_section .results_container {
+  padding-top: 150px;
+}
+
+section.results_section .results_container h3 {
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+section.results_section .results_container p {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+section.results_section .results_container .red_btn {
+  display: table;
+  margin: 70px auto 0;
+}
+
 .jeans_bg {
   background: url("/img/jeans_texture_plain.jpg") no-repeat center;
   background-size: cover;
@@ -1199,6 +1278,10 @@ section.privacy_policy_section .privacy_policy_container p {
   background-size: cover;
   position: relative;
   padding: 90px 125px;
+}
+
+.img_container {
+  margin-bottom: -20px;
 }
 
 .img_container img {
@@ -1332,6 +1415,31 @@ footer .links_list li a.lang.active {
 
 footer .links_list li a img {
   width: 26px;
+}
+
+.slick-slider .slick-arrow {
+  background: rgba(0, 0, 0, 0.75);
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 50%;
+  margin-top: -20px;
+  border: none;
+  z-index: 99;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.slick-slider .slick-arrow img {
+  width: 100%;
+}
+
+.slick-slider .slick-arrow.slick-prev {
+  left: -50px;
+}
+
+.slick-slider .slick-arrow.slick-next {
+  right: -50px;
 }
 
 .dashboard_header {
@@ -1550,6 +1658,9 @@ footer .links_list li a img {
 }
 
 @media screen and (max-width: 1199px) {
+  header {
+    margin-bottom: -20px;
+  }
   header .navbar.navbar-light {
     padding-left: 190px;
   }
@@ -1680,6 +1791,7 @@ footer .links_list li a img {
 @media screen and (max-width: 767px) {
   header {
     margin-top: 40px;
+    margin-bottom: -10px;
   }
   header .navbar.navbar-light .navbar-nav {
     margin: 0 0 40px;
@@ -1753,6 +1865,15 @@ footer .links_list li a img {
   section.press_section .press_container .paragraph {
     max-width: 100%;
   }
+  section.partners_section .partners_container h2 {
+    font-size: 1.2rem;
+  }
+  section.partners_section .partners_container .partners_carousel .flickity-prev-next-button.next {
+    right: -43px;
+  }
+  section.partners_section .partners_container .partners_carousel .flickity-prev-next-button.previous {
+    left: -43px;
+  }
   section.contact_section .contact_container form button {
     margin-top: 15px;
   }
@@ -1782,6 +1903,11 @@ footer .links_list li a img {
   .btn_beige {
     font-size: 1.2rem;
     height: 50px;
+  }
+  .red_btn {
+    padding: 10px 15px;
+    font-size: .85rem;
+    width: 213px;
   }
 }
 
@@ -1903,6 +2029,27 @@ footer .links_list li a img {
   }
   section.about_section .about_container p {
     font-size: .85rem;
+  }
+  section.partners_section .partners_container .partners_carousel .carousel_item {
+    width: 25%;
+  }
+  section.partners_section .partners_container .partners_carousel .flickity-prev-next-button {
+    width: 30px;
+    height: 30px;
+  }
+  section.partners_section .partners_container .partners_carousel .flickity-prev-next-button.next {
+    right: -10px;
+  }
+  section.partners_section .partners_container .partners_carousel .flickity-prev-next-button.previous {
+    left: -10px;
+  }
+  section.partners_section .partners_container .buttons_container .red_btn {
+    margin: 0 auto;
+  }
+  section.partners_section .partners_container .buttons_container .red_btn:first-child {
+    margin: 0 auto;
+    float: none;
+    margin-bottom: 20px;
   }
   section.privacy_policy_section .privacy_policy_container {
     padding: 30px 15px;

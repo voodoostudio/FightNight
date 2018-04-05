@@ -56,8 +56,7 @@ class AdminController extends Controller
         $lang = LaravelLocalization::getCurrentLocale();
 
         $rules = array(
-            'title_fr'      => 'required',
-            'title_en'      => 'required',
+            'image_file'    => 'required',
         );
 
         $news = new News;
@@ -69,60 +68,41 @@ class AdminController extends Controller
                 ->withErrors($validator)
                 ->withInput(Input::except('password'));
         } else {
-
             $image_file = $request->file('image_file');
-            $pdf_file = $request->file('pdf_file');
-            $archive_file = $request->file('archive_file');
 
-            if($request->hasFile('image_file'))
-            {
-                $file_name = sha1(rand() . time() . rand()) . '.' . $image_file->getClientOriginalExtension();
-                $image_file->move(public_path("/news/image/" . date('F_Y')), $file_name);
+            if($request->hasFile('image_file')) {
+                if ($image_file->getClientOriginalExtension() == 'pdf') {
+                    $file_name = sha1(rand() . time() . rand()) . '.' . $image_file->getClientOriginalExtension();
+                    $image_file->move(public_path("/news/pdf/" . date('F_Y')), $file_name);
 
-                /* resize image */
-                $path = $_SERVER['DOCUMENT_ROOT'] . "/news/image/" . date('F_Y') . '/' . $file_name;
-                $image = Image::make($path);
+                    /* convert first page pdf to jpg */
+                    $pdf_path = 'news/pdf/' . date('F_Y') . '/' . $file_name;
+                    $jpg_path = preg_replace('"\.pdf$"', '.jpg', $pdf_path);
 
-                list($width, $height) = getimagesize($path);
-                $new_width = 1200;
-                $ratio = $width / $height;
+                    exec("convert \"{$pdf_path}[0]\" \"{$jpg_path}\"");
+                } else {
+                    $file_name = sha1(rand() . time() . rand()) . '.' . $image_file->getClientOriginalExtension();
+                    $image_file->move(public_path("/news/image/" . date('F_Y')), $file_name);
 
-                if($width > $new_width) {
-                    $image->resize($new_width, intval($new_width / $ratio));
+                    /* resize image */
+                    $path = $_SERVER['DOCUMENT_ROOT'] . "/news/image/" . date('F_Y') . '/' . $file_name;
+                    $image = Image::make($path);
+
+                    list($width, $height) = getimagesize($path);
+                    $new_width = 1200;
+                    $ratio = $width / $height;
+
+                    if ($width > $new_width) {
+                        $image->resize($new_width, intval($new_width / $ratio));
+                    }
+
+                    /* save new image */
+                    $image->save($path);
                 }
-
-                /* save new image */
-                $image->save($path);
-
                 $news->image_file = $file_name;
             } else {
                 $news->image_file = '';
             }
-
-            if($request->hasFile('pdf_file'))
-            {
-                $file_name = sha1(rand() . time() . rand()) . '.' . $pdf_file->getClientOriginalExtension();
-                $pdf_file->move(public_path("/news/pdf/" . date('F_Y')), $file_name);
-
-                $news->pdf_file = $file_name;
-            } else {
-                $news->pdf_file = '';
-            }
-
-            if($request->hasFile('archive_file'))
-            {
-                $file_name = sha1(rand() . time() . rand()) . '.' . $archive_file->getClientOriginalExtension();
-                $archive_file->move(public_path("/news/archives/" . date('F_Y')), $file_name);
-
-                $news->archive_file = $file_name;
-            } else {
-                $news->archive_file = '';
-            }
-
-            $news->title_fr        = Input::get('title_fr');
-            $news->title_en        = Input::get('title_en');
-            $news->description_fr  = Input::get('description_fr');
-            $news->description_en  = Input::get('description_en');
 
             $news->save();
 
@@ -155,8 +135,7 @@ class AdminController extends Controller
         $lang = LaravelLocalization::getCurrentLocale();
 
         $rules = array(
-            'title_fr'      => 'required',
-            'title_en'      => 'required',
+            'image_file'    => 'required',
         );
 
         $validator = Validator::make(Input::all(), $rules);
@@ -167,69 +146,43 @@ class AdminController extends Controller
                 ->withErrors($validator)
                 ->withInput(Input::except('password'));
         } else {
-
             $news = News::find($id);
-
             $image_file = $request->file('image_file');
-            $pdf_file = $request->file('pdf_file');
-            $archive_file = $request->file('archive_file');
 
-            // IMAGE
-            if($request->hasFile('image_file'))
-            {
-                $file_name = sha1(rand() . time() . rand()) . '.' . $image_file->getClientOriginalExtension();
-                $image_file->move(public_path("/news/image/" . date('F_Y')), $file_name);
+            if($request->hasFile('image_file')) {
+                if ($image_file->getClientOriginalExtension() == 'pdf') {
+                    $file_name = sha1(rand() . time() . rand()) . '.' . $image_file->getClientOriginalExtension();
+                    $image_file->move(public_path("/news/pdf/" . date('F_Y')), $file_name);
 
-                /* resize image */
-                $path = $_SERVER['DOCUMENT_ROOT'] . "/news/image/" . date('F_Y') . '/' . $file_name;
-                $image = Image::make($path);
+                    /* convert first page pdf to jpg */
+                    $pdf_path = 'news/pdf/' . date('F_Y') . '/' . $file_name;
+                    $jpg_path = preg_replace('"\.pdf$"', '.jpg', $pdf_path);
 
-                list($width, $height) = getimagesize($path);
-                $new_width = 1200;
-                $ratio = $width / $height;
+                    exec("convert \"{$pdf_path}[0]\" \"{$jpg_path}\"");
+                } else {
+                    $file_name = sha1(rand() . time() . rand()) . '.' . $image_file->getClientOriginalExtension();
+                    $image_file->move(public_path("/news/image/" . date('F_Y')), $file_name);
 
-                if($width > $new_width) {
-                    $image->resize($new_width, intval($new_width / $ratio));
+                    /* resize image */
+                    $path = $_SERVER['DOCUMENT_ROOT'] . "/news/image/" . date('F_Y') . '/' . $file_name;
+                    $image = Image::make($path);
+
+                    list($width, $height) = getimagesize($path);
+                    $new_width = 1200;
+                    $ratio = $width / $height;
+
+                    if ($width > $new_width) {
+                        $image->resize($new_width, intval($new_width / $ratio));
+                    }
+
+                    /* save new image */
+                    $image->save($path);
+
+                    $news->image_file = $file_name;
                 }
-
-                /* save new image */
-                $image->save($path);
-
-                $news->image_file = $file_name;
             } else {
-                $news->image_file = News::where('id', '=', $id)->value('image_file');
+                $news->image_file = '';
             }
-
-            // PDF
-            if($request->hasFile('pdf_file'))
-            {
-                $file_name = sha1(rand() . time() . rand()) . '.' . $pdf_file->getClientOriginalExtension();
-                $pdf_file->move(public_path("/news/pdf/" . date('F_Y')), $file_name);
-
-                /* convert first page pdf to jpg */
-                $pdf_path = 'news/pdf/' . date('F_Y') . '/' . $file_name;
-                $jpg_path = preg_replace('"\.pdf$"', '.jpg', $pdf_path);
-
-                exec("convert \"{$pdf_path}[0]\" \"{$jpg_path}\"");
-            } else {
-                $news->pdf_file = News::where('id', '=', $id)->value('pdf_file');
-            }
-
-            // ARCHIVE
-            if($request->hasFile('archive_file'))
-            {
-                $file_name = sha1(rand() . time() . rand()) . '.' . $archive_file->getClientOriginalExtension();
-                $archive_file->move(public_path("/news/archives/" . date('F_Y')), $file_name);
-
-                $news->archive_file = $file_name;
-            } else {
-                $news->archive_file = News::where('id', '', $id)->value('archive_file');
-            }
-
-            $news->title_fr        = Input::get('title_fr');
-            $news->title_en        = Input::get('title_en');
-            $news->description_fr  = Input::get('description_fr');
-            $news->description_en  = Input::get('description_en');
 
             $news->save();
 
