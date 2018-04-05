@@ -440,7 +440,7 @@ header {
   background-position: bottom;
   margin: 70px 0 -40px;
   position: relative;
-  z-index: 9999;
+  z-index: 9998;
 }
 
 header .navbar.navbar-light {
