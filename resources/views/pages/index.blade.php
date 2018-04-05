@@ -14,8 +14,8 @@
                         {{--<h1>learn to <span>defend</span> yourself in real life</h1>--}}
                     {{--</div>--}}
                     <div class="caption">
-                        <h1><span class="small">Saint-Tropez</span><span class="big">Best Show</span></h1>
-                        {{--<h1><span class="small">The best</span><span class="big">show</span> <span class="small">of st-tropez</span></h1>--}}
+                        {{--<h1><span class="small">Saint-Tropez</span><span class="big">Best Show</span></h1>--}}
+                        <h1><span class="small">The best</span><span class="big">show</span> <span class="small">of st-tropez</span></h1>
                     </div>
                 </div>
                 <div class="carousel-cell">
@@ -110,19 +110,19 @@
                 <div class="col-sm-6 col-md-4 my_col">
                     <div class="page_thumbnail first">
                         <h2>{!! trans('lang.our_tickets') !!}</h2>
-                        <a href="{{ route('tickets') }}" class="btn">{{ trans('lang.read_more') }}</a>
+                        <a href="{{ route('tickets') }}" class="btn">Acheter</a>
                     </div>
                 </div>
                 <div class="col-sm-6 col-md-4 my_col">
                     <div class="page_thumbnail second">
                         <h2>{!! trans('lang.our_editions') !!}</h2>
-                        <a href="{{ route('editions') }}" class="btn">{{ trans('lang.read_more') }}</a>
+                        <a href="{{ route('editions') }}" class="btn">Découvrir</a>
                     </div>
                 </div>
                 <div class="col-sm-6 col-md-4 my_col">
                     <div class="page_thumbnail third">
                         <h2>{!! trans('lang.our_contact') !!}</h2>
-                        <a href="{{ route('contact') }}" class="btn">{{ trans('lang.read_more') }}</a>
+                        <a href="{{ route('contact') }}" class="btn">Ecrire</a>
                     </div>
                 </div>
             </div>
@@ -134,7 +134,8 @@
     <script type="text/javascript" src="{{mix('js/index.js')}}"></script>
     <script>
         // Set the date we're counting down to
-        var countDownDate = new Date("Aug 4, 2018 00:00:01").getTime();
+//        var countDownDate = new Date("Aug 4, 2018 00:00:01").getTime();
+        var countDownDate = new Date("Apr 25, 2018 00:00:01").getTime();
         countdown();
     </script>
 @stop

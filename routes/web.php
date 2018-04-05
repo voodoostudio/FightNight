@@ -78,6 +78,11 @@ Route::group(['prefix' => LaravelLocalization::setLocale()], function()
         'as' => 'tickets',
     ]);
 
+    Route::get('/tickets_widget/{name}', [
+        'uses' => 'PagesController@tickets_widget',
+        'as' => 'tickets_widget',
+    ]);
+
     Route::get('/contact', [
         'uses' => 'PagesController@contact',
         'as' => 'contact',

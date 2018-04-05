@@ -124,7 +124,7 @@
 }
 
 .btn:hover {
-  color: #c08167;
+  color: #b7866f;
 }
 
 .btn_beige {
@@ -352,8 +352,16 @@ textarea:focus {
 }
 
 /*Select2 styles END*/
-#form-messages .success {
+.success {
   color: #51bf6c;
+  font-family: proxima_nova_thin;
+  font-size: .875rem;
+}
+
+.error {
+  color: #ff6666;
+  font-family: proxima_nova_thin;
+  font-size: .875rem;
 }
 
 html {
@@ -408,7 +416,7 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
-  margin: 70px 0 -20px;
+  margin: 70px 0 -40px;
   position: relative;
   z-index: 9999;
 }
@@ -416,7 +424,7 @@ header {
 header .navbar.navbar-light {
   position: relative;
   background-color: transparent;
-  padding: 20px 0 20px 270px;
+  padding: 20px 0 20px 260px;
 }
 
 header .navbar.navbar-light .navbar-brand {
@@ -439,6 +447,7 @@ header .navbar.navbar-light .navbar-nav .nav-link {
   text-shadow: 1px 1px 5px #000000;
   letter-spacing: 2px;
   position: relative;
+  white-space: nowrap;
 }
 
 header .navbar.navbar-light .navbar-nav .nav-link.active {
@@ -563,7 +572,7 @@ section.carousel_section .homepage_carousel .flickity-viewport .flickity-slider 
   display: block;
   line-height: 1;
   height: 75px;
-  margin: 10px 0;
+  margin: 5px 0;
 }
 
 section.carousel_section .homepage_carousel .flickity-viewport .flickity-slider .carousel-cell .caption h1 .small {
@@ -572,7 +581,7 @@ section.carousel_section .homepage_carousel .flickity-viewport .flickity-slider 
   letter-spacing: 3px;
   display: block;
   color: #bf3737;
-  height: 40px;
+  height: 36px;
 }
 
 section.carousel_section .homepage_carousel .flickity-prev-next-button {
@@ -587,7 +596,6 @@ section.carousel_section .homepage_carousel .flickity-prev-next-button.next {
 
 section.carousel_section .homepage_carousel .flickity-prev-next-button.previous {
   left: 60px;
-  right: initial;
 }
 
 section.carousel_section .homepage_carousel .flickity-prev-next-button:hover {
@@ -635,6 +643,7 @@ section.countdown_section .countdown_container .title_container h4 {
 
 section.tickets_section .countdown_container {
   position: relative;
+  padding: 90px 30px 45px;
 }
 
 section.tickets_section .countdown_container .countdown {
@@ -723,7 +732,7 @@ section.posts_section .post_block h6 {
   text-transform: uppercase;
   font-size: 1.1rem;
   letter-spacing: 1px;
-  color: #c08167;
+  color: #b7866f;
   line-height: 1;
   margin-bottom: 5px;
 }
@@ -798,7 +807,7 @@ section.thumbnails_section .page_thumbnail h2 {
 }
 
 section.thumbnails_section .page_thumbnail h2 span {
-  color: #c08167;
+  color: #b7866f;
   display: block;
 }
 
@@ -821,6 +830,15 @@ section.about_section .about_container p {
   line-height: 1.2;
   letter-spacing: 0px;
   font-size: 1.2rem;
+}
+
+section.about_section .about_container .img_btn {
+  margin-top: 20px;
+  display: block;
+}
+
+section.about_section .about_container .img_btn img {
+  width: 225px;
 }
 
 section.gallery_section {
@@ -887,9 +905,10 @@ section.editions_section .edition .edition__info-container {
 
 section.editions_section .edition .edition_title {
   font-family: proxima_nova_thin;
-  font-size: 3rem;
+  font-size: 3.4rem;
   letter-spacing: 2px;
-  margin: 0;
+  margin: 0 0 7px 0;
+  line-height: 1;
 }
 
 section.editions_section .edition .edition_title .city {
@@ -900,25 +919,24 @@ section.editions_section .edition .edition_title .city {
 }
 
 section.editions_section .edition .edition_title .year {
-  font-family: proxima_nova_regular;
-  color: #c08167;
-  font-size: 3.2rem;
+  font-family: proxima_nova_semibold;
+  color: #a96b58;
+  font-size: 3.6rem;
 }
 
 section.editions_section .edition .edition_statistics {
   font-size: .7rem;
   text-transform: uppercase;
   line-height: 1;
-  font-family: proxima_nova_thin;
   letter-spacing: 1px;
 }
 
 section.editions_section .edition .edition_statistics span {
-  font-family: proxima_nova_light;
+  font-family: proxima_nova_regular;
   display: inline-block;
-  padding: 2px 5px 0;
-  border: 2px solid #c08167;
-  color: #c08167;
+  padding: 3px 7px 2px;
+  border: 1px solid #a96b58;
+  color: #a96b58;
   margin-right: 10px;
   letter-spacing: 0;
   font-size: 1rem;
@@ -926,19 +944,22 @@ section.editions_section .edition .edition_statistics span {
 
 section.editions_section .edition .edition_statistics span sup {
   font-size: .6rem;
+  letter-spacing: 1px;
 }
 
 section.editions_section .edition .edition_description {
-  color: #c08167;
+  color: #b7866f;
   font-size: 1.1rem;
-  font-family: proxima_nova_thin;
+  font-family: proxima_nova_light;
   line-height: 1.2;
+  letter-spacing: 1px;
 }
 
 section.editions_section .edition .edition_person {
   line-height: 1;
   margin: 0 0 7px 0;
   font-size: 1.1rem;
+  letter-spacing: 1px;
 }
 
 section.editions_section .edition .edition_person span {
@@ -998,7 +1019,7 @@ section.press_section .press_container {
 }
 
 section.press_section .press_container h2 {
-  color: #c08167;
+  color: #b7866f;
   position: relative;
   letter-spacing: 1px;
   line-height: 1;
@@ -1011,7 +1032,7 @@ section.press_section .press_container h2:after {
   width: 100%;
   height: 1px;
   max-width: 209px;
-  background: #c08167;
+  background: #b7866f;
   position: absolute;
   bottom: -5px;
 }
@@ -1030,7 +1051,7 @@ section.press_section .press_container .download_link img {
 }
 
 section.press_section .press_container .article_block {
-  margin-bottom: 20px;
+  margin: 0 10px 20px;
 }
 
 section.press_section .press_container .article_block .article_img {
@@ -1089,7 +1110,7 @@ section.press_section .press_container .article_block .article_info h4 {
   text-transform: uppercase;
   font-size: 1.1rem;
   letter-spacing: 1px;
-  color: #c08167;
+  color: #b7866f;
   line-height: 1;
   margin-bottom: 5px;
 }
@@ -1100,6 +1121,26 @@ section.press_section .press_container .article_block .article_info p {
   text-align: justify;
   font-size: .875rem;
   margin: 0;
+}
+
+section.press_section .modal .modal-dialog {
+  max-width: 800px;
+}
+
+section.press_section .modal .modal-body {
+  padding: 0;
+  position: relative;
+}
+
+section.press_section .modal .modal-body .close {
+  position: absolute;
+  right: 15px;
+  top: 8px;
+  color: #b7866f;
+}
+
+section.press_section .modal .modal-body img {
+  width: 100%;
 }
 
 section.partners_section .partners_container h2 {
@@ -1189,6 +1230,10 @@ section.privacy_policy_section .privacy_policy_container p {
   padding: 90px 125px;
 }
 
+.img_container {
+  margin-bottom: -20px;
+}
+
 .img_container img {
   width: 100%;
 }
@@ -1213,10 +1258,10 @@ section.privacy_policy_section .privacy_policy_container p {
 
 .title--translated {
   font-family: proxima_nova_thin;
-  font-size: 11rem;
+  font-size: 10rem;
   position: absolute;
-  top: -115px;
-  left: 125px;
+  top: -92px;
+  left: 115px;
   margin: 0;
 }
 
@@ -1320,6 +1365,43 @@ footer .links_list li a.lang.active {
 
 footer .links_list li a img {
   width: 26px;
+}
+
+.slick-slider .slick-arrow {
+  background: rgba(0, 0, 0, 0.75);
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 50%;
+  margin-top: -20px;
+  border: none;
+  z-index: 99;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.slick-slider .slick-arrow img {
+  width: 100%;
+}
+
+.slick-slider .slick-arrow.slick-prev {
+  left: -50px;
+}
+
+.slick-slider .slick-arrow.slick-next {
+  right: -50px;
+}
+
+.img_btn {
+  text-decoration: none;
+}
+
+.img_btn img {
+  width: 225px;
+}
+
+.img_btn:hover, .img_btn:active {
+  text-decoration: none;
 }
 
 .dashboard_header {
@@ -1538,6 +1620,9 @@ footer .links_list li a img {
 }
 
 @media screen and (max-width: 1199px) {
+  header {
+    margin-bottom: -20px;
+  }
   header .navbar.navbar-light {
     padding-left: 190px;
   }
@@ -1668,6 +1753,7 @@ footer .links_list li a img {
 @media screen and (max-width: 767px) {
   header {
     margin-top: 40px;
+    margin-bottom: -10px;
   }
   header .navbar.navbar-light .navbar-nav {
     margin: 0 0 40px;
@@ -1740,6 +1826,15 @@ footer .links_list li a img {
   }
   section.press_section .press_container .paragraph {
     max-width: 100%;
+  }
+  section.partners_section .partners_container h2 {
+    font-size: 1.2rem;
+  }
+  section.partners_section .partners_container .partners_carousel .flickity-prev-next-button.next {
+    right: -43px;
+  }
+  section.partners_section .partners_container .partners_carousel .flickity-prev-next-button.previous {
+    left: -43px;
   }
   section.contact_section .contact_container form button {
     margin-top: 15px;
@@ -1891,6 +1986,19 @@ footer .links_list li a img {
   }
   section.about_section .about_container p {
     font-size: .85rem;
+  }
+  section.partners_section .partners_container .partners_carousel .carousel_item {
+    width: 25%;
+  }
+  section.partners_section .partners_container .partners_carousel .flickity-prev-next-button {
+    width: 30px;
+    height: 30px;
+  }
+  section.partners_section .partners_container .partners_carousel .flickity-prev-next-button.next {
+    right: -10px;
+  }
+  section.partners_section .partners_container .partners_carousel .flickity-prev-next-button.previous {
+    left: -10px;
   }
   section.privacy_policy_section .privacy_policy_container {
     padding: 30px 15px;

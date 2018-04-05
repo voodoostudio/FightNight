@@ -25,7 +25,6 @@ $('.posts_carousel').flickity({
     contain: true,
     wrapAround: true,
     pageDots: false,
-    // autoPlay: true,
     arrowShape: {
         x0: 15,
         x1: 65, y1: 50,

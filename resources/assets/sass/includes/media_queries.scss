@@ -4,6 +4,7 @@
 
 @media screen and ( max-width: 1199px ) {
   header {
+    margin-bottom: -20px;
     .navbar.navbar-light {
       padding-left: 190px;
       .navbar-brand {
@@ -188,6 +189,7 @@
 @media screen and ( max-width: 767px ) {
   header {
     margin-top: 40px;
+    margin-bottom: -10px;
     .navbar.navbar-light {
       .navbar-nav {
         margin: 0 0 40px;
@@ -293,6 +295,23 @@
     .press_container {
       .paragraph {
         max-width: 100%;
+      }
+    }
+  }
+  section.partners_section {
+    .partners_container {
+      h2 {
+        font-size: 1.2rem;
+      }
+      .partners_carousel {
+        .flickity-prev-next-button{
+          &.next {
+            right: -43px;
+          }
+          &.previous {
+            left: -43px;
+          }
+        }
       }
     }
   }
@@ -499,6 +518,26 @@
       }
       p {
         font-size: .85rem;
+      }
+    }
+  }
+
+  section.partners_section {
+    .partners_container {
+      .partners_carousel {
+        .carousel_item {
+          width: 25%;
+        }
+        .flickity-prev-next-button{
+          width: 30px;
+          height: 30px;
+          &.next {
+            right: -10px;
+          }
+          &.previous {
+            left: -10px;
+          }
+        }
       }
     }
   }

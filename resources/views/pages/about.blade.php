@@ -4,7 +4,7 @@
     <section class="about_section">
         <div class="container-fluid">
             <div class="img_container">
-                <img src="/img/about.png" alt="About us banner">
+                <img src="/img/about/about.png" alt="About us banner">
             </div>
             <div class="about_container jeans_bg_ragged">
                 <h1 class="title--translated">{{ trans('lang.about') }}</h1>
@@ -22,6 +22,13 @@
                     <a href="{{ route('tickets') }}">{{ trans('lang.about_tickets_link') }}</a><br>
                 {{ trans('lang.about_tickets_part2') }}</p>
 
+                <div class="row">
+                    <div class="col-12">
+                        <a href="#" class="img_btn">
+                            <img src="/img/about/about_btn.png" alt="Download the program">
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
