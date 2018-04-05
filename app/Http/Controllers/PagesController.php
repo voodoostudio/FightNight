@@ -151,9 +151,9 @@ class PagesController extends Controller
     }
 
 
-    public function results ()
+    public function results ($slug)
     {
-        return view('pages.results');
+        return view('pages.results', ['slug' => $slug]);
     }
 
     public function partners ()

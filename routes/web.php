@@ -38,7 +38,7 @@ Route::group(['prefix' => LaravelLocalization::setLocale()], function()
         'as' => 'virtual_tour',
     ]);
 
-    Route::get('/results', [
+    Route::get('/results/{slug}', [
         'uses' => 'PagesController@results',
         'as' => 'results',
     ]);

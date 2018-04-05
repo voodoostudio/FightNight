@@ -7,7 +7,7 @@
                 <div class="row">
                     <div class="col-12 col-md-7 col-xl-6">
                         <div class="edition__info-container">
-                            <h2 class="edition_title"><span class="city">Saint-Tropez</span> Fight Night <span class="year">2013</span></h2>
+                           <h2 class="edition_title"><span class="city">Saint-Tropez</span> <a href="{{ route('results', ['slug' => 'fight-night-2013']) }}"> Fight Night <span class="year">2013</span></a></h2>
                             {!! trans('lang.editions_block_2013') !!}
                             <div class="edition__stars">
                                 <i class="fas fa-star"></i>
@@ -29,7 +29,7 @@
                 <div class="row">
                     <div class="col-12 col-md-7 col-xl-6">
                         <div class="edition__info-container">
-                            <h2 class="edition_title"><span class="city">Saint-Tropez</span> Fight Night <span class="year">2014</span></h2>
+                            <h2 class="edition_title"><span class="city">Saint-Tropez</span> <a href="{{ route('results', ['slug' => 'fight-night-2014']) }}">Fight Night <span class="year">2014</span></a></h2>
                             {!! trans('lang.editions_block_2014') !!}
                             <div class="edition__stars">
                                 <i class="fas fa-star"></i>
@@ -51,7 +51,7 @@
                 <div class="row">
                     <div class="col-12 col-md-7 col-xl-6">
                         <div class="edition__info-container">
-                            <h2 class="edition_title"><span class="city">Saint-Tropez</span> Fight Night <span class="year">2015</span></h2>
+                            <h2 class="edition_title"><span class="city">Saint-Tropez</span> <a href="{{ route('results', ['slug' => 'fight-night-2015']) }}">Fight Night <span class="year">2015</span></a></h2>
                             {!! trans('lang.editions_block_2015') !!}
                             <div class="edition__stars">
                                 <i class="fas fa-star"></i>
@@ -73,7 +73,7 @@
                 <div class="row">
                     <div class="col-12 col-md-7 col-xl-6">
                         <div class="edition__info-container">
-                            <h2 class="edition_title"><span class="city">Saint-Tropez</span> Fight Night <span class="year">2016</span></h2>
+                            <h2 class="edition_title"><span class="city">Saint-Tropez</span> <a href="{{ route('results', ['slug' => 'fight-night-2016']) }}">Fight Night <span class="year">2016</span></a></h2>
                             {!! trans('lang.editions_block_2016') !!}
                             <div class="edition__stars">
                                 <i class="fas fa-star"></i>
@@ -95,7 +95,7 @@
                 <div class="row">
                     <div class="col-12 col-md-7 col-xl-6">
                         <div class="edition__info-container">
-                            <h2 class="edition_title"><span class="city">Saint-Tropez</span> Fight Night <span class="year">2017</span></h2>
+                            <h2 class="edition_title"><span class="city">Saint-Tropez</span> <a href="{{ route('results', ['slug' => 'fight-night-2017']) }}">Fight Night <span class="year">2017</span></a></h2>
                             {!! trans('lang.editions_block_2017') !!}
                             <div class="edition__stars">
                                 <i class="fas fa-star"></i>

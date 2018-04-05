@@ -122,7 +122,7 @@
                 <div class="col-sm-6 col-md-4 my_col">
                     <div class="page_thumbnail third">
                         <h2>{!! trans('lang.our_contact') !!}</h2>
-                        <a href="{{ route('contact') }}" class="btn">Ecrire</a>
+                        <a href="{{ route('contact') }}" class="btn">écrire</a>
                     </div>
                 </div>
             </div>

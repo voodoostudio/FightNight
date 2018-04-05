@@ -79,7 +79,7 @@
                 <div class="modal-dialog modal-dialog-centered" role="document">
                     <div class="modal-content">
                         <div class="modal-body">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: transparent; font-size: 3.5rem; opacity: 1; text-shadow: none;">
                                 <span aria-hidden="true">&times;</span>
                             </button>
                             <img src="{{ (strtolower($extension->getExtension()) == 'pdf') ? URL::to('/') . '/news/pdf/' . date('F_Y', strtotime($item['updated_at'])) . '/' . $jpg_preview :  URL::to('/') . '/news/image/' . date('F_Y', strtotime($item['updated_at'])) . '/' . $item['image_file']}}" alt="">
