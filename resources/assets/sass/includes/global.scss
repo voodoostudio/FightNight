@@ -703,6 +703,7 @@ section.press_section {
   }
 
   .modal {
+    z-index: 999999;
     .modal-dialog {
       max-width: 800px;
     }
