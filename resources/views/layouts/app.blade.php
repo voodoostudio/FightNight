@@ -3,7 +3,7 @@
 <html lang="fr">
 <head>
     <meta charset="utf-8">
-    <title>@yield('title') - FightNights</title>
+    <title> @if((!empty(Route::current())) ? Route::current()->getName() == 'index' : '') {{ trans('lang.title_homepage') }} @elseif((!empty(Route::current())) ? Route::current()->getName() == 'about' : '') {{ trans('lang.title_about') }} @elseif((!empty(Route::current())) ? Route::current()->getName() == 'editions' : '') {{ trans('lang.title_editions') }} @endif </title>
     <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale = 1.0, user-scalable=no" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="Heraclee website">

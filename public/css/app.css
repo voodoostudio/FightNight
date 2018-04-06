@@ -1522,6 +1522,8 @@ footer .links_list li a img {
   position: absolute;
   top: 10px;
   right: 10px;
+  background: #000000d6;
+  padding: 4px 10px;
 }
 
 .admin_items_list_section .admin_item_info_block .edit_elements > * {
@@ -1540,6 +1542,7 @@ footer .links_list li a img {
 
 .admin_items_list_section .admin_item_info_block .edit_elements a {
   color: white;
+  padding-left: 4px;
 }
 
 .admin_items_list_section .admin_item_info_block .edit_elements a:hover {
@@ -1696,6 +1699,12 @@ footer .links_list li a img {
 .img_upload_container .img_upload input.input_file + label:hover {
   background-color: rgba(0, 0, 0, 0.9);
   text-decoration: underline;
+}
+
+@media screen and (min-width: 1200px) {
+  .admin_items_list_section, .admin_edit_section {
+    margin-top: 100px;
+  }
 }
 
 @media screen and (max-width: 1199px) {

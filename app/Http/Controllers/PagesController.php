@@ -168,7 +168,7 @@ class PagesController extends Controller
 
     public function press ()
     {
-        $news = News::all();
+        $news = News::orderBy('created_at', 'desc')->get();
 //        dd($news->toArray());
         return view('pages.press',[
             'news' => $news
