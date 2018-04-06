@@ -1879,10 +1879,15 @@ footer .links_list li a img {
     width: 30px;
     height: 30px;
     text-align: center;
+    padding: 0;
+    display: table;
   }
   section.carousel_section .slick-slider .slick-arrow img {
     width: 15px;
     height: 15px;
+    vertical-align: middle;
+    display: table-cell;
+    margin: 0 auto;
   }
   section.carousel_section .slick-slider .slick-arrow.slick-prev {
     left: initial;

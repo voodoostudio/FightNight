@@ -250,9 +250,14 @@
         width: 30px;
         height: 30px;
         text-align: center;
+        padding: 0;
+        display: table;
         img {
           width: 15px;
           height: 15px;
+          vertical-align: middle;
+          display: table-cell;
+          margin: 0 auto;
         }
         &.slick-prev {
           left: initial;
