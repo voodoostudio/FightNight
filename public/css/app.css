@@ -391,11 +391,6 @@ html {
 }
 
 body {
-  background-image: url("/img/bg_main_hd.jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
   position: relative;
   min-height: 100vh;
   font-family: proxima_nova_light;
@@ -445,7 +440,7 @@ p a:hover {
 }
 
 header {
-  background-image: url("/img/bg_header_hd.png");
+  background-image: url("/img/bg_header.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
@@ -1748,9 +1743,6 @@ footer .links_list li a img {
 }
 
 @media screen and (max-width: 991px) {
-  body {
-    background-image: url("/img/bg_main.jpg");
-  }
   header {
     background-image: url("/img/bg_header.png");
   }
@@ -1842,9 +1834,6 @@ footer .links_list li a img {
 }
 
 @media screen and (max-width: 767px) {
-  body {
-    background-size: auto 100%;
-  }
   header {
     margin-top: 40px;
     margin-bottom: -10px;
@@ -2002,7 +1991,6 @@ footer .links_list li a img {
 @media screen and (max-width: 575px) {
   body {
     padding-bottom: 200px;
-    background-image: url("/img/bg_main_sm.jpg");
   }
   header {
     background-image: url("/img/bg_header_sm.png");

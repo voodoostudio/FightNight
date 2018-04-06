@@ -68,9 +68,9 @@
 }
 
 @media screen and ( max-width: 991px ) {
-  body {
-    background-image: url("/img/bg_main.jpg");
-  }
+  //body {
+  //  background-image: url("/img/bg_main.jpg");
+  //}
   header {
     background-image: url("/img/bg_header.png");
     .navbar.navbar-light {
@@ -189,9 +189,19 @@
 }
 
 @media screen and ( max-width: 767px ) {
-  body {
-    background-size: auto 100%;
-  }
+  //body {
+  //  //-webkit-background-size: auto 100%;
+  //  //-moz-background-size: auto 100%;
+  //  //-o-background-size: auto 100%;
+  //  //background-size: auto 100%;
+  //
+  //
+  //  background: url("/img/bg_main_sm.jpg") no-repeat center center fixed;
+  //  -webkit-background-size: cover;
+  //  -moz-background-size: cover;
+  //  -o-background-size: cover;
+  //  background-size: cover;
+  //}
   header {
     margin-top: 40px;
     margin-bottom: -10px;
@@ -398,7 +408,7 @@
 @media screen and ( max-width: 575px ) {
   body {
     padding-bottom: 200px;
-    background-image: url("/img/bg_main_sm.jpg");
+    //background-image: url("/img/bg_main_sm.jpg");
   }
 
 
