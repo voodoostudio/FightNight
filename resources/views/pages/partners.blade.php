@@ -273,28 +273,28 @@
                     <div class="carousel_item">
                         {{--<a href="#">--}}
                             <div class="partner">
-                                <img src="/img/partners/your_logo.png" alt="Your logo">
+                                <img src="/img/partners/partenaires_medias/sfr.png" alt="Your logo">
                             </div>
                         {{--</a>--}}
                     </div>
                     <div class="carousel_item">
                         {{--<a href="#">--}}
                             <div class="partner">
-                                <img src="/img/partners/your_logo.png" alt="Your logo">
+                                <img src="/img/partners/partenaires_medias/nrj.png" alt="Your logo">
                             </div>
                         {{--</a>--}}
                     </div>
                     <div class="carousel_item">
                         {{--<a href="#">--}}
                             <div class="partner">
-                                <img src="/img/partners/your_logo.png" alt="Your logo">
+                                <img src="/img/partners/partenaires_medias/var_matin.png" alt="Your logo">
                             </div>
                         {{--</a>--}}
                     </div>
                     <div class="carousel_item">
                         {{--<a href="#">--}}
                             <div class="partner">
-                                <img src="/img/partners/your_logo.png" alt="Your logo">
+                                <img src="/img/partners/partenaires_medias/equipe_21.png" alt="Your logo">
                             </div>
                         {{--</a>--}}
                     </div>
@@ -349,7 +349,7 @@
                 slidesToShow: 5,
                 slidesToScroll: 1,
                 autoplay: true,
-                autoplaySpeed: 3000,
+                autoplaySpeed: 4000,
                 prevArrow: '<button type="button" class="slick-prev"><img src="/img/arrow_left.png" alt="Slide to previous"></button>',
                 nextArrow: '<button type="button" class="slick-next"><img src="/img/arrow_right.png" alt="Slide to previous"></button>',
                 responsive: [

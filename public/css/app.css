@@ -1827,6 +1827,10 @@ footer .links_list li a img {
   .jeans_bg_ragged {
     padding: 85px;
   }
+  .modal-backdrop.show {
+    opacity: 1;
+    z-index: 9999;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -1980,10 +1984,6 @@ footer .links_list li a img {
 }
 
 @media screen and (max-width: 575px) {
-  .modal-backdrop.show {
-    opacity: 1;
-    z-index: 9999;
-  }
   body {
     padding-bottom: 200px;
   }
