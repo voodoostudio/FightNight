@@ -68,7 +68,11 @@
 }
 
 @media screen and ( max-width: 991px ) {
+  body {
+    background-image: url("/img/bg_main.jpg");
+  }
   header {
+    background-image: url("/img/bg_header.png");
     .navbar.navbar-light {
       justify-content: flex-end;
       padding-left: 0;
@@ -185,6 +189,9 @@
 }
 
 @media screen and ( max-width: 767px ) {
+  body {
+    background-size: auto 100%;
+  }
   header {
     margin-top: 40px;
     margin-bottom: -10px;
@@ -391,9 +398,12 @@
 @media screen and ( max-width: 575px ) {
   body {
     padding-bottom: 200px;
+    background-image: url("/img/bg_main_sm.jpg");
   }
 
+
   header {
+    background-image: url("/img/bg_header_sm.png");
     margin-top: 20px;
     .navbar.navbar-light {
       padding: 0 0 20px 0;
