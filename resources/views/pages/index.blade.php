@@ -56,6 +56,22 @@
                     <img src="/img/carousel/4_sm.jpg" alt="" class="d-sm-none">
                     <img src="/img/carousel/4.jpg" alt="" class="d-none d-sm-block">
                 </div>
+                <div class="carousel_cell">
+                    <img src="/img/carousel/5_sm.jpg" alt="" class="d-sm-none">
+                    <img src="/img/carousel/5.jpg" alt="" class="d-none d-sm-block">
+                </div>
+                <div class="carousel_cell">
+                    <img src="/img/carousel/6_sm.jpg" alt="" class="d-sm-none">
+                    <img src="/img/carousel/6.jpg" alt="" class="d-none d-sm-block">
+                </div>
+                <div class="carousel_cell">
+                    <img src="/img/carousel/7_sm.jpg" alt="" class="d-sm-none">
+                    <img src="/img/carousel/7.jpg" alt="" class="d-none d-sm-block">
+                </div>
+                <div class="carousel_cell">
+                    <img src="/img/carousel/8_sm.jpg" alt="" class="d-sm-none">
+                    <img src="/img/carousel/8.jpg" alt="" class="d-none d-sm-block">
+                </div>
             </div>
         </div>
     </section>
