@@ -57,10 +57,8 @@
                         </div>
                     @endforeach
                 </div>
-
-
-                <h2>Accréditations</h2>
-                <p class="paragraph">Accréditez-vous à la Fight Night Saint-Tropez en envoyant une copie de votre carte de presse à <a href="mailto:info@fightnights.pro">info@fightnights.pro</a></p>
+                <h2>{{ trans('lang.accreditations') }}</h2>
+                <p class="paragraph">{{ trans('lang.send_passport_copy') }} <a href="mailto:info@fightnights.pro">info@fightnights.pro</a></p>
 
                 <h2>{{ trans('lang.press_kit') }}</h2>
                 <a href="/news/fightnight_2018.pdf" class="download_link" download="FightNight Saint-Tropez Communique de presse 2018">
@@ -79,7 +77,7 @@
                 <div class="modal-dialog modal-dialog-centered" role="document">
                     <div class="modal-content">
                         <div class="modal-body">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: transparent; font-size: 3.5rem; opacity: 1; text-shadow: none;">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
                             <img src="{{ (strtolower($extension->getExtension()) == 'pdf') ? URL::to('/') . '/news/pdf/' . date('F_Y', strtotime($item['updated_at'])) . '/' . $jpg_preview :  URL::to('/') . '/news/image/' . date('F_Y', strtotime($item['updated_at'])) . '/' . $item['image_file']}}" alt="">
@@ -89,9 +87,6 @@
             </div>
         @endforeach
     </section>
-
-
-
 @stop
 
 @section('js')
@@ -132,5 +127,26 @@
                 }
             ]
         });
+
+
+        $('.modal').on('shown.bs.modal', function () {
+            stopBodyScrolling(true);
+        });
+
+        $('.modal').on('hidden.bs.modal', function () {
+            stopBodyScrolling(false);
+        });
+
+        var freezeVp = function(e) {
+            e.preventDefault();
+        };
+
+        function stopBodyScrolling (bool) {
+            if (bool === true) {
+                document.body.addEventListener("touchmove", freezeVp, false);
+            } else {
+                document.body.removeEventListener("touchmove", freezeVp, false);
+            }
+        }
     </script>
 @stop

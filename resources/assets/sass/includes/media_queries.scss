@@ -68,7 +68,11 @@
 }
 
 @media screen and ( max-width: 991px ) {
+  //body {
+  //  background-image: url("/img/bg_main.jpg");
+  //}
   header {
+    background-image: url("/img/bg_header.png");
     .navbar.navbar-light {
       justify-content: flex-end;
       padding-left: 0;
@@ -91,23 +95,17 @@
         width: 50px;
         height: 50px;
       }
-      .flickity-viewport {
-        .flickity-slider {
-          .carousel-cell {
-            .caption {
-              bottom: 40px;
-              left: 40px;
-              h1 {
-                .small {
-                  font-size: 2rem;
-                  height: 25px;
-                }
-                .big {
-                  font-size: 4rem;
-                  height: 50px;
-                }
-              }
-            }
+      .caption {
+        bottom: 40px;
+        left: 40px;
+        h1 {
+          .small {
+            font-size: 2rem;
+            height: 25px;
+          }
+          .big {
+            font-size: 4rem;
+            height: 50px;
           }
         }
       }
@@ -180,6 +178,10 @@
   .jeans_bg_ragged {
     padding: 85px
   }
+  .modal-backdrop.show {
+    opacity: 1;
+    z-index: 9999;
+  }
 }
 
 @media screen and ( min-width: 768px ) and ( max-width: 991px ) {
@@ -187,6 +189,19 @@
 }
 
 @media screen and ( max-width: 767px ) {
+  //body {
+  //  //-webkit-background-size: auto 100%;
+  //  //-moz-background-size: auto 100%;
+  //  //-o-background-size: auto 100%;
+  //  //background-size: auto 100%;
+  //
+  //
+  //  background: url("/img/bg_main_sm.jpg") no-repeat center center fixed;
+  //  -webkit-background-size: cover;
+  //  -moz-background-size: cover;
+  //  -o-background-size: cover;
+  //  background-size: cover;
+  //}
   header {
     margin-top: 40px;
     margin-bottom: -10px;
@@ -206,6 +221,7 @@
     }
   }
   section.carousel_section {
+    margin-top: 30px;
     .homepage_carousel {
       .flickity-prev-next-button {
         width: 40px;
@@ -217,21 +233,37 @@
           right: 115px;
         }
       }
-      .flickity-viewport {
-        .flickity-slider {
-          .carousel-cell {
-            .caption {
-              bottom: 15px;
-              left: 25px;
-              h1 {
-                .big {
-                  font-size: 3rem;
-                  letter-spacing: 8px;
-                  height: 37px;
-                }
-              }
-            }
+      .caption {
+        bottom: 15px;
+        left: 25px;
+        h1 {
+          .big {
+            font-size: 3rem;
+            letter-spacing: 8px;
+            height: 37px;
           }
+        }
+      }
+    }
+    .slick-slider {
+      .slick-arrow{
+        width: 30px;
+        height: 30px;
+        text-align: center;
+        padding: 0;
+        display: table;
+        img {
+          width: 15px;
+          height: 15px;
+          vertical-align: middle;
+          display: table-cell;
+          margin: 0 auto;
+        }
+        &.slick-prev {
+          left: 20px;
+        }
+        &.slick-next {
+          right: 20px;
         }
       }
     }
@@ -245,7 +277,7 @@
         }
       }
       .countdown {
-        padding: 0;
+        padding: 0 35px;
         margin: 0 auto;
       }
     }
@@ -358,6 +390,15 @@
     font-size: .85rem;
     width: 213px;
   }
+
+  section.press_section .modal .modal-body .close {
+    right: 5px;
+    top: 5px;
+    padding: 6px;
+    width: 40px;
+    height: 40px;
+  }
+
 }
 
 @media screen and (max-width: 885px) {
@@ -371,9 +412,12 @@
 @media screen and ( max-width: 575px ) {
   body {
     padding-bottom: 200px;
+    //background-image: url("/img/bg_main_sm.jpg");
   }
 
+
   header {
+    background-image: url("/img/bg_header_sm.png");
     margin-top: 20px;
     .navbar.navbar-light {
       padding: 0 0 20px 0;
@@ -391,7 +435,7 @@
       }
       .navbar-nav {
         flex-direction: column;
-        margin-top: 30px;
+        margin-top: 40px;
         .nav-link {
           margin-right: 0;
           text-align: center;
@@ -411,7 +455,7 @@
       }
       .title_container {
         h4 {
-          font-size: 1.2rem;
+          font-size: 1rem;
         }
       }
     }
@@ -430,23 +474,17 @@
           right: 85px;
         }
       }
-      .flickity-viewport {
-        .flickity-slider {
-          .carousel-cell {
-            .caption {
-              h1 {
-                .small {
-                  font-size: 1rem;
-                  height: 13px;
-                }
-                .big {
-                  font-size: 1.5rem;
-                  letter-spacing: 5px;
-                  height: 20px;
-                  margin: 5px 0 0;
-                }
-              }
-            }
+      .caption {
+        h1 {
+          .small {
+            font-size: 1rem;
+            height: 13px;
+          }
+          .big {
+            font-size: 1.5rem;
+            letter-spacing: 5px;
+            height: 20px;
+            margin: 5px 0 0;
           }
         }
       }

@@ -5,9 +5,9 @@
 @section('id', 'index')
 
 @section('content')
-     <section class="carousel_section">
+     <section class="carousel_section" style="display:none">
         <div class="container-fluid">
-            <div class="homepage_carousel">
+            <div class="homepage_carousel flickity_carousel">
                 <div class="carousel-cell">
                     <img src="/img/carousel/1.jpg" alt="">
                     {{--<div class="caption">--}}
@@ -26,6 +26,35 @@
                 </div>
                 <div class="carousel-cell">
                     <img src="/img/carousel/4.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+     <section class="carousel_section">
+        <div class="container-fluid">
+            <div class="homepage_carousel slick_carousel">
+                <div class="carousel_cell">
+                    <img src="/img/carousel/1_sm.jpg" alt="" class="d-sm-none">
+                    <img src="/img/carousel/1.jpg" alt="" class="d-none d-sm-block">
+                    {{--<div class="caption">--}}
+                        {{--<h1>learn to <span>defend</span> yourself in real life</h1>--}}
+                    {{--</div>--}}
+                    <div class="caption">
+                        {{--<h1><span class="small">Saint-Tropez</span><span class="big">Best Show</span></h1>--}}
+                        <h1><span class="small">The best</span><span class="big">show</span> <span class="small">of st-tropez</span></h1>
+                    </div>
+                </div>
+                <div class="carousel_cell">
+                    <img src="/img/carousel/2_sm.jpg" alt="" class="d-sm-none">
+                    <img src="/img/carousel/2.jpg" alt="" class="d-none d-sm-block">
+                </div>
+                <div class="carousel_cell">
+                    <img src="/img/carousel/3_sm.jpg" alt="" class="d-sm-none">
+                    <img src="/img/carousel/3.jpg" alt="" class="d-none d-sm-block">
+                </div>
+                <div class="carousel_cell">
+                    <img src="/img/carousel/4_sm.jpg" alt="" class="d-sm-none">
+                    <img src="/img/carousel/4.jpg" alt="" class="d-none d-sm-block">
                 </div>
             </div>
         </div>
@@ -135,7 +164,7 @@
     <script>
         // Set the date we're counting down to
 //        var countDownDate = new Date("Aug 4, 2018 00:00:01").getTime();
-        var countDownDate = new Date("Apr 25, 2018 00:00:01").getTime();
+        var countDownDate = new Date("Aug 4, 2018 00:00:01").getTime();
         countdown();
     </script>
 @stop

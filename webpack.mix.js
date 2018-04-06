@@ -51,6 +51,7 @@ mix.scripts([
     'resources/assets/js/libraries/fancybox.js',
     'resources/assets/js/libraries/flickity.js',
     'resources/assets/js/libraries/snap.svg.js',
+    'resources/assets/js/libraries/backstretch.js',
     'resources/assets/js/libraries/cubeportfolio.js',
     'resources/assets/js/libraries/tooltipster.bundle.min.js'
 ], 'public/js/libraries.js');

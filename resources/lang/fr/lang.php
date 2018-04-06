@@ -43,23 +43,23 @@ return [
     // Editions page
     'editions_block_2013'   => '<h3 class="edition_statistics"><span>1<sup>ere</sup> edition</span> 200 000 tv spectateurs</h3>
                             <p class="edition_description">Cette soirée unique est la première rencontre poings-pieds avec les plus grands noms du Kick-Boxing et du Pro-Fight, sur le ring installé à la Citadelle de Saint-Tropez. Parrainé par M. Drucker, cet événement aura également une dimension caritative. </p>
-                            <p class="edition_person"><span>Guest</span>Sylvester Stallone - Sébastien Chabbal</p>
-                            <p class="edition_person"><span>Fighter</span>Jérôme Le Banner</p>',
+                            <p class="edition_person"><span>Guest</span>Sylvester Stallone - Sébastien Chabbal - Michel Drucker</p>
+                            <p class="edition_person"><span>Fighter</span>Jérôme Le Banner - Stefan Leko</p>',
     'editions_block_2014'   => '<h3 class="edition_statistics"><span>2<sup>eme</sup> edition</span> 300 000 tv spectateurs</h3>
                             <p class="edition_description">La soirée c\'est très bien passée et <b>Jérôme Le Banner, Freddy Kemayo</b> et <b>Nicolas Wamba</b> ce sont tous les trois imposés par KO au second round !</p>
                             <p class="edition_person"><span>Guest</span>Vincent Lagaf - David Ginola - Enrico Macias</p>
-                            <p class="edition_person"><span>Fighter </span>Jérôme Le Banner</p>',
+                            <p class="edition_person"><span>Fighter </span>Jérôme Le Banner - Danyo Illunga</p>',
     'editions_block_2015'   => '<h3 class="edition_statistics"><span>3<sup>eme</sup> edition</span> 300 000 tv spectateurs</h3>
                             <p class="edition_description">Bien que de nombreux combats de prestige se tiendront sur le ring, toute lʼattention sera portée sur Jérôme Le Banner, véritable porte-étendard des sports de combat en France qui tirera sa révérence au terme de la soirée. Lʼoccasion pour nous de le saluer et de lui souhaiter le meilleur pour la suite...</p>
-                            <p class="edition_person"><span>Guest</span>Joey Starr - Mathieu Kassovitz</p>
-                            <p class="edition_person"><span>Fighter </span>Jérôme Le Banner last Fight </p>',
+                            <p class="edition_person"><span>Guest</span>Joey Starr - Mathieu Kassovitz - Gerard Lanvin</p>
+                            <p class="edition_person"><span>Fighter </span>Jérôme Le Banner last Fight - Peter Aertz</p>',
     'editions_block_2016'   => '<h3 class="edition_statistics"><span>4<sup>eme</sup> edition</span> 300 000 tv spectateurs</h3>
                             <p class="edition_description">On note particulièrement la mise en place d\'un tournoi à 4 dans la division des poids-lourds, un terme plus que jamais approprié puisque le plus léger de ces 4 combattants pèse plus de 120kg ! Comme annoncé sur l\'affiche, c\'est un "+500kg tournament" qui sera proposé, une chose est sure, la citadelle va trembler !</p>
-                            <p class="edition_person"><span>Guest</span>Mickey Rourke..</p>
+                            <p class="edition_person"><span>Guest</span>Mickey Rourke - Thomas Langmann</p>
                             <p class="edition_person"><span>Fighter </span>Yohan Lidon - Daniel Sam</p>',
     'editions_block_2017'   => '<h3 class="edition_statistics"><span>5<sup>eme</sup> edition</span> 350 000 tv spectateurs</h3>
                             <p class="edition_description">La cinquième édition voit s\'opposer Grégory Tony et Bob SAPP. Yohan Lidon, lui défendra sa ceinture mondiale WKN face à l\'Allemand Florian Kroger. Un show spectaculaire aussi bien sur le ring qu\'en dehors devant un parterre de VIP. </p>
-                            <p class="edition_person"><span>Guest</span>Jean-Luc Reichmann - Jean Rock...</p>
+                            <p class="edition_person"><span>Guest</span>Jean-Luc Reichmann - Jean Roch...</p>
                             <p class="edition_person"><span>Fighter </span>Bob Sapp - Yohan Lidon</p>',
 
     // Ticketing page
@@ -77,7 +77,7 @@ return [
 
     // Press
     'press_title'           => 'Presse',
-    'press_releases'        => 'Communiqués de presse',
+    'press_releases'        => 'La presse en parle',
     'accreditations'        => 'Accréditations',
     'send_passport_copy'    => 'Accréditer-vous à la Fight Night Saint-Tropez en envoyant une copie de votre carte de presse à',
     'press_kit'             => 'Dossier de presse',
@@ -104,75 +104,82 @@ return [
     'ticketing_coming'      => 'Billetterie Prochainement Disponible',
 
     // Privace policy
-    'privacy_policy'        => '<h1>Privacy policy</h1>
-                <p>This privacy policy has been compiled to better serve those who are concerned with how their \'Personally Identifiable Information\' (PII) is being used online. PII, as described in US privacy law and information security, is information that can be used on its own or with other information to identify, contact, or locate a single person, or to identify an individual in context. Please read our privacy policy carefully to get a clear understanding of how we collect, use, protect or otherwise handle your Personally Identifiable Information in accordance with our website.</p>
-                <h3>What personal information do we collect from the people that visit our blog, website or app?</h3>
-                <p>When ordering or registering on our site, as appropriate, you may be asked to enter your name, email address, mailing address or other details to help you with your experience.</p>
-                <h3>When do we collect information?</h3>
-                <p>We collect information from you when you register on our site, subscribe to a newsletter, fill out a form or enter information on our site.</p>
-                <h3>How do we use your information?</h3>
-                <p>We may use the information we collect from you when you register, make a purchase, sign up for our newsletter, respond to a survey or marketing communication, surf the website, or use certain other site features in the following ways:</p>
+    'privacy_policy'        => '<h1>Politique de confidentialité</h1>
+                <p>Cette politique de confidentialité a été compilée pour mieux servir ceux qui sont préoccupés par la façon dont leurs «informations personnelles identifiables» (PII) sont utilisées en ligne. Les IPI, telles que décrites dans la législation américaine sur la confidentialité et la sécurité de l\'information, sont des informations qui peuvent être utilisées seules ou avec d\'autres informations pour identifier, contacter ou localiser une seule personne, ou pour identifier une personne dans son contexte. Veuillez lire attentivement notre politique de confidentialité pour bien comprendre comment nous collectons, utilisons, protégeons ou gérons vos informations personnelles conformément à notre site Web.</p>
+                <h3>Quelles informations personnelles collectons-nous auprès des personnes qui visitent notre blog, site web ou application?</h3>
+                <p>Lors de la commande ou de l\'inscription sur notre site, le cas échéant, vous pouvez être invité à entrer votre nom, adresse e-mail, adresse postale ou d\'autres détails pour vous aider avec votre expérience.</p>
+                <h3>Quand recueillons-nous des informations?</h3>
+                <p>Nous recueillons des informations auprès de vous lorsque vous vous inscrivez sur notre site, vous abonnez à une newsletter, remplissez un formulaire ou entrez des informations sur notre site.</p>
+                <h3>Comment utilisons-nous vos informations?</h3>
+                <p>Nous pouvons utiliser les informations que nous collectons lorsque vous vous inscrivez, effectuez un achat, vous abonnez à notre newsletter, répondez à un sondage ou à une communication marketing, naviguez sur le site Web ou utilisez certaines autres fonctionnalités du site de la manière suivante:</p>
                 <ul>
-                    <li>To administer a contest, promotion, survey or other site feature.</li>
-                    <li>To quickly process your transactions.</li>
-                    <li>To follow up with them after correspondence (live chat, email or phone inquiries)</li>
+                    <li>Pour administrer un concours, une promotion, un sondage ou une autre caractéristique du site.</li>
+                    <li>Pour traiter rapidement vos transactions.</li>
+                    <li>Pour faire un suivi avec eux après la correspondance (chat en direct, email ou téléphone)</li>
                 </ul>
-                <h3>How do we protect your information?</h3>
-                <p>Our website is scanned on a regular basis for security holes and known vulnerabilities in order to make your visit to our site as safe as possible.<br><br>
-                    We do not use Malware Scanning.<br><br>
-                    Your personal information is contained behind secured networks and is only accessible by a limited number of persons who have special access rights to such systems, and are required to keep the information confidential. In addition, all sensitive/credit information you supply is encrypted via Secure Socket Layer (SSL) technology.<br><br>
-                    We implement a variety of security measures when a user enters, submits, or accesses their information to maintain the safety of your personal information.<br><br>
-                    All transactions are processed through a gateway provider and are not stored or processed on our servers.</p>
-                <h3>Do we use \'cookies\'?</h3>
-                <p>Yes. Cookies are small files that a site or its service provider transfers to your computer\'s hard drive through your Web browser (if you allow) that enables the site\'s or service provider\'s systems to recognize your browser and capture and remember certain information. For instance, we use cookies to help us remember and process the items in your shopping cart. They are also used to help us understand your preferences based on previous or current site activity, which enables us to provide you with improved services. We also use cookies to help us compile aggregate data about site traffic and site interaction so that we can offer better site experiences and tools in the future.</p>
-                <h3>We use cookies to:</h3>
+                <h3>Comment protégeons-nous vos informations?</h3>
+                <p>Notre site Web est régulièrement analysé à la recherche de failles de sécurité et de vulnérabilités connues afin de rendre votre visite sur notre site aussi sûre que possible.<br><br>
+                    Nous n\'utilisons pas la recherche de logiciels malveillants.<br><br>
+                    Vos informations personnelles sont contenues derrière des réseaux sécurisés et ne sont accessibles que par un nombre limité de personnes qui ont des droits d\'accès spéciaux à ces systèmes, et sont tenus de garder les informations confidentielles. En outre, toutes les informations sensibles / de crédit que vous fournissez sont cryptées via la technologie SSL (Secure Socket Layer).<br><br>
+                    Nous mettons en œuvre une variété de mesures de sécurité lorsqu\'un utilisateur entre, soumet ou accède à ses informations pour maintenir la sécurité de vos informations personnelles.<br><br>
+                    Toutes les transactions sont traitées par un fournisseur de passerelle et ne sont pas stockées ou traitées sur nos serveurs.</p>
+                <h3>Utilisons-nous des \'cookies\'?</h3>
+                <p>Oui. Les cookies sont de petits fichiers qu\'un site ou son fournisseur de services transfère sur le disque dur de votre ordinateur via votre navigateur Web (si vous le permettez) qui permet aux systèmes du site ou du fournisseur de reconnaître votre navigateur et de capturer certaines informations. Par exemple, nous utilisons des cookies pour nous aider à mémoriser et traiter les articles dans votre panier. Ils sont également utilisés pour nous aider à comprendre vos préférences en fonction de l\'activité précédente ou actuelle du site, ce qui nous permet de vous fournir des services améliorés. Nous utilisons également des cookies pour nous aider à compiler des données agrégées sur le trafic du site et l\'interaction du site afin que nous puissions offrir de meilleures expériences et outils sur le site à l\'avenir.</p>
+                <h3>Nous utilisons des cookies pour:</h3>
                 <ul>
-                    <li>Help remember and process the items in the shopping cart.</li>
-                    <li>Compile aggregate data about site traffic and site interactions in order to offer better site experiences and tools in the future. We may also use trusted third-party services that track this information on our behalf.</li>
+                    <li>Aidez-vous à mémoriser et traiter les articles dans le panier.</li>
+                    <li>Compilez des données agrégées sur le trafic du site et les interactions du site afin d\'offrir de meilleures expériences de site et de meilleurs outils dans le futur. Nous pouvons également utiliser des services tiers de confiance qui suivent ces informations en notre nom.</li>
                 </ul>
-                <p>You can choose to have your computer warn you each time a cookie is being sent, or you can choose to turn off all cookies. You do this through your browser settings. Since browser is a little different, look at your browser\'s Help Menu to learn the correct way to modify your cookies.</p>
-                <h3>If users disable cookies in their browser:</h3>
-                <p>If you turn cookies off, Some of the features that make your site experience more efficient may not function properly.Some of the features that make your site experience more efficient and may not function properly.</p>
-                <h3>Third-party disclosure</h3>
-                <p>We do not sell, trade, or otherwise transfer to outside parties your Personally Identifiable Information unless we provide users with advance notice. This does not include website hosting partners and other parties who assist us in operating our website, conducting our business, or serving our users, so long as those parties agree to keep this information confidential. We may also release information when it\'s release is appropriate to comply with the law, enforce our site policies, or protect ours or others\' rights, property or safety.<br>
-                However, non-personally identifiable visitor information may be provided to other parties for marketing, advertising, or other uses.</p>
-                <h3>Third-party links</h3>
-                <p>We do not include or offer third-party products or services on our website.</p>
+                <p>Vous pouvez choisir que votre ordinateur vous avertisse chaque fois qu\'un cookie est envoyé, ou vous pouvez choisir de désactiver tous les cookies. Vous faites cela via les paramètres de votre navigateur. Comme le navigateur est un peu différent, consultez le menu d\'aide de votre navigateur pour apprendre comment modifier vos cookies.</p>
+                <h3>Si les utilisateurs désactivent les cookies dans leur navigateur:</h3>
+                <p>Si vous désactivez les cookies, certaines des fonctionnalités qui améliorent l\'efficacité de votre site peuvent ne pas fonctionner correctement.Certaines des fonctionnalités qui rendent votre site plus efficace et peuvent ne pas fonctionner correctement.</p>
+                <h3>Divulgation par des tiers</h3>
+                <p>Nous ne vendons, n\'échangeons ou ne transférons pas vos informations personnelles à des tiers, sauf si nous en informons les utilisateurs à l\'avance. Cela n\'inclut pas les partenaires d\'hébergement de site Web et les autres parties qui nous aident à exploiter notre site Web, à mener nos activités ou à servir nos utilisateurs, à condition que ces parties acceptent de garder cette information confidentielle. Nous pouvons également divulguer des informations lorsque leur publication est appropriée pour se conformer à la loi, appliquer les politiques de notre site, ou protéger les droits, la propriété ou la sécurité des autres ou des autres.<br>
+                Cependant, des informations de visiteur non personnellement identifiables peuvent être fournies à d\'autres parties à des fins de marketing, de publicité ou autres.</p>
+                <h3>Liens avec des tiers</h3>
+                <p>Nous n\'incluons pas ou n\'offrons pas de produits ou de services tiers sur notre site Web.</p>
                 <h3>Google</h3>
-                <p>Google\'s advertising requirements can be summed up by Google\'s Advertising Principles. They are put in place to provide a positive experience for users. https://support.google.com/adwordspolicy/answer/1316548?hl=en<br>
-                    We have not enabled Google AdSense on our site but we may do so in the future.</p>
-                <h3>California Online Privacy Protection Act</h3>
-                <p>CalOPPA is the first state law in the nation to require commercial websites and online services to post a privacy policy. The law\'s reach stretches well beyond California to require any person or company in the United States (and conceivably the world) that operates websites collecting Personally Identifiable Information from California consumers to post a conspicuous privacy policy on its website stating exactly the information being collected and those individuals or companies with whom it is being shared. - See more at: http://consumercal.org/california-online-privacy-protection-act-caloppa/#sthash.0FdRbT51.dpuf</p>
-                <h3>According to CalOPPA, we agree to the following:</h3>
-                <p>Users can visit our site anonymously.
-                    Once this privacy policy is created, we will add a link to it on our home page or as a minimum, on the first significant page after entering our website.
-                    Our Privacy Policy link includes the word \'Privacy\' and can easily be found on the page specified above.</p>
-                <p>You will be notified of any Privacy Policy changes:</p>
+                <p>Les exigences publicitaires de Google peuvent être résumées par les principes de publicité de Google. Ils sont mis en place pour offrir une expérience positive aux utilisateurs. https://support.google.com/adwordspolicy/answer/1316548?hl=fr<br>
+                    Nous n\'avons pas activé Google AdSense sur notre site, mais nous pouvons le faire à l\'avenir.</p>
+                <h3>Loi sur la protection de la vie privée en ligne</h3>
+                <p>CalOPPA est la première loi d\'état dans le pays à exiger des sites Web commerciaux et des services en ligne d\'afficher une politique de confidentialité. La portée de la loi s\'étend bien au-delà de la Californie pour exiger que toute personne ou entreprise aux États-Unis (et éventuellement le monde) qui exploite des sites Web recueillant des informations personnellement identifiables des consommateurs californiens affiche une politique de confidentialité visible sur son site Web indiquant exactement les informations collectées. les individus ou les entreprises avec lesquels il est partagé. - Voir plus à: http://consumercal.org/california-online-privacy-protection-act-caloppa/#sthash.0FdRbT51.dpuf</p>
+                <h3>Selon CalOPPA, nous sommes d\'accord sur les points suivants:</h3>
+                <p>Les utilisateurs peuvent visiter notre site anonymement.
+                    Une fois cette politique de confidentialité créée, nous ajouterons un lien sur notre page d\'accueil ou, au minimum, sur la première page importante après avoir accédé à notre site Web.
+                    Notre lien Politique de confidentialité inclut le mot "Confidentialité" et peut facilement être trouvé sur la page spécifiée ci-dessus.</p>
+                <p>Vous serez informé de toute modification de la politique de confidentialité:</p>
                 <ul>
-                    <li>On our Privacy Policy Page</li>
+                    <li>Sur notre page de politique de confidentialité</li>
                 </ul>
-                <p>Can change your personal information:</p>
+                <p>Peut changer vos informations personnelles:</p>
                 <ul>
-                    <li>By emailing us</li>
+                    <li>En nous envoyant un email</li>
                 </ul>
-                <h3>How does our site handle Do Not Track signals?</h3>
-                <p>We honor Do Not Track signals and Do Not Track, plant cookies, or use advertising when a Do Not Track (DNT) browser mechanism is in place.</p>
-                <h3>Does our site allow third-party behavioral tracking?</h3>
-                <p>It\'s also important to note that we allow third-party behavioral tracking</p>
-                <h3>COPPA (Children Online Privacy Protection Act)</h3>
-                <p>When it comes to the collection of personal information from children under the age of 13 years old, the Children\'s Online Privacy Protection Act (COPPA) puts parents in control. The Federal Trade Commission, United States\' consumer protection agency, enforces the COPPA Rule, which spells out what operators of websites and online services must do to protect children\'s privacy and safety online.<br>
-                    We do not specifically market to children under the age of 13 years old.<br>
-                    Do we let third-parties, including ad networks or plug-ins collect PII from children under 13?</p>
-                <h3>Fair Information Practices</h3>
-                <p>The Fair Information Practices Principles form the backbone of privacy law in the United States and the concepts they include have played a significant role in the development of data protection laws around the globe. Understanding the Fair Information Practice Principles and how they should be implemented is critical to comply with the various privacy laws that protect personal information.</p>
-                <h3>In order to be in line with Fair Information Practices we will take the following responsive action, should a data breach occur:</h3>
-                <p>We will notify you via email</p>
+                <h3>Comment notre site gère-t-il les signaux Do Not Track?</h3>
+                <p>Nous respectons les signaux Do Not Track et Do Not Track, plantons des cookies ou utilisons la publicité lorsqu\'un mécanisme de navigation Do Not Track (DNT) est en place.</p>
+                <h3>Est-ce que notre site permet le suivi comportemental d\'un tiers?</h3>
+                <p>Il est également important de noter que nous autorisons le suivi comportemental par un tiers.</p>
+                <h3>COPPA (loi sur la protection de la vie privée des enfants en ligne)</h3>
+                <p>En ce qui concerne la collecte de renseignements personnels d\'enfants de moins de 13 ans, la Loi sur la protection de la vie privée des enfants en ligne (COPPA) permet aux parents de prendre le contrôle. La Federal Trade Commission, l\'agence de protection des consommateurs des États-Unis, applique la règle COPPA, qui définit ce que les opérateurs de sites Web et de services en ligne doivent faire pour protéger la vie privée et la sécurité des enfants en ligne.<br>
+                    Nous ne vendons pas spécifiquement aux enfants de moins de 13 ans.<br>
+                    Laissons-nous des tiers, y compris des réseaux publicitaires ou des plug-ins, collecter des données personnelles auprès d\'enfants de moins de 13 ans?</p>
+                <h3>Pratiques équitables d\'information</h3>
+                <p>Les principes des pratiques d\'information équitables constituent l\'épine dorsale de la législation sur la protection de la vie privée aux États-Unis et les concepts qu\'ils incluent ont joué un rôle important dans le développement des lois sur la protection des données dans le monde. Comprendre les principes de la pratique de l\'information juste et comment ils doivent être mis en œuvre est essentiel pour se conformer aux diverses lois sur la protection des renseignements personnels qui protègent les renseignements personnels.</p>
+                <h3>Afin d\'être en conformité avec les pratiques d\'information équitables, nous prendrons les mesures suivantes en cas de violation de données:</h3>
+                <p>Nous vous informerons par e-mail</p>
                 <ul>
-                    <li>Within 7 business days</li>
+                    <li>Dans les 7 jours ouvrables</li>
                 </ul>
-                <p>We will notify the users via in-site notification</p>
+                <p>Nous informerons les utilisateurs via la notification sur site</p>
                 <ul>
-                    <li>Within 7 business days</li>
+                    <li>Dans les 7 jours ouvrables</li>
                 </ul>
-                <p>We also agree to the Individual Redress Principle which requires that individuals have the right to legally pursue enforceable rights against data collectors and processors who fail to adhere to the law. This principle requires not only that individuals have enforceable rights against data users, but also that individuals have recourse to courts or government agencies to investigate and/or prosecute non-compliance by data processors.</p>',
+                <p>Nous sommes également d\'accord avec le principe de la réparation individuelle qui exige que les individus aient le droit de poursuivre légalement des droits exécutoires contre les collecteurs de données et les processeurs qui ne respectent pas la loi. Ce principe exige non seulement que les individus aient des droits exécutoires contre les utilisateurs de données, mais aussi que les individus aient recours à des tribunaux ou à des organismes gouvernementaux pour enquêter et / ou poursuivre en justice les non-conformistes.</p>',
+
+
+    //Titles
+    'title_homepage'        => 'FightNights - St-Tropez, 6ème édition rencontres poings-pieds, Championnat du Monde, combat féminin.',
+    'title_about'           => 'FightNights - Une soirée sportive et glamour exceptionnelle dans un lieu magique !',
+    'title_editions'        => 'Editions de la FightNights',
+
 ];

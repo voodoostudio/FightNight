@@ -120,7 +120,7 @@ class PagesController extends Controller
 
     public function tickets_widget($name)
     {
-        $url = 'https://www.weezevent.com/widget_billeterie.php?id_evenement=333583&lg_billetterie=2&code=40534&resize=1&width_auto=1&color_primary=00AEEF&v=2';
+        $url = 'https://www.weezevent.com/widget_billeterie.php?id_evenement=332537&code=59823';
         $ch = curl_init();
 
         curl_setopt($ch, CURLOPT_HEADER, 0);
@@ -133,17 +133,17 @@ class PagesController extends Controller
         $content = str_replace('images/billetterie/securite_info.gif','https://static-ticketing.weezevent.net/images/billetterie/securite_info.gif', $content);
 
         if($name == "salons") {
-            $content = str_replace('id="bloc_liste_billets_134126" style="display: none;"','id="bloc_liste_billets_134126 style="display: block;"', $content);
+            $content = str_replace('id="bloc_liste_billets_133686" style="display: none;"','id="bloc_liste_billets_133686 style="display: block;"', $content);
             $content = str_replace('class="billetterie_tb_titre_categorie p_0 wid-close"','class="billetterie_tb_titre_categorie p_0 wid-close" style="display:none;"', $content);
         }
 
         if($name == "tables") {
-            $content = str_replace('id="bloc_liste_billets_134127" style="display: none;"','id="bloc_liste_billets_134127 style="display: block;"', $content);
+            $content = str_replace('id="bloc_liste_billets_133684" style="display: none;"','id="bloc_liste_billets_133684 style="display: block;"', $content);
             $content = str_replace('class="billetterie_tb_titre_categorie p_0 wid-close"','class="billetterie_tb_titre_categorie p_0 wid-close" style="display:none;"', $content);
         }
 
         if($name == "chaises") {
-            $content = str_replace('id="bloc_liste_billets_134188" style="display: none;"','id="bloc_liste_billets_134188 style="display: block;"', $content);
+            $content = str_replace('id="bloc_liste_billets_134316" style="display: none;"','id="bloc_liste_billets_134316 style="display: block;"', $content);
             $content = str_replace('class="billetterie_tb_titre_categorie p_0 wid-close"','class="billetterie_tb_titre_categorie p_0 wid-close" style="display:none;"', $content);
         }
 
@@ -168,7 +168,7 @@ class PagesController extends Controller
 
     public function press ()
     {
-        $news = News::all();
+        $news = News::orderBy('created_at', 'desc')->get();
 //        dd($news->toArray());
         return view('pages.press',[
             'news' => $news
