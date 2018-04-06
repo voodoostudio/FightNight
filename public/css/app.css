@@ -151,6 +151,28 @@
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#454545', endColorstr='#1f1a1c', GradientType=0 );
 }
 
+.red_btn {
+  display: table;
+  width: 260px;
+  line-height: 1;
+  text-align: center;
+  padding: 18px 25px;
+  border-radius: 15px;
+  color: #fffaff;
+  text-transform: uppercase;
+  font-family: proxima_nova_bold;
+  background: #fc0000;
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, #fc0000), color-stop(0%, #f6290c), color-stop(100%, #780000));
+  background: -webkit-gradient(linear, left top, left bottom, from(#fc0000), color-stop(0%, #f6290c), to(#780000));
+  background: linear-gradient(to bottom, #fc0000 0%, #f6290c 0%, #780000 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fc0000', endColorstr='#780000', GradientType=0 );
+}
+
+.red_btn:hover {
+  color: #fffaff;
+  text-decoration: underline;
+}
+
 /*Buttons style END*/
 .form_group {
   margin-bottom: 20px;
@@ -379,6 +401,15 @@ body {
   color: #fffaff;
 }
 
+body.modal-open {
+  height: 100%;
+  overflow: hidden;
+}
+
+body.modal-open .wrapper {
+  overflow: hidden;
+}
+
 p a {
   color: #00ffff;
 }
@@ -418,7 +449,7 @@ header {
   background-position: bottom;
   margin: 70px 0 -40px;
   position: relative;
-  z-index: 9999;
+  z-index: 9998;
 }
 
 header .navbar.navbar-light {
@@ -536,7 +567,7 @@ section.carousel_section {
   margin-top: 60px;
 }
 
-section.carousel_section .homepage_carousel .flickity-viewport .flickity-slider .carousel-cell {
+section.carousel_section .flickity-viewport .flickity-slider .carousel-cell {
   width: 100%;
   height: auto;
   background: black;
@@ -544,21 +575,47 @@ section.carousel_section .homepage_carousel .flickity-viewport .flickity-slider 
   position: relative;
 }
 
-section.carousel_section .homepage_carousel .flickity-viewport .flickity-slider .carousel-cell:before {
+section.carousel_section .flickity-viewport .flickity-slider .carousel-cell:before {
   display: none;
 }
 
-section.carousel_section .homepage_carousel .flickity-viewport .flickity-slider .carousel-cell img {
+section.carousel_section .flickity-viewport .flickity-slider .carousel-cell img {
   width: 100%;
 }
 
-section.carousel_section .homepage_carousel .flickity-viewport .flickity-slider .carousel-cell .caption {
+section.carousel_section .flickity-prev-next-button {
+  background: rgba(0, 0, 0, 0.75);
+  width: 40px;
+  height: 40px;
+}
+
+section.carousel_section .flickity-prev-next-button.next {
+  right: 60px;
+}
+
+section.carousel_section .flickity-prev-next-button.previous {
+  left: 60px;
+}
+
+section.carousel_section .flickity-prev-next-button:hover {
+  background: black;
+}
+
+section.carousel_section .flickity-prev-next-button:disabled {
+  display: none;
+}
+
+section.carousel_section .flickity-prev-next-button .arrow {
+  fill: #fffaff;
+}
+
+section.carousel_section .caption {
   position: absolute;
   bottom: 120px;
   left: 40px;
 }
 
-section.carousel_section .homepage_carousel .flickity-viewport .flickity-slider .carousel-cell .caption h1 {
+section.carousel_section .caption h1 {
   color: #fffaff;
   font-family: сhunkfive_ex;
   margin: 0;
@@ -566,7 +623,7 @@ section.carousel_section .homepage_carousel .flickity-viewport .flickity-slider 
   text-shadow: 2px 2px 15px black;
 }
 
-section.carousel_section .homepage_carousel .flickity-viewport .flickity-slider .carousel-cell .caption h1 .big {
+section.carousel_section .caption h1 .big {
   font-size: 6rem;
   letter-spacing: 5px;
   display: block;
@@ -575,7 +632,7 @@ section.carousel_section .homepage_carousel .flickity-viewport .flickity-slider 
   margin: 5px 0;
 }
 
-section.carousel_section .homepage_carousel .flickity-viewport .flickity-slider .carousel-cell .caption h1 .small {
+section.carousel_section .caption h1 .small {
   font-size: 3rem;
   line-height: 1;
   letter-spacing: 3px;
@@ -584,30 +641,20 @@ section.carousel_section .homepage_carousel .flickity-viewport .flickity-slider 
   height: 36px;
 }
 
-section.carousel_section .homepage_carousel .flickity-prev-next-button {
-  background: rgba(0, 0, 0, 0.75);
-  width: 40px;
-  height: 40px;
+section.carousel_section .slick-slide img {
+  width: 100%;
 }
 
-section.carousel_section .homepage_carousel .flickity-prev-next-button.next {
-  right: 60px;
+section.carousel_section .slick-slider .slick-slide {
+  position: relative;
 }
 
-section.carousel_section .homepage_carousel .flickity-prev-next-button.previous {
+section.carousel_section .slick-slider .slick-arrow.slick-prev {
   left: 60px;
 }
 
-section.carousel_section .homepage_carousel .flickity-prev-next-button:hover {
-  background: black;
-}
-
-section.carousel_section .homepage_carousel .flickity-prev-next-button:disabled {
-  display: none;
-}
-
-section.carousel_section .homepage_carousel .flickity-prev-next-button .arrow {
-  fill: #fffaff;
+section.carousel_section .slick-slider .slick-arrow.slick-next {
+  right: 60px;
 }
 
 section.countdown_section {
@@ -755,7 +802,7 @@ section.posts_section .post_block .social_links {
 
 section.posts_section .post_block .social_links a {
   margin-right: 6px;
-  font-size: 16px;
+  font-size: 20px;
   line-height: 1;
   color: #7f7f7f;
 }
@@ -955,6 +1002,12 @@ section.editions_section .edition .edition_description {
   letter-spacing: 1px;
 }
 
+section.editions_section .edition .results_link {
+  color: #00ffff;
+  font-family: proxima_nova_thin;
+  letter-spacing: 1px;
+}
+
 section.editions_section .edition .edition_person {
   line-height: 1;
   margin: 0 0 7px 0;
@@ -975,7 +1028,7 @@ section.editions_section .edition .edition__stars {
 
 section.editions_section .edition .video-container {
   position: relative;
-  padding-bottom: 56.25%;
+  padding-bottom: 61.25%;
   padding-top: 58px;
   height: 0;
   overflow: hidden;
@@ -1123,6 +1176,10 @@ section.press_section .press_container .article_block .article_info p {
   margin: 0;
 }
 
+section.press_section .modal {
+  z-index: 999999;
+}
+
 section.press_section .modal .modal-dialog {
   max-width: 800px;
 }
@@ -1134,9 +1191,17 @@ section.press_section .modal .modal-body {
 
 section.press_section .modal .modal-body .close {
   position: absolute;
-  right: 15px;
-  top: 8px;
-  color: #b7866f;
+  right: 10px;
+  top: 10px;
+  text-align: center;
+  color: #ffffff;
+  display: block;
+  padding: 10px;
+  background: black;
+  font-size: 2rem;
+  width: 50px;
+  border-radius: 50%;
+  height: 50px;
 }
 
 section.press_section .modal .modal-body img {
@@ -1190,6 +1255,11 @@ section.partners_section .partners_container .partners_carousel .flickity-prev-n
   fill: #fffaff;
 }
 
+section.partners_section .partners_container .buttons_container .red_btn:first-child {
+  float: left;
+  margin-right: 20px;
+}
+
 section.privacy_policy_section .privacy_policy_container {
   padding: 90px 125px;
   background: rgba(21, 21, 21, 0.99);
@@ -1209,6 +1279,27 @@ section.privacy_policy_section .privacy_policy_container h3 {
 
 section.privacy_policy_section .privacy_policy_container p {
   font-size: .875rem;
+}
+
+section.results_section .results_container {
+  padding-top: 150px;
+}
+
+section.results_section .results_container h3 {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #fbffff;
+}
+
+section.results_section .results_container p {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #fbffff;
+}
+
+section.results_section .results_container .red_btn {
+  display: table;
+  margin: 70px auto 0;
 }
 
 .jeans_bg {
@@ -1390,18 +1481,6 @@ footer .links_list li a img {
 
 .slick-slider .slick-arrow.slick-next {
   right: -50px;
-}
-
-.img_btn {
-  text-decoration: none;
-}
-
-.img_btn img {
-  width: 225px;
-}
-
-.img_btn:hover, .img_btn:active {
-  text-decoration: none;
 }
 
 .dashboard_header {
@@ -1693,15 +1772,15 @@ footer .links_list li a img {
     width: 50px;
     height: 50px;
   }
-  section.carousel_section .homepage_carousel .flickity-viewport .flickity-slider .carousel-cell .caption {
+  section.carousel_section .homepage_carousel .caption {
     bottom: 40px;
     left: 40px;
   }
-  section.carousel_section .homepage_carousel .flickity-viewport .flickity-slider .carousel-cell .caption h1 .small {
+  section.carousel_section .homepage_carousel .caption h1 .small {
     font-size: 2rem;
     height: 25px;
   }
-  section.carousel_section .homepage_carousel .flickity-viewport .flickity-slider .carousel-cell .caption h1 .big {
+  section.carousel_section .homepage_carousel .caption h1 .big {
     font-size: 4rem;
     height: 50px;
   }
@@ -1770,6 +1849,9 @@ footer .links_list li a img {
   header .navbar.navbar-light .navbar-nav .nav-link.active:before {
     bottom: 0;
   }
+  section.carousel_section {
+    margin-top: 30px;
+  }
   section.carousel_section .homepage_carousel .flickity-prev-next-button {
     width: 40px;
     height: 40px;
@@ -1780,14 +1862,25 @@ footer .links_list li a img {
   section.carousel_section .homepage_carousel .flickity-prev-next-button.previous {
     right: 115px;
   }
-  section.carousel_section .homepage_carousel .flickity-viewport .flickity-slider .carousel-cell .caption {
+  section.carousel_section .homepage_carousel .caption {
     bottom: 15px;
     left: 25px;
   }
-  section.carousel_section .homepage_carousel .flickity-viewport .flickity-slider .carousel-cell .caption h1 .big {
+  section.carousel_section .homepage_carousel .caption h1 .big {
     font-size: 3rem;
     letter-spacing: 8px;
     height: 37px;
+  }
+  section.carousel_section .slick-slider .slick-arrow {
+    width: 30px;
+    height: 30px;
+  }
+  section.carousel_section .slick-slider .slick-arrow.slick-prev {
+    left: initial;
+    right: 100px;
+  }
+  section.carousel_section .slick-slider .slick-arrow.slick-next {
+    right: 20px;
   }
   section.countdown_section .countdown_container .ticket_container {
     padding: 0 0 0 15px;
@@ -1796,7 +1889,7 @@ footer .links_list li a img {
     width: 100px;
   }
   section.countdown_section .countdown_container .countdown {
-    padding: 0;
+    padding: 0 35px;
     margin: 0 auto;
   }
   section.posts_section .carousel_container .posts_carousel .carousel_item {
@@ -1866,6 +1959,18 @@ footer .links_list li a img {
     font-size: 1.2rem;
     height: 50px;
   }
+  .red_btn {
+    padding: 10px 15px;
+    font-size: .85rem;
+    width: 213px;
+  }
+  section.press_section .modal .modal-body .close {
+    right: 5px;
+    top: 5px;
+    padding: 6px;
+    width: 40px;
+    height: 40px;
+  }
 }
 
 @media screen and (max-width: 885px) {
@@ -1875,6 +1980,10 @@ footer .links_list li a img {
 }
 
 @media screen and (max-width: 575px) {
+  .modal-backdrop.show {
+    opacity: 1;
+    z-index: 9999;
+  }
   body {
     padding-bottom: 200px;
   }
@@ -1915,7 +2024,7 @@ footer .links_list li a img {
     margin-right: 5px;
   }
   section.countdown_section .countdown_container .title_container h4 {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
   section.carousel_section .homepage_carousel .flickity-prev-next-button {
     width: 30px;
@@ -1928,11 +2037,11 @@ footer .links_list li a img {
   section.carousel_section .homepage_carousel .flickity-prev-next-button.previous {
     right: 85px;
   }
-  section.carousel_section .homepage_carousel .flickity-viewport .flickity-slider .carousel-cell .caption h1 .small {
+  section.carousel_section .homepage_carousel .caption h1 .small {
     font-size: 1rem;
     height: 13px;
   }
-  section.carousel_section .homepage_carousel .flickity-viewport .flickity-slider .carousel-cell .caption h1 .big {
+  section.carousel_section .homepage_carousel .caption h1 .big {
     font-size: 1.5rem;
     letter-spacing: 5px;
     height: 20px;
@@ -1999,6 +2108,14 @@ footer .links_list li a img {
   }
   section.partners_section .partners_container .partners_carousel .flickity-prev-next-button.previous {
     left: -10px;
+  }
+  section.partners_section .partners_container .buttons_container .red_btn {
+    margin: 0 auto;
+  }
+  section.partners_section .partners_container .buttons_container .red_btn:first-child {
+    margin: 0 auto;
+    float: none;
+    margin-bottom: 20px;
   }
   section.privacy_policy_section .privacy_policy_container {
     padding: 30px 15px;

@@ -10,6 +10,13 @@ body {
   font-family: proxima_nova_light;
   padding-bottom: 160px;
   color: $white;
+  &.modal-open {
+    height: 100%;
+    overflow: hidden;
+    .wrapper {
+      overflow: hidden;
+    }
+  }
 }
 
 p {
@@ -55,7 +62,7 @@ header {
   background-position: bottom;
   margin: 70px 0 -40px;
   position: relative;
-  z-index: 9999;
+  z-index: 9998;
   .navbar.navbar-light {
     position: relative;
     background-color: transparent;
@@ -164,53 +171,25 @@ header {
 
 section.carousel_section {
   margin-top: 60px;
-  .homepage_carousel {
-    .flickity-viewport {
-      .flickity-slider {
-        .carousel-cell {
+
+  .flickity-viewport {
+    .flickity-slider {
+      .carousel-cell {
+        width: 100%;
+        height: auto;
+        background: black;
+        border-radius: 0;
+        position: relative;
+        &:before {
+          display: none;
+        }
+        img {
           width: 100%;
-          height: auto;
-          background: black;
-          border-radius: 0;
-          position: relative;
-          &:before {
-            display: none;
-          }
-          img {
-            width: 100%;
-          }
-          .caption {
-            position: absolute;
-            bottom: 120px;
-            left: 40px;
-            h1 {
-              color: $white;
-              font-family: сhunkfive_ex;
-              margin: 0;
-              text-transform: uppercase;
-              text-shadow: 2px 2px 15px $black;
-              .big {
-                font-size: 6rem;
-                letter-spacing: 5px;
-                display: block;
-                line-height: 1;
-                height: 75px;
-                margin: 5px 0;
-              }
-              .small {
-                font-size: 3rem;
-                line-height: 1;
-                letter-spacing: 3px;
-                display: block;
-                color: $red;
-                height: 36px;
-              }
-            }
-          }
         }
       }
     }
-    .flickity-prev-next-button {
+  }
+  .flickity-prev-next-button {
       background: rgba($black, 0.75);
       width: 40px;
       height: 40px;
@@ -231,6 +210,52 @@ section.carousel_section {
       }
     }
 
+  .caption {
+    position: absolute;
+    bottom: 120px;
+    left: 40px;
+    h1 {
+      color: $white;
+      font-family: сhunkfive_ex;
+      margin: 0;
+      text-transform: uppercase;
+      text-shadow: 2px 2px 15px $black;
+      .big {
+        font-size: 6rem;
+        letter-spacing: 5px;
+        display: block;
+        line-height: 1;
+        height: 75px;
+        margin: 5px 0;
+      }
+      .small {
+        font-size: 3rem;
+        line-height: 1;
+        letter-spacing: 3px;
+        display: block;
+        color: $red;
+        height: 36px;
+      }
+    }
+  }
+
+  .slick-slide {
+    img {
+      width: 100%;
+    }
+  }
+  .slick-slider {
+    .slick-slide {
+      position: relative;
+    }
+    .slick-arrow {
+      &.slick-prev {
+        left: 60px;
+      }
+      &.slick-next {
+        right: 60px;
+      }
+    }
   }
 }
 
@@ -371,7 +396,7 @@ section.posts_section {
       line-height: 1;
       a {
         margin-right: 6px;
-        font-size: 16px;
+        font-size: 20px;
         line-height: 1;
         color: $gray;
         &:hover {
@@ -545,6 +570,11 @@ section.editions_section {
       line-height: 1.2;
       letter-spacing: 1px;
     }
+    .results_link {
+      color: $blue-light;
+      font-family: proxima_nova_thin;
+      letter-spacing: 1px;
+    }
     .edition_person {
       line-height: 1;
       margin: 0 0 7px 0;
@@ -563,7 +593,7 @@ section.editions_section {
 
     .video-container {
       position: relative;
-      padding-bottom: 56.25%;
+      padding-bottom: 61.25%;
       padding-top: 58px;
       height: 0;
       overflow: hidden;
@@ -698,6 +728,7 @@ section.press_section {
   }
 
   .modal {
+    z-index: 999999;
     .modal-dialog {
       max-width: 800px;
     }
@@ -706,9 +737,17 @@ section.press_section {
       position: relative;
       .close {
         position: absolute;
-        right: 15px;
-        top: 8px;
-        color: $brown;
+        right: 10px;
+        top: 10px;
+        text-align: center;
+        color: #ffffff;
+        display: block;
+        padding: 10px;
+        background: black;
+        font-size: 2rem;
+        width: 50px;
+        border-radius: 50%;
+        height: 50px;
       }
       img {
         width: 100%;
@@ -756,6 +795,12 @@ section.partners_section {
         }
       }
     }
+    .buttons_container {
+      .red_btn:first-child {
+        float: left;
+        margin-right: 20px;
+      }
+    }
   }
 }
 section.privacy_policy_section {
@@ -774,6 +819,26 @@ section.privacy_policy_section {
     }
     p {
       font-size: .875rem;
+    }
+  }
+}
+
+section.results_section {
+  .results_container {
+    padding-top: 150px;
+    h3 {
+      text-align: center;
+      font-size: 1.2rem;
+      color: #fbffff;
+    }
+    p {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #fbffff;
+    }
+    .red_btn {
+      display: table;
+      margin: 70px auto 0;
     }
   }
 }
@@ -930,16 +995,5 @@ footer {
     &.slick-next {
       right: -50px;
     }
-  }
-}
-
-.img_btn {
-  text-decoration: none;
-  img {
-    width: 225px;
-  }
-  &:hover,
-  &:active {
-    text-decoration: none;
   }
 }

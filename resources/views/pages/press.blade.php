@@ -81,7 +81,7 @@
             @endphp
         <!-- Modal -->
             <div class="modal fade" id="image_{{ $item->id }}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog" role="document">
+                <div class="modal-dialog modal-dialog-centered" role="document">
                     <div class="modal-content">
                         <div class="modal-body">
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -94,16 +94,13 @@
             </div>
         @endforeach
     </section>
-
-
-
 @stop
 
 @section('js')
     <script>
         $('.press_carousel').slick({
             infinite: true,
-            slidesToShow: 3,
+            slidesToShow: 6,
             centerMode: false,
             slidesToScroll: 1,
             autoplay: true,
@@ -112,11 +109,19 @@
             nextArrow: '<button type="button" class="slick-next"><img src="/img/arrow_right.png" alt="Slide to previous"></button>',
             responsive: [
                 {
-                    breakpoint: 768,
+                    breakpoint: 1170,
                     settings: {
                         arrows: false,
                         centerPadding: '40px',
-                        slidesToShow: 2
+                        slidesToShow: 5
+                    }
+                },
+                {
+                    breakpoint: 769,
+                    settings: {
+                        arrows: false,
+                        centerPadding: '40px',
+                        slidesToShow: 4
                     }
                 },
                 {
@@ -124,10 +129,31 @@
                     settings: {
                         arrows: false,
                         centerPadding: '40px',
-                        slidesToShow: 1
+                        slidesToShow: 2
                     }
                 }
             ]
         });
+
+
+        $('.modal').on('shown.bs.modal', function () {
+            stopBodyScrolling(true);
+        });
+
+        $('.modal').on('hidden.bs.modal', function () {
+            stopBodyScrolling(false);
+        });
+
+        var freezeVp = function(e) {
+            e.preventDefault();
+        };
+
+        function stopBodyScrolling (bool) {
+            if (bool === true) {
+                document.body.addEventListener("touchmove", freezeVp, false);
+            } else {
+                document.body.removeEventListener("touchmove", freezeVp, false);
+            }
+        }
     </script>
 @stop

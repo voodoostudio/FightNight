@@ -7,151 +7,9 @@
                 <img src="/img/partners/partners.jpg" alt="About us banner">
             </div>
             <div class="partners_container jeans_bg_ragged">
-                <h1 class="title--translated">{{ trans('lang.partners_title') }}</h1>
-                <h2>{{ trans('lang.historical_partners') }}</h2>
-                <div class="partners_carousel">
-                    <div class="carousel_item">
-                        {{--<a href="#">--}}
-                            <div class="partner">
-                                <img src="/img/partners/partenaires_historiques/le_sporting.png" alt="logo Sporting">
-                            </div>
-                        {{--</a>--}}
-                    </div>
-                    <div class="carousel_item">
-                        {{--<a href="#">--}}
-                            <div class="partner">
-                                <img src="/img/partners/partenaires_historiques/maitres_vigneron.png" alt="logo Maître Vignerons">
-                            </div>
-                        {{--</a>--}}
-                    </div>
-                    <div class="carousel_item">
-                        {{--<a href="#">--}}
-                            <div class="partner">
-                                <img src="/img/partners/partenaires_historiques/pastis_hotel.png" alt="Logo Pastis Hotel ">
-                            </div>
-                        {{--</a>--}}
-                    </div>
-                    <div class="carousel_item">
-                        {{--<a href="#">--}}
-                            <div class="partner">
-                                <img src="/img/partners/partenaires_historiques/st_pellegrino.png" alt="logo Sporting">
-                            </div>
-                        {{--</a>--}}
-                    </div>
-                    <div class="carousel_item">
-                        {{--<a href="#">--}}
-                            <div class="partner">
-                                <img src="/img/partners/partenaires_historiques/strend.png" alt="Logo Strend">
-                            </div>
-                        {{--</a>--}}
-                    </div>
-                    <div class="carousel_item">
-                        {{--<a href="#">--}}
-                            <div class="partner">
-                                <img src="/img/partners/partenaires_historiques/sylvain_costa.png" alt="logo Sylvain Costa">
-                            </div>
-                        {{--</a>--}}
-                    </div>
-                    <div class="carousel_item">
-                        {{--<a href="#">--}}
-                            <div class="partner">
-                                <img src="/img/partners/partenaires_historiques/tartane.png" alt="logo Tartane">
-                            </div>
-                        {{--</a>--}}
-                    </div>
-                    <div class="carousel_item">
-                        {{--<a href="#">--}}
-                            <div class="partner">
-                                <img src="/img/partners/partenaires_historiques/villa_belrose.png" alt="Logo Villa Belrose ">
-                            </div>
-                        {{--</a>--}}
-                    </div>
-                    <div class="carousel_item">
-                        {{--<a href="#">--}}
-                            <div class="partner">
-                                <img src="/img/partners/partenaires_historiques/blondesttropez.png" alt="logo Blond of saint tropez">
-                            </div>
-                        {{--</a>--}}
-                    </div>
-                    <div class="carousel_item">
-                        {{--<a href="#">--}}
-                            <div class="partner">
-                                <img src="/img/partners/partenaires_historiques/cafedeparis.png" alt="logo Café paris">
-                            </div>
-                        {{--</a>--}}
-                    </div>
-                    <div class="carousel_item">
-                        {{--<a href="#">--}}
-                            <div class="partner">
-                                <img src="/img/partners/partenaires_historiques/edenplage.png" alt="logo Eden plage">
-                            </div>
-                        {{--</a>--}}
-                    </div>
-                    <div class="carousel_item">
-                        {{--<a href="#">--}}
-                            <div class="partner">
-                                <img src="/img/partners/partenaires_historiques/icetropez.png" alt="logo Ice tropez">
-                            </div>
-                        {{--</a>--}}
-                    </div>
-                    <div class="carousel_item">
-                        {{--<a href="#">--}}
-                            <div class="partner">
-                                <img src="/img/partners/partenaires_historiques/manuclim.png" alt="logo Manu clim">
-                            </div>
-                        {{--</a>--}}
-                    </div>
-                    <div class="carousel_item">
-                        {{--<a href="#">--}}
-                            <div class="partner">
-                                <img src="/img/partners/partenaires_historiques/masbellevue.png" alt="logo Mas bellevue">
-                            </div>
-                        {{--</a>--}}
-                    </div>
-                    <div class="carousel_item">
-                        {{--<a href="#">--}}
-                            <div class="partner">
-                                <img src="/img/partners/partenaires_historiques/pastis.png" alt="logo Pastis">
-                            </div>
-                        {{--</a>--}}
-                    </div>
-                    <div class="carousel_item">
-                        {{--<a href="#">--}}
-                            <div class="partner">
-                                <img src="/img/partners/partenaires_historiques/riviera_village.png" alt="logo Riviera village">
-                            </div>
-                        {{--</a>--}}
-                    </div>
-                    <div class="carousel_item">
-                        {{--<a href="#">--}}
-                            <div class="partner">
-                                <img src="/img/partners/partenaires_historiques/sezz.png" alt="logo Hôtel sezz">
-                            </div>
-                        {{--</a>--}}
-                    </div>
-                    <div class="carousel_item">
-                        {{--<a href="#">--}}
-                            <div class="partner">
-                                <img src="/img/partners/partenaires_historiques/torchia.png" alt="logo Torchia">
-                            </div>
-                        {{--</a>--}}
-                    </div>
-                    <div class="carousel_item">
-                        {{--<a href="#">--}}
-                            <div class="partner">
-                                <img src="/img/partners/partenaires_historiques/universal_decoration.png" alt="Logo universal deco">
-                            </div>
-                        {{--</a>--}}
-                    </div>
-                    <div class="carousel_item">
-                        {{--<a href="#">--}}
-                            <div class="partner">
-                                <img src="/img/partners/partenaires_historiques/viproom.png" alt="logo VIP Room">
-                            </div>
-                        {{--</a>--}}
-                    </div>
-                </div>
-                <h2>{{ trans('lang.great_partners') }}</h2>
+                <h1 class="title--translated">Partenaires</h1>
+
+                <h2>Grands partenaires</h2>
                 <div class="partners_carousel">
                     <div class="carousel_item">
                         {{--<a href="#">--}}
@@ -196,7 +54,8 @@
                         {{--</a>--}}
                     </div>
                 </div>
-                <h2>{{ trans('lang.preferred_partners') }}</h2>
+
+                <h2>Partenaires privilégiés</h2>
                 <div class="partners_carousel">
                     <div class="carousel_item">
                         {{--<a href="#">--}}
@@ -241,7 +100,168 @@
                         {{--</a>--}}
                     </div>
                 </div>
+
+                <h2>Partenaires historiques</h2>
+                <div class="partners_carousel">
+                    <div class="carousel_item">
+                        {{--<a href="#">--}}
+                        <div class="partner">
+                            <img src="/img/partners/partenaires_historiques/le_sporting.png" alt="logo Sporting">
+                        </div>
+                        {{--</a>--}}
+                    </div>
+                    <div class="carousel_item">
+                        {{--<a href="#">--}}
+                        <div class="partner">
+                            <img src="/img/partners/partenaires_historiques/maitres_vigneron.png" alt="logo Maître Vignerons">
+                        </div>
+                        {{--</a>--}}
+                    </div>
+                    <div class="carousel_item">
+                        {{--<a href="#">--}}
+                        <div class="partner">
+                            <img src="/img/partners/partenaires_historiques/pastis_hotel.png" alt="Logo Pastis Hotel ">
+                        </div>
+                        {{--</a>--}}
+                    </div>
+                    <div class="carousel_item">
+                        {{--<a href="#">--}}
+                        <div class="partner">
+                            <img src="/img/partners/partenaires_historiques/st_pellegrino.png" alt="logo Sporting">
+                        </div>
+                        {{--</a>--}}
+                    </div>
+                    <div class="carousel_item">
+                        {{--<a href="#">--}}
+                        <div class="partner">
+                            <img src="/img/partners/partenaires_historiques/strend.png" alt="Logo Strend">
+                        </div>
+                        {{--</a>--}}
+                    </div>
+                    <div class="carousel_item">
+                        {{--<a href="#">--}}
+                        <div class="partner">
+                            <img src="/img/partners/partenaires_historiques/sylvain_costa.png" alt="logo Sylvain Costa">
+                        </div>
+                        {{--</a>--}}
+                    </div>
+                    <div class="carousel_item">
+                        {{--<a href="#">--}}
+                        <div class="partner">
+                            <img src="/img/partners/partenaires_historiques/tartane.png" alt="logo Tartane">
+                        </div>
+                        {{--</a>--}}
+                    </div>
+                    <div class="carousel_item">
+                        {{--<a href="#">--}}
+                        <div class="partner">
+                            <img src="/img/partners/partenaires_historiques/villa_belrose.png" alt="Logo Villa Belrose ">
+                        </div>
+                        {{--</a>--}}
+                    </div>
+<<<<<<< HEAD
+                </div>
+                <h2>{{ trans('lang.great_partners') }}</h2>
+                <div class="partners_carousel">
+=======
+>>>>>>> 28f3c66e6ce4dcf1efc3f1d703d59e3b0df66076
+                    <div class="carousel_item">
+                        {{--<a href="#">--}}
+                        <div class="partner">
+                            <img src="/img/partners/partenaires_historiques/blondesttropez.png" alt="logo Blond of saint tropez">
+                        </div>
+                        {{--</a>--}}
+                    </div>
+                    <div class="carousel_item">
+                        {{--<a href="#">--}}
+                        <div class="partner">
+                            <img src="/img/partners/partenaires_historiques/cafedeparis.png" alt="logo Café paris">
+                        </div>
+                        {{--</a>--}}
+                    </div>
+                    <div class="carousel_item">
+                        {{--<a href="#">--}}
+                        <div class="partner">
+                            <img src="/img/partners/partenaires_historiques/edenplage.png" alt="logo Eden plage">
+                        </div>
+                        {{--</a>--}}
+                    </div>
+                    <div class="carousel_item">
+                        {{--<a href="#">--}}
+                        <div class="partner">
+                            <img src="/img/partners/partenaires_historiques/icetropez.png" alt="logo Ice tropez">
+                        </div>
+                        {{--</a>--}}
+                    </div>
+                    <div class="carousel_item">
+                        {{--<a href="#">--}}
+                        <div class="partner">
+                            <img src="/img/partners/partenaires_historiques/manuclim.png" alt="logo Manu clim">
+                        </div>
+                        {{--</a>--}}
+                    </div>
+                    <div class="carousel_item">
+                        {{--<a href="#">--}}
+                        <div class="partner">
+                            <img src="/img/partners/partenaires_historiques/masbellevue.png" alt="logo Mas bellevue">
+                        </div>
+                        {{--</a>--}}
+                    </div>
+<<<<<<< HEAD
+                </div>
+                <h2>{{ trans('lang.preferred_partners') }}</h2>
+                <div class="partners_carousel">
+=======
+>>>>>>> 28f3c66e6ce4dcf1efc3f1d703d59e3b0df66076
+                    <div class="carousel_item">
+                        {{--<a href="#">--}}
+                        <div class="partner">
+                            <img src="/img/partners/partenaires_historiques/pastis.png" alt="logo Pastis">
+                        </div>
+                        {{--</a>--}}
+                    </div>
+                    <div class="carousel_item">
+                        {{--<a href="#">--}}
+                        <div class="partner">
+                            <img src="/img/partners/partenaires_historiques/riviera_village.png" alt="logo Riviera village">
+                        </div>
+                        {{--</a>--}}
+                    </div>
+                    <div class="carousel_item">
+                        {{--<a href="#">--}}
+                        <div class="partner">
+                            <img src="/img/partners/partenaires_historiques/sezz.png" alt="logo Hôtel sezz">
+                        </div>
+                        {{--</a>--}}
+                    </div>
+                    <div class="carousel_item">
+                        {{--<a href="#">--}}
+                        <div class="partner">
+                            <img src="/img/partners/partenaires_historiques/torchia.png" alt="logo Torchia">
+                        </div>
+                        {{--</a>--}}
+                    </div>
+                    <div class="carousel_item">
+                        {{--<a href="#">--}}
+                        <div class="partner">
+                            <img src="/img/partners/partenaires_historiques/universal_decoration.png" alt="Logo universal deco">
+                        </div>
+                        {{--</a>--}}
+                    </div>
+                    <div class="carousel_item">
+                        {{--<a href="#">--}}
+                        <div class="partner">
+                            <img src="/img/partners/partenaires_historiques/viproom.png" alt="logo VIP Room">
+                        </div>
+                        {{--</a>--}}
+                    </div>
+                </div>
+<<<<<<< HEAD
                 <h2>{{ trans('lang.media_partners') }}</h2>
+=======
+
+                <h2>Partenaires médias</h2>
+>>>>>>> 28f3c66e6ce4dcf1efc3f1d703d59e3b0df66076
                 <div class="partners_carousel">
                     <div class="carousel_item">
                         {{--<a href="#">--}}
@@ -291,12 +311,12 @@
                 <p>De 5'000 € à 50'000 € nos packages s’adaptent à vos objectifs.<br>
                     Nous vous accompagnons dans la réalisation de vos campagnes et leur activation.</p>
                 <div class="buttons_container">
-                    <a href="/img/partners/sponsoring_fnst18.pdf" download="Partenaires-FNST18.pdf" class="img_btn">
-                        <img src="/img/partners/sponsors_list_btn.png" alt="Sponsors list btn">
+                    <a href="/img/partners/sponsoring_fnst18.pdf" download="Partenaires-FNST18.pdf" class="red_btn" style="float: none">
+                        Telecharger le dossier<br> de sponsoring 2018
                     </a>
-                    <a href="/img/partners/partenaires_fnst18.pdf" download="Sponsoring-FNST18.pdf" class="img_btn">
-                        <img src="/img/partners/packages_btn.png" alt="Sponsors list btn">
-                    </a>
+                    {{--<a href="/img/partners/partenaires_fnst18.pdf" download="Sponsoring-FNST18.pdf" class="red_btn">--}}
+                        {{--Consulter nos<br> packages--}}
+                    {{--</a>--}}
                 </div>
             </div>
         </div>

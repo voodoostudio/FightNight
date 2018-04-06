@@ -22,13 +22,13 @@
                     <a href="{{ route('tickets') }}">{{ trans('lang.about_tickets_link') }}</a><br>
                 {{ trans('lang.about_tickets_part2') }}</p>
 
-                <div class="row">
-                    <div class="col-12">
-                        <a href="#" class="img_btn">
-                            <img src="/img/about/about_btn.png" alt="Download the program">
-                        </a>
-                    </div>
-                </div>
+                {{--<div class="row">--}}
+                    {{--<div class="col-12">--}}
+                        {{--<a href="#" class="red_btn">--}}
+                            {{--Telecharger le programme 2018--}}
+                        {{--</a>--}}
+                    {{--</div>--}}
+                {{--</div>--}}
             </div>
         </div>
     </section>
