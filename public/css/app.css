@@ -1522,8 +1522,6 @@ footer .links_list li a img {
   position: absolute;
   top: 10px;
   right: 10px;
-  background: #000000d6;
-  padding: 4px 10px;
 }
 
 .admin_items_list_section .admin_item_info_block .edit_elements > * {
@@ -1542,7 +1540,6 @@ footer .links_list li a img {
 
 .admin_items_list_section .admin_item_info_block .edit_elements a {
   color: white;
-  padding-left: 4px;
 }
 
 .admin_items_list_section .admin_item_info_block .edit_elements a:hover {
@@ -1701,12 +1698,6 @@ footer .links_list li a img {
   text-decoration: underline;
 }
 
-@media screen and (min-width: 1200px) {
-  .admin_items_list_section, .admin_edit_section {
-    margin-top: 100px;
-  }
-}
-
 @media screen and (max-width: 1199px) {
   header {
     margin-bottom: -20px;
@@ -1835,6 +1826,10 @@ footer .links_list li a img {
   }
   .jeans_bg_ragged {
     padding: 85px;
+  }
+  .modal-backdrop.show {
+    opacity: 1;
+    z-index: 9999;
   }
 }
 
@@ -1989,10 +1984,6 @@ footer .links_list li a img {
 }
 
 @media screen and (max-width: 575px) {
-  .modal-backdrop.show {
-    opacity: 1;
-    z-index: 9999;
-  }
   body {
     padding-bottom: 200px;
   }
