@@ -13,7 +13,7 @@
     <section class="gallery_section" style="display: none">
         <div id="js-filters-full-width" class="cbp-l-filters-alignCenter">
             <div data-filter="*" class="cbp-filter-item">
-               Title / year
+               {{ trans('title_year') }}
             </div>
         </div>
         <div id="js-grid-full-width" class="cbp">

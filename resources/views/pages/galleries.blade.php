@@ -16,7 +16,7 @@
         {{--<div class="container-fluid">--}}
             <div id="js-filters-full-width" class="cbp-l-filters-alignCenter">
                 <div data-filter="*" class="cbp-filter-item">
-                    Tous les albums <div class="cbp-filter-counter"></div>
+                    {{ trans('lang.all_albums') }} <div class="cbp-filter-counter"></div>
                 </div> <span>/</span>
               {{--  @foreach($menu as $key => $item)
                     @php

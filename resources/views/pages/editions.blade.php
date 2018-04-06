@@ -7,9 +7,9 @@
                 <div class="row">
                     <div class="col-12 col-md-7 col-xl-6">
                         <div class="edition__info-container">
-                            <h2 class="edition_title"><span class="city">Saint-Tropez</span> Fight Night <span class="year">2017</span></h2>
+                            <h2 class="edition_title">{!! trans('details_title') !!}</h2>
                             {!! trans('lang.editions_block_2017') !!}
-                            <a href="{{ route('results', ['slug' => 'fight-night-2017']) }}" class="results_link">Résultats</a>
+                            <a href="{{ route('results', ['slug' => 'fight-night-2017']) }}" class="results_link">{{ trans('results') }}</a>
                             <div class="edition__stars">
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>

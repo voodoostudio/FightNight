@@ -7,7 +7,7 @@
                 <img src="/img/contact/contact.jpg" alt="Contact us banner">
             </div>
             <div class="contact_container jeans_bg_ragged">
-                <h1 class="title--translated">Contact</h1>
+                <h1 class="title--translated">{{ trans('lang.contact') }}</h1>
                 <form action="{{ route('post_contact') }}" method="POST" id="ajax-contact">
                     {{ csrf_field() }}
                     <div class="row">
@@ -34,7 +34,7 @@
                         </div>
                         <div class="col-12">
                             <div class="form_group">
-                                <label class="form_el_label"><span>Message</span></label>
+                                <label class="form_el_label"><span>{{ trans('lang.message') }}</span></label>
                                 <div class="input_container">
                                     <textarea name="message" id="message" value="" placeholder=""></textarea>
                                 </div>
@@ -55,13 +55,7 @@
                 </form>
                 <div class="row">
                     <div class="col-12 col-md-4">
-                        <p class="address">
-                            Fight Night Saint-Tropez<br>
-                            1 Montée de la Citadelle<br>
-                            83990 ST TROPEZ
-                        </p>
-                        <p class="tel">+33 (0)4 94 20 34 24</p>
-                        <p class="tel">+33 (0)6 81 14 55 33</p>
+                        {!! trans('lang.contact_data') !!}
                     </div>
                 </div>
             </div>
