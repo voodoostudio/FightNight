@@ -7,101 +7,101 @@
                 <img src="/img/partners/partners.jpg" alt="About us banner">
             </div>
             <div class="partners_container jeans_bg_ragged">
-                <h1 class="title--translated">Partenaires</h1>
+                <h1 class="title--translated">{{ trans('lang.partners_title') }}</h1>
 
-                <h2>Grands partenaires</h2>
+                <h2>{{ trans('lang.great_partners') }}</h2>
                 <div class="partners_carousel">
                     <div class="carousel_item">
                         {{--<a href="#">--}}
-                            <div class="partner">
-                                <img src="/img/partners/grands_partenaires/bagatelle.png" alt="logo Bagatelle">
-                            </div>
+                        <div class="partner">
+                            <img src="/img/partners/grands_partenaires/bagatelle.png" alt="logo Bagatelle">
+                        </div>
                         {{--</a>--}}
                     </div>
                     <div class="carousel_item">
                         {{--<a href="#">--}}
-                            <div class="partner">
-                                <img src="/img/partners/grands_partenaires/heraclee.png" alt="logo Heraclee">
-                            </div>
+                        <div class="partner">
+                            <img src="/img/partners/grands_partenaires/heraclee.png" alt="logo Heraclee">
+                        </div>
                         {{--</a>--}}
                     </div>
                     <div class="carousel_item">
                         {{--<a href="#">--}}
-                            <div class="partner">
-                                <img src="/img/partners/grands_partenaires/madinevent.png" alt="logo Mad in event">
-                            </div>
+                        <div class="partner">
+                            <img src="/img/partners/grands_partenaires/madinevent.png" alt="logo Mad in event">
+                        </div>
                         {{--</a>--}}
                     </div>
                     <div class="carousel_item">
                         {{--<a href="#">--}}
-                            <div class="partner">
-                                <img src="/img/partners/grands_partenaires/mairie.png" alt="logo Mairie de saint-tropez">
-                            </div>
+                        <div class="partner">
+                            <img src="/img/partners/grands_partenaires/mairie.png" alt="logo Mairie de saint-tropez">
+                        </div>
                         {{--</a>--}}
                     </div>
                     <div class="carousel_item">
                         {{--<a href="#">--}}
-                            <div class="partner">
-                                <img src="/img/partners/grands_partenaires/moorea.png" alt="logo Moorea">
-                            </div>
+                        <div class="partner">
+                            <img src="/img/partners/grands_partenaires/moorea.png" alt="logo Moorea">
+                        </div>
                         {{--</a>--}}
                     </div>
                     <div class="carousel_item">
                         {{--<a href="#">--}}
-                            <div class="partner">
-                                <img src="/img/partners/your_logo.png" alt="Your logo">
-                            </div>
+                        <div class="partner">
+                            <img src="/img/partners/your_logo.png" alt="Your logo">
+                        </div>
                         {{--</a>--}}
                     </div>
                 </div>
 
-                <h2>Partenaires privilégiés</h2>
+                <h2>{{ trans('lang.preferred_partners') }}</h2>
                 <div class="partners_carousel">
                     <div class="carousel_item">
                         {{--<a href="#">--}}
-                            <div class="partner">
-                                <img src="/img/partners/partenaires_privilégiés/edenplage.png" alt="logo Eden plage">
-                            </div>
+                        <div class="partner">
+                            <img src="/img/partners/partenaires_privilégiés/edenplage.png" alt="logo Eden plage">
+                        </div>
                         {{--</a>--}}
                     </div>
                     <div class="carousel_item">
                         {{--<a href="#">--}}
-                            <div class="partner">
-                                <img src="/img/partners/partenaires_privilégiés/mapauto.png" alt="logo Map auto">
-                            </div>
+                        <div class="partner">
+                            <img src="/img/partners/partenaires_privilégiés/mapauto.png" alt="logo Map auto">
+                        </div>
                         {{--</a>--}}
                     </div>
                     <div class="carousel_item">
                         {{--<a href="#">--}}
-                            <div class="partner">
-                                <img src="/img/partners/partenaires_privilégiés/opera.png" alt="logo Opera">
-                            </div>
+                        <div class="partner">
+                            <img src="/img/partners/partenaires_privilégiés/opera.png" alt="logo Opera">
+                        </div>
                         {{--</a>--}}
                     </div>
                     <div class="carousel_item">
                         {{--<a href="#">--}}
-                            <div class="partner">
-                                <img src="/img/partners/your_logo.png" alt="Your logo">
-                            </div>
+                        <div class="partner">
+                            <img src="/img/partners/your_logo.png" alt="Your logo">
+                        </div>
                         {{--</a>--}}
                     </div>
                     <div class="carousel_item">
                         {{--<a href="#">--}}
-                            <div class="partner">
-                                <img src="/img/partners/your_logo.png" alt="Your logo">
-                            </div>
+                        <div class="partner">
+                            <img src="/img/partners/your_logo.png" alt="Your logo">
+                        </div>
                         {{--</a>--}}
                     </div>
                     <div class="carousel_item">
                         {{--<a href="#">--}}
-                            <div class="partner">
-                                <img src="/img/partners/your_logo.png" alt="Your logo">
-                            </div>
+                        <div class="partner">
+                            <img src="/img/partners/your_logo.png" alt="Your logo">
+                        </div>
                         {{--</a>--}}
                     </div>
                 </div>
 
-                <h2>Partenaires historiques</h2>
+                <h2>{{ trans('lang.historical_partners') }}</h2>
                 <div class="partners_carousel">
                     <div class="carousel_item">
                         {{--<a href="#">--}}
@@ -159,12 +159,6 @@
                         </div>
                         {{--</a>--}}
                     </div>
-<<<<<<< HEAD
-                </div>
-                <h2>{{ trans('lang.great_partners') }}</h2>
-                <div class="partners_carousel">
-=======
->>>>>>> 28f3c66e6ce4dcf1efc3f1d703d59e3b0df66076
                     <div class="carousel_item">
                         {{--<a href="#">--}}
                         <div class="partner">
@@ -207,12 +201,6 @@
                         </div>
                         {{--</a>--}}
                     </div>
-<<<<<<< HEAD
-                </div>
-                <h2>{{ trans('lang.preferred_partners') }}</h2>
-                <div class="partners_carousel">
-=======
->>>>>>> 28f3c66e6ce4dcf1efc3f1d703d59e3b0df66076
                     <div class="carousel_item">
                         {{--<a href="#">--}}
                         <div class="partner">
@@ -256,53 +244,49 @@
                         {{--</a>--}}
                     </div>
                 </div>
-<<<<<<< HEAD
-                <h2>{{ trans('lang.media_partners') }}</h2>
-=======
 
-                <h2>Partenaires médias</h2>
->>>>>>> 28f3c66e6ce4dcf1efc3f1d703d59e3b0df66076
+                <h2>{{ trans('lang.media_partners') }}</h2>
                 <div class="partners_carousel">
                     <div class="carousel_item">
                         {{--<a href="#">--}}
-                            <div class="partner">
-                                <img src="/img/partners/partenaires_medias/canalsport.png" alt="logo Canal sport">
-                            </div>
+                        <div class="partner">
+                            <img src="/img/partners/partenaires_medias/canalsport.png" alt="logo Canal sport">
+                        </div>
                         {{--</a>--}}
                     </div>
                     <div class="carousel_item">
                         {{--<a href="#">--}}
-                            <div class="partner">
-                                <img src="/img/partners/partenaires_medias/sfr.png" alt="Your logo">
-                            </div>
+                        <div class="partner">
+                            <img src="/img/partners/your_logo.png" alt="Your logo">
+                        </div>
                         {{--</a>--}}
                     </div>
                     <div class="carousel_item">
                         {{--<a href="#">--}}
-                            <div class="partner">
-                                <img src="/img/partners/partenaires_medias/nrj.png" alt="Your logo">
-                            </div>
+                        <div class="partner">
+                            <img src="/img/partners/your_logo.png" alt="Your logo">
+                        </div>
                         {{--</a>--}}
                     </div>
                     <div class="carousel_item">
                         {{--<a href="#">--}}
-                            <div class="partner">
-                                <img src="/img/partners/partenaires_medias/var_matin.png" alt="Your logo">
-                            </div>
+                        <div class="partner">
+                            <img src="/img/partners/your_logo.png" alt="Your logo">
+                        </div>
                         {{--</a>--}}
                     </div>
                     <div class="carousel_item">
                         {{--<a href="#">--}}
-                            <div class="partner">
-                                <img src="/img/partners/partenaires_medias/equipe_21.png" alt="Your logo">
-                            </div>
+                        <div class="partner">
+                            <img src="/img/partners/your_logo.png" alt="Your logo">
+                        </div>
                         {{--</a>--}}
                     </div>
                     <div class="carousel_item">
                         {{--<a href="#">--}}
-                            <div class="partner">
-                                <img src="/img/partners/your_logo.png" alt="Your logo">
-                            </div>
+                        <div class="partner">
+                            <img src="/img/partners/your_logo.png" alt="Your logo">
+                        </div>
                         {{--</a>--}}
                     </div>
                 </div>
@@ -315,7 +299,7 @@
                         Telecharger le dossier<br> de sponsoring 2018
                     </a>
                     {{--<a href="/img/partners/partenaires_fnst18.pdf" download="Sponsoring-FNST18.pdf" class="red_btn">--}}
-                        {{--Consulter nos<br> packages--}}
+                    {{--Consulter nos<br> packages--}}
                     {{--</a>--}}
                 </div>
             </div>

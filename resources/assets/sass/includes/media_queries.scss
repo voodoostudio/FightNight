@@ -232,6 +232,11 @@
       .slick-arrow{
         width: 30px;
         height: 30px;
+        text-align: center;
+        img {
+          width: 15px;
+          height: 15px;
+        }
         &.slick-prev {
           left: initial;
           right: 100px;

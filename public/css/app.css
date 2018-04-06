@@ -1878,6 +1878,11 @@ footer .links_list li a img {
   section.carousel_section .slick-slider .slick-arrow {
     width: 30px;
     height: 30px;
+    text-align: center;
+  }
+  section.carousel_section .slick-slider .slick-arrow img {
+    width: 15px;
+    height: 15px;
   }
   section.carousel_section .slick-slider .slick-arrow.slick-prev {
     left: initial;
