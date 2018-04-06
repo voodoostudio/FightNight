@@ -77,7 +77,7 @@ return [
 
     // Press
     'press_title'           => 'Presse',
-    'press_releases'        => 'Communiqués de presse',
+    'press_releases'        => 'La presse en parle',
     'accreditations'        => 'Accréditations',
     'send_passport_copy'    => 'Accréditer-vous à la Fight Night Saint-Tropez en envoyant une copie de votre carte de presse à',
     'press_kit'             => 'Dossier de presse',

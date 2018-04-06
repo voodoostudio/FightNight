@@ -11,8 +11,8 @@
                 <img src="/img/presse/presse_img.jpg" alt="About us banner">
             </div>
             <div class="press_container jeans_bg_ragged">
-                <h1 class="title--translated">Presse</h1>
-                <h2>La presse en parle</h2>
+                <h1 class="title--translated">{{ trans('lang.press_title') }}</h1>
+                <h2>{{ trans('lang.press_releases') }}</h2>
 
                 <div class="press_carousel">
                     @foreach($news as $item)
@@ -57,15 +57,9 @@
                         </div>
                     @endforeach
                 </div>
-<<<<<<< HEAD
                 <h2>{{ trans('lang.accreditations') }}</h2>
                 <p class="paragraph">{{ trans('lang.send_passport_copy') }} <a href="mailto:info@fightnights.pro">info@fightnights.pro</a></p>
-=======
 
-
-                <h2>Accréditations</h2>
-                <p class="paragraph">Accréditez-vous à la Fight Night Saint-Tropez en envoyant une copie de votre carte de presse à <a href="mailto:info@fightnights.pro">info@fightnights.pro</a></p>
->>>>>>> 30005697e7c3c667cfab2a12afc5c45cc26c130a
 
                 <h2>{{ trans('lang.press_kit') }}</h2>
                 <a href="/news/fightnight_2018.pdf" class="download_link" download="FightNight Saint-Tropez Communique de presse 2018">
