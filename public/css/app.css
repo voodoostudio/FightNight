@@ -1890,8 +1890,7 @@ footer .links_list li a img {
     margin: 0 auto;
   }
   section.carousel_section .slick-slider .slick-arrow.slick-prev {
-    left: initial;
-    right: 100px;
+    left: 20px;
   }
   section.carousel_section .slick-slider .slick-arrow.slick-next {
     right: 20px;
