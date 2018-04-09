@@ -9,7 +9,9 @@
                         <div class="edition__info-container">
                             <h2 class="edition_title"><span class="city">Saint-Tropez</span> Fight Night <span class="year">2017</span></h2>
                             {!! trans('lang.editions_block_2017') !!}
-                            <a href="{{ route('results', ['slug' => 'fight-night-2017']) }}" class="results_link">Résultats</a>
+                            <div class="button_results">
+                                <a href="{{ route('results', ['slug' => 'fight-night-2017']) }}" class="results_link">Résultats</a>
+                            </div>
                             <div class="edition__stars">
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
@@ -32,7 +34,9 @@
                         <div class="edition__info-container">
                             <h2 class="edition_title"><span class="city">Saint-Tropez</span> Fight Night <span class="year">2016</span></h2>
                             {!! trans('lang.editions_block_2016') !!}
-                            <a href="{{ route('results', ['slug' => 'fight-night-2016']) }}" class="results_link">Résultats</a>
+                            <div class="button_results">
+                                <a href="{{ route('results', ['slug' => 'fight-night-2016']) }}" class="results_link">Résultats</a>
+                            </div>
                             <div class="edition__stars">
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
@@ -55,7 +59,9 @@
                         <div class="edition__info-container">
                             <h2 class="edition_title"><span class="city">Saint-Tropez</span> Fight Night <span class="year">2015</span></h2>
                             {!! trans('lang.editions_block_2015') !!}
-                            <a href="{{ route('results', ['slug' => 'fight-night-2015']) }}" class="results_link">Résultats</a>
+                            <div class="button_results">
+                                <a href="{{ route('results', ['slug' => 'fight-night-2015']) }}" class="results_link">Résultats</a>
+                            </div>
                             <div class="edition__stars">
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
@@ -78,7 +84,9 @@
                         <div class="edition__info-container">
                             <h2 class="edition_title"><span class="city">Saint-Tropez</span> Fight Night <span class="year">2014</span></h2>
                             {!! trans('lang.editions_block_2014') !!}
-                            <a href="{{ route('results', ['slug' => 'fight-night-2014']) }}" class="results_link">Résultats</a>
+                            <div class="button_results">
+                                <a href="{{ route('results', ['slug' => 'fight-night-2014']) }}" class="results_link">Résultats</a>
+                            </div>
                             <div class="edition__stars">
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
@@ -101,7 +109,9 @@
                         <div class="edition__info-container">
                             <h2 class="edition_title"><span class="city">Saint-Tropez</span> Fight Night <span class="year">2013</span></h2>
                             {!! trans('lang.editions_block_2013') !!}
-                            <a href="{{ route('results', ['slug' => 'fight-night-2013']) }}" class="results_link">Résultats</a>
+                            <div class="button_results">
+                                <a href="{{ route('results', ['slug' => 'fight-night-2013']) }}" class="results_link">Résultats</a>
+                            </div>
                             <div class="edition__stars">
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>

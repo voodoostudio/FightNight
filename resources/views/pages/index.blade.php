@@ -5,13 +5,13 @@
 @section('id', 'index')
 
 @section('content')
-     <section class="carousel_section" style="display:none">
+    <section class="carousel_section" style="display:none">
         <div class="container-fluid">
             <div class="homepage_carousel flickity_carousel">
                 <div class="carousel-cell">
                     <img src="/img/carousel/1.jpg" alt="">
                     {{--<div class="caption">--}}
-                        {{--<h1>learn to <span>defend</span> yourself in real life</h1>--}}
+                    {{--<h1>learn to <span>defend</span> yourself in real life</h1>--}}
                     {{--</div>--}}
                     <div class="caption">
                         {{--<h1><span class="small">Saint-Tropez</span><span class="big">Best Show</span></h1>--}}
@@ -30,18 +30,18 @@
             </div>
         </div>
     </section>
-     <section class="carousel_section">
+    <section class="carousel_section">
         <div class="container-fluid">
             <div class="homepage_carousel slick_carousel">
                 <div class="carousel_cell">
                     <img src="/img/carousel/1_sm.jpg" alt="" class="d-sm-none">
                     <img src="/img/carousel/1.jpg" alt="" class="d-none d-sm-block">
                     {{--<div class="caption">--}}
-                        {{--<h1>learn to <span>defend</span> yourself in real life</h1>--}}
+                    {{--<h1>learn to <span>defend</span> yourself in real life</h1>--}}
                     {{--</div>--}}
                     <div class="caption">
                         {{--<h1><span class="small">Saint-Tropez</span><span class="big">Best Show</span></h1>--}}
-                        <h1><span class="small">The best</span><span class="big">show</span> <span class="small">of st-tropez</span></h1>
+                        <h1><span class="small">The best</span><span class="big">show</span> <span class="small">of st-tropez</span><span class="small">KICK BOCKING & MUAYTHAI</span></h1>
                     </div>
                 </div>
                 <div class="carousel_cell">
@@ -84,9 +84,12 @@
                         @include('includes.countdown')
                     </div>
                     <div class="col-12 col-md-5">
-                        <div class="title_container">
-                            <h4 title="Billeterie Prochainment Disponible">
-                                <span>{{ trans('lang.ticketing_coming') }}</span>
+                        <div class="title_container" title="4 Août 2018, La Citadele de Saint-Tropez">
+                            <h4>
+                                <span>4 août 2018</span>
+                            </h4>
+                            <h4>
+                                <span>{!! trans('lang.ticketing_coming') !!}</span>
                             </h4>
                             {{--<img src="/img/countdown_title.png" alt="ticket">--}}
                         </div>
@@ -143,9 +146,9 @@
                             </div>
                         @endif
                     @endforeach
-                 </div>
-             </div>
-         </div>
+                </div>
+            </div>
+        </div>
     </section>
 
 
@@ -179,7 +182,7 @@
     <script type="text/javascript" src="{{mix('js/index.js')}}"></script>
     <script>
         // Set the date we're counting down to
-//        var countDownDate = new Date("Aug 4, 2018 00:00:01").getTime();
+        //        var countDownDate = new Date("Aug 4, 2018 00:00:01").getTime();
         var countDownDate = new Date("Aug 4, 2018 00:00:01").getTime();
         countdown();
     </script>

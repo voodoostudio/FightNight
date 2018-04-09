@@ -40,6 +40,9 @@
     <section class="gallery_section">
         <div class="container-fluid">
             <div id="js-filters-mosaic" class="cbp-l-filters-alignCenter">
+                <span class="return-back">
+                    <a href="{{ url()->previous() }}"><i class="fa fa-chevron-left"></i> {{ trans('lang.back_button') }}</a>
+                </span>
                 <div data-filter="*" class="cbp-filter-item">
                     <span>{{ ($lang == 'fr') ?  $gallery->title_fr :  $gallery->title_en}}</span> / {{ $gallery->category_name }}
                 </div>

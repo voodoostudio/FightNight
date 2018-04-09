@@ -74,7 +74,7 @@
                 $jpg_preview = preg_replace('"\.pdf$"', '.jpg', $item['image_file']);
             @endphp
         <!-- Modal -->
-            <div class="modal fade" id="image_{{ $item->id }}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal fade" id="image_{{ $item->id }}" tabindex="-1" role="dialog" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered" role="document">
                     <div class="modal-content">
                         <div class="modal-body">
@@ -85,12 +85,33 @@
                         </div>
                     </div>
                 </div>
+                <button type="button" class="press-prev"><i class="fa fa-chevron-left"></i></button>
+                <button type="button" class="press-next"><i class="fa fa-chevron-right"></i></button>
             </div>
         @endforeach
     </section>
 @stop
 
 @section('js')
+    <script>
+        $("div[id^='image_']").each(function(){
+
+            var currentModal = $(this);
+
+            //click next
+            currentModal.find('.press-next').click(function(){
+                currentModal.modal('hide');
+                currentModal.closest("div[id^='image_']").nextAll("div[id^='image_']").first().modal('show');
+            });
+
+            //click prev
+            currentModal.find('.press-prev').click(function(){
+                currentModal.modal('hide');
+                currentModal.closest("div[id^='image_']").prevAll("div[id^='image_']").first().modal('show');
+            });
+
+        });
+    </script>
     <script>
         $('.press_carousel').slick({
             infinite: true,

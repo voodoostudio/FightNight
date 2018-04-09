@@ -20,7 +20,7 @@ return [
     'about'                 => 'A propos',
     'editions'              => 'Editions',
     'ticketing'             => 'Billetterie',
-    'gallery'               => 'Galeries',
+    'gallery'               => 'Galerie',
     'partners'              => 'Partenaires',
     'press'                 => 'Presse',
     'contact'               => 'Contact',
@@ -46,19 +46,19 @@ return [
                             <p class="edition_person"><span>Guest</span>Sylvester Stallone - Sébastien Chabbal - Michel Drucker</p>
                             <p class="edition_person"><span>Fighter</span>Jérôme Le Banner - Stefan Leko</p>',
     'editions_block_2014'   => '<h3 class="edition_statistics"><span>2<sup>eme</sup> edition</span> 300 000 tv spectateurs</h3>
-                            <p class="edition_description">La soirée c\'est très bien passée et <b>Jérôme Le Banner, Freddy Kemayo</b> et <b>Nicolas Wamba</b> ce sont tous les trois imposés par KO au second round !</p>
+                            <p class="edition_description">La soirée s\'est très bien passée et <b>Jérôme Le Banner, Freddy Kemayo</b> et <b>Nicolas Wamba</b> se sont tous les trois imposés par KO au second round !</p>
                             <p class="edition_person"><span>Guest</span>Vincent Lagaf - David Ginola - Enrico Macias</p>
                             <p class="edition_person"><span>Fighter </span>Jérôme Le Banner - Danyo Illunga</p>',
     'editions_block_2015'   => '<h3 class="edition_statistics"><span>3<sup>eme</sup> edition</span> 300 000 tv spectateurs</h3>
-                            <p class="edition_description">Bien que de nombreux combats de prestige se tiendront sur le ring, toute lʼattention sera portée sur Jérôme Le Banner, véritable porte-étendard des sports de combat en France qui tirera sa révérence au terme de la soirée. Lʼoccasion pour nous de le saluer et de lui souhaiter le meilleur pour la suite...</p>
+                            <p class="edition_description">Bien que de nombreux combats de prestige se soient tenus sur le ring, toute lʼattention s\'est portée sur Jérôme Le Banner, véritable porte-étendard des sports de combat en France et qui tirera sa révérence à l\'issue de la soirée. Lʼoccasion pour nous de le saluer et de lui souhaiter le meilleur pour la suite...</p>
                             <p class="edition_person"><span>Guest</span>Joey Starr - Mathieu Kassovitz - Gerard Lanvin</p>
                             <p class="edition_person"><span>Fighter </span>Jérôme Le Banner last Fight - Peter Aertz</p>',
     'editions_block_2016'   => '<h3 class="edition_statistics"><span>4<sup>eme</sup> edition</span> 300 000 tv spectateurs</h3>
-                            <p class="edition_description">On note particulièrement la mise en place d\'un tournoi à 4 dans la division des poids-lourds, un terme plus que jamais approprié puisque le plus léger de ces 4 combattants pèse plus de 120kg ! Comme annoncé sur l\'affiche, c\'est un "+500kg tournament" qui sera proposé, une chose est sure, la citadelle va trembler !</p>
+                            <p class="edition_description">On note tout particulièrement la mise en place d\'un tournoi à 4 dans la division des poids-lourds, un terme plus que jamais approprié puisque le plus léger de ces 4 combattants pèse plus de 120kg ! Comme l\'annonce l\'affiche, c\'est bien un "+500kg tournament" qui sera proposé. Une chose est sure, la citadelle va trembler !</p>
                             <p class="edition_person"><span>Guest</span>Mickey Rourke - Thomas Langmann</p>
                             <p class="edition_person"><span>Fighter </span>Yohan Lidon - Daniel Sam</p>',
     'editions_block_2017'   => '<h3 class="edition_statistics"><span>5<sup>eme</sup> edition</span> 350 000 tv spectateurs</h3>
-                            <p class="edition_description">La cinquième édition voit s\'opposer Grégory Tony et Bob SAPP. Yohan Lidon, lui défendra sa ceinture mondiale WKN face à l\'Allemand Florian Kroger. Un show spectaculaire aussi bien sur le ring qu\'en dehors devant un parterre de VIP. </p>
+                            <p class="edition_description">La cinquième édition voit s\'opposer Grégory Tony et Bob Sapp. Quant à Yohan Lidon, il défendra sa ceinture mondiale WKN face à l\'Allemand Florian Kroger. Un show spectaculaire aussi bien sur le ring qu\'en dehors, et devant un parterre de VIP. </p>
                             <p class="edition_person"><span>Guest</span>Jean-Luc Reichmann - Jean Roch...</p>
                             <p class="edition_person"><span>Fighter </span>Bob Sapp - Yohan Lidon</p>',
 
@@ -101,7 +101,7 @@ return [
     'our_editions'          => 'éditions',
     'our_contact'           => 'contact',
     'read_more'             => 'Voir plus',
-    'ticketing_coming'      => 'Billetterie Prochainement Disponible',
+    'ticketing_coming'      => 'La Citadelle de<br/> Saint-Tropez',
 
     // Privace policy
     'privacy_policy'        => '<h1>Politique de confidentialité</h1>
@@ -182,4 +182,5 @@ return [
     'title_about'           => 'FightNights - Une soirée sportive et glamour exceptionnelle dans un lieu magique !',
     'title_editions'        => 'Editions de la FightNights',
 
+    'back_button'           => 'Retour',
 ];

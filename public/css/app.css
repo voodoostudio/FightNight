@@ -221,7 +221,7 @@ input:focus,
 textarea:focus {
   outline: none !important;
   -webkit-box-shadow: none !important;
-          box-shadow: none !important;
+  box-shadow: none !important;
   border-color: #cccccc !important;
 }
 
@@ -535,9 +535,9 @@ header .navbar.navbar-light .navbar-toggler .icon-bar {
   transition: opacity, transform;
   transition: opacity, transform, -webkit-transform;
   -webkit-transition-duration: 200ms;
-          transition-duration: 200ms;
+  transition-duration: 200ms;
   -webkit-transition-timing-function: cubic-bezier(0.7, 0, 0, 0.7);
-          transition-timing-function: cubic-bezier(0.7, 0, 0, 0.7);
+  transition-timing-function: cubic-bezier(0.7, 0, 0, 0.7);
 }
 
 header .navbar.navbar-light .navbar-toggler .icon-bar + .icon-bar {
@@ -607,9 +607,10 @@ section.carousel_section .flickity-prev-next-button .arrow {
 }
 
 section.carousel_section .caption {
+  margin: 0;
   position: absolute;
-  bottom: 120px;
-  left: 40px;
+  top: 50%;
+  transform: translate(40px, -50%);
 }
 
 section.carousel_section .caption h1 {
@@ -666,7 +667,7 @@ section.countdown_section .countdown_container .title_container {
   position: relative;
   top: 50%;
   -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
 section.countdown_section .countdown_container .title_container img {
@@ -674,15 +675,28 @@ section.countdown_section .countdown_container .title_container img {
   width: 100%;
 }
 
+section.countdown_section .countdown_container .title_container > h4:first-child {
+  font-size:3.4rem;
+  margin: 0;
+  line-height: 1.1;
+  background: linear-gradient(to right, #ec8a67 40%, #713c2e 85%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 section.countdown_section .countdown_container .title_container h4 {
   text-align: center;
   text-transform: uppercase;
   font-family: proxima_nova_black;
   font-size: 2.4rem;
-  letter-spacing: 5px;
+  margin-top: -10px;
+  /*letter-spacing: 5px;*/
   position: relative;
   line-height: .9;
-  color: #fffaff;
+  background: linear-gradient(to right, #b0b0b0 40%, #3e3e3e 85%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
 }
 
 section.tickets_section .countdown_container {
@@ -703,18 +717,22 @@ section.tickets_section .countdown_container h3 {
   margin: 0;
 }
 
+section.tickets_section .red_btn{
+  width: 165px;
+}
+
 .countdown_container .countdown {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-line-pack: center;
-      align-content: center;
+  align-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   height: 100%;
 }
 
@@ -886,7 +904,7 @@ section.about_section .about_container .img_btn img {
 }
 
 section.gallery_section {
-  margin-top: 50px;
+  margin-top: 70px;
 }
 
 section.gallery_section .cbp-l-filters-alignCenter {
@@ -925,8 +943,29 @@ section.gallery_section .cbp-item img {
   max-height: 400px;
 }
 
+section.gallery_section .grid-wrap {
+  position: relative;
+}
+
+section.gallery_section .cbp-l-filters-alignCenter > .return-back {
+  float: left;
+}
+
+section.gallery_section .cbp-l-filters-alignCenter > .return-back > a {
+  color: #00ffff;
+  text-transform: uppercase;
+}
+
+section.gallery_section .cbp-l-filters-alignCenter > .return-back > a:hover {
+  text-decoration: none;
+}
+
 section.gallery_section .cbp-caption-activeWrap {
   background-color: rgba(0, 0, 0, 0.7);
+}
+
+section.gallery_section .mobile-text {
+  display: none;
 }
 
 section.editions_section {
@@ -1205,6 +1244,34 @@ section.press_section .modal .modal-body img {
   width: 100%;
 }
 
+section.press_section .press-prev, .press-next {
+  position: fixed;
+  top: 50%;
+  font-size: 1.5rem;
+  border: none;
+  background: #000000bd;
+  color: #ffffffb3;
+}
+
+section.press_section .press-prev {
+  left: 10%;
+  padding: 7px 18px 4px 15px;
+}
+
+section.press_section .press-next {
+  right: 10%;
+  padding: 7px 15px 4px 18px;
+}
+
+section.press_section .modal-body {
+  max-height: calc(100vh - 210px);
+  overflow-y: auto;
+}
+
+section.press_section .modal {
+  padding-right: 0 !important;
+}
+
 section.partners_section .partners_container h2 {
   margin-bottom: 20px;
 }
@@ -1390,13 +1457,13 @@ footer p a.social {
   line-height: 16px;
   display: inline-block;
   -webkit-transform: translateY(5px);
-          transform: translateY(5px);
+  transform: translateY(5px);
 }
 
 footer p a.social:hover {
   color: #fffaff;
   -webkit-transform: scale(1.2) translateY(4px);
-          transform: scale(1.2) translateY(4px);
+  transform: scale(1.2) translateY(4px);
 }
 
 footer .links_list {
@@ -1405,7 +1472,7 @@ footer .links_list {
   padding: 0 0 0 20px;
   margin: 0;
   -webkit-transform: translateY(-12px);
-          transform: translateY(-12px);
+  transform: translateY(-12px);
 }
 
 footer .links_list li {
@@ -1426,24 +1493,24 @@ footer .links_list li a {
 footer .links_list li a.social {
   font-size: 26px;
   -webkit-transform: translateY(5px);
-          transform: translateY(5px);
+  transform: translateY(5px);
 }
 
 footer .links_list li a.social:hover {
   color: #fffaff;
   -webkit-transform: scale(1.2) translateY(4px);
-          transform: scale(1.2) translateY(4px);
+  transform: scale(1.2) translateY(4px);
 }
 
 footer .links_list li a.lang {
   -webkit-transform: translateY(-2px);
-          transform: translateY(-2px);
+  transform: translateY(-2px);
   opacity: .5;
 }
 
 footer .links_list li a.lang:hover {
   -webkit-transform: scale(1.2) translateY(-2px);
-          transform: scale(1.2) translateY(-2px);
+  transform: scale(1.2) translateY(-2px);
   opacity: .75;
 }
 
@@ -1519,6 +1586,8 @@ footer .links_list li a img {
   position: absolute;
   top: 10px;
   right: 10px;
+  background: #000000d6;
+  padding: 4px 10px;
 }
 
 .admin_items_list_section .admin_item_info_block .edit_elements > * {
@@ -1537,6 +1606,7 @@ footer .links_list li a img {
 
 .admin_items_list_section .admin_item_info_block .edit_elements a {
   color: white;
+  padding-left: 4px;
 }
 
 .admin_items_list_section .admin_item_info_block .edit_elements a:hover {
@@ -1695,6 +1765,13 @@ footer .links_list li a img {
   text-decoration: underline;
 }
 
+
+@media screen and (min-width: 1200px) {
+  .admin_items_list_section, .admin_edit_section {
+    margin-top: 100px;
+  }
+}
+
 @media screen and (max-width: 1199px) {
   header {
     margin-bottom: -20px;
@@ -1748,19 +1825,19 @@ footer .links_list li a img {
   }
   header .navbar.navbar-light {
     -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
     padding-left: 0;
   }
   header .navbar.navbar-light .navbar-nav {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
     margin-top: 30px;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
   header .navbar.navbar-light .navbar-nav .nav-link {
     margin-right: 13px;
@@ -1772,10 +1849,10 @@ footer .links_list li a img {
     width: 50px;
     height: 50px;
   }
-  section.carousel_section .homepage_carousel .caption {
-    bottom: 40px;
+  /*section.carousel_section .homepage_carousel .caption {
+    bottom: 110px;
     left: 40px;
-  }
+  }*/
   section.carousel_section .homepage_carousel .caption h1 .small {
     font-size: 2rem;
     height: 25px;
@@ -1786,6 +1863,10 @@ footer .links_list li a img {
   }
   section.countdown_section .countdown_container .title_container h4 {
     font-size: 1.5rem;
+    margin-top: -5px;
+  }
+  section.countdown_section .countdown_container .title_container > h4:first-child {
+    font-size: 2.4rem;
   }
   section.posts_section .post_block .date_container {
     font-size: 1.3rem;
@@ -1833,6 +1914,36 @@ footer .links_list li a img {
   }
 }
 
+@media screen and (max-width: 885px) {
+  section.gallery_section .cbp-caption-activeWrap {
+    display: none;
+  }
+  section.gallery_section .mobile-text {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    color: #ffffff;
+    font-weight: 900;
+    z-index: 1;
+  }
+  section.gallery_section .grid-wrap {
+    background: black;
+  }
+  .grid-wrap img{
+    opacity: 0.4;
+  }
+  section.editions_section .button_results {
+    padding: 15px 0;
+  }
+  section.editions_section .button_results > a{
+    border: 1px solid #00ffff;
+    padding: 10px;
+  }
+}
+
 @media screen and (max-width: 767px) {
   header {
     margin-top: 40px;
@@ -1842,8 +1953,8 @@ footer .links_list li a img {
     margin: 0 0 40px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
   header .navbar.navbar-light .navbar-nav .nav-link {
     margin-right: 0;
@@ -1866,10 +1977,10 @@ footer .links_list li a img {
   section.carousel_section .homepage_carousel .flickity-prev-next-button.previous {
     right: 115px;
   }
-  section.carousel_section .homepage_carousel .caption {
+  /*section.carousel_section .homepage_carousel .caption {
     bottom: 15px;
     left: 25px;
-  }
+  }*/
   section.carousel_section .homepage_carousel .caption h1 .big {
     font-size: 3rem;
     letter-spacing: 8px;
@@ -1986,12 +2097,6 @@ footer .links_list li a img {
   }
 }
 
-@media screen and (max-width: 885px) {
-  section.gallery_section .cbp-caption-activeWrap {
-    display: none;
-  }
-}
-
 @media screen and (max-width: 575px) {
   body {
     padding-bottom: 200px;
@@ -2018,8 +2123,8 @@ footer .links_list li a img {
   header .navbar.navbar-light .navbar-nav {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     margin-top: 40px;
   }
   header .navbar.navbar-light .navbar-nav .nav-link {
@@ -2035,6 +2140,12 @@ footer .links_list li a img {
   }
   section.countdown_section .countdown_container .title_container h4 {
     font-size: 1rem;
+    line-height: 1;
+    margin: 0;
+  }
+  section.countdown_section .countdown_container .title_container > h4:first-child {
+    font-size: 1.4rem;
+    line-height: 1;
   }
   section.carousel_section .homepage_carousel .flickity-prev-next-button {
     width: 30px;
@@ -2171,5 +2282,8 @@ footer .links_list li a img {
   }
   .jeans_bg_ragged {
     padding: 30px 15px;
+  }
+  section.gallery_section .mobile-text {
+    font-size: 14px;
   }
 }

@@ -13,6 +13,12 @@
                 @include('includes.countdown')
 
                 <h3>{{ trans('lang.coming_soon') }}</h3>
+
+                <div class="button_pdf">
+                    <a href="/img/tickets/offre-vip.pdf" download="OFFRE-VIP.pdf" class="red_btn" style="float: none">
+                        OFFRE VIP
+                    </a>
+                </div>
             </div>
 
             {{--<img src="/img/tickets/CITADELLE_V4.jpg" usemap="#image-map" width="100%" >
