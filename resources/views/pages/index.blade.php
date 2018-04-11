@@ -125,7 +125,7 @@
                                         <div class="col-9 my_col">
                                             <h5>Fight Night</h5>
                                             <h6>Saint Tropez</h6>
-                                            <p>{{ mb_substr($posts['text'], 0, 20) }} ...</p>
+                                            <p>{{ mb_substr($posts['text'], 0, 15) }} ...</p>
                                             <div class="social_links">
                                                 @if(!empty($posts['facebook_link']))
                                                     <a href="{{ $posts['facebook_link'] }}"><i class="fab fa-facebook-f"></i></a>
