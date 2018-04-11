@@ -29,7 +29,7 @@
                                 </button>
                             </div>
                             <div class="modal-body">
-                                <iframe src="{{ route('tickets_widget', ['name' => 'tables']) }}" style="border:0; min-height: 255px;" width = "100%" ></iframe>
+                                <iframe src="{{ route('tickets_widget', ['name' => 'tables']) }}" style="border:0; min-height: 225px;" width = "100%" ></iframe>
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -48,7 +48,7 @@
                                 </button>
                             </div>
                             <div class="modal-body">
-                                <iframe src="{{ route('tickets_widget', ['name' => 'salons']) }}" style="border:0; min-height: 600px;" width = "100%" ></iframe>
+                                <iframe src="{{ route('tickets_widget', ['name' => 'salons']) }}" style="border:0; min-height: 225px;" width = "100%" ></iframe>
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -67,7 +67,7 @@
                                 </button>
                             </div>
                             <div class="modal-body">
-                                <iframe src="{{ route('tickets_widget', ['name' => 'chaises']) }}" style="border:0; min-height: 600px;" width = "100%" ></iframe>
+                                <iframe src="{{ route('tickets_widget', ['name' => 'chaises']) }}" style="border:0; min-height: 225px;" width = "100%" ></iframe>
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
