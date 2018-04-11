@@ -100,6 +100,7 @@ return [
     'our_tickets'           => 'tickets',
     'our_editions'          => 'edition',
     'our_contact'           => 'contact',
+    'see_more'              => 'See',
     'read_more'             => 'Read more',
     'ticketing_coming'      => 'Ticketing Coming Soon',
 

@@ -101,6 +101,7 @@ return [
     'our_editions'          => 'éditions',
     'our_contact'           => 'contact',
     'read_more'             => 'Voir plus',
+    'see_more'              => 'Voir',
     'ticketing_coming'      => 'La Citadelle de<br/> Saint-Tropez',
 
     // Privace policy

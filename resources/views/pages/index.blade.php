@@ -169,8 +169,8 @@
                 </div>
                 <div class="col-sm-6 col-md-4 my_col">
                     <div class="page_thumbnail third">
-                        <h2>{!! trans('lang.our_contact') !!}</h2>
-                        <a href="{{ route('contact') }}" class="btn">écrire</a>
+                        <h2>{!! trans('lang.partners') !!}</h2>
+                        <a href="{{ route('partners') }}" class="btn">{{ trans('lang.see_more') }}</a>
                     </div>
                 </div>
             </div>
