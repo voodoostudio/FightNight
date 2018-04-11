@@ -129,7 +129,7 @@ class PagesController extends Controller
         $content = curl_exec($ch);
         curl_close($ch);
 
-        $content = str_replace('/static/c14198/css/widget/widget_main.css','https://static-ticketing.weezevent.net/static/c14198/css/widget/widget_main.css', $content);
+        $content = str_replace('/static/','https://static-ticketing.weezevent.net/static/', $content);
         $content = str_replace('images/billetterie/securite_info.gif','https://static-ticketing.weezevent.net/images/billetterie/securite_info.gif', $content);
 
         if($name == "salons") {
