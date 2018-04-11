@@ -610,7 +610,11 @@ section.carousel_section .caption {
   margin: 0;
   position: absolute;
   top: 50%;
-  transform: translate(40px, -50%);
+  transform: translate(70px, -50%);
+}
+
+section.carousel_section .caption > h1 span:last-child {
+  margin-top: 85px;
 }
 
 section.carousel_section .caption h1 {
@@ -622,21 +626,31 @@ section.carousel_section .caption h1 {
 }
 
 section.carousel_section .caption h1 .big {
-  font-size: 6rem;
+  font-size: 8rem;
+  letter-spacing: 5px;
+  display: block;
+  line-height: 1;
+  margin: 5px 0;
+  /*font-size: 6rem;
   letter-spacing: 5px;
   display: block;
   line-height: 1;
   height: 75px;
-  margin: 5px 0;
+  margin: 5px 0;*/
 }
 
 section.carousel_section .caption h1 .small {
-  font-size: 3rem;
+  font-size: 4.2rem;
+  line-height: 0.5;
+  letter-spacing: 3px;
+  display: block;
+  color: #fffaff;
+  /*font-size: 3rem;
   line-height: 1;
   letter-spacing: 3px;
   display: block;
-  color: #bf3737;
-  height: 36px;
+  color: #fffaff;
+  height: 36px;*/
 }
 
 section.carousel_section .slick-slide img {
@@ -648,11 +662,11 @@ section.carousel_section .slick-slider .slick-slide {
 }
 
 section.carousel_section .slick-slider .slick-arrow.slick-prev {
-  left: 60px;
+  left: 25px;
 }
 
 section.carousel_section .slick-slider .slick-arrow.slick-next {
-  right: 60px;
+  right: 25px;
 }
 
 section.countdown_section {
@@ -664,10 +678,20 @@ section.countdown_section .countdown_container {
 }
 
 section.countdown_section .countdown_container .title_container {
-  position: relative;
+  /*position: relative;
   top: 50%;
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
+  margin: 0;*/
+  padding: 8px 0;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  height: 100%;
 }
 
 section.countdown_section .countdown_container .title_container img {
@@ -901,6 +925,10 @@ section.about_section .about_container .img_btn {
 
 section.about_section .about_container .img_btn img {
   width: 225px;
+}
+
+section.about_section .about_container h3 {
+  text-transform: uppercase;
 }
 
 section.gallery_section {
@@ -1817,6 +1845,11 @@ footer .links_list li a img {
   section.gallery_section {
     margin-top: 15px;
   }
+
+  section.carousel_section .caption h1 .small {
+    font-size: 3.5rem;
+  }
+
 }
 
 @media screen and (max-width: 991px) {
@@ -1854,12 +1887,12 @@ footer .links_list li a img {
     left: 40px;
   }*/
   section.carousel_section .homepage_carousel .caption h1 .small {
-    font-size: 2rem;
-    height: 25px;
+    font-size: 3rem;
+    /*height: 25px;*/
   }
   section.carousel_section .homepage_carousel .caption h1 .big {
-    font-size: 4rem;
-    height: 50px;
+    font-size: 6rem;
+    /*height: 50px;*/
   }
   section.countdown_section .countdown_container .title_container h4 {
     font-size: 1.5rem;
@@ -1942,6 +1975,15 @@ footer .links_list li a img {
     border: 1px solid #00ffff;
     padding: 10px;
   }
+  section.carousel_section .homepage_carousel .caption h1 .small {
+    font-size: 2.5rem;
+  }
+  section.carousel_section .homepage_carousel .caption h1 .big {
+    font-size: 5rem;
+  }
+  section.carousel_section .caption > h1 span:last-child {
+    margin-top: 55px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -1981,10 +2023,19 @@ footer .links_list li a img {
     bottom: 15px;
     left: 25px;
   }*/
+  section.carousel_section .homepage_carousel .caption h1 .small {
+    font-size: 2rem;
+  }
   section.carousel_section .homepage_carousel .caption h1 .big {
-    font-size: 3rem;
+    font-size: 4.5rem;
     letter-spacing: 8px;
-    height: 37px;
+    /* height: 37px;*/
+  }
+  section.carousel_section .caption {
+    transform: translate(50px, -50%);
+  }
+  section.carousel_section .caption > h1 span:last-child {
+    margin-top: 45px;
   }
   section.carousel_section .slick-slider .slick-arrow {
     width: 30px;
@@ -2159,14 +2210,14 @@ footer .links_list li a img {
     right: 85px;
   }
   section.carousel_section .homepage_carousel .caption h1 .small {
-    font-size: 1rem;
-    height: 13px;
+    font-size: 1.5rem;
+    /*height: 13px;*/
   }
   section.carousel_section .homepage_carousel .caption h1 .big {
-    font-size: 1.5rem;
+    font-size: 3.5rem;
     letter-spacing: 5px;
-    height: 20px;
-    margin: 5px 0 0;
+    /* height: 20px;
+     margin: 5px 0 0;*/
   }
   section.posts_section .carousel_container .posts_carousel .carousel_item {
     width: 100%;
@@ -2285,5 +2336,72 @@ footer .links_list li a img {
   }
   section.gallery_section .mobile-text {
     font-size: 14px;
+  }
+}
+
+@media(max-width: 480px) {
+  section.carousel_section .homepage_carousel .caption h1 .small {
+    font-size: 1rem;
+  }
+  section.carousel_section .homepage_carousel .caption h1 .big {
+    font-size: 2rem;
+    margin: 5px 0 5px;
+  }
+  section.carousel_section .slick-list.draggable {
+    max-height: 200px;
+  }
+
+  section.carousel_section .caption h1 .small {
+    line-height: 1;
+  }
+}
+
+@media(max-width: 390px) {
+  section.carousel_section .homepage_carousel .caption h1 .small {
+    font-size: 0.9rem;
+  }
+
+  section.carousel_section .homepage_carousel .caption h1 span:last-child {
+    margin-top: 23px;
+  }
+
+  section.carousel_section .caption {
+    transform: translate(40px, -50%);
+  }
+
+  section.carousel_section .homepage_carousel .caption h1 .big {
+    font-size: 3rem;
+    line-height: 0.8;
+    margin: 5px 0 0;
+  }
+
+  section.carousel_section .slick-list.draggable {
+    max-height: 170px;
+  }
+
+  section.carousel_section .slick-slider .slick-arrow.slick-prev {
+    left: 5px;
+  }
+
+  section.carousel_section .slick-slider .slick-arrow.slick-next {
+    right: 5px;
+  }
+}
+
+@media(max-width: 350px) {
+  section.carousel_section .homepage_carousel .caption h1 .small {
+    font-size: 0.7rem;
+  }
+
+  section.carousel_section .homepage_carousel .caption h1 span:last-child {
+    margin-top: 23px;
+  }
+
+  section.carousel_section .homepage_carousel .caption h1 .big {
+    font-size: 2rem;
+  }
+
+  section.carousel_section .slick-list.draggable {
+    max-height: 170px;
   }
 }

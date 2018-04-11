@@ -41,7 +41,7 @@
                     {{--</div>--}}
                     <div class="caption">
                         {{--<h1><span class="small">Saint-Tropez</span><span class="big">Best Show</span></h1>--}}
-                        <h1><span class="small">The best</span><span class="big">show</span> <span class="small">of st-tropez</span><span class="small">KICK BOCKING & MUAYTHAI</span></h1>
+                        <h1><span class="small">One of the best</span><span class="big">shows</span> <span class="small">of saint-tropez</span><span class="small">KICK BOXING & MUAYTHAI</span></h1>
                     </div>
                 </div>
                 <div class="carousel_cell">
@@ -83,7 +83,7 @@
                     <div class="col-12 col-md-7">
                         @include('includes.countdown')
                     </div>
-                    <div class="col-12 col-md-5">
+                    <div class="col-12 col-md-5" >
                         <div class="title_container" title="4 Août 2018, La Citadele de Saint-Tropez">
                             <h4>
                                 <span>4 août 2018</span>

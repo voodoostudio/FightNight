@@ -20,7 +20,7 @@ $('.slick_carousel').slick({
     infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: true,
+    //autoplay: true,
     autoplaySpeed: 4000,
     prevArrow: '<button type="button" class="slick-prev"><img src="/img/arrow_left.png" alt="Slide to previous"></button>',
     nextArrow: '<button type="button" class="slick-next"><img src="/img/arrow_right.png" alt="Slide to previous"></button>',

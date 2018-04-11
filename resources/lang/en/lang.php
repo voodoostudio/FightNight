@@ -29,37 +29,37 @@ return [
 //    'about_text1'           => 'Created in 2013 the FIGHT NIGHT of Saint-Tropez is an event that has become a must, combining the highest values of international combat sports with the authentic character of this fishing village, world famous and appreciated for a long time by the artists and the international jet set Unit of time and place, the FIGHT NIGHT gives you an appointment every August 4 at the Citadel of Saint-Tropez, a listed monument dating from the seventeenth century. In a festive and refined atmosphere, some of the biggest names in Thai Boxing and Kick-Boxing have clashed in this ring, now part of the boxing legend.',
 //    'about_text2'           => 'Each year, more than 1700 spectators and international personalities take place among a hundred VIP tables, arranged around the ring overlooking the sea, to admire a unique 360 ° show in the world.',
     'about_title'           => 'Fight Night VI',
-    'about_text'            => '<p>An exceptional sporty and glamorous evening in a magical place!</p>
-                                <h3>ON THE RING</h3>
-                                <p>A must-see sports event, the Fight Night 6 promises to be more thrilling than ever with its international bouts, "4 Man" tournaments, a World Championship and a women\'s fight. Fight on!</p>
+    'about_text'            => '<p> A boxing sports event combining fun and glamour in a magical place!</p>
+                                <h3>THE RING</h3>
+                                <p> Now a must-see sports event, the 6th edition promises to be more thrilling than ever with international fights, "4 Man" tournaments, a World Championship and a women\'s fight. Fight on !</p>
                                 <h3>THE SHOW</h3>
                                 <p>Around one of the most beautiful rings in the world, the Fight Night 6 offers a breathtaking show with grandiose visual and pyrotechnic effects, the famous mapping projected on the dungeon, new facilities and lots of surprises! See you on August 4th!</p>',
     'about_title2'          => 'THE 6th EDITION',
-    'about_tickets_part1'   => 'Do not let it tell you: come live the event live!',
-    'about_tickets_link'    => 'Tickets go on sale April 25, 2018',
-    'about_tickets_part2'   => 'To all our fans and prestigious guests, we wish you an excellent Fight Night 6!',
+    'about_tickets_part1'   => 'Be part of the story: come and see the event live!',
+    'about_tickets_link'    => 'Tickets go on-sale on April 25th',
+    'about_tickets_part2'   => 'To all our fans and VIP guests, we wish you a fantastic Fight Night 6!',
 
 
     // Editions page
     'editions_block_2013'   => '<h3 class="edition_statistics"><span>1<sup>ere</sup> edition</span> 200 000 tv spectateurs</h3>
-                            <p class="edition_description">Cette soirée unique est la première rencontre poings-pieds avec les plus grands noms du Kick-Boxing et du Pro-Fight, sur le ring installé à la Citadelle de Saint-Tropez. Parrainé par M. Drucker, cet événement aura également une dimension caritative. </p>
-                            <p class="edition_person"><span>Guest</span>Sylvester Stallone - Sébastien Chabbal - Michel Drucker</p>
-                            <p class="edition_person"><span>Fighter</span>Jérôme Le Banner - Stefan Leko</p>',
+                            <p class="edition_description"> First ever Fight Night with the biggest names in Kick-Boxing and Pro-Fight, on the ring at the Citadelle in Saint-Tropez. With Mr. Drucker as patron, this event  also had a charitable dimension. </p>
+                            <p class="edition_person"><span>Guest</span>Sylvester Stallone - Sébastien Chabbal</p>
+                            <p class="edition_person"><span>Fighter</span>Jérôme Le Banner</p>',
     'editions_block_2014'   => '<h3 class="edition_statistics"><span>2<sup>eme</sup> edition</span> 300 000 tv spectateurs</h3>
-                            <p class="edition_description">La soirée s\'est très bien passée et <b>Jérôme Le Banner, Freddy Kemayo</b> et <b>Nicolas Wamba</b> se sont tous les trois imposés par KO au second round !</p>
+                            <p class="edition_description"> The event went well <b>Jérôme Le Banner, Freddy Kemayo</b> and <b>Nicolas Wamba</b> delivered knock-out in the second round !</p>
                             <p class="edition_person"><span>Guest</span>Vincent Lagaf - David Ginola - Enrico Macias</p>
-                            <p class="edition_person"><span>Fighter </span>Jérôme Le Banner - Danyo Illunga</p>',
+                            <p class="edition_person"><span>Fighter </span>Jérôme Le Banner</p>',
     'editions_block_2015'   => '<h3 class="edition_statistics"><span>3<sup>eme</sup> edition</span> 300 000 tv spectateurs</h3>
-                            <p class="edition_description">Bien que de nombreux combats de prestige se soient tenus sur le ring, toute lʼattention s\'est portée sur Jérôme Le Banner, véritable porte-étendard des sports de combat en France et qui tirera sa révérence à l\'issue de la soirée. Lʼoccasion pour nous de le saluer et de lui souhaiter le meilleur pour la suite...</p>
-                            <p class="edition_person"><span>Guest</span>Joey Starr - Mathieu Kassovitz - Gerard Lanvin</p>
-                            <p class="edition_person"><span>Fighter </span>Jérôme Le Banner last Fight - Peter Aertz</p>',
+                            <p class="edition_description">Although many prestigious fights happened on the ring, all attention focused on Jerome Le Banner, true icon of combat sports in France and who retired after this evening. An opportunity for us to greet him and wish him the best for the future ....</p>
+                            <p class="edition_person"><span>Guest</span>Joey Starr - Mathieu Kassovitz</p>
+                            <p class="edition_person"><span>Fighter </span>Jérôme Le Banner last Fight </p>',
     'editions_block_2016'   => '<h3 class="edition_statistics"><span>4<sup>eme</sup> edition</span> 300 000 tv spectateurs</h3>
-                            <p class="edition_description">On note tout particulièrement la mise en place d\'un tournoi à 4 dans la division des poids-lourds, un terme plus que jamais approprié puisque le plus léger de ces 4 combattants pèse plus de 120kg ! Comme l\'annonce l\'affiche, c\'est bien un "+500kg tournament" qui sera proposé. Une chose est sure, la citadelle va trembler !</p>
-                            <p class="edition_person"><span>Guest</span>Mickey Rourke - Thomas Langmann</p>
+                            <p class="edition_description">We particularly note the  tournament  in the heavy-weight division, a say that is more than ever appropriate since the lightest of these 4 fighters weighs over 120kg! As announced, it was really a "+ 500kg tournament". For sure, the citadel is going to shake!</p>
+                            <p class="edition_person"><span>Guest</span>Mickey Rourke..</p>
                             <p class="edition_person"><span>Fighter </span>Yohan Lidon - Daniel Sam</p>',
     'editions_block_2017'   => '<h3 class="edition_statistics"><span>5<sup>eme</sup> edition</span> 350 000 tv spectateurs</h3>
-                            <p class="edition_description">La cinquième édition voit s\'opposer Grégory Tony et Bob Sapp. Quant à Yohan Lidon, il défendra sa ceinture mondiale WKN face à l\'Allemand Florian Kroger. Un show spectaculaire aussi bien sur le ring qu\'en dehors, et devant un parterre de VIP. </p>
-                            <p class="edition_person"><span>Guest</span>Jean-Luc Reichmann - Jean Roch...</p>
+                            <p class="edition_description">The fifth edition opposes Grégory Tony and Bob Sapp. As for Yohan Lidon, he defends his world belt WKN against German Florian Kroger. A spectacular show both in the ring and outside, and in front of a VIP crowd. </p>
+                            <p class="edition_person"><span>Guest</span>Jean-Luc Reichmann - Jean Rock...</p>
                             <p class="edition_person"><span>Fighter </span>Bob Sapp - Yohan Lidon</p>',
 
 
@@ -80,9 +80,9 @@ return [
     'press_title'           => 'Press',
     'press_releases'        => 'Press Releases',
     'accreditations'        => 'Accreditations',
-    'send_passport_copy'    => 'Accredit yourself at the Saint-Tropez Fight Night by sending a copy of your press card to',
+    'send_passport_copy'    => 'Get your accreditation for  Saint-Tropez Fight Night by sending a copy of your press card to',
     'press_kit'             => 'Press kit',
-    'click_download'        => 'Click here to download the 2018 Fight Night Press Kit!',
+    'click_download'        => 'Click here and download Fight Night Press release',
 
     //Contact
     'sector'                => 'Sector',
