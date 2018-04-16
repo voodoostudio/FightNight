@@ -19,12 +19,12 @@ return [
     'home'                  => 'Home',
     'about'                 => 'About',
     'editions'              => 'Editions',
-    'ticketing'             => 'Ticketing',
+    'ticketing'             => 'Tickets',
     'gallery'               => 'Gallery',
     'partners'              => 'Partners',
     'press'                 => 'Press',
     'contact'               => 'Contact',
-    
+
     // About page
 //    'about_text1'           => 'Created in 2013 the FIGHT NIGHT of Saint-Tropez is an event that has become a must, combining the highest values of international combat sports with the authentic character of this fishing village, world famous and appreciated for a long time by the artists and the international jet set Unit of time and place, the FIGHT NIGHT gives you an appointment every August 4 at the Citadel of Saint-Tropez, a listed monument dating from the seventeenth century. In a festive and refined atmosphere, some of the biggest names in Thai Boxing and Kick-Boxing have clashed in this ring, now part of the boxing legend.',
 //    'about_text2'           => 'Each year, more than 1700 spectators and international personalities take place among a hundred VIP tables, arranged around the ring overlooking the sea, to admire a unique 360 ° show in the world.',
@@ -75,6 +75,8 @@ return [
     'great_partners'        => 'Great partners',
     'preferred_partners'    => 'Preferred partners',
     'media_partners'        => 'Media Partners',
+    'title_partners'		=> 'Become a sponsor',
+    'description_partners'	=> 'From €5.000 to €50.000 our partners packages will fit your objectives.<br> We are here to assist you in realising your campaign.',
 
     // Press
     'press_title'           => 'Press',
@@ -83,6 +85,8 @@ return [
     'send_passport_copy'    => 'Get your accreditation for  Saint-Tropez Fight Night by sending a copy of your press card to',
     'press_kit'             => 'Press kit',
     'click_download'        => 'Click here and download Fight Night Press release',
+    'press_kit_zip'         => 'Communication Kit',
+    'click_download_zip'    => 'Click for download our communication kit (official poster, banner, etc...)',
 
     //Contact
     'sector'                => 'Sector',

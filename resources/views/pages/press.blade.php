@@ -23,15 +23,15 @@
                         <div class="article_block">
                             <div class="article_img" style="background-image: url({{ (strtolower($extension->getExtension()) == 'pdf') ? URL::to('/') . '/news/pdf/' . date('F_Y', strtotime($item['updated_at'])) . '/' . $jpg_preview :  URL::to('/') . '/news/image/' . date('F_Y', strtotime($item['updated_at'])) . '/' . $item['image_file']}})">
                                 <a href="#" data-toggle="modal" data-target="#image_{{ $item->id }}" class="article_link"></a>
-                            {{--<a href="{{ route('press-details', ['id' => $item['id']]) }}" class="article_link"></a>--}}
-                            {{--<div class="links_block">
-                                @if(!empty($item['pdf_file']))
-                                    <a href="{{ URl::to('/') }}/news/pdf/{{ date('F_Y', strtotime($item['created_at'])) }}/{{ $item['pdf_file'] }}" download><i class="far fa-file-pdf"></i></a>
-                                @endif
-                                @if(!empty($item['archive_file']))
-                                    <a href="{{ URl::to('/') }}/news/archives/{{ date('F_Y', strtotime($item['created_at'])) }}/{{ $item['archive_file'] }}" download><i class="far fa-file-archive"></i></a>
-                                @endif
-                            </div>--}}
+                                {{--<a href="{{ route('press-details', ['id' => $item['id']]) }}" class="article_link"></a>--}}
+                                {{--<div class="links_block">
+                                    @if(!empty($item['pdf_file']))
+                                        <a href="{{ URl::to('/') }}/news/pdf/{{ date('F_Y', strtotime($item['created_at'])) }}/{{ $item['pdf_file'] }}" download><i class="far fa-file-pdf"></i></a>
+                                    @endif
+                                    @if(!empty($item['archive_file']))
+                                        <a href="{{ URl::to('/') }}/news/archives/{{ date('F_Y', strtotime($item['created_at'])) }}/{{ $item['archive_file'] }}" download><i class="far fa-file-archive"></i></a>
+                                    @endif
+                                </div>--}}
                             </div>
                             {{--<div class="article_info jeans_bg">
 
@@ -60,19 +60,24 @@
                 <h2>{{ trans('lang.accreditations') }}</h2>
                 <p class="paragraph">{{ trans('lang.send_passport_copy') }} <a href="mailto:info@fightnights.pro">info@fightnights.pro</a></p>
 
-
                 <h2>{{ trans('lang.press_kit') }}</h2>
                 <a href="/news/fightnight_2018.pdf" class="download_link" download="FightNight Saint-Tropez Communique de presse 2018">
                     <img src="/img/pdf.png" alt="PDF icn">
                 </a>
                 <p class="paragraph">{{ trans('lang.click_download') }}</p>
+
+                <h2>{{ trans('lang.press_kit_zip') }}</h2>
+                <a href="/zip/medias.zip" class="download_link" download="{{ trans('lang.press_kit_zip') }}">
+                    <img src="/img/zip.png" alt="ZIP icn">
+                </a>
+                <p class="paragraph">{{ trans('lang.click_download_zip') }}</p>
             </div>
         </div>
-        @foreach($news as $item)
-            @php
-                $extension = new SplFileInfo($item['image_file']);
-                $jpg_preview = preg_replace('"\.pdf$"', '.jpg', $item['image_file']);
-            @endphp
+    @foreach($news as $item)
+        @php
+            $extension = new SplFileInfo($item['image_file']);
+            $jpg_preview = preg_replace('"\.pdf$"', '.jpg', $item['image_file']);
+        @endphp
         <!-- Modal -->
             <div class="modal fade" id="image_{{ $item->id }}" tabindex="-1" role="dialog" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered" role="document">

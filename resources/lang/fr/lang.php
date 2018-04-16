@@ -74,6 +74,8 @@ return [
     'great_partners'        => 'Grands partenaires',
     'preferred_partners'    => 'Partenaires privilégiés',
     'media_partners'        => 'Partenaires médias',
+    'title_partners'		=> 'Devenez partenaire',
+    'description_partners'	=> 'De 5\'000 € à 50\'000 € nos packages s’adaptent à vos objectifs.<br> Nous vous accompagnons dans la réalisation de vos campagnes et leur activation.',
 
     // Press
     'press_title'           => 'Presse',
@@ -82,6 +84,8 @@ return [
     'send_passport_copy'    => 'Accréditer-vous à la Fight Night Saint-Tropez en envoyant une copie de votre carte de presse à',
     'press_kit'             => 'Dossier de presse',
     'click_download'        => 'Cliquez ici pour télécharger le dossier de presse Fight Night 2018 !',
+    'press_kit_zip'         => 'Kit de communication',
+    'click_download_zip'    => 'Cliquez ici pour télécharger le kit de communication (affiche officielle, bandeau, ...)',
 
     //Contact
     'sector'                => 'Secteur',

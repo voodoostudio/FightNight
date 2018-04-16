@@ -72,6 +72,38 @@
                     <img src="/img/carousel/8_sm.jpg" alt="" class="d-sm-none">
                     <img src="/img/carousel/8.jpg" alt="" class="d-none d-sm-block">
                 </div>
+                <div class="carousel_cell">
+                    <img src="/img/carousel/9_sm.jpg" alt="" class="d-sm-none">
+                    <img src="/img/carousel/9.jpg" alt="" class="d-none d-sm-block">
+                </div>
+                <div class="carousel_cell">
+                    <img src="/img/carousel/10_sm.jpg" alt="" class="d-sm-none">
+                    <img src="/img/carousel/10.jpg" alt="" class="d-none d-sm-block">
+                </div>
+                <div class="carousel_cell">
+                    <img src="/img/carousel/11_sm.jpg" alt="" class="d-sm-none">
+                    <img src="/img/carousel/11.jpg" alt="" class="d-none d-sm-block">
+                </div>
+                <div class="carousel_cell">
+                    <img src="/img/carousel/12_sm.jpg" alt="" class="d-sm-none">
+                    <img src="/img/carousel/12.jpg" alt="" class="d-none d-sm-block">
+                </div>
+                <div class="carousel_cell">
+                    <img src="/img/carousel/13_sm.jpg" alt="" class="d-sm-none">
+                    <img src="/img/carousel/13.jpg" alt="" class="d-none d-sm-block">
+                </div>
+                <div class="carousel_cell">
+                    <img src="/img/carousel/14_sm.jpg" alt="" class="d-sm-none">
+                    <img src="/img/carousel/14.jpg" alt="" class="d-none d-sm-block">
+                </div>
+                <div class="carousel_cell">
+                    <img src="/img/carousel/15_sm.jpg" alt="" class="d-sm-none">
+                    <img src="/img/carousel/15.jpg" alt="" class="d-none d-sm-block">
+                </div>
+                <div class="carousel_cell">
+                    <img src="/img/carousel/16_sm.jpg" alt="" class="d-sm-none">
+                    <img src="/img/carousel/16.jpg" alt="" class="d-none d-sm-block">
+                </div>
             </div>
         </div>
     </section>
@@ -125,7 +157,7 @@
                                         <div class="col-9 my_col">
                                             <h5>Fight Night</h5>
                                             <h6>Saint Tropez</h6>
-                                            <p>{{ mb_substr($posts['text'], 0, 15) }} ...</p>
+                                            <p>{{ mb_substr($posts['text'], 0, 70) }} ...</p>
                                             <div class="social_links">
                                                 @if(!empty($posts['facebook_link']))
                                                     <a href="{{ $posts['facebook_link'] }}"><i class="fab fa-facebook-f"></i></a>

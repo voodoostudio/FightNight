@@ -1160,6 +1160,7 @@ section.press_section .press_container h2:after {
 
 section.press_section .press_container .paragraph {
     max-width: 58%;
+    padding-left: 55px;
 }
 
 section.press_section .press_container .download_link {
@@ -1853,7 +1854,9 @@ footer .links_list li a img {
     section.carousel_section .caption h1 .small {
         font-size: 3.5rem;
     }
-
+    section.posts_section .post_block {
+        min-height: 150px;
+    }
 }
 
 @media screen and (max-width: 991px) {
@@ -1945,9 +1948,6 @@ footer .links_list li a img {
     .jeans_bg_ragged {
         padding: 85px;
     }
-    section.tickets_section .modal {
-        z-index: 9999;
-    }
     /*.modal-backdrop.show {
         opacity: 1;
         z-index: 9999;
@@ -1990,6 +1990,9 @@ footer .links_list li a img {
     }
     section.carousel_section .caption > h1 span:last-child {
         margin-top: 55px;
+    }
+    section.posts_section .post_block {
+        min-height: 159px;
     }
 }
 
@@ -2152,6 +2155,9 @@ footer .links_list li a img {
         padding: 6px;
         width: 40px;
         height: 40px;
+    }
+    section.posts_section .post_block {
+        min-height: 140px;
     }
 }
 

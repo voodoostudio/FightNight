@@ -84,7 +84,7 @@
                         <a href="{{ route('gallery_details', $images->id) }}" class="cbp-caption" data-title="{{ ($lang == 'fr') ? $images->title_fr : $images->title_en }}">
                             <div class="cbp-caption-defaultWrap grid-wrap">
                                 <div class="mobile-text">
-                                    PLUS DE PHOTOS
+                                    {{ ($lang == 'fr') ? $images->title_fr : $images->title_en }}
                                 </div>
                                 @php
                                     $image_counter = 1;

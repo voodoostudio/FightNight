@@ -7,9 +7,9 @@
                 <img src="/img/partners/partners.jpg" alt="About us banner">
             </div>
             <div class="partners_container jeans_bg_ragged">
-                <h1 class="title--translated">{{ trans('lang.partners_title') }}</h1>
+                <h1 class="title--translated">Partenaires</h1>
 
-                <h2>{{ trans('lang.great_partners') }}</h2>
+                <h2>Grands partenaires</h2>
                 <div class="partners_carousel">
                     <div class="carousel_item">
                         {{--<a href="#">--}}
@@ -55,7 +55,7 @@
                     </div>
                 </div>
 
-                <h2>{{ trans('lang.preferred_partners') }}</h2>
+                <h2>Partenaires privilégiés</h2>
                 <div class="partners_carousel">
                     <div class="carousel_item">
                         {{--<a href="#">--}}
@@ -101,7 +101,7 @@
                     </div>
                 </div>
 
-                <h2>{{ trans('lang.historical_partners') }}</h2>
+                <h2>Partenaires historiques</h2>
                 <div class="partners_carousel">
                     <div class="carousel_item">
                         {{--<a href="#">--}}
@@ -245,7 +245,7 @@
                     </div>
                 </div>
 
-                <h2>{{ trans('lang.media_partners') }}</h2>
+                <h2>Partenaires médias</h2>
                 <div class="partners_carousel">
                     <div class="carousel_item">
                         {{--<a href="#">--}}
@@ -257,28 +257,28 @@
                     <div class="carousel_item">
                         {{--<a href="#">--}}
                         <div class="partner">
-                            <img src="/img/partners/your_logo.png" alt="Your logo">
+                            <img src="/img/partners/partenaires_medias/sfr.png" alt="Your logo">
                         </div>
                         {{--</a>--}}
                     </div>
                     <div class="carousel_item">
                         {{--<a href="#">--}}
                         <div class="partner">
-                            <img src="/img/partners/your_logo.png" alt="Your logo">
+                            <img src="/img/partners/partenaires_medias/nrj.png" alt="Your logo">
                         </div>
                         {{--</a>--}}
                     </div>
                     <div class="carousel_item">
                         {{--<a href="#">--}}
                         <div class="partner">
-                            <img src="/img/partners/your_logo.png" alt="Your logo">
+                            <img src="/img/partners/partenaires_medias/var_matin.png" alt="Your logo">
                         </div>
                         {{--</a>--}}
                     </div>
                     <div class="carousel_item">
                         {{--<a href="#">--}}
                         <div class="partner">
-                            <img src="/img/partners/your_logo.png" alt="Your logo">
+                            <img src="/img/partners/partenaires_medias/equipe_21.png" alt="Your logo">
                         </div>
                         {{--</a>--}}
                     </div>
@@ -291,9 +291,8 @@
                     </div>
                 </div>
 
-                <h2>Devenez partenaire</h2>
-                <p>De 5'000 € à 50'000 € nos packages s’adaptent à vos objectifs.<br>
-                    Nous vous accompagnons dans la réalisation de vos campagnes et leur activation.</p>
+                <h2>{{ trans('lang.title_partners') }}</h2>
+                <p>{!! trans('lang.description_partners') !!}</p>
                 <div class="buttons_container">
                     <a href="/img/partners/sponsoring_fnst18.pdf" download="Partenaires-FNST18.pdf" class="red_btn" style="float: none">
                         Telecharger le dossier<br> de sponsoring 2018
