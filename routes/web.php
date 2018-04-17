@@ -110,6 +110,11 @@ Route::group(['prefix' => LaravelLocalization::setLocale()], function()
 
     /* CRUD GALLERY */
     Route::resource('/admin/gallery', 'AdminGalleryController');
+
+    Route::get('/admin/gallery/{gallery_id}/remove/{id}', [
+        'uses' => 'AdminGalleryController@remove_image',
+        'as' => 'remove_image',
+    ]);
 });
 
 

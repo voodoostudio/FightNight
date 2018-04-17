@@ -1,9 +1,8 @@
-@extends('layouts.app')
+@extends('admin.layouts.app')
 
 @php
     $lang = LaravelLocalization::getCurrentLocale();
 @endphp
-
 
 @section('content')
     <main>
@@ -11,6 +10,20 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-12">
+                        <div class="block-menu">
+                            <ul class="nav">
+                                <li>
+                                    <a class="{{ (URL::current() == URL::to($lang . '/admin') || URL::current() == URL::to('/admin') || URL::current() == URL::to($lang . '/admin/news') || URL::current() == URL::to('/admin/news')) ? 'admin-menu-active' : '' }}" href="{{ URL::to($lang . '/admin') }}">
+                                        News
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="{{ (URL::current() == URL::to($lang . '/admin/gallery') || URL::current() == URL::to('/admin/gallery')) ? 'admin-menu-active' : '' }}" href="{{ URL::to($lang . '/admin/gallery') }}">
+                                        Gallery
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                         <div class="title_container">
                             <h1 class="dashboard_header">
                                 <a class="action_link" href="{{ URL::to($lang . '/admin') }}"><i class="fas fa-arrow-left"></i></a>
@@ -27,25 +40,16 @@
                                 <div class="col-12 col-sm-6 col-md-4 col-lg-3">
                                     <div class="admin_item_info_block">
                                         <div class="edit_elements">
+                                            <a class="edit_btn" href="{{ URL::to($lang . '/admin/gallery/' . $items->id . '/edit') }}"><i class="fas fa-edit"></i></a>
                                             {{ Form::open(array('url' => 'admin/gallery/' . $items->id, 'class' => 'pull-right')) }}
                                             {{ Form::hidden('_method', 'DELETE') }}
                                             <button type="submit" class = "remove_btn"><i class="fas fa-trash-alt"></i></button>
                                             {{ Form::close() }}
                                         </div>
                                         <div class="admin_item_img">
-                                            @php
-                                                $image_counter = 1;
-                                            @endphp
-                                            @foreach(json_decode($items['front_image']) as $key => $image)
-                                                @if($image_counter == 1)
-                                                    <img src="{{ URL::to('/') }}/gallery/front_image/{{ $items->created_at->format('F_Y') }}/{{ $image }}" alt="{{ $key }}">
-                                                @endif
-                                                @php
-                                                    $image_counter++;
-                                                @endphp
-                                            @endforeach
-
-                                            @if(empty(json_decode($items['front_image'])))
+                                            @if(!empty($items['front_image']))
+                                                <img src="{{ URL::to('/') }}/gallery/front_image/{{ $items->updated_at->format('F_Y') }}/{{ $items['front_image'] }}" alt="{{ $items['front_image'] }}">
+                                            @else
                                                 <img src="/img/details/no_agent_photo.svg" alt="">
                                             @endif
                                         </div>

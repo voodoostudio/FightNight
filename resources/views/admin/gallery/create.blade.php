@@ -1,9 +1,8 @@
-@extends('layouts.app')
+@extends('admin.layouts.app')
 
 @php
     $lang = LaravelLocalization::getCurrentLocale();
 @endphp
-
 
 @section('content')
     <main>
@@ -66,7 +65,7 @@
                                 <div class="col-md-6">
                                     <div class="img_upload_container">
                                         <div class="img_upload">
-                                            <input name="front_image[]" type="file" accept="image/*" id="header_img" class="input_file"/>
+                                            <input name="front_image" type="file" accept="image/*" id="header_img" class="input_file"/>
                                             <label for="header_img"><span>Gallery preview</span></label>
                                         </div>
                                     </div>

@@ -1,11 +1,11 @@
-@extends('layouts.app')
-
-{{--{{ dd($news->toArray()) }}--}}
+@extends('admin.layouts.app')
 
 @section('title', 'News page')
+
 @section('css')
     <link rel="stylesheet" type="text/css" href="{{asset('css/dashboard.css')}}">
 @stop
+
 @php
     $lang = LaravelLocalization::getCurrentLocale();
 @endphp
@@ -16,6 +16,20 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-12">
+                        <div class="block-menu">
+                            <ul class="nav">
+                                <li>
+                                    <a class="{{ (URL::current() == URL::to($lang . '/admin') || URL::current() == URL::to('/admin') || URL::current() == URL::to($lang . '/admin/news') || URL::current() == URL::to('/admin/news')) ? 'admin-menu-active' : '' }}" href="{{ URL::to($lang . '/admin') }}">
+                                        News
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="{{ (URL::current() == URL::to($lang . '/admin/gallery') || URL::current() == URL::to('/admin/gallery')) ? 'admin-menu-active' : '' }}" href="{{ URL::to($lang . '/admin/gallery') }}">
+                                        Gallery
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                         <div class="title_container">
                             <h1 class="dashboard_header">
                                 {{ trans('lang.list_of_articles') }}
@@ -51,9 +65,6 @@
                                                 <img src="/img/no_image.svg" alt="">
                                             @endif
                                         </div>
-                                        {{--<div class="admin_item_info">
-                                            <h2>@if($lang == 'fr') {{ $items['title_fr'] }} @elseif($lang == 'en') {{ $items['title_en'] }}  @endif</h2>
-                                        </div>--}}
                                     </div>
                                 </div>
                             @endforeach
@@ -64,11 +75,3 @@
         </section>
     </main>
 @endsection
-
-@section('javascript')
-    {{--<script type="text/javascript">--}}
-        {{--if ($(window).width() >= 1200) {--}}
-            {{--tallestArticleBlock();--}}
-        {{--}--}}
-    {{--</script>--}}
-@stop

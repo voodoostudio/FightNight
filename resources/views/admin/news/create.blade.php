@@ -1,13 +1,8 @@
-@extends('layouts.app')
+@extends('admin.layouts.app')
 
-{{--@section('title', 'Details page')--}}
-{{--@section('css')--}}
-    {{--<link rel="stylesheet" type="text/css" href="{{mix('css/dashboard.css')}}">--}}
-{{--@stop--}}
 @php
     $lang = LaravelLocalization::getCurrentLocale();
 @endphp
-
 
 @section('content')
     <main>
@@ -29,63 +24,6 @@
                         <form method="POST" id="articleEditForm" action = "{{ route('news.store') }}" enctype="multipart/form-data">
                         {{ csrf_field() }}
                         <div class="row">
-                            {{--<div class="col-md-6">
-                                <div class="row">
-                                    <div class="col-12 margin_bottom_20">
-                                        <div class="label_container">
-                                            <label class="form_el_label"><span>{{ trans('lang.title') }} *</span></label>
-                                            <ul class="nav nav-tabs" role="tablist">
-                                                <li class="nav-item">
-                                                    <a class="nav-link active" href="#fr_title" role="tab" data-toggle="tab">FR</a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a class="nav-link" href="#en_title" role="tab" data-toggle="tab">EN</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="tab-content">
-                                            <div role="tabpanel" class="tab-pane fade in show active" id="fr_title">
-                                                <div class="input_container">
-                                                    <input type="text" name="title_fr" id="title_fr" placeholder="{{ trans('lang.title') }}">
-                                                </div>
-                                            </div>
-                                            <div role="tabpanel" class="tab-pane fade" id="en_title" >
-                                                <div class="input_container">
-                                                    <input type="text" name="title_en" id="title_fr" placeholder="{{ trans('lang.title') }}">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-12">
-                                        <div class="label_container">
-                                            <label class="form_el_label"><span>{{ trans('lang.article_text') }}</span></label>
-                                            <ul class="nav nav-tabs" role="tablist">
-                                                <li class="nav-item">
-                                                    <a class="nav-link active" href="#fr_text" role="tab" data-toggle="tab">FR</a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a class="nav-link" href="#en_text" role="tab" data-toggle="tab">EN</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="tab-content">
-                                            <div role="tabpanel" class="tab-pane fade in show active" id="fr_text">
-                                                <div class="input_container">
-                                                    <textarea name="description_fr" id="text_content" cols="30" rows="10"></textarea>
-                                                </div>
-                                            </div>
-                                            <div role="tabpanel" class="tab-pane fade" id="en_text" >
-                                                <div class="input_container">
-                                                    <textarea name="description_en" id="text_content" cols="30" rows="10"></textarea>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>--}}
-
                             <div class="col-md-12">
                                 <div class="row">
                                     <div class="col-12">
@@ -96,22 +34,6 @@
                                             </div>
                                         </div>
                                     </div>
-                                    {{--<div class="col-12">
-                                        <div class="img_upload_container sm">
-                                            <div class="img_upload">
-                                                <input name="pdf_file" accept="application/pdf" type="file" id="pdf" class="input_file"/>
-                                                <label for="pdf"><span>Choose a pdf</span></label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-12">
-                                        <div class="img_upload_container sm">
-                                            <div class="img_upload">
-                                                <input name="archive_file" accept=".zip, .rar" type="file" id="archive" class="input_file"/>
-                                                <label for="archive"><span>Choose a archive file</span></label>
-                                            </div>
-                                        </div>
-                                    </div>--}}
                                 </div>
                             </div>
 
