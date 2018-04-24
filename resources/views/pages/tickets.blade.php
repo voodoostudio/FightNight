@@ -9,7 +9,7 @@
 
             <div class="countdown_container jeans_bg_ragged">
                 <h1 class="title--translated">{{ trans('lang.tickets_title') }}</h1>
-            <!--<img src="/img/tickets/CITADELLE_V4.jpg" usemap="#image-map" width="100%" >
+            <img src="/img/tickets/CITADELLE_V4.jpg" usemap="#image-map" width="100%" >
                 <map name="image-map">
                     <area target="" arena="TB1" alt="tables_1" title="TABLES ZONE 1" href="#tables_1" data-toggle="modal" data-target="#tables" coords="1,134,0,372,164,368,294,364,351,360,387,357,404,356,424,355,458,355,486,355,514,356,624,316,646,305,666,293,683,277,704,258,724,242,738,225,752,204,770,172,781,133,790,108,526,117,437,134,470,254,335,290,302,166" shape="poly">
                     <area target="" arena="SL1" alt="salons_1" title="SALONS ZONE 1" href="#salons_1" data-toggle="modal" data-target="#salons" coords="163,429,173,431,183,434,197,439,221,444,240,449,269,454,279,456,297,460,320,463,342,465,365,465,392,466,424,466,456,465,503,461,542,455,566,449,598,439,623,430,629,426,753,490,725,511,683,531,639,551,595,563,560,571,523,577,486,581,435,584,377,584,323,582,274,575,218,564,217,500,203,472,190,455" shape="poly">
@@ -80,10 +80,10 @@
                     <a href="/img/tickets/offre-vip.pdf" download="OFFRE-VIP.pdf" class="red_btn" style="float: none">
                         OFFRE VIP
                     </a>
-                </div>-->
-                @include('includes.countdown')
+                </div>
+                {{--@include('includes.countdown')
 
-                <h3>{{ trans('lang.coming_soon') }}</h3>
+                <h3>{{ trans('lang.coming_soon') }}</h3>--}}
 
             </div>
 

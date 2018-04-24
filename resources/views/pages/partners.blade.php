@@ -1,5 +1,9 @@
 @extends('layouts.app')
 
+@php
+    $lang = LaravelLocalization::getCurrentLocale();
+@endphp
+
 @section('content')
     <section class="partners_section">
         <div class="container-fluid">
@@ -294,9 +298,15 @@
                 <h2>{{ trans('lang.title_partners') }}</h2>
                 <p>{!! trans('lang.description_partners') !!}</p>
                 <div class="buttons_container">
-                    <a href="/img/partners/sponsoring_fnst18.pdf" download="Partenaires-FNST18.pdf" class="red_btn" style="float: none">
-                        Telecharger le dossier<br> de sponsoring 2018
-                    </a>
+                    @if($lang == 'en')
+                        <a href="/img/partners/Sponsoring-EN-FNST18.pdf" download="Sponsoring-EN-FNST18.pdf" class="red_btn" style="float: none">
+                            Download the 2018<br> sponsorship file
+                        </a>
+                    @else
+                        <a href="/img/partners/sponsoring_fnst18.pdf" download="Sponsoring-FR-FNST18.pdf" class="red_btn" style="float: none">
+                            Telecharger le dossier<br> de sponsoring 2018
+                        </a>
+                    @endif
                     {{--<a href="/img/partners/partenaires_fnst18.pdf" download="Sponsoring-FNST18.pdf" class="red_btn">--}}
                     {{--Consulter nos<br> packages--}}
                     {{--</a>--}}
